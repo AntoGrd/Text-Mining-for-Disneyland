@@ -44,13 +44,9 @@ for comment in soup.body.find_all(class_="_T FKffI"):
 
 
 #localisation 
-for localisation in soup.body.find_all(class_="JINyA"):
-    a = localisation.find("span", attrs = {"class": "mat"})
-    print(a.text)
+for loc in soup.body.find_all(class_="biGQs _P pZUbB osNWb"):
+    print(loc.text)
 
-###########print("\n\n PAYS \n")
-for x in soup.body.find_all(class_="biGQs _P pZUbB osNWb"):
-    print(x.text)
 
 #Note
 for note in soup.body.find_all(class_="UctUV d H0"):
@@ -60,23 +56,29 @@ for note in soup.body.find_all(class_="UctUV d H0"):
 
 #situation de venu 
 for situation in soup.body.find_all(class_="RpeCd"):
-    print(comment.text)
+    print(situation.text)
 
 
-###########print("\n\n Présence de photo \n")
-for x in soup.body.find_all(class_="ajoIU _S B-"):
-    
-    ###########print("oui")
-
-scriptTags = soup.body.find_all(class_="LblVz _e q")
+#présence photo 
+scriptTags = soup.body.find_all(class_="ajoIU _S B-")
 for script in scriptTags:
-    if script.find('button', attrs = {"class": "ajoIU _S B-"}):
-        print("oui")
-    else:
-        print("non")
+    script_tags = soup.find_all('script', some_attribute=True)
+    print("yes")
+    
 
 
-driver.find_element(By.CLASS_NAME, "BrOJk u j z _F wSSLS tIqAi unMkR").click()
+#scriptTags = soup.findAll(attrs={"class" : "ajoIU _S B-"})
+#for script in scriptTags:
+    #if script.has_attr('some_attribute'):
+      # print('yes')
+    #else:
+       # print("no")
+
+#firt page -> second page
+driver.find_element(By.CLASS_NAME, "UCacc").click()
+
+#next pages after the second page
+#driver.find_element(By.CSS_SELECTOR, "button.BrOJk u j z _F wSSLS tIqAi iNBVo SSqtP > div.nsTKv").click()
 
 
 
