@@ -5,13 +5,6 @@ Created on Wed Nov 30 15:36:08 2022
 @author: sibghi
 """
 
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Nov 30 09:39:44 2022
-
-@author: sibghi
-"""
-
 from selenium import webdriver 
 from selenium.webdriver.common.by import By 
 from bs4 import BeautifulSoup
