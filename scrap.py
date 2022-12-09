@@ -68,7 +68,7 @@ for script in scriptTags:
        # print("no")
 
 #firt page -> second page
-driver.find_element(By.CLASS_NAME, "UCacc").click()
+driver.find_element(By.CLASS_NAME, "xkSty").click()
 
 #next pages after the second page
 #driver.find_element(By.CSS_SELECTOR, "button.BrOJk u j z _F wSSLS tIqAi iNBVo SSqtP > div.nsTKv").click()
