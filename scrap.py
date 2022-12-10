@@ -30,44 +30,42 @@ liste_loc = []
 liste_note = []
 
 
-blocAvis = soup.find(attrs={"class" : "LbPSX"})
-for avis in blocAvis.findAll(attrs={"class" : "C"}):
+while True :
     
     blocAvis = soup.find(attrs={"class" : "LbPSX"})
+    for avis in blocAvis.findAll(attrs={"class" : "C"}):
+            
+        #Titre commentaire 
+        titre = avis.find("span", attrs = {"class": "yCeTE"})
+        liste_titre_comm.append(titre.text)
+        #print(titre.text)
     
-    #Titre commentaire 
-    titre = avis.find("span", attrs = {"class": "yCeTE"})
-    liste_titre_comm.append(titre.text)
-    #print(titre.text)
-
-    #commentaire 
-    comment = avis.find(attrs = {"class": "biGQs _P pZUbB KxBGd"})
-    liste_comm.append(comment.text)
-
-
-    #localisation 
-    loc = avis.find(attrs = {"class": "JINyA"})
-    liste_loc.append(loc.text)
-
-
-    #Note
-    note = avis.find(class_="UctUV d H0")
-    note_clean = note["aria-label"]
-    liste_note.append(note_clean)
+        #commentaire 
+        comment = avis.find(attrs = {"class": "biGQs _P pZUbB KxBGd"})
+        liste_comm.append(comment.text)
     
-
-    #situation and date  
-    situation = avis.find(class_="RpeCd")
-    situation_clean = situation.text
-    if "•" in situation_clean:
-        liste_sit_date = situation_clean.split("•")
-        liste_date.append(liste_sit_date[0])
-        liste_situation.append(liste_sit_date[1])
-    else:
-        liste_date.append(situation.text)
-
-
-
+    
+        #localisation 
+        loc = avis.find(attrs = {"class": "JINyA"})
+        liste_loc.append(loc.text)
+    
+    
+        #Note
+        note = avis.find(class_="UctUV d H0")
+        note_clean = note["aria-label"]
+        liste_note.append(note_clean)
+        
+    
+        #situation and date  
+        situation = avis.find(class_="RpeCd")
+        situation_clean = situation.text
+        if "•" in situation_clean:
+            liste_sit_date = situation_clean.split("•")
+            liste_date.append(liste_sit_date[0])
+            liste_situation.append(liste_sit_date[1])
+        else:
+            liste_date.append(situation.text)
+            
     #next pages after the second page
     driver.find_element(By.CLASS_NAME, "xkSty").click()
 
