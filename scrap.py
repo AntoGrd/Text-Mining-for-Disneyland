@@ -16,47 +16,66 @@ driver = webdriver.Chrome("/usr/lib/chromium-browser/chromdriver")
 
 driver.get(url)
 
-
+time.sleep(2)
 driver.find_element(By.ID,"onetrust-reject-all-handler").click()
 
 content  = driver.page_source
 soup = BeautifulSoup(content)
 
+liste_date = []
+liste_situation = []
+liste_titre_comm  = []
+liste_comm = []
+liste_loc = []
+liste_note = []
 
-#Titre commentaire 
+
 blocAvis = soup.find(attrs={"class" : "LbPSX"})
 for avis in blocAvis.findAll(attrs={"class" : "C"}):
     
     blocAvis = soup.find(attrs={"class" : "LbPSX"})
+    
+    #Titre commentaire 
     titre = avis.find("span", attrs = {"class": "yCeTE"})
-    print(titre.text)
+    liste_titre_comm.append(titre.text)
+    #print(titre.text)
 
-#commentaire 
-for comment in soup.body.find_all(class_="_T FKffI"):
-    print(comment.text)
-
-
-#localisation 
-for loc in soup.body.find_all(class_="biGQs _P pZUbB osNWb"):
-    print(loc.text)
+    #commentaire 
+    comment = avis.find(attrs = {"class": "biGQs _P pZUbB KxBGd"})
+    liste_comm.append(comment.text)
 
 
-#Note
-for note in soup.body.find_all(class_="UctUV d H0"):
-    a = note["aria-label"]
-    print(a)
+    #localisation 
+    loc = avis.find(attrs = {"class": "JINyA"})
+    liste_loc.append(loc.text)
 
 
-#situation de venu 
-for situation in soup.body.find_all(class_="RpeCd"):
-    print(situation.text)
+    #Note
+    note = avis.find(class_="UctUV d H0")
+    note_clean = note["aria-label"]
+    liste_note.append(note_clean)
+    
+
+    #situation and date  
+    situation = avis.find(class_="RpeCd")
+    situation_clean = situation.text
+    if "•" in situation_clean:
+        liste_sit_date = situation_clean.split("•")
+        liste_date.append(liste_sit_date[0])
+        liste_situation.append(liste_sit_date[1])
+    else:
+        liste_date.append(situation.text)
 
 
-#présence photo 
-scriptTags = soup.body.find_all(class_="ajoIU _S B-")
-for script in scriptTags:
-    script_tags = soup.find_all('script', some_attribute=True)
-    print("yes")
+
+    #next pages after the second page
+    driver.find_element(By.CLASS_NAME, "xkSty").click()
+
+    #présence photo 
+    #scriptTags = soup.body.find_all(class_="ajoIU _S B-")
+    #for script in scriptTags:
+        #script_tags = soup.find_all('script', some_attribute=True)
+        #print("yes")
     
 
 
@@ -66,12 +85,6 @@ for script in scriptTags:
       # print('yes')
     #else:
        # print("no")
-
-#firt page -> second page
-driver.find_element(By.CLASS_NAME, "xkSty").click()
-
-#next pages after the second page
-#driver.find_element(By.CSS_SELECTOR, "button.BrOJk u j z _F wSSLS tIqAi iNBVo SSqtP > div.nsTKv").click()
 
 
 
