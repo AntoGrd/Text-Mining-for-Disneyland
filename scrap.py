@@ -19,70 +19,97 @@ driver.get(url)
 time.sleep(2)
 driver.find_element(By.ID,"onetrust-reject-all-handler").click()
 
-content  = driver.page_source
-soup = BeautifulSoup(content)
+
 
 liste_date = []
 liste_situation = []
+liste_sit_date = []
 liste_titre_comm  = []
 liste_comm = []
 liste_loc = []
 liste_note = []
+presence_photo = []
 
 
+# boucle pour recuperer les donnees
 while True :
     
-    blocAvis = soup.find(attrs={"class" : "LbPSX"})
+    content  = driver.page_source
+    soup = BeautifulSoup(content)
+    blocAvis = soup.find(attrs={"class" : "LbPSX"})    
     for avis in blocAvis.findAll(attrs={"class" : "C"}):
-            
+        
         #Titre commentaire 
-        titre = avis.find("span", attrs = {"class": "yCeTE"})
-        liste_titre_comm.append(titre.text)
-        #print(titre.text)
+        try:
+            
+            titre = avis.find("span", attrs = {"class": "yCeTE"})
+            liste_titre_comm.append(titre.text)
+            #print(titre.text)
+        except:
+            liste_titre_comm.append("None")
     
         #commentaire 
-        comment = avis.find(attrs = {"class": "biGQs _P pZUbB KxBGd"})
-        liste_comm.append(comment.text)
-    
+        try:
+            
+            comment = avis.find(attrs = {"class": "biGQs _P pZUbB KxBGd"})
+            liste_comm.append(comment.text)
+        except:
+            liste_comm.append("None")
     
         #localisation 
-        loc = avis.find(attrs = {"class": "JINyA"})
-        liste_loc.append(loc.text)
+        try:
+            
+            loc = avis.find(attrs = {"class": "JINyA"})
+            liste_loc.append(loc.text)
+        except:
+            liste_loc.append("None")
     
     
         #Note
-        note = avis.find(class_="UctUV d H0")
-        note_clean = note["aria-label"]
-        liste_note.append(note_clean)
+        try:
+            note = avis.find(class_="UctUV d H0")
+            note_clean = note["aria-label"]
+            liste_note.append(note_clean)
+        except:
+            liste_note.append("None")
         
     
-        #situation and date  
-        situation = avis.find(class_="RpeCd")
-        situation_clean = situation.text
-        if "•" in situation_clean:
-            liste_sit_date = situation_clean.split("•")
-            liste_date.append(liste_sit_date[0])
-            liste_situation.append(liste_sit_date[1])
-        else:
-            liste_date.append(situation.text)
+        #situation and date
+        #on utlise try pour eviter la non presence de balises 
+        try:
+            situation = avis.find(attrs = {"class": "RpeCd"})
+        
+            liste_sit_date.append(situation.text)
             
-    #next pages after the second page
-    driver.find_element(By.CLASS_NAME, "xkSty").click()
-
-    #présence photo 
-    #scriptTags = soup.body.find_all(class_="ajoIU _S B-")
-    #for script in scriptTags:
-        #script_tags = soup.find_all('script', some_attribute=True)
-        #print("yes")
+            if "•" in liste_sit_date[0]:
+                liste_temp = liste_sit_date[0].split("•")
+                liste_date.append(liste_temp[0])
+                liste_situation.append(liste_temp[1])
+            else:
+                liste_date.append(liste_sit_date[0])
+        except:
+            liste_date.append("None")
+            liste_situation.append("None")
+            
+        liste_sit_date = []
+        
+        #test presence photo 
+        try:
+            photo = avis.find(attrs = {"class" : "ajoIU _S B-"})
+            if (photo.name =="button"):
+               presence_photo.append("yes")
+        except:
+            presence_photo.append("no")
+            
+    time.sleep(1)
     
+    try:
+        driver.find_element(By.CLASS_NAME, "xkSty").click()
+    except:
+        driver.quit()
+    
+#fin de la boucle 
 
-
-#scriptTags = soup.findAll(attrs={"class" : "ajoIU _S B-"})
-#for script in scriptTags:
-    #if script.has_attr('some_attribute'):
-      # print('yes')
-    #else:
-       # print("no")
 
 
 
