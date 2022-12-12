@@ -12,7 +12,7 @@ import time
 
 url = "https://www.tripadvisor.fr/Attraction_Review-g226865-d189258-Reviews-Disneyland_Paris-Marne_la_Vallee_Seine_et_Marne_Ile_de_France.html"
 
-driver = webdriver.Chrome("/usr/lib/chromium-browser/chromdriver")
+driver = webdriver.Chrome("C:/Users/sibghi/Downloads/chromedriver_win32/chromedriver.exe")
 
 driver.get(url)
 
@@ -32,17 +32,19 @@ presence_photo = []
 
 
 # boucle pour recuperer les donnees
-while True :
+while(True) :
     
+    time.sleep(2)
     content  = driver.page_source
     soup = BeautifulSoup(content)
-    blocAvis = soup.find(attrs={"class" : "LbPSX"})    
+    blocAvis = soup.find(attrs={"class" : "LbPSX"}) 
     for avis in blocAvis.findAll(attrs={"class" : "C"}):
         
         #Titre commentaire 
         try:
             
             titre = avis.find("span", attrs = {"class": "yCeTE"})
+            print(titre.text)
             liste_titre_comm.append(titre.text)
             #print(titre.text)
         except:
@@ -100,12 +102,12 @@ while True :
                presence_photo.append("yes")
         except:
             presence_photo.append("no")
-            
-    time.sleep(1)
+    
     
     try:
         driver.find_element(By.CLASS_NAME, "xkSty").click()
     except:
+        
         driver.quit()
     
 #fin de la boucle 
