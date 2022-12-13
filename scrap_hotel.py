@@ -39,7 +39,7 @@ presence_photo = []
 # boucle pour recuperer les donnees
 while(True) :
     
-    time.sleep(2)
+    
     content  = driver.page_source
     soup = BeautifulSoup(content)
     for avis in soup.findAll("div", {'class':'YibKl MC R2 Gi z Z BB pBbQr'}):
@@ -64,7 +64,7 @@ while(True) :
         try:
             
             loc = avis.find(attrs = {"class": "MziKN"})
-            loc_precise = loc.find("span", attrs = {"class": "ui_icon map-pin-fill fXexN"})
+            loc_precise = loc.find("span", attrs = {"class": "default LXUOn small"})
             liste_loc.append(loc_precise.text)
         except:
             liste_loc.append("None")
@@ -73,43 +73,33 @@ while(True) :
         #Note
         try:
             note = avis.find("div", attrs = {"class": "IkECb f O"})
-            note.find("span", attrs = {"class": "ui_bubble_rating bubble_50"}).text
-            note_clean = note["aria-label"]
+            search_span = note.find("div", attrs = {"class": "Hlmiy F1"})
+            res = search_span.find("span")
+            if res.has_attr('class'):
+                
+                note_clean = res['class'][1]
+            
             liste_note.append(note_clean)
+            
         except:
             liste_note.append("None")
         
-    
-        #situation and date
-        #on utlise try pour eviter la non presence de balises 
-        try:
-            situation = avis.find(attrs = {"class": "RpeCd"})
-        
-            liste_sit_date.append(situation.text)
-            
-            if "•" in liste_sit_date[0]:
-                liste_temp = liste_sit_date[0].split("•")
-                liste_date.append(liste_temp[0])
-                liste_situation.append(liste_temp[1])
-            else:
-                liste_date.append(liste_sit_date[0])
-        except:
-            liste_date.append("None")
-            liste_situation.append("None")
-            
-        liste_sit_date = []
-        
         #test presence photo 
         try:
-            photo = avis.find(attrs = {"class" : "ajoIU _S B-"})
-            if (photo.name =="button"):
+            
+            photo = avis.find("div", attrs = {"class" : "BSBvb GA"})
+            if (photo is not None):
                presence_photo.append("yes")
+            else:
+    
+                presence_photo.append("no")
         except:
+            
             presence_photo.append("no")
     
-    
+    time.sleep(2)
     try:
-        driver.find_element(By.CLASS_NAME, "xkSty").click()
+        driver.find_element(by=By.CSS_SELECTOR, value='.ui_button.nav.next.primary').click()
     except:
         
         driver.quit()
