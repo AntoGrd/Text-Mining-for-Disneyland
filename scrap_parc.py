@@ -101,6 +101,7 @@ def scrapping_parc(url_parc, driver):
         except:
             
             driver.quit()
+            break
         page=page+1    
         
     #fin de la boucle 

@@ -25,7 +25,7 @@ def scrapping_hotel(url_hotel, driver):
     liste_loc = []
     liste_note = []
     presence_photo = []
-    
+    liste_date = []
     # boucle pour recuperer les donnees
     page=1 
     while(page<4): #juste pour tester
@@ -51,6 +51,13 @@ def scrapping_hotel(url_hotel, driver):
                 liste_comm.append(comment.text)
             except:
                 liste_comm.append("None")
+                
+            try:
+                temp = avis.find(attrs = {"cRVSd"})
+                date = temp.find("span").text
+                liste_date.append(date)
+            except:
+                liste_date.append("None, None")
         
             #localisation 
             try:
@@ -59,7 +66,7 @@ def scrapping_hotel(url_hotel, driver):
                 loc_precise = loc.find("span", attrs = {"class": "default LXUOn small"})
                 liste_loc.append(loc_precise.text)
             except:
-                liste_loc.append("None")
+                liste_loc.append("None, None")
         
         
             #Note
@@ -95,10 +102,11 @@ def scrapping_hotel(url_hotel, driver):
         except:
             
             driver.quit()
+            break
         page=page+1
     #fin de la boucle 
-    df = pd.DataFrame(list(zip(liste_titre_comm, liste_comm, liste_loc, liste_note, presence_photo)),
-                   columns =['titre_comm', 'comm','loc','note','photo'])
+    df = pd.DataFrame(list(zip(liste_titre_comm, liste_comm,liste_date, liste_loc, liste_note, presence_photo)),
+                   columns =['titre_comm', 'comm',"date",'loc','note','photo'])
     return(df)
 
 

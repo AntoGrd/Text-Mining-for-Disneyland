@@ -14,8 +14,8 @@ url_parc = ["https://www.tripadvisor.fr/Attraction_Review-g226865-d189258-Review
             "https://www.tripadvisor.fr/Attraction_Review-g226865-d285990-Reviews-Walt_Disney_Studios_Park-Marne_la_Vallee_Seine_et_Marne_Ile_de_France.html"]
 
 #Indiquer le driver présent sur la machine
-#driver = webdriver.Chrome("C:/Users/Sam/Documents/SISE/Text mining/Driver/chromedriver.exe")
-driver = webdriver.Chrome("C:/Documents/travail/LYON2\M2/text_mining/projet_disney/chromedriver.exe")
+driver = webdriver.Chrome("C:/Users/Sam/Documents/SISE/Text mining/Driver/chromedriver.exe")
+#driver = webdriver.Chrome("C:/Documents/travail/LYON2\M2/text_mining/projet_disney/chromedriver.exe")
 
 #Choisir hotel/parc à scrapper :
 tab=scrap_hotel.scrapping_hotel(url_hotel[0], driver)
