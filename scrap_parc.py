@@ -53,8 +53,9 @@ def scrapping_parc(url_parc, driver):
             #localisation 
             try:
                 
-                loc = avis.find(attrs = {"class": "JINyA"})
-                liste_loc.append(loc.text)
+                temp = avis.find(attrs = {"class": "JINyA"})
+                loc = temp.find("span").text
+                liste_loc.append(loc)
             except:
                 liste_loc.append("None")
         
