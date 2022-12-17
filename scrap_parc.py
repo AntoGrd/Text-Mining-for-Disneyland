@@ -13,6 +13,7 @@ def scrapping_parc(url_parc, driver):
     
     time.sleep(1)
     driver.find_element(By.CLASS_NAME,"NK").click()
+    time.sleep(1)
     driver.find_element(By.ID,"menu-item-all").click()
     
     liste_date = []
