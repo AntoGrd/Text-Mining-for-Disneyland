@@ -13,12 +13,31 @@ url_hotel = ["https://www.tripadvisor.fr/Hotel_Review-g1182377-d262678-Reviews-D
 url_parc = ["https://www.tripadvisor.fr/Attraction_Review-g226865-d189258-Reviews-Disneyland_Paris-Marne_la_Vallee_Seine_et_Marne_Ile_de_France.html",
             "https://www.tripadvisor.fr/Attraction_Review-g226865-d285990-Reviews-Walt_Disney_Studios_Park-Marne_la_Vallee_Seine_et_Marne_Ile_de_France.html"]
 
-#Indiquer le driver présent sur la machine
-driver = webdriver.Chrome("C:/Users/Sam/Documents/SISE/Text mining/Driver/chromedriver.exe")
-#driver = webdriver.Chrome("C:/Documents/travail/LYON2\M2/text_mining/projet_disney/chromedriver.exe")
 
-#Choisir hotel/parc à scrapper :
-tab=scrap_hotel.scrapping_hotel(url_hotel[0], driver)
-#tab=scrap_parc.scrapping_parc(url_parc[0],driver)
+#Récupération des hotels :
+nom_hotels=["hotel_marvel","hotel_newport","hotel_sequoia","hotel_sante_fe","hotel_davy_crockett"]
+#boucle pour récupérer tous les hotels
+#for i in len(url_hotel):
+for i in range(1,6) :
+    driver = webdriver.Chrome("C:/Documents/travail/LYON2\M2/text_mining/projet_disney/chromedriver.exe")
+    #driver = webdriver.Chrome("C:/Users/Sam/Documents/SISE/Text mining/Driver/chromedriver.exe")
+    tab=scrap_hotel.scrapping_hotel(url_hotel[i],driver)
+    tab.to_csv(nom_hotels[i]+'.csv', index=False, encoding = 'utf-8-sig')
+    
+#Récupération parcs :
+driver = webdriver.Chrome("C:/Documents/travail/LYON2\M2/text_mining/projet_disney/chromedriver.exe")
+#driver = webdriver.Chrome("C:/Users/Sam/Documents/SISE/Text mining/Driver/chromedriver.exe")
+tab=scrap_parc.scrapping_parc(url_parc[0],driver)
+tab.to_csv('parc_disneyland_paris.csv', sep ='\t', index=False, encoding = 'utf-8-sig')
 
-tab
+driver = webdriver.Chrome("C:/Documents/travail/LYON2\M2/text_mining/projet_disney/chromedriver.exe")
+#driver = webdriver.Chrome("C:/Users/Sam/Documents/SISE/Text mining/Driver/chromedriver.exe")
+tab=scrap_parc.scrapping_parc(url_parc[1],driver)
+tab.to_csv('parc_walt_disney_studios.csv', sep ='\t', index=False, encoding = 'utf-8-sig')
+
+
+
+
+
+
+
