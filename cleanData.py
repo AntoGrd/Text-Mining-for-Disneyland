@@ -86,8 +86,21 @@ def clean_data_hotel(df):
 
         if col =="loc":
             
-            liste_ville = [item.split(',', 1)[0] for item in list(df[col])]
-            liste_Pays = [item.split(',', 1)[1] for item in list(df[col])]
+            liste_ville = [] 
+            liste_Pays  = []
+            for item in list(df[col]):
+                temp = item.split(",")
+                
+                try:
+                    liste_ville.append(temp[0])
+                except:
+                    
+                    liste_ville.append("None")
+                try:
+                    liste_Pays.append(temp[1])
+                except:
+                    
+                    liste_Pays.append("None")
             
         if col == "note":
             list_note = [int(item[7:8]) for item in list(df[col])]
