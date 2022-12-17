@@ -11,7 +11,9 @@ def scrapping_parc(url_parc, driver):
     time.sleep(2)
     driver.find_element(By.ID,"onetrust-reject-all-handler").click()
     
-    
+    time.sleep(1)
+    driver.find_element(By.CLASS_NAME,"NK").click()
+    driver.find_element(By.ID,"menu-item-all").click()
     
     liste_date = []
     liste_situation = []
