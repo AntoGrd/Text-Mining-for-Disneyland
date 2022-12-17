@@ -16,7 +16,7 @@ def scrapping_hotel(url_hotel, driver):
     
     time.sleep(2)
     driver.find_element(By.ID,"onetrust-reject-all-handler").click()
-    
+    time.sleep(1)
     driver.find_element(by=By.CLASS_NAME,value ="Qukvo.Vm._S").click()
 
     #liste_date = []
