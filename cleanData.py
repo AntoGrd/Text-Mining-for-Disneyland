@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Spyder Editor
-
 This is a temporary script file.
 """
 
@@ -106,8 +105,8 @@ def clean_data_hotel(df):
             list_note = [int(item[7:8]) for item in list(df[col])]
         
         
-    df = pd.DataFrame(list(zip(liste_titre_comm, liste_comm,liste_, liste_ville,liste_Pays, list_note, list(df["photo"]))),
-                   columns =['titre_commentaire', 'commentaire','Date','Ville',"Pays","Note",'Photo'])
+    df = pd.DataFrame(list(zip(liste_titre_comm, liste_comm,liste_, liste_ville,liste_Pays, list_note, list(df["photo"]), list(df["langue"]))),
+                   columns =['titre_commentaire', 'commentaire','Date','Ville','Pays','Note','Photo','langue'])
     
     return df 
     
