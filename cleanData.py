@@ -153,7 +153,7 @@ def clean_data_parc(df):
             list_note = [int(item[0:1]) for item in list(df[col])]
         
         
-    df = pd.DataFrame(list(zip(liste_titre_comm, liste_comm,list(df["date"]), list(df["situation"]),liste_ville,liste_Pays, list_note, list(df["photo"]))),
+    df = pd.DataFrame(list(zip(liste_titre_comm, liste_comm,list(df["date"]), list(df["situation"]),liste_ville,liste_Pays, list_note, list(df["photo"]), list(df["langue"]))),
                    columns =['titre_commentaire', 'commentaire','Date','Situation','Ville',"Pays","Note",'Photo'])
     
     return df 
