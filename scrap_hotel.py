@@ -29,9 +29,9 @@ def scrapping_hotel(url_hotel, driver):
     presence_photo = []
     liste_date = []
     # boucle pour recuperer les donnees
-    page=1 
-    while(page<4): #juste pour tester
-    #while(True) :
+    #page=1 
+    #while(page<4): #juste pour tester
+    while(True) :
         
         
         content  = driver.page_source
@@ -105,7 +105,7 @@ def scrapping_hotel(url_hotel, driver):
             
             driver.quit()
             break
-        page=page+1
+        #page=page+1
     #fin de la boucle 
     df = pd.DataFrame(list(zip(liste_titre_comm, liste_comm,liste_date, liste_loc, liste_note, presence_photo)),
                    columns =['titre_comm', 'comm',"date",'loc','note','photo'])

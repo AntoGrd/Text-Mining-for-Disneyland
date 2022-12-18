@@ -27,12 +27,13 @@ def scrapping_parc(url_parc, driver):
     
     # boucle pour recuperer les donnees
         #while(True) :
-    page=1 
-    while(page<8): #juste pour tester
-    #while(True) :    
-        time.sleep(2)
+    #page=1 
+    #while(page<8): #juste pour tester
+    while(True) :    
+        
+        time.sleep(3)
         content  = driver.page_source
-        soup = BeautifulSoup(content)
+        soup = BeautifulSoup(content,features="lxml")
         blocAvis = soup.find(attrs={"class" : "LbPSX"}) 
         for avis in blocAvis.findAll(attrs={"class" : "C"}):
             
@@ -99,14 +100,13 @@ def scrapping_parc(url_parc, driver):
             except:
                 presence_photo.append("no")
         
-        
         try:
             driver.find_element(By.CLASS_NAME, "xkSty").click()
         except:
             
             driver.quit()
             break
-        page=page+1    
+        #page=page+1    
         
     #fin de la boucle 
     df = pd.DataFrame(list(zip(liste_date, liste_situation, liste_titre_comm, liste_comm, liste_loc, liste_note, presence_photo)),
