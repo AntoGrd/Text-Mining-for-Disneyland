@@ -27,7 +27,7 @@ url_parc = ["https://www.tripadvisor.fr/Attraction_Review-g226865-d189258-Review
 #Récupération des hotels :
 nom_hotels=["hotel_marvel","hotel_newport","hotel_sequoia","hotel_sante_fe","hotel_davy_crockett"]
 #boucle pour récupérer tous les hotels
-for i in range(1,5):
+for i in range(1,6): #♠car déjà recup hotel marvel
 #for i in len(url_hotel):
     driver = webdriver.Chrome("C:/Documents/travail/LYON2\M2/text_mining/projet_disney/chromedriver.exe")
     #driver = webdriver.Chrome("C:/Users/Sam/Documents/SISE/Text mining/Driver/chromedriver.exe")
