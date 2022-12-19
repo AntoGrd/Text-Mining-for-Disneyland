@@ -16,7 +16,7 @@ def scrapping_parc(url_parc, driver):
     time.sleep(1)
     driver.find_element(By.ID,"menu-item-all").click()
     
-    liste_date = []
+    liste_dateAvis = []
     liste_situation = []
     liste_sit_date = []
     liste_titre_comm  = []
@@ -24,11 +24,12 @@ def scrapping_parc(url_parc, driver):
     liste_loc = []
     liste_note = []
     presence_photo = []
+    liste_dateSejour = []
     
     # boucle pour recuperer les donnees
         #while(True) :
     #page=1 
-    #while(page<8): #juste pour tester
+    #while(page<2): #juste pour tester
     while(True) :    
         
         time.sleep(3)
@@ -82,15 +83,21 @@ def scrapping_parc(url_parc, driver):
                 
                 if "•" in liste_sit_date[0]:
                     liste_temp = liste_sit_date[0].split("•")
-                    liste_date.append(liste_temp[0])
+                    liste_dateSejour.append(liste_temp[0])
                     liste_situation.append(liste_temp[1])
                 else:
-                    liste_date.append(liste_sit_date[0])
+                    liste_dateSejour.append(liste_sit_date[0])
             except:
-                liste_date.append("None")
+                liste_dateSejour.append("None")
                 liste_situation.append("None")
                 
             liste_sit_date = []
+            
+            try:
+                dateAvis = avis.find(attrs = {"class": "biGQs _P pZUbB xUqsL ncFvv osNWb"}).text
+                liste_dateAvis.append(dateAvis)
+            except:
+                liste_dateAvis.append("None")
             
             #test presence photo 
             try:
@@ -109,8 +116,8 @@ def scrapping_parc(url_parc, driver):
         #page=page+1    
         
     #fin de la boucle 
-    df = pd.DataFrame(list(zip(liste_date, liste_situation, liste_titre_comm, liste_comm, liste_loc, liste_note, presence_photo)),
-                   columns =['date','situation','titre_comm', 'comm','loc','note','photo'])
+    df = pd.DataFrame(list(zip(liste_dateSejour, liste_situation, liste_titre_comm, liste_comm, liste_loc,liste_dateAvis, liste_note, presence_photo)),
+                   columns =['dateSejour','situation','titre_comm', 'comm','loc','dateAvis','note','photo'])
     return(df)
 
 

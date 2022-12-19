@@ -28,8 +28,8 @@ nom_hotels=["hotel_marvel","hotel_newport","hotel_sequoia","hotel_sante_fe","hot
 #boucle pour récupérer tous les hotels
 for i in range(0,len(url_hotel)): #♠car déjà recup hotel marvel
 #for i in len(url_hotel):
-    driver = webdriver.Chrome("C:/Documents/travail/LYON2\M2/text_mining/projet_disney/chromedriver.exe")
-    #driver = webdriver.Chrome("C:/Users/Sam/Documents/SISE/Text mining/Driver/chromedriver.exe")
+    #driver = webdriver.Chrome("C:/Documents/travail/LYON2\M2/text_mining/projet_disney/chromedriver.exe")
+    driver = webdriver.Chrome("C:/Users/Sam/Documents/SISE/Text mining/Driver/chromedriver.exe")
     tab=scrap_hotel.scrapping_hotel(url_hotel[i],driver)
     #tab = clean_data_hotel(tab)
     tab.to_csv(nom_hotels[i]+'.csv', index=False, encoding = 'utf-8-sig')
@@ -49,8 +49,11 @@ for i in range(0,len(url_parc)):
 #os.chdir(r"C:\Documents\travail\LYON2\M2\text_mining\projet_disney\projet_disney\data")
 #tab=pd.read_csv("hotel_marvel.csv")
 #os.chdir(r"C:\Documents\travail\LYON2\M2\text_mining\projet_disney\projet_disney")
+os.chdir("C:/Users/Sam/Documents/GitHub/Text-Mining-for-Disneyland/data")
+tab=pd.read_csv("Walt_Disney_Studios_Park.csv")
+os.chdir(r"C:\Users\Sam\Documents\GitHub\Text-Mining-for-Disneyland")
 translate(tab)
-tab = clean_data_hotel(tab)
+tab = clean_data_parc(tab)
 tab.to_csv('hotel_marvel_clean.csv', index=False, encoding = 'utf-8-sig')
 
 

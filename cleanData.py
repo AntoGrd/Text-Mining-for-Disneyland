@@ -51,7 +51,6 @@ def nettoyage_corpus(corpus,vire_vide=True):
     return output
 
 
-
 def clean_data_hotel(df):
     
     for col in df.columns :
@@ -66,8 +65,8 @@ def clean_data_hotel(df):
             df[col] = df[col].str.replace("'"," ")
             liste_comm = nettoyage_corpus(list(df[col]))
 
-        if col == "date":
-            liste_date = [w.split('(',1)[1] for w in list(df[col])]
+        if col == "dateAvis":
+            liste_date = [w.split('(',1)[1] for w in list(df["dateAvis"])]
             liste_date = [w.replace(")","") for w in liste_date]
             
             liste_ = []
@@ -87,8 +86,23 @@ def clean_data_hotel(df):
                 if "Hier" in date:
                     date=date.replace('Hier',months[datetime.datetime.now().month-1])    
                 liste_.append(date)
+        
+        if col == "dateSejour":
+            liste_daSej = [w.split(':')[1] for w in list(df[col])]
+            
+            mois = []
+            annee= []
+            for i in liste_daSej:
                 
-
+                temp = i.split(" ")
+                
+                mois.append(temp[1])
+                annee.append(" " +temp[2])
+            
+            liste_daSej = [i + j for i, j in zip (mois, annee)]
+           
+            
+            
         if col =="loc":
             
             liste_ville = [] 
@@ -111,8 +125,8 @@ def clean_data_hotel(df):
             list_note = [int(item[7:8]) for item in list(df[col])]
         
         
-    df = pd.DataFrame(list(zip(liste_titre_comm, liste_comm,liste_, liste_ville,liste_Pays, list_note, list(df["photo"]), list(df["langue"]))),
-                   columns =['titre_commentaire', 'commentaire','Date','Ville','Pays','Note','Photo','langue'])
+    df = pd.DataFrame(list(zip(liste_titre_comm, liste_comm,liste_, liste_ville,liste_Pays,liste_daSej, list_note, list(df["photo"]), list(df["langue"]))),
+                   columns =['titre_commentaire', 'commentaire','Date_Avis','Ville','Pays',"Date_Sejour", 'Note','Photo','langue'])
     
     return df 
     
@@ -159,12 +173,26 @@ def clean_data_parc(df):
                     
                     liste_Pays.append("None")
                     
+        if col == "dateAvis" : 
             
+            liste_dateAv = []
+            for i in list(df["dateAvis"]): 
+                
+                temp = i.split("le ")
+                
+                if len(temp)==1:
+                    liste_dateAv.append("None")
+                    
+                else : 
+                    liste_dateAv.append(temp[1])
+                    
+           
+
         if col == "note":
             list_note = [int(item[0:1]) for item in list(df[col])]
         
         
-    df = pd.DataFrame(list(zip(liste_titre_comm, liste_comm,list(df["date"]), list(df["situation"]),liste_ville,liste_Pays, list_note, list(df["photo"]), list(df["langue"]))),
-                   columns =['titre_commentaire', 'commentaire','Date','Situation','Ville','Pays','Note','Photo','langue'])
+    df = pd.DataFrame(list(zip(liste_titre_comm, liste_comm,list(df["dateSejour"]), list(df["situation"]),liste_ville,liste_Pays,liste_dateAv, list_note, list(df["photo"]), list(df["langue"]))),
+                   columns =['titre_commentaire', 'commentaire','Date_Sejour','Situation','Ville','Pays',"Date_Avis",'Note','Photo','langue'])
     
     return df 

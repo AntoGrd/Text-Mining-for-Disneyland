@@ -27,7 +27,8 @@ def scrapping_hotel(url_hotel, driver):
     liste_loc = []
     liste_note = []
     presence_photo = []
-    liste_date = []
+    liste_dateAvis = []
+    liste_dateSejour = []
     # boucle pour recuperer les donnees
     #page=1 
     #while(page<4): #juste pour tester
@@ -53,14 +54,24 @@ def scrapping_hotel(url_hotel, driver):
                 liste_comm.append(comment.text)
             except:
                 liste_comm.append("None")
-                
+              
+            #date avis
             try:
                 temp = avis.find(attrs = {"cRVSd"})
-                date = temp.find("span").text
-                liste_date.append(date)
+                dateAvis = temp.find("span").text
+                liste_dateAvis.append(dateAvis)
             except:
-                liste_date.append("None, None")
+                liste_dateAvis.append("None, None")
         
+            #date sejour 
+            try:
+                temp = avis.find(attrs = {"class" : "EftBQ"})
+                date_sejour = temp.find("span", attrs = {"class" : "teHYY _R Me S4 H3"}).text
+                liste_dateSejour.append(date_sejour)
+                
+            except:
+                liste_dateSejour.append("None")
+                
             #localisation 
             try:
                 
@@ -107,8 +118,8 @@ def scrapping_hotel(url_hotel, driver):
             break
         #page=page+1
     #fin de la boucle 
-    df = pd.DataFrame(list(zip(liste_titre_comm, liste_comm,liste_date, liste_loc, liste_note, presence_photo)),
-                   columns =['titre_comm', 'comm',"date",'loc','note','photo'])
+    df = pd.DataFrame(list(zip(liste_titre_comm, liste_comm,liste_dateAvis,liste_dateSejour, liste_loc, liste_note, presence_photo)),
+                   columns =['titre_comm', 'comm',"dateAvis","dateSejour",'loc','note','photo'])
     return(df)
 
 
