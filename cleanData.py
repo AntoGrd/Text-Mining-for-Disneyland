@@ -14,7 +14,6 @@ import nltk
 from nltk.corpus import stopwords
 import datetime
 
-
 lem = WordNetLemmatizer()
 ponctuations = set(string.punctuation)
 nltk.download('punkt')
@@ -26,6 +25,7 @@ chiffres = list("0123456789")
 def nettoyage_doc(doc_param):
     #passage en minuscule
     doc = doc_param.lower()
+    #doc = " ".join([w for w in list(doc) if not w in "'"])
     #retrait des ponctuations
     doc = "".join([w for w in list(doc) if not w in ponctuations])
     #retirer les chiffres
@@ -57,10 +57,13 @@ def clean_data_hotel(df):
     for col in df.columns :
          
         if col == "titre_comm":
-            
+            #retrait des ' avant retrait ponctuation pour éviter que les lettres uniques 
+            #soient colées avec les mots lors de l'utilisation de nettoyage_corpus
+            df[col] = df[col].str.replace("'"," ")
             liste_titre_comm = nettoyage_corpus(list(df[col]))
         
         if col == "comm":
+            df[col] = df[col].str.replace("'"," ")
             liste_comm = nettoyage_corpus(list(df[col]))
 
         if col == "date":
@@ -114,15 +117,20 @@ def clean_data_hotel(df):
     return df 
     
 
-def clean_data_parc(df):
+def clean_data_parc(df):    
     
     for col in df.columns :
          
         if col == "titre_comm":
             
+            #retrait des ' avant retrait ponctuation pour éviter que les lettres uniques 
+            #soient colées avec les mots lors de l'utilisation de nettoyage_corpus
+            df[col] = df[col].str.replace("'"," ")
             liste_titre_comm = nettoyage_corpus(list(df[col]))
         
         if col == "comm":
+            
+            df[col] = df[col].str.replace("'"," ")
             liste_comm = nettoyage_corpus(list(df[col]))
 
         if col =="loc":
