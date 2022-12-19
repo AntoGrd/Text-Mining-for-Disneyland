@@ -79,8 +79,11 @@ def clean_data_hotel(df):
                 if len(temp)==1:
                     temp.append(str(datetime.datetime.now().year))
                 
-                
-                liste_.append(" ".join(temp))
+                date=(" ".join(temp))
+                months=["janv","févr","mars","avr","mai","juin","juil","août","sept","oct","nov","déc"]
+                if "Hier" in date:
+                    date=date.replace('Hier',months[datetime.datetime.now().month-1])    
+                liste_.append(date)
                 
 
         if col =="loc":
