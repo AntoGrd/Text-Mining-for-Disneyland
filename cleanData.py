@@ -165,6 +165,6 @@ def clean_data_parc(df):
         
         
     df = pd.DataFrame(list(zip(liste_titre_comm, liste_comm,list(df["date"]), list(df["situation"]),liste_ville,liste_Pays, list_note, list(df["photo"]), list(df["langue"]))),
-                   columns =['titre_commentaire', 'commentaire','Date','Situation','Ville',"Pays","Note",'Photo'])
+                   columns =['titre_commentaire', 'commentaire','Date','Situation','Ville','Pays','Note','Photo','langue'])
     
     return df 
