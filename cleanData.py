@@ -18,7 +18,8 @@ lem = WordNetLemmatizer()
 ponctuations = set(string.punctuation)
 nltk.download('punkt')
 nltk.download('stopwords')
-mots_vides = stopwords.words("english") + stopwords.words('french')
+mots_vides_1 = stopwords.words('french')
+mots_vides_2 = ["marvel", "disney","parc"]
 chiffres = list("0123456789")
 
 
@@ -35,7 +36,8 @@ def nettoyage_doc(doc_param):
     #lematisation de chaque terme
     doc = [lem.lemmatize(terme) for terme in doc]
     #retirer les stopwords
-    doc = [w for w in doc if not w in mots_vides]
+    doc = [w for w in doc if not w in mots_vides_1]
+    doc = [w for w in doc if not w in mots_vides_2]
     #retirer les termes de moins de 3 caractères
     doc = [w for w in doc if len(w)>=3]
     #fin
