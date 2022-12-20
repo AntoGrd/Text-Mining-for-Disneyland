@@ -24,15 +24,15 @@ url_parc = ["https://www.tripadvisor.fr/Attraction_Review-g226865-d189258-Review
 
 
 #Récupération des hotels :
-nom_hotels=["hotel_marvel","hotel_newport","hotel_sequoia","hotel_sante_fe","hotel_davy_crockett"]
+nom_hotels=["hotel_marvel","hotel_newport","hotel_sequoia","hotel_cheyenne", "hotel_sante_fe","hotel_davy_crockett"]
 #boucle pour récupérer tous les hotels
 for i in range(0,len(url_hotel)): #♠car déjà recup hotel marvel
 #for i in len(url_hotel):
     #driver = webdriver.Chrome("C:/Documents/travail/LYON2\M2/text_mining/projet_disney/chromedriver.exe")
     driver = webdriver.Chrome("C:/Users/Sam/Documents/SISE/Text mining/Driver/chromedriver.exe")
-    tab=scrap_hotel.scrapping_hotel(url_hotel[i],driver)
+    tab=scrap_hotel.scrapping_hotel(url_hotel[3],driver)
     #tab = clean_data_hotel(tab)
-    tab.to_csv(nom_hotels[i]+'.csv', index=False, encoding = 'utf-8-sig')
+    tab.to_csv(nom_hotels[3]+'.csv', index=False, encoding = 'utf-8-sig')
    
 #Récupération parcs :
 namesParc  = ["Disneyland_Paris","Walt_Disney_Studios_Park"]
