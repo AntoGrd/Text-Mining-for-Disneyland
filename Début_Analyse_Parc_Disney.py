@@ -4,14 +4,13 @@ from sklearn.feature_extraction.text import CountVectorizer
 
 # Importation de la base de données
 parcDisney = pd.read_csv("C:/Users/laura/Downloads/Text-Mining-for-Disneyland-main (1)/Text-Mining-for-Disneyland-main/data_clean/parc_disney_debut.csv", sep=",")
-parcDisney.info( ) #200 avis
+parcDisney.info( ) #20685 avis
 
 parcDisney.head() 
 parcDisney['Date'].tail(1)
 modalites = pd.unique(parcDisney['Note'])
 print(parcDisney.Note.value_counts())
 
-parseur = CountVectorizer()
 # Fonction qui donne les 5 (par défault) mots les plus cités dans le dataframe (df) pour toutes les notes (par défault) 
 def mots_significatif_par_note(df,note='tous',nb_mots = 5):
     # Récupération du dataframe pour toutes les notes)
@@ -24,6 +23,7 @@ def mots_significatif_par_note(df,note='tous',nb_mots = 5):
         for i in note:
             print(i)
             dfnew = dfnew.append(df[df['Note']==i])
+    parseur = CountVectorizer()
     X = parseur.fit_transform(dfnew['commentaire'])
     mdt = X.toarray()
     freq_mots = np.sum(mdt,axis=0)
