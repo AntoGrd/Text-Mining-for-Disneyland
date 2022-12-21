@@ -92,21 +92,17 @@ def clean_data_hotel(df):
         if col == "dateSejour":
                         
             liste_daSej = []
-            try :
-                for i in df[col].tolist():
-                    pos = i.find(":")
-                    temp = i[pos +2 : len(i)]
-                    liste_daSej.append(temp)
-            except:
-                liste_daSej.append("None")
-                
+            for i in df[col].tolist():
+                pos = i.find(":")
+                temp = i[pos +2 : len(i)]
+                liste_daSej.append(temp)
             
         if col =="loc":
             
             liste_ville = [] 
             liste_Pays  = []
             for item in list(df[col]):
-                temp = item.split(",")
+                temp = str(item).split(",")
                 
                 try:
                     liste_ville.append(temp[0])
