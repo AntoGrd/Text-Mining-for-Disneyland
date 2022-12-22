@@ -6,7 +6,8 @@ from sklearn.feature_extraction.text import CountVectorizer
 parcDisney = pd.read_csv("C:/Users/laura/Downloads/Text-Mining-for-Disneyland-main (1)/Text-Mining-for-Disneyland-main/data_clean/parc_disney_debut.csv", sep=",")
 parcDisney.info( ) #20685 avis
 
-parcDisney.head() 
+parcDisney.head()
+#Récupération de l'année des premiers avis
 parcDisney['Annee_Avis'][parcDisney['Annee_Avis'] != 'None'].tail(1)
 modalites = pd.unique(parcDisney['Note'])
 print(parcDisney.Note.value_counts())
