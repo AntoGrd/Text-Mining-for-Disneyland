@@ -7,7 +7,7 @@ parcDisney = pd.read_csv("C:/Users/laura/Downloads/Text-Mining-for-Disneyland-ma
 parcDisney.info( ) #20685 avis
 
 parcDisney.head() 
-parcDisney['Date_Avis'].tail(1)
+parcDisney['Année_Avis'].tail(1)
 modalites = pd.unique(parcDisney['Note'])
 print(parcDisney.Note.value_counts())
 
