@@ -1,0 +1,24 @@
+
+#Afin de réaliser l'analyse des sentiments sur les Commentaires, sélection de la colonne Commentaires
+only_reviews = reviews.iloc[:, 1].values
+
+#Afin de réaliser l'analyse des sentiments, transformer les sous-listes en listes
+import ast
+liste=[ast.literal_eval(x) for x in only_reviews]
+
+#Afin de réaliser l'analyse des sentiments, reformer les documents sous forme de chaîne 
+documents =[" ".join(doc) for doc in liste]
+
+# Initialisation de SentimentIntensityAnalyzer.
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
+import nltk
+nltk.download('vader_lexicon')
+vader = SentimentIntensityAnalyzer()
+
+# Fonction lambda pour obtenir les scores composés.
+function = lambda title: vader.polarity_scores(title)['compound']
+hotel_reviews['compound'] = hotel_reviews['commentaires'].apply(function)
+
+#lancement de l'analyse des sentiments avec la fonction qu'on a créée (getanalysis.py)
+import getanalysis
+hotel_reviews['sentiment'] = hotel_reviews['compound'].apply(getAnalysis)
