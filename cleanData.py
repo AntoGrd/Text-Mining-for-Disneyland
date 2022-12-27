@@ -18,7 +18,7 @@ lem = WordNetLemmatizer()
 ponctuations = set(string.punctuation)
 nltk.download('punkt')
 nltk.download('stopwords')
-mots_vides_2 = ["marvel","disney","disneyland","hny","new","york","la…","pourtant","car","cependant","toutefois", "néanmoins", "grâce","auron","avon","cela","cet","tout","donc","le…","dès","déjà","bref","jusqu","malgré","ceux","vers","plutôt","etc","tant","entre","puis","leurs","ensuite","afin","parce","estàdire","luimême","sen","quelle","ailleurs","dessus","avoir","oui","newyork","appelle","peuvent","pourraient","littéralement","devenu"]
+mots_vides_2 = ["marvel","disney","disneyland","hny","new","york","la…","pourtant","car","cependant","toutefois", "néanmoins", "grâce","auron","avon","cela","cet","tout","donc","le…","dès","déjà","bref","jusqu","malgré","ceux","vers","plutôt","etc","tant","entre","puis","leurs","ensuite","afin","parce","estàdire","luimême","sen","quelle","ailleurs","dessus","avoir","oui","newyork","appelle","peuvent","pourraient","littéralement","devenu", "wtf"]
 mots_vides_1 = stopwords.words('french') + mots_vides_2
 chiffres = list("0123456789")
 
@@ -89,8 +89,8 @@ def clean_data_hotel(df):
                 
             df["dateAvis_recod"] = liste_
             df[['Mois_Avis','Annee_Avis']] = df["dateAvis_recod"].str.split(expand=True)
-
-        
+    
+       
         if col == "dateSejour":
                         
             liste_daSej = []
@@ -98,9 +98,10 @@ def clean_data_hotel(df):
                 pos = i.find(":")
                 temp = i[pos +2 : len(i)]
                 liste_daSej.append(temp)
+        
                 
-                df["dateSejour_recod"] = liste_daSej
-                df[['Mois_Sejour','Annee_Sejour']] = df["dateSejour_recod"].str.split(expand=True)
+            df["dateSejour_recod"] = liste_daSej
+            df[['Mois_Sejour','Annee_Sejour']] = df["dateSejour_recod"].str.split(expand=True)
             
         if col =="loc":
             

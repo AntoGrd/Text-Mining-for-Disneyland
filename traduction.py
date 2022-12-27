@@ -26,3 +26,4 @@ def translate(df):
     df.insert(5,"langue",langue)
 
     
+
