@@ -1,4 +1,6 @@
 # IMPORTATION
+# /!\ Il faut récupérer la fonction GetAnalysis 
+# On peut aussi par la suite appler des fonction du fichier ... pour plus d'infos 
 import wordcloud
 import seaborn as sns
 import matplotlib.pyplot as plt
