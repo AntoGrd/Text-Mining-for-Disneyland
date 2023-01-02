@@ -23,3 +23,13 @@ def répartition_des_notes(df):
 répartition_des_notes(studio)
 répartition_des_notes(parcDisney)
 
+def notes(df):
+  comptage=df['langue'].value_counts()
+  comptage.plot(kind='bar',stacked=True,ylabel="Nombre de répondants",xlabel="Langue de l'avis")
+  T=pd.crosstab(df['langue']=='fr',df['Note'], normalize='index')
+  T.plot.barh()
+  plt.show()
+
+notes(parcDisney)
+notes(studio)
+
