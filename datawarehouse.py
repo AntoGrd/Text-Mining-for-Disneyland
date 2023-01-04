@@ -3,6 +3,8 @@ import pandas as pd
 import numpy as np
 
 os.chdir(r"C:\Documents\travail\LYON2\M2\text_mining\projet_disney\projet_disney\data_clean")
+#os.chdir(r"C:\Documents\travail\LYON2\M2\text_mining\projet_disney\projet_disney\tables")
+#tab=pd.read_csv("tab_commentaire.csv")
 
 tab=pd.read_csv("hotel_cheyenne_clean.csv")
 tab2=pd.read_csv("hotel_davy_crockett_clean.csv")
@@ -13,17 +15,20 @@ tab6=pd.read_csv("hotel_sequoia_clean.csv")
 
 tab7=pd.read_csv("Disneyland_Paris_clean.csv")
 tab8=pd.read_csv("Walt_Disney_Studios_Park_clean.csv")
-
+tab7.info()
 liste_tab_hotels=[tab,tab2,tab3,tab4,tab5,tab6]
 liste_tab_parcs=[tab7,tab8]
-
-
 #Creation des tables
 
 #table Lieux_disney
 lieux_disney=["hotel_cheyenne","hotel_davy_crockett","hotel_marvel","hotel_newport","hotel_sante_fe","hotel_sequoia","Disneyland_Paris","Walt_Disney_Studios_Park"]
-tab_lieux_disney=pd.DataFrame({'ID_lieux_disney':["L1","L2","L3","L4","L5","L6","L7","L8"],'Lieux_disney':lieux_disney})
+tab_lieux_disney=pd.DataFrame({'ID_lieux_disney':[1,2,3,4,5,6,7,8],'Lieux_disney':lieux_disney})
 
+#int(liste_tab_hotels[4]['Annee_Sejour'][1])
+#liste_tab_hotels[4]['Annee_Sejour'].value_counts()
+#dic=[np.nan,98.9, 99.90,100.0]
+#df=pd.DataFrame(dic)
+#df.value_counts()
 
 #Réunir les hotels et parcs
 liste_lieux_hotels=[]
@@ -33,6 +38,11 @@ for i in range(0,len(liste_tab_hotels)):
 liste_lieux_parcs=[]   
 for i in range(0,len(liste_tab_parcs)):
      liste_lieux_parcs.extend([lieux_disney[i+len(liste_tab_hotels)]]*len(liste_tab_parcs[i])) 
+
+#années en float > passer en integer
+for i in range(0,len(liste_tab_hotels)):
+    liste_tab_hotels[i]['Annee_Sejour']=liste_tab_hotels[i]['Annee_Sejour'].replace(np.nan, 0)
+    liste_tab_hotels[i]['Annee_Sejour']=liste_tab_hotels[i]['Annee_Sejour'].astype(int)
      
 parcs=pd.concat([tab7,tab8])
 parcs.insert(12,"Nom",liste_lieux_parcs)
@@ -42,16 +52,16 @@ hotels=pd.concat([tab,tab2,tab3,tab4,tab5,tab6],ignore_index=True)
 hotels.insert(11,"Nom",liste_lieux_hotels)
 
 #table Notes
-tab_note=pd.DataFrame({'ID_note':["N1","N2","N3","N4","N5"],'Note':[1,2,3,4,5]})
+tab_note=pd.DataFrame({'ID_note':[1,2,3,4,5],'Note':[1,2,3,4,5]})
 
 #table Types
-tab_type=pd.DataFrame({'ID_type':["T1","T2"],'Type':["Hotel","Parc"]})
+tab_type=pd.DataFrame({'ID_type':[1,2],'Type':["Hotel","Parc"]})
 
 #table Situations
-tab_situations=pd.DataFrame({'ID_situation':["S1","S2","S3","S4","S5","S6"],'Situation':[" Entre amis"," En famille"," En couple","None"," Voyage d'affaires"," En solo"]})
+tab_situations=pd.DataFrame({'ID_situation':[1,2,3,4,5,6],'Situation':[" Entre amis"," En famille"," En couple","None"," Voyage d'affaires"," En solo"]})
 
 #table Présence photos
-tab_photo=pd.DataFrame({'ID_photo':["P1","P2"],'presence_photo':['yes','no']})
+tab_photo=pd.DataFrame({'ID_photo':[1,2],'presence_photo':['yes','no']})
 
 #table Langue
 tab_langues=[*hotels["langue"],*parcs["langue"]]
@@ -74,11 +84,16 @@ tab_date_avis.drop_duplicates(keep = 'first', inplace=True)
 tab_date_avis.insert(0,'ID_date_avis',range(1,1+len(tab_date_avis)))
 
 #table Date_sejour
-#il y a un commentaire où mois = one (supprimer l'avis ?) (peut etre un None ?)
-#années en float > passer en integer
+#il y a un commentaire où mois = one (supprimer l'avis ?) (peut etre un None ?) 
+hotels['Annee_Sejour']=hotels['Annee_Sejour'].replace(np.nan, 0)
+hotels['Annee_Sejour']=hotels['Annee_Sejour'].astype(int)
+hotels['Mois_Sejour'][hotels['Mois_Sejour']=="one"]="None"
+parcs['Annee_Sejour']=parcs['Annee_Sejour'].replace(np.nan, 0)
+parcs['Annee_Sejour']=parcs['Annee_Sejour'].astype(int)
+#parcs['Mois_Sejour'][parcs['Mois_Sejour']=="None"]=0  
+
 tabms=pd.DataFrame([*hotels["Mois_Sejour"],*parcs["Mois_Sejour"]])
 tabas=pd.DataFrame([*hotels["Annee_Sejour"],*parcs["Annee_Sejour"]])
-
 mois_debut2=['janv.','févr.','mars','avr.','mai','juin','juil.','août','sept.','oct.','nov.','déc.']
 tabms = tabms.replace(mois_debut2,mois_entier)
 
