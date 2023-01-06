@@ -29,7 +29,7 @@ from typing import Tuple
 from tqdm import tqdm
 tqdm.pandas()
 from geopy.geocoders import Nominatim
-
+from gensim.models import Word2Vec
 
 
 #Transform list 
@@ -91,6 +91,18 @@ plt.axis('off')
 plt.show()
 """
 
+def wordCloud(df, colonne):
+    
+    allWords = ' '.join([twts for twts in df[str(colonne)]])
+    wordCloud = WordCloud(width=500, height=300, random_state=5000, max_font_size=110).generate(allWords)
+
+    plt.imshow(wordCloud, interpolation="bilinear")
+    plt.axis('off')
+
+    plt.show()
+    
+    
+
 #select annee
 def graph_sentiment(df , col, color, annee = "None"):
     
@@ -111,6 +123,28 @@ def graph_sentiment(df , col, color, annee = "None"):
     
     
     return fig
+
+def representation_mots(df,colonne,nb_mots = 10):
+    
+
+    liste = [ast.literal_eval(x) for x in df[str(colonne)]]
+    modele = Word2Vec(liste,vector_size=2,window=5)
+    words = modele.wv
+    data = pd.DataFrame(words.vectors, columns=['V1','V2'], index=words.key_to_index.keys())
+    mots2 = words.key_to_index.keys()
+    mots2 = list(mots2)[0:nb_mots]
+    dataMots2= data.loc[mots2]
+
+    fig = px.scatter(dataMots2.V1,dataMots2.V2,text=dataMots2.index)
+
+    fig.update_traces(textposition='top center')
+
+    fig.update_layout(
+        height=800,
+    title_text='Représentation vectorielle des' + str(nb_mots) + "les plus présents"
+    )
+    
+    fig.show()
 
 
 
@@ -242,7 +276,6 @@ def get_continent_name(continent_code: str) -> str:
     return continent_dict[continent_code]
 
 
-#ressort le payset le continent à partir des coordonnées de la ville 
 def get_continent(lat: float, lon:float) -> Tuple[str, str]:
     geolocator = Nominatim(user_agent="<username>@gmail.com", timeout=10)
     geocode = RateLimiter(geolocator.reverse, min_delay_seconds=1)
@@ -256,6 +289,9 @@ def get_continent(lat: float, lon:float) -> Tuple[str, str]:
     # extract country code
     address = location.raw["address"]
     country = address["country"]
+    lat = location.raw["lat"]
+    lon = location.raw["lon"]
+    
     #print(country)
     country_code = address["country_code"].upper()
 
@@ -263,4 +299,5 @@ def get_continent(lat: float, lon:float) -> Tuple[str, str]:
     continent_code = pc.country_alpha2_to_continent_code(country_code)
     continent_name = get_continent_name(continent_code)
     
-    return country, continent_name
+    return country, continent_name, lat, lon
+

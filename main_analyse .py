@@ -9,6 +9,8 @@ import fonctions_analyse
 import pandas as pd
 import os
 from geopy.geocoders import Nominatim
+from tqdm import tqdm
+tqdm.pandas()
 
 
 geolocator  = Nominatim(user_agent = "geoapiExercises")
@@ -32,10 +34,10 @@ for i in nom_sites:
     d_sentiment = fonctions_analyse.add_Sentiment(tab) #ajouter la colonne sentiment sur les commentaires
     
     #ajouter la lattitude et longitudes des villes 
-    for i in d_sentiment['Ville'] : 
+    for ville in d_sentiment['Ville'] : 
     
         try :
-            location = geolocator.geocode(str(i))
+            location = geolocator.geocode(str(ville))
             latitude.append(location.latitude)
     
             longitude.append(location.longitude)
@@ -51,15 +53,13 @@ for i in nom_sites:
 
     d_sentiment['longitude_city'] = longitude
 
-
-
     latitude_city = d_sentiment['latitude_city'].tolist()
     longitude_city = d_sentiment['longitude_city'].tolist()
 
-    for i in range(d_sentiment.shape[0]) : 
+    for z in range(d_sentiment.shape[0]) : 
     
         try : 
-            continent = fonctions_analyse.get_continent(latitude_city[i], longitude_city[i])
+            continent = fonctions_analyse.get_continent(latitude_city[z], longitude_city[z])
     
             list_pays.append(continent[0])
             list_continent.append(continent[1])
@@ -79,7 +79,6 @@ for i in nom_sites:
     
     d_sentiment.to_csv(str(i) + "_ope.csv", index=False, encoding = 'utf-8-sig')
 
-    
 
 
 
