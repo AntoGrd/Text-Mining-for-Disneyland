@@ -24,6 +24,4 @@ def translate(df):
     df["comm"]=commentaires_fr
     df["titre_comm"]=titres_fr
     df.insert(5,"langue",langue)
-
     
-
