@@ -110,17 +110,18 @@ cnx.commit()
 
 #table commentaire
 table = 'commentaire'
-query = f'CREATE TABLE {table} (titre_commentaire VARCHAR(255), commentaire VARCHAR(255), ID_note INT, ID_photo INT, ID_langue INT, ID_lieux_disney INT, ID_situation INT, ID_produit INT, ID_date_sejour INT, ID_date_avis INT)'                                               
-cursor.execute(query)
+query = f'CREATE TABLE {table} (ID_commentaire INT PRIMARY KEY, titre_commentaire TEXT CHARACTER SET utf8, commentaire TEXT CHARACTER SET utf8, ID_note INT, ID_photo INT, ID_langue INT, ID_lieux_disney INT, ID_situation INT, ID_produit INT, ID_date_sejour INT, ID_date_avis INT, FOREIGN KEY (ID_note) REFERENCES note(ID_note),FOREIGN KEY (ID_photo) REFERENCES photo(ID_photo),FOREIGN KEY (ID_langue) REFERENCES langues(ID_langue),FOREIGN KEY (ID_lieux_disney) REFERENCES lieux_disney(ID_lieux_disney),FOREIGN KEY (ID_situation) REFERENCES situations(ID_situation),FOREIGN KEY (ID_produit) REFERENCES produit(ID_produit),FOREIGN KEY (ID_date_sejour) REFERENCES date_sejour(ID_date_sejour),FOREIGN KEY (ID_date_avis) REFERENCES date_avis(ID_date_avis))'
 
+cursor.execute(query)
+                                                                                                                            
 for i, row in commentaire.iterrows():
-    query = f"INSERT INTO {table} ({','.join(commentaire.columns)}) VALUES (%s, %s, %s)"
+    query = f"INSERT INTO {table} ({','.join(commentaire.columns)}) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
     cursor.execute(query, tuple(row))
 cnx.commit()
 
 
 
-
+cnx.close()
 
 
 
