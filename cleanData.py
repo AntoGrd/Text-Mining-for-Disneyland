@@ -18,7 +18,7 @@ lem = WordNetLemmatizer()
 ponctuations = set(string.punctuation)
 nltk.download('punkt')
 nltk.download('stopwords')
-mots_vides_2 = ["marvel","disney","disneyland","hny","new","york","la…","pourtant","car","cependant","toutefois", "néanmoins", "grâce","auron","avon","cela","cet","tout","donc","le…","dès","déjà","bref","jusqu","malgré","ceux","vers","plutôt","etc","tant","entre","puis","leurs","ensuite","afin","parce","estàdire","luimême","sen","quelle","ailleurs","dessus","avoir","oui","newyork","appelle","peuvent","pourraient","littéralement","devenu", "wtf"]
+mots_vides_2 = ["marvel","disney","disneyland","hny","new","york","la…","pourtant","car","cependant","toutefois", "néanmoins", "grâce","auron","avon","cela","cet","tout","donc","le…","dès","déjà","bref","jusqu","malgré","ceux","vers","plutôt","etc","tant","entre","puis","leurs","ensuite","afin","parce","estàdire","luimême","sen","quelle","ailleurs","dessus","avoir","oui","newyork","appelle","peuvent","pourraient","littéralement","devenu"]
 mots_vides_1 = stopwords.words('french') + mots_vides_2
 chiffres = list("0123456789")
 
@@ -55,16 +55,6 @@ def clean_data_hotel(df):
     
 
     for col in df.columns :
-         
-        if col == "titre_comm":
-            #retrait des ' avant retrait ponctuation pour éviter que les lettres uniques 
-            #soient colées avec les mots lors de l'utilisation de nettoyage_corpus
-            df[col] = df[col].str.replace("'"," ")
-            liste_titre_comm = nettoyage_corpus(list(df[col]))
-        
-        if col == "comm":
-            df[col] = df[col].str.replace("'"," ")
-            liste_comm = nettoyage_corpus(list(df[col]))
 
         if col == "dateAvis":
             liste_date = [w.split('(',1)[1] for w in list(df[col])]
@@ -125,28 +115,15 @@ def clean_data_hotel(df):
             list_note = [int(item[7:8]) for item in list(df[col])]
         
         
-    df = pd.DataFrame(list(zip(liste_titre_comm, liste_comm,list(df['Mois_Avis']),list(df['Annee_Avis']), liste_ville,liste_Pays,list(df['Mois_Sejour']),list(df['Annee_Sejour']), list_note, list(df["photo"]), list(df["langue"]))),
+    df = pd.DataFrame(list(zip(list(df["titre_comm"]), list(df["comm"]),list(df['Mois_Avis']),list(df['Annee_Avis']), liste_ville,liste_Pays,list(df['Mois_Sejour']),list(df['Annee_Sejour']), list_note, list(df["photo"]), list(df["langue"]))),
                    columns =['titre_commentaire', 'commentaire','Mois_Avis','Annee_Avis','Ville','Pays','Mois_Sejour','Annee_Sejour', 'Note','Photo','langue'])
     
-    return df 
-    
+    return df  
 
 def clean_data_parc(df):    
     
     for col in df.columns :
-         
-        if col == "titre_comm":
             
-            #retrait des ' avant retrait ponctuation pour éviter que les lettres uniques 
-            #soient colées avec les mots lors de l'utilisation de nettoyage_corpus
-            df[col] = df[col].str.replace("'"," ")
-            liste_titre_comm = nettoyage_corpus(list(df[col]))
-        
-        if col == "comm":
-            
-            df[col] = df[col].str.replace("'"," ")
-            liste_comm = nettoyage_corpus(list(df[col]))
-
         if col =="loc":
             
             liste_loc = []
@@ -208,7 +185,29 @@ def clean_data_parc(df):
             list_note = [int(item[0:1]) for item in list(df[col])]
         
         
-    df = pd.DataFrame(list(zip(liste_titre_comm, liste_comm,liste_Mois_Avis, liste_Annee_Avis,list(df["situation"]),liste_ville,liste_Pays, list(df['Mois_Sejour']),list(df['Annee_Sejour']),list_note, list(df["photo"]), list(df["langue"]))),
+    df = pd.DataFrame(list(zip(df["titre_comm"], df["comm"],liste_Mois_Avis, liste_Annee_Avis,list(df["situation"]),liste_ville,liste_Pays, list(df['Mois_Sejour']),list(df['Annee_Sejour']),list_note, list(df["photo"]), list(df["langue"]))),
                    columns =['titre_commentaire', 'commentaire','Mois_Avis','Annee_Avis','Situation','Ville','Pays','Mois_Sejour','Annee_Sejour','Note','Photo','langue'])
     
     return df 
+
+
+def clean_commentaire(df):
+    for col in df.columns :
+        if col == "titre_commentaire":
+            
+            #retrait des ' avant retrait ponctuation pour éviter que les lettres uniques 
+            #soient colées avec les mots lors de l'utilisation de nettoyage_corpus
+            df[col] = df[col].str.replace("'"," ")
+            df[col] = nettoyage_corpus(list(df[col]))
+        
+        if col == "commentaire":
+            
+            df[col] = df[col].str.replace("'"," ")
+            df[col] = nettoyage_corpus(list(df[col]))
+    
+    return df
+
+
+
+
+
