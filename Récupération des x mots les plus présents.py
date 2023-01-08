@@ -44,14 +44,19 @@ def mots_significatif_par_note(df, variable = 'toutes', modalité = 'toutes',  n
     freq_mots = np.sum(mdt,axis=0)
     # Récupération des index des mots qui reviennent le plus (ordre décroissant)
     index = np.argsort(freq_mots)
+    imp = {'terme': np.asarray(parseur.get_feature_names())[index], 'freq':freq_mots[index]}
+    imp1 = pd.DataFrame.from_dict(imp, orient='columns')
+    imp2 = imp1.sort_values(by = 'freq', ascending = False)
     # On met les index dans l'ordre croissant
     index = np.flip(index)
     # On affiche les variables et les modalités de notre DataFrame et les nombre de mot total dans ce dernier
     print("Nombre de mots distinct dans notre dataframe contenant les variables : " + str(variable) ,"et les modalités " + str(modalité) ,": "+ str(freq_mots.shape[0]))
     # Affichage des 5 mots qui ressortent le plus (ou un autre nombre si l'on a mit autre chose que 5)
-    for k in range(nb_mots):
-        print(np.asarray(parseur.get_feature_names())[index[k]],freq_mots[index[k]])
-    print("")
+    import matplotlib.pyplot as plt
+    poids = imp2['freq'].head(nb_mots)
+    bars = imp2['terme'].head(nb_mots)
+    y_pos = np.arange(len(bars))
+    plt.bar(y_pos,poids)
 
 # Exemple d'utilisation 
 mots_significatif_par_note(df = parcDisney)
