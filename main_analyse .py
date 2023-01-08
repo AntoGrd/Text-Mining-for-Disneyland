@@ -5,7 +5,7 @@ Created on Wed Jan  4 17:25:42 2023
 @author: Sam
 """
 
-import fonctions_analyse
+import fonctions_analyse 
 import pandas as pd
 import os
 from geopy.geocoders import Nominatim
@@ -70,7 +70,8 @@ for i in nom_sites:
             list_continent.append("None")
             list_lat.append("None")
             list_lon.append("None")
-
+    
+    list_pays = list_pays.pop(len(list_pays))
     d_sentiment["Pays_recod"] = list_pays
     d_sentiment["Contient_recod"] = list_continent
     d_sentiment["lat_Pays"] = list_lat

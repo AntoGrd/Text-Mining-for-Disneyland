@@ -13,7 +13,7 @@ from nltk.tokenize import word_tokenize #pour la tokénisation
 import nltk
 from nltk.corpus import stopwords
 import datetime
-import re
+import numpy as np
 
 lem = WordNetLemmatizer()
 ponctuations = set(string.punctuation)
@@ -22,7 +22,9 @@ nltk.download('stopwords')
 mots_vides_2 = ["marvel","disney","disneyland","hny","new","york","la…","pourtant","car","cependant","toutefois", "néanmoins", "grâce","auron","avon","cela","cet","tout","donc","le…","dès","déjà","bref","jusqu","malgré","ceux","vers","plutôt","etc","tant","entre","puis","leurs","ensuite","afin","parce","estàdire","luimême","sen","quelle","ailleurs","dessus","avoir","oui","newyork","appelle","peuvent","pourraient","littéralement","devenu"]
 mots_vides_1 = stopwords.words('french') + mots_vides_2
 chiffres = list("0123456789")
-
+mois_debut=['janv','févr','mars','avr','mai','juin','juil','août','sept','oct','nov','déc']
+mois_entier=['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre']
+            
 
 def nettoyage_doc(doc_param):
     #passage en minuscule
@@ -58,37 +60,69 @@ def clean_data_hotel(df):
     for col in df.columns :
 
         if col == "dateAvis":
-            liste_date = [w.split('(',1)[1] for w in list(df[col])]
-            liste_date = [w.replace(")","") for w in liste_date]
-            liste_ = []
-            for i in liste_date:
-                #list_split  = i.split(".")
-                list_split=re.split('(\d+)', i)
-                list_split.pop()
-                print(list_split)
-                #list_split[0] = "".join([w for w in list_split[0] if not w in chiffres]).replace(" ", "")
-                
-                
-                temp = "".join(list_split)
-                temp = temp.split(" ")
+            months=["janv","févr","mars","avr","mai","juin","juil","août","sept","oct","nov","déc"]
+
+            liste_date = [w.split('(',1)[1] for w in list(df["dateAvis"])]
+            liste_date = [w.replace(")","") for w in liste_date]            
             
-                if len(temp)==1:
-                    temp.append(str(datetime.datetime.now().year))
+            Mois_Avis = []
+            Annee_Avis = []
+            dateAvis_recod = []
+            for i in liste_date: 
                 
-                date=(" ".join(temp))
-                months=["janv","févr","mars","avr","mai","juin","juil","août","sept","oct","nov","déc"]
-                if "Hier" in date:
-                    date=date.replace('Hier',months[datetime.datetime.now().month-1])    
-                liste_.append(date)
+                if i.find('.') !=-1: 
+                    
+                    list_split  = i.split(".")
                 
-            df["dateAvis_recod"] = liste_
-            df[['Mois_Avis','Annee_Avis']] = df["dateAvis_recod"].str.split(expand=True)
-    
+                elif i.find(' ') !=-1 : 
+                    list_split  = i.split(" ")
+                    
+                else:
+                    hier  = i
+                    
+                if hier == "Hier" or hier == str("Aujourd'hui"): 
+                    hier=hier.replace('Hier',months[datetime.datetime.now().month-1])
+                    Mois_Avis.append(hier)
+                    Annee_Avis.append(str(datetime.datetime.now().year))
+                    temp = hier + "," + str(datetime.datetime.now().year)
+                    temp  = temp.split(",")
+                    
+                    dateAvis_recod.append(temp)
+                else:
+                    list_split[0] = "".join([w for w in list_split[0] if not w in chiffres]).replace(" ", "")
+                     
+                    list_split[1] = list_split[1].replace(" ", "")
+
+                    if list_split[1] == "":
+                        
+                        list_split[1] = str(datetime.datetime.now().year)
+                        
+                    Mois_Avis.append(list_split[0])
+                    Annee_Avis.append(list_split[1])
+                    
+                    
+                    dateAvis_recod.append(list_split)
+                    
+                    
+            for i in range(len(Mois_Avis)):
+                if Mois_Avis[i] in mois_debut :
+                    pos = mois_debut.index(Mois_Avis[i])
+                    Mois_Avis[i] = Mois_Avis[i].replace(Mois_Avis[i],mois_entier[pos])
+                    
+            df["dateAvis_recod"] = dateAvis_recod
+            df['Mois_Avis'] = Mois_Avis
+            df['Annee_Avis'] = Annee_Avis
        
+        
+            df['Annee_Avis']= df['Annee_Avis'].replace(np.nan, 0)
+            df['Annee_Avis']= df['Annee_Avis'].astype(int)
+            df['Mois_Avis'][df['Mois_Avis']=="one"]="None"
+            
+    
         if col == "dateSejour":
                         
             liste_daSej = []
-            for i in df[col].tolist():
+            for i in df["dateSejour"].tolist():
                 pos = i.find(":")
                 temp = i[pos +2 : len(i)]
                 liste_daSej.append(temp)
@@ -96,6 +130,10 @@ def clean_data_hotel(df):
                 
             df["dateSejour_recod"] = liste_daSej
             df[['Mois_Sejour','Annee_Sejour']] = df["dateSejour_recod"].str.split(expand=True)
+            
+            df['Annee_Sejour']= df['Annee_Sejour'].replace(np.nan, 0)
+            df['Annee_Sejour']= df['Annee_Sejour'].astype(int)
+            df['Mois_Sejour'][df['Mois_Sejour']=="one"]="None"
             
         if col =="loc":
             
@@ -118,6 +156,8 @@ def clean_data_hotel(df):
         if col == "note":
             list_note = [int(item[7:8]) for item in list(df[col])]
         
+        
+        df = clean_commentaire(df)
         
     df = pd.DataFrame(list(zip(list(df["titre_comm"]), list(df["comm"]),list(df['Mois_Avis']),list(df['Annee_Avis']), liste_ville,liste_Pays,list(df['Mois_Sejour']),list(df['Annee_Sejour']), list_note, list(df["photo"]), list(df["langue"]))),
                    columns =['titre_commentaire', 'commentaire','Mois_Avis','Annee_Avis','Ville','Pays','Mois_Sejour','Annee_Sejour', 'Note','Photo','langue'])
@@ -178,18 +218,37 @@ def clean_data_parc(df):
                     temp = i.split(" ")
                     liste_Mois_Avis.append(temp[1])
                     liste_Annee_Avis.append(temp[2])
+                    
+           
+            for i in range(len(liste_Mois_Avis)):
+                if liste_Mois_Avis[i] in mois_debut :
+                    pos = mois_debut.index(liste_Mois_Avis[i])
+                    liste_Mois_Avis[i] = liste_Mois_Avis[i].replace(liste_Mois_Avis[i],mois_entier[pos] )
                 
+                df["Mois_Avis"] = liste_Mois_Avis
+                df["Annee_Avis"] = liste_Annee_Avis
+                
+                df['Annee_Avis']= df['Annee_Avis'].replace(np.nan, 0)
+                df['Annee_Avis']= df['Annee_Avis'].astype(int)
+                df['Mois_Avis'][df['Mois_Avis']=="one"]="None"
+                 
         if col == "dateSejour" :
             
                 df["dateSejour_recod"] = list(df[col])
                 df[['Mois_Sejour','Annee_Sejour']] = df["dateSejour_recod"].str.split(expand=True)
+                
+                df['Annee_Sejour']= df['Annee_Sejour'].replace(np.nan, 0)
+                df['Annee_Sejour']= df['Annee_Sejour'].astype(int)
+                df['Mois_Sejour'][df['Mois_Sejour']=="one"]="None"
             
 
         if col == "note":
             list_note = [int(item[0:1]) for item in list(df[col])]
         
         
-    df = pd.DataFrame(list(zip(df["titre_comm"], df["comm"],liste_Mois_Avis, liste_Annee_Avis,list(df["situation"]),liste_ville,liste_Pays, list(df['Mois_Sejour']),list(df['Annee_Sejour']),list_note, list(df["photo"]), list(df["langue"]))),
+        df = clean_commentaire(df)
+        
+    df = pd.DataFrame(list(zip(df["titre_comm"], df["comm"],list(df["Mois_Avis"]), list(df["Annee_Avis"]),list(df["situation"]),liste_ville,liste_Pays, list(df['Mois_Sejour']),list(df['Annee_Sejour']),list_note, list(df["photo"]), list(df["langue"]))),
                    columns =['titre_commentaire', 'commentaire','Mois_Avis','Annee_Avis','Situation','Ville','Pays','Mois_Sejour','Annee_Sejour','Note','Photo','langue'])
     
     return df 
@@ -197,14 +256,14 @@ def clean_data_parc(df):
 
 def clean_commentaire(df):
     for col in df.columns :
-        if col == "titre_commentaire":
+        if col == "titre_comm":
             
             #retrait des ' avant retrait ponctuation pour éviter que les lettres uniques 
             #soient colées avec les mots lors de l'utilisation de nettoyage_corpus
             df[col] = df[col].str.replace("'"," ")
             df[col] = nettoyage_corpus(list(df[col]))
         
-        if col == "commentaire":
+        if col == "comm":
             
             df[col] = df[col].str.replace("'"," ")
             df[col] = nettoyage_corpus(list(df[col]))
