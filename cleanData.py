@@ -13,6 +13,7 @@ from nltk.tokenize import word_tokenize #pour la tokénisation
 import nltk
 from nltk.corpus import stopwords
 import datetime
+import re
 
 lem = WordNetLemmatizer()
 ponctuations = set(string.punctuation)
@@ -61,13 +62,16 @@ def clean_data_hotel(df):
             liste_date = [w.replace(")","") for w in liste_date]
             liste_ = []
             for i in liste_date:
-                list_split  = i.split(".")
-                list_split[0] = "".join([w for w in list_split[0] if not w in chiffres]).replace(" ", "")
+                #list_split  = i.split(".")
+                list_split=re.split('(\d+)', i)
+                list_split.pop()
+                print(list_split)
+                #list_split[0] = "".join([w for w in list_split[0] if not w in chiffres]).replace(" ", "")
                 
                 
                 temp = "".join(list_split)
                 temp = temp.split(" ")
-                
+            
                 if len(temp)==1:
                     temp.append(str(datetime.datetime.now().year))
                 
