@@ -64,22 +64,23 @@ def clean_data_hotel(df):
 
             liste_date = [w.split('(',1)[1] for w in list(df[col])]
             liste_date = [w.replace(")","") for w in liste_date]            
-            
+
             Mois_Avis = []
             Annee_Avis = []
             dateAvis_recod = []
             for i in liste_date: 
                 
-                try: 
-                    if i.find('.') !=-1: 
+                #try: 
+                if i.find('.') !=-1: 
                     
-                        list_split  = i.split(".")
+                    list_split  = i.split(".")
                 
-                    elif i.find(' ') !=-1 : 
-                        list_split  = i.split(" ")
-                except:
-                        list_split  = i
-                    
+                elif i.find(' ') !=-1 : 
+                    list_split  = i.split(" ")
+                #except:
+                else :
+                    list_split  = i
+                
                 if list_split == "Hier":
                         list_split=list_split.replace('Hier',months[datetime.datetime.now().month-1])
                         
@@ -262,8 +263,3 @@ def clean_commentaire(df):
             df[col] = nettoyage_corpus(list(df[col]))
     
     return df
-
-
-
-
-
