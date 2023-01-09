@@ -1,7 +1,7 @@
 import scrap_hotel
 import scrap_parc
 from selenium import webdriver 
-from cleanData import clean_data_hotel, clean_data_parc
+from cleanData import clean_data_hotel, clean_data_parc,clean_commentaire
 from traduction import translate
 import os
 import pandas as pd
@@ -30,7 +30,7 @@ for i in range(0,len(url_hotel)): #♠car déjà recup hotel marvel
 #for i in len(url_hotel):
     #driver = webdriver.Chrome("C:/Documents/travail/LYON2\M2/text_mining/projet_disney/chromedriver.exe")
     driver = webdriver.Chrome("C:/Users/Sam/Documents/SISE/Text mining/Driver/chromedriver.exe")
-    tab=scrap_hotel.scrapping_hotel(url_hotel[i],driver)
+    tab=scrap_parc.scrapping_hotel(url_hotel[i],driver)
     #tab = clean_data_hotel(tab)
     tab.to_csv(nom_hotels[i]+'.csv', index=False, encoding = 'utf-8-sig')
    
@@ -55,6 +55,7 @@ for i in nom_hotels:
     os.chdir(r"C:\Users\Sam\Documents\GitHub\Text-Mining-for-Disneyland")
     translate(tab)
     tab = clean_data_hotel(tab)
+    tab = clean_commentaire(tab)
     tab.to_csv(str(i) + "_clean.csv", index=False, encoding = 'utf-8-sig')
 
 
@@ -64,7 +65,10 @@ for i in namesParc:
     os.chdir(r"C:\Users\Sam\Documents\GitHub\Text-Mining-for-Disneyland")
     translate(tab)
     tab = clean_data_parc(tab)
+    tab = clean_commentaire(tab)
     tab.to_csv(str(i) + "_clean.csv", index=False, encoding = 'utf-8-sig')
+
+
 
 
 #<<<<<<< HEAD
