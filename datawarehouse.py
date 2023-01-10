@@ -13,9 +13,8 @@ tab3=pd.read_csv("hotel_marvel_fr.csv")
 tab4=pd.read_csv("hotel_newport_fr.csv")
 tab5=pd.read_csv("hotel_sante_fe_fr.csv")
 tab6=pd.read_csv("hotel_sequoia_fr.csv")
-
-tab7=pd.read_csv("Disneyland_Paris_fr_debut.csv")
-tab8=pd.read_csv("Walt_Disney_Studios_Park_fr_debut.csv")
+tab7=pd.read_csv("Disneyland_Paris_fr.csv")
+tab8=pd.read_csv("Walt_Disney_Studios_Park_fr.csv")
 
 tab = clean_data_hotel(tab)
 tab2 = clean_data_hotel(tab2)
@@ -26,7 +25,7 @@ tab6 = clean_data_hotel(tab6)
 tab7 = clean_data_parc(tab7)
 tab8 = clean_data_parc(tab8)
 tab.info()
-
+tab3.to_csv('azefze.csv', index=False, encoding = 'utf-8-sig')
 
 #je vire les avis avec pintade et Rachaécritunavis(févr 
 #à intégrer dans les df
