@@ -30,7 +30,8 @@ for i in range(0,len(url_hotel)): #♠car déjà recup hotel marvel
 #for i in len(url_hotel):
     #driver = webdriver.Chrome("C:/Documents/travail/LYON2\M2/text_mining/projet_disney/chromedriver.exe")
     driver = webdriver.Chrome("C:/Users/Sam/Documents/SISE/Text mining/Driver/chromedriver.exe")
-    tab=scrap_parc.scrapping_hotel(url_hotel[i],driver)
+    tab=scrap_hotel.scrapping_hotel(url_hotel[i],driver)
+            
     #tab = clean_data_hotel(tab)
     tab.to_csv(nom_hotels[i]+'.csv', index=False, encoding = 'utf-8-sig')
    
@@ -70,6 +71,38 @@ for i in namesParc:
 
 
 
+#ajout de la colonne id 
+for i in nom_hotels:
+    
+    os.chdir("C:/Users/Sam/Documents/GitHub/Text-Mining-for-Disneyland/data")
+    tab=pd.read_csv(str(i) + ".csv")
+    tab["id"] = tab["dateAvis"] + tab["loc"] +  tab["note"] 
+    tab.to_csv(str(i) + ".csv", index=False, encoding = 'utf-8-sig')
+
+for i in namesParc:
+    
+    os.chdir("C:/Users/Sam/Documents/GitHub/Text-Mining-for-Disneyland/data")
+    tab=pd.read_csv(str(i) + ".csv")
+    tab["id"] = tab["dateAvis"] + tab["loc"] +  tab["note"] 
+    tab.to_csv(str(i) + ".csv", index=False, encoding = 'utf-8-sig')
+
+
+
+#test recup nouveau cxommentaire
+df = pd.read_csv("hotel_marvel.csv")
+
+driver = webdriver.Chrome("C:/Users/Sam/Documents/SISE/Text mining/Driver/chromedriver.exe")
+tab = scrap_hotel.Scraping_NouveauAvis_hotel(url_hotel[0], driver, df)
+tab = tab.iloc[:-1,:]
+tab.drop_duplicates(keep = 'first', inplace=True)
+
+for z in range(tab.shape[0]):
+    for i in range(df.shape[0]):
+    
+        if(df["id"].tolist()[i] == tab["id"].tolist()[z]) == True:
+            tab["id"].tolist().remove(tab["id"].tolist()[z])
+        
+   
 
 #<<<<<<< HEAD
 #namesHotel = ["Hotel_New_York_The_Art_of_Marvel", "Disney_Newport_Bay_Club","Disney_Hotel_Cheyenne","Disney_Davy_Crockett_Ranch"]

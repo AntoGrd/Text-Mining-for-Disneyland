@@ -280,7 +280,7 @@ def get_continent(lat: float, lon:float) -> Tuple[str, str]:
     geolocator = Nominatim(user_agent="<username>@gmail.com", timeout=10)
     geocode = RateLimiter(geolocator.reverse, min_delay_seconds=1)
 
-    location = geocode(f"{lat}, {lon}", language="en")
+    location = geocode(f"{lat}, {lon}", language="fr")
 
     # for cases where the location is not found, coordinates are antarctica
     if location is None:
@@ -289,6 +289,7 @@ def get_continent(lat: float, lon:float) -> Tuple[str, str]:
     # extract country code
     address = location.raw["address"]
     country = address["country"]
+    city = address["city"]
     lat = location.raw["lat"]
     lon = location.raw["lon"]
     
@@ -299,5 +300,5 @@ def get_continent(lat: float, lon:float) -> Tuple[str, str]:
     continent_code = pc.country_alpha2_to_continent_code(country_code)
     continent_name = get_continent_name(continent_code)
     
-    return country, continent_name, lat, lon
+    return country, continent_name, lat, lon, city 
 
