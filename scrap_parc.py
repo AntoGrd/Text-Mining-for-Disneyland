@@ -123,7 +123,7 @@ def scrapping_parc(url_parc, driver):
 
 
 
-def Scraping_NouveauAvis_parc(url_parc, driver,df):
+def Scraping_NouveauAvis_parc(url_parc, driver,tab):
     
     driver.get(url_parc)
     
@@ -231,7 +231,7 @@ def Scraping_NouveauAvis_parc(url_parc, driver,df):
                 
             test = liste_dateAvis[compt] + liste_loc[compt] + liste_note[compt]
             test_list.append(test)
-            if test in df["id"].to_list():
+            if test in tab["id"].to_list():
                 accord = True
             else:
                 accord = False
@@ -247,6 +247,15 @@ def Scraping_NouveauAvis_parc(url_parc, driver,df):
     #fin de la boucle 
     df = pd.DataFrame(list(zip(liste_dateSejour, liste_situation, liste_titre_comm, liste_comm, liste_loc,liste_dateAvis, liste_note, presence_photo, test_list)),
                    columns =['dateSejour','situation','titre_comm', 'comm','loc','dateAvis','note','photo','id'])
+    
+    df = df.iloc[:-1,:]
+    df.drop_duplicates(keep = 'first', inplace=True)
+
+    for z in range(df.shape[0]):
+        for i in range(tab.shape[0]):
+        
+            if(tab["id"].tolist()[i] == df["id"].tolist()[z]) == True:
+                df["id"].tolist().remove(df["id"].tolist()[z])
     return(df)
 
 

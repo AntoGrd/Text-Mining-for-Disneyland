@@ -123,7 +123,7 @@ def scrapping_hotel(url_hotel, driver):
     return(df)
 
 
-def Scraping_NouveauAvis_hotel(url_hotel, driver, df):
+def Scraping_NouveauAvis_hotel(url_hotel, driver, tab):
     time.sleep(1)
     driver.get(url_hotel)
     
@@ -233,7 +233,7 @@ def Scraping_NouveauAvis_hotel(url_hotel, driver, df):
             
             test = liste_dateAvis[compt] + liste_loc[compt] + liste_note[compt]
             test_list.append(test)
-            if test in df["id"].to_list():
+            if test in tab["id"].to_list():
                 accord = True
             else:
                 accord = False
@@ -252,4 +252,13 @@ def Scraping_NouveauAvis_hotel(url_hotel, driver, df):
     #fin de la boucle 
     df = pd.DataFrame(list(zip(liste_titre_comm, liste_comm,liste_dateAvis,liste_dateSejour, liste_loc, liste_note, presence_photo, test_list)),
                    columns =['titre_comm', 'comm',"dateAvis","dateSejour",'loc','note','photo', 'id'])
+    
+    df = df.iloc[:-1,:]
+    df.drop_duplicates(keep = 'first', inplace=True)
+
+    for z in range(df.shape[0]):
+        for i in range(tab.shape[0]):
+        
+            if(tab["id"].tolist()[i] == df["id"].tolist()[z]) == True:
+                df["id"].tolist().remove(df["id"].tolist()[z])
     return(df)

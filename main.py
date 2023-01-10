@@ -89,19 +89,11 @@ for i in namesParc:
 
 
 #test recup nouveau cxommentaire
+"""
 df = pd.read_csv("hotel_marvel.csv")
-
 driver = webdriver.Chrome("C:/Users/Sam/Documents/SISE/Text mining/Driver/chromedriver.exe")
 tab = scrap_hotel.Scraping_NouveauAvis_hotel(url_hotel[0], driver, df)
-tab = tab.iloc[:-1,:]
-tab.drop_duplicates(keep = 'first', inplace=True)
-
-for z in range(tab.shape[0]):
-    for i in range(df.shape[0]):
-    
-        if(df["id"].tolist()[i] == tab["id"].tolist()[z]) == True:
-            tab["id"].tolist().remove(tab["id"].tolist()[z])
-        
+"""
    
 
 #<<<<<<< HEAD
