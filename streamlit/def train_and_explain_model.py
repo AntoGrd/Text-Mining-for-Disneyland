@@ -1,3 +1,8 @@
+#définition de création de 2 graphiques des enseignements du modèle prédictif (termes les plus impactant sur le sentiment/la satis-client)
+#le premier "summary" offre une vue synthétique quantitative et qualtative#interactif avec les boites de sélection mois et année
+#le 2 permet de visualiser la répartition des termes/vecteurs entre sentiment négatif et sentiment positif 
+"et de sélectionner les termes/vecteurs en cliquant sur le graphique ou à partir de la boite de slection
+
 import streamlit as st
 import sklearn
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -31,7 +36,7 @@ def train_and_explain_model(corpus, y, years, months, test_size=0.2, random_stat
 
     st.subheader("Termes les plus impactant de la satisfaction-clients")
 
-    st.write("Graphique récapitulatif - moyenne de l'importance des caractéristiques par classe.Axe des x :moyenne en valeur absolue. Couleur :valeur du terme dans le verbatim")
+    st.write("Graphique récapitulatif - importance moyenne des caractéristiques par classe.Axe des x :moyenne en valeur absolue. Couleur :valeur du terme dans le verbatim")
   
     st.pyplot()
     shap.summary_plot(shap_values, X_test_array, feature_names=vectorizer.get_feature_names_out())
@@ -44,6 +49,12 @@ def train_and_explain_model(corpus, y, years, months, test_size=0.2, random_stat
     st.write("Contribution de chaque terme/vecteur à la prédiction sur l'échantillon-test. Les vecteurs sont triés par similarité en fonction de l'ampleur de leur contribution"
 )
    #sentiment négatif =0, sentiment positif=1
- ind = st.selectbox('Select index', range(X_test.shape[0]))
+    ind = st.selectbox('Select index', range(X_test.shape[0]))
     shap.force_plot(explainer.expected_value[ind],shap_values[ind],feature_names=vectorizer.get_feature_names_out())
     plt.legend(title='Sentiment', labels=['Negatif', 'Positif'])
+                                          
+#pour appeler la fonction (train_and_explain_model(corpus,y,years,months)
+#corpus : le jeu de données
+#y: la variable sentiment
+#years:l'année du commentaire(Annee_avis)
+#months: mois du commentaire(Mois_avis)
