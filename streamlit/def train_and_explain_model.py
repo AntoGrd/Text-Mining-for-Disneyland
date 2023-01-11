@@ -34,7 +34,7 @@ def train_and_explain_model(corpus, y, years, months, test_size=0.2, random_stat
     shap_values = explainer.shap_values(X_test)
     X_test_array = X_test.toarray()
 
-    st.subheader("Termes les plus impactant de la satisfaction-clients")
+    st.subheader("Termes les plus impactants de la satisfaction-clients")
 
     st.write("Graphique récapitulatif - importance moyenne des caractéristiques par classe.Axe des x :moyenne en valeur absolue. Couleur :valeur du terme dans le verbatim")
   
