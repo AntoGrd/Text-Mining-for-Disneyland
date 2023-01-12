@@ -22,12 +22,14 @@ import seaborn as sns
 import os 
 from gensim.models import keyedvectors
 import ast
+from plotly.offline import plot
+
 import sys
 
 sys.setrecursionlimit(20000)
-os.chdir("C:/Users/Sam/Documents/GitHub/Text-Mining-for-Disneyland/data_clean")
+os.chdir("C:/Users/sibghi/Documents/GitHub/Text-Mining-for-Disneyland/data_clean")
 
-d_sentiment = pd.read_csv("d_sentiment.csv", sep=",")
+d_sentiment = pd.read_csv("hotel_marvel_clean.csv", sep=",")
 
 os.chdir("C:/Users/Sam/Downloads/archive")
 
@@ -90,11 +92,22 @@ def elbow_method(Y_sklearn):
     score = [kmeans[i].fit(Y_sklearn).score(Y_sklearn) for i in range(len(kmeans))] # Getting score corresponding to each cluster.
     score = [i*-1 for i in score] # Getting list of positive scores.
     
-    plt.plot(number_clusters, score)
-    plt.xlabel('Number of Clusters')
-    plt.ylabel('Score')
-    plt.title('Elbow Method')
-    plt.show()
+    df = pd.DataFrame()
+    df["Number of Clusters"] = number_clusters
+    df["Score"] = score
+    
+    fig = px.scatter(df, x="Number of Clusters", y="Score", 
+                 title="Méthode du coude") 
+
+    fig.update_layout(
+        title={
+            'y':0.95,
+            'x':0.5,
+            'xanchor': 'center',
+            'yanchor': 'top'})
+
+    return fig
+    
   
 def get_top_keywords(n_terms, X,clusters,vectorizer):
     """This function returns the keywords for each centroid of the KMeans"""
@@ -142,8 +155,8 @@ def text_cluistering(df, colonne, nb_cluster) :
 
     # assign clusters and PCA vectors to columns in the original dataframe
     Dcluster['cluster'] = clusters
-    Dcluster['x0'] = x0
-    Dcluster['x1'] = x1
+    Dcluster['1er axe'] = x0
+    Dcluster['2ème axe'] = x1
 
 
     dicts = {}
@@ -153,6 +166,7 @@ def text_cluistering(df, colonne, nb_cluster) :
         
         
     Dcluster['cluster'] = Dcluster['cluster'].map(dicts)
+    Dcluster = pd.DataFrame(Dcluster)
     
     coude = elbow_method(pca_vecs)
 
@@ -160,25 +174,26 @@ def text_cluistering(df, colonne, nb_cluster) :
     return Dcluster, Sim, coude
 
 
-a, b , c= text_cluistering(d_sentiment, "titre_commentaire", 3)
+a, b , c = text_cluistering(d_sentiment, "titre_commentaire", 2)
 
 
-# set image size
-plt.figure(figsize=(12, 7))
-# set title
-plt.title("Raggruppamento TF-IDF + KMeans 20newsgroup", fontdict={"fontsize": 18})
-# set axes names
-plt.xlabel("X0", fontdict={"fontsize": 16})
-plt.ylabel("X1", fontdict={"fontsize": 16})
-#  create scatter plot with seaborn, where hue is the class used to group the data
-a = sns.scatterplot(data=a, x='x0', y='x1', hue='cluster', palette="viridis")
-plt.show()
+import plotly.express as px
 
 
-print(b)
+fig = px.scatter(a, x="1er axe", y="2ème axe", color="cluster",symbol="cluster", 
+                 title="Clusters de mots avec les Kmeans") 
+
+fig.update_layout(
+    title={
+        'y':0.95,
+        'x':0.5,
+        'xanchor': 'center',
+        'yanchor': 'top'})
+
+plot(fig)
 
 
-
+plot()
 
 
 
