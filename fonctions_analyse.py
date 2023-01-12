@@ -366,7 +366,10 @@ def applyCountry(i):
                 list_lat.append("None")
                 list_lon.append("None")
                 list_city.append("None")
-    
+        
+        if i == "hotel_davy_crockett":
+            del list_pays[-1]
+        
         tab["Pays_recod"] = list_pays
         tab["Contient_recod"] = list_continent
         tab["lat_Pays"] = list_lat
