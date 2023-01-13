@@ -10,6 +10,7 @@ from sklearn.datasets import fetch_20newsgroups
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.cluster import KMeans
 from sklearn.decomposition import PCA
+from sklearn.decomposition import LatentDirichletAllocation
 
 # import other required libs
 import pandas as pd
@@ -23,11 +24,12 @@ import os
 from gensim.models import keyedvectors
 import ast
 from plotly.offline import plot
+import plotly.express as px
 
 import sys
 
 sys.setrecursionlimit(20000)
-os.chdir("C:/Users/sibghi/Documents/GitHub/Text-Mining-for-Disneyland/data_clean")
+os.chdir("C:/Users/Sam/Documents/GitHub/Text-Mining-for-Disneyland/data_clean")
 
 d_sentiment = pd.read_csv("hotel_marvel_clean.csv", sep=",")
 
@@ -96,9 +98,7 @@ def elbow_method(Y_sklearn):
     df["Number of Clusters"] = number_clusters
     df["Score"] = score
     
-    fig = px.scatter(df, x="Number of Clusters", y="Score", 
-                 title="Méthode du coude") 
-
+    fig = (px.line(df, x='Number of Clusters', y='Score',title="Méthode du coude", template='seaborn')).update_traces(mode='lines+markers')
     fig.update_layout(
         title={
             'y':0.95,
@@ -118,11 +118,34 @@ def get_top_keywords(n_terms, X,clusters,vectorizer):
     for i,r in df.iterrows():
         dicts['Cluster {}'.format(i)] = ','.join([terms[t] for t in np.argsort(r)[-n_terms:]]) 
         
+    
     return dicts
 
 
 
-def text_cluistering(df, colonne, nb_cluster) : 
+#Plot topics function. Code from: https://scikit-learn.org/stable/auto_examples/applications/plot_topics_extraction_with_nmf_lda.html
+def plot_top_words(model, feature_names, n_top_words, title):
+    fig, axes = plt.subplots(6, 5, figsize=(30, 30), sharex=True)
+    axes = axes.flatten()
+    for topic_idx, topic in enumerate(model.components_):
+        top_features_ind = topic.argsort()[:-n_top_words - 1:-1]
+        top_features = [feature_names[i] for i in top_features_ind]
+        weights = topic[top_features_ind]
+
+        ax = axes[topic_idx]
+        ax.barh(top_features, weights, height=0.7)
+        ax.set_title(f'Topic {topic_idx +1}',
+                     fontdict={'fontsize': 30})
+        ax.invert_yaxis()
+        ax.tick_params(axis='both', which='major', labelsize=20)
+        for i in 'top right left'.split():
+            ax.spines[i].set_visible(False)
+        fig.suptitle(title, fontsize=40)
+    plt.subplots_adjust(top=0.90, bottom=0.05, wspace=0.90, hspace=0.3)
+    plt.show()
+    
+
+def text_cluistering(df, colonne, nb_cluster, ntherm) : 
     
     #inialisation dataframe
     Dcluster = pd.DataFrame()
@@ -132,6 +155,13 @@ def text_cluistering(df, colonne, nb_cluster) :
     
 
     X = vector.fit_transform(df[str(colonne)])
+
+    #creation cluster avce LDA
+    lda = LatentDirichletAllocation(n_components=nb_cluster, learning_decay=0.9)
+    X_lda = lda.fit(X)
+    feature_names = vector.get_feature_names()
+
+    top_word = plot_top_words(X_lda, feature_names, ntherm, ' ')
 
         
     # initialize KMeans with 3 clusters
@@ -168,32 +198,27 @@ def text_cluistering(df, colonne, nb_cluster) :
     Dcluster['cluster'] = Dcluster['cluster'].map(dicts)
     Dcluster = pd.DataFrame(Dcluster)
     
-    coude = elbow_method(pca_vecs)
-
     
-    return Dcluster, Sim, coude
+    #graphique methode coude
+    coude = elbow_method(pca_vecs)
+    
+    
+    #graphique Kmeans
+    fig = px.scatter(Dcluster, x="1er axe", y="2ème axe", color="cluster",symbol="cluster", 
+                     title="Clusters de mots avec les Kmeans") 
 
+    fig.update_layout(
+        title={
+            'y':0.95,
+            'x':0.5,
+            'xanchor': 'center',
+            'yanchor': 'top'})
 
-a, b , c = text_cluistering(d_sentiment, "titre_commentaire", 2)
+    #return 
+    return fig,top_word,coude
 
-
-import plotly.express as px
-
-
-fig = px.scatter(a, x="1er axe", y="2ème axe", color="cluster",symbol="cluster", 
-                 title="Clusters de mots avec les Kmeans") 
-
-fig.update_layout(
-    title={
-        'y':0.95,
-        'x':0.5,
-        'xanchor': 'center',
-        'yanchor': 'top'})
-
-plot(fig)
-
-
-plot()
+#appel fonction
+a, b ,c = text_cluistering(d_sentiment, "titre_commentaire", 2, 10)
 
 
 
