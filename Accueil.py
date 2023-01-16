@@ -22,13 +22,14 @@ st.session_state['monument'] = selection
 if selection == 'Parcs':
     st.write('Attention vous devez valider vos données en cliquant sur Oui en bas de page')
     liste = ['ParcDisney','Studio']
-    res = st.multiselect("Sectionne un (des) parc(s) et/ou un (des) hotel(s)) ",liste, (['ParcDisney']))
+    res = st.multiselect("Sectionnez un (des) parc(s) et/ou un (des) hotel(s)) ",liste, (['ParcDisney','Studio']))
     df = pd.DataFrame()
     for i in res:
         if i == 'ParcDisney':
-            df = df.append(pd.read_csv("C:/Users/laura/OneDrive/Bureau/Disneyland_Paris_clean.csv", sep=","))
+             df = df.append(pd.read_csv("C:/Disney/Disneyland_Paris_clean.csv", sep=","))
         if i == 'Studio':
-            df = df.append(pd.read_csv("C:/Users/laura/OneDrive/Bureau/Walt_Disney_Studios_Park_clean.csv", sep=","))
+             
+            df = df.append(pd.read_csv("C:/Disney/Walt_Disney_Studios_Park_clean.csv", sep=","))
 
     if 'Parcs' not in st.session_state :
         valeur_def = df['Note'].unique()
@@ -37,7 +38,7 @@ if selection == 'Parcs':
 
     # Création de la liste de selection des notes
     liste = df.Note.unique()
-    res = st.multiselect('Sectionner la ou les notes souhaité(s)',liste, (valeur_def))
+    res = st.multiselect('Sectionnez la ou les notes souhaitée(s)',liste, (valeur_def))
     sol = []
     # On crée une liste où se trouve les notes qui ne sont pas dans la liste
     for i in liste:
@@ -45,7 +46,7 @@ if selection == 'Parcs':
             # On transfome les élément en entier (car c'est leur type dans le df)
             i = int(i)
             sol.append(i)
-        # Ici si aucune valeur selectionner, on à toute les données à la base
+        # Ici si aucune valeur selectionnée, on a toute les données de la base
         if len(sol) != len(liste):
             # On supprime les éléments non choisie dans la liste déroulante a selection multiple
             for i in sol:
@@ -59,7 +60,7 @@ if selection == 'Parcs':
         valeur_def = st.session_state["Parcs"].Annee_Avis.unique()
 
     liste = df.Annee_Avis.unique()
-    res = st.multiselect("Sectionner la ou les années d'avis souhaité(s)",liste, valeur_def)
+    res = st.multiselect("Sectionnez la ou les années d'avis souhaité(es)",liste, valeur_def)
     sol = []
     # On crée une liste où se trouve les notes qui ne sont pas dans la liste
     for i in liste:
@@ -78,7 +79,7 @@ if selection == 'Parcs':
         valeur_def = st.session_state["Parcs"].Mois_Avis.unique()
 
     liste = df.Mois_Avis.unique()
-    res = st.multiselect("Sectionner la ou les mois d'avis souhaité(s)",liste, valeur_def)
+    res = st.multiselect("Sectionnez la ou les mois d'avis souhaité(s)",liste, valeur_def)
     sol = []
     # On crée une liste où se trouve les notes qui ne sont pas dans la liste
     for i in liste:
@@ -117,7 +118,7 @@ if selection == 'Parcs':
         valeur_def = st.session_state["Parcs"].Mois_Sejour.unique()
 
     liste = df.Mois_Sejour.unique()
-    res = st.multiselect('Sectionner la ou les mois de séjour souhaité(s)',liste, valeur_def)
+    res = st.multiselect('Sectionnez la ou les mois de séjour souhaité(s)',liste, valeur_def)
     sol = []
     # On crée une liste où se trouve les notes qui ne sont pas dans la liste
     for i in liste:
@@ -135,7 +136,7 @@ if selection == 'Parcs':
         valeur_def = st.session_state["Parcs"].Situation.unique()
 
     liste = df.Situation.unique()
-    res = st.multiselect('Sectionner la ou les situations souhaité(s)',liste, valeur_def)
+    res = st.multiselect('Sectionnez la ou les situations souhaité(s)',liste, valeur_def)
     sol = []
     # On crée une liste où se trouve les notes qui ne sont pas dans la liste
     for i in liste:
@@ -166,12 +167,12 @@ if selection == 'Parcs':
                df.drop(df[df['Pays'] == i].index,inplace=True) 
 
     # Affichage du dataframe précédement selectionné
-    st.subheader('Donnée du lieux choisi')
+    st.subheader('Données du lieu choisi')
     st.write(df)
 
-    st.text('Taille de la base sélectionner contient : ' + str(df.shape[0]) + " lignes")
+    st.text('La base sélectionnée contient : ' + str(df.shape[0]) + " lignes")
 
-    st.write('La Base de données vous convient elle?')
+    st.write('La Base de données vous convient-elle?')
     button = st.button('Oui')
     # Si validation du bouton => création d'une variable globale (en gros qu'on peut utiliser dans toute l'appli)
     if button:
@@ -181,12 +182,22 @@ if selection == 'Parcs':
 
 if selection == 'Hotels':
     st.write('Attention vous devez valider vos données en cliquant sur Oui en bas de page')
-    liste = ['Cheyenne']
-    res = st.multiselect("Sectionne un (des) parc(s) et/ou un (des) hotel(s)) ",liste, (['Cheyenne']) )
+    liste = ['Cheyenne','Davy_Crockett','Marvel','Newport','Santa_Fe','Sequoia']
+    res = st.multiselect("Sectionne un (des) parc(s) et/ou un (des) hotel(s)) ",liste, (['Cheyenne','Davy_Crockett','Marvel','Newport','Santa_Fe','Sequoia']) )
     df = pd.DataFrame()
     for i in res:
         if i == 'Cheyenne':
-            df = df.append(pd.read_csv("C:/Users/laura/OneDrive/Bureau/hotel_cheyenne_clean.csv", sep=","))
+            df = df.append(pd.read_csv("C:/Disney_app/hotel_cheyenne_clean.csv", sep=","))
+        if i == 'Davy_Crockett':
+            df = df.append(pd.read_csv("C:/Disney_app/hotel_davy_crockett_clean.csv", sep=","))
+        if i == 'Marvel':
+            df = df.append(pd.read_csv("C:/Disney_app/hotel_marvel_clean.csv", sep=","))
+        if i == 'Newport':
+            df = df.append(pd.read_csv("C:/Disney_app/hotel_newport_clean.csv", sep=","))
+        if i == 'Santa_Fe':
+            df = df.append(pd.read_csv("C:/Disney_app/hotel_santa_fe_clean.csv", sep=","))
+        if i == 'Sequoia':
+            df = df.append(pd.read_csv("C:/Disney_app/hotel_sequoia_clean.csv", sep=","))
 
     if 'Hotels' not in st.session_state :
         valeur_def = df['Note'].unique()
@@ -306,12 +317,12 @@ if selection == 'Hotels':
                df.drop(df[df['Pays'] == i].index,inplace=True) 
 
     # Affichage du dataframe précédement selectionné
-    st.subheader('Donnée du lieux choisi')
+    st.subheader('Données du lieu choisi')
     st.write(df)
 
-    st.text('Taille de la base sélectionner contient : ' + str(df.shape[0]) + " lignes")
+    st.text('La base sélectionnée contient : ' + str(df.shape[0]) + " lignes")
 
-    st.write('La Base de données vous convient elle?')
+    st.write('La Base de données vous convient-elle?')
     # Si validation du bouton => création d'une variable globale (en gros qu'on peut utiliser dans toute l'appli)
     button = st.button('Oui')
     if button:
