@@ -318,7 +318,7 @@ def applyCountry(i):
         geolocator  = Nominatim(user_agent = "geoapiExercises")
 
         
-        os.chdir("C:/Users/Sam/Documents/GitHub/Text-Mining-for-Disneyland/data_translate")
+        os.chdir("C:/Users/sibghi/Documents/GitHub/Text-Mining-for-Disneyland/data_translate")
         tab=pd.read_csv(str(i) + "_fr.csv")
         if i == "Disneyland_Paris" or i == "Walt_Disney_Studios_Park" :
             
@@ -367,7 +367,7 @@ def applyCountry(i):
                 list_lon.append("None")
                 list_city.append("None")
         
-        if i == "hotel_davy_crockett" and  i == "Disneyland_Paris":
+        if i == "hotel_davy_crockett" or  i == "Disneyland_Paris":
             del list_pays[-1]
             
             
