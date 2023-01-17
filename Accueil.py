@@ -23,7 +23,7 @@ st.session_state['monument'] = selection
 if selection == 'Parcs':
     st.write('Attention, vous devez valider vos données en cliquant sur Oui en bas de page')
     liste = ['ParcDisney 🌈','Studio 🎬']
-    res = st.multiselect("Sectionnez un (des) parc(s) et/ou un (des) hotel(s)) ",liste, (['ParcDisney 🌈','Studio 🎬']))
+    res = st.multiselect("Sélectionnez un (des) parc(s) et/ou un (des) hotel(s)) ",liste, (['ParcDisney 🌈','Studio 🎬']))
     df = pd.DataFrame()
     for i in res:
         if i == 'ParcDisney 🌈':
@@ -61,7 +61,7 @@ if selection == 'Parcs':
         valeur_def = st.session_state["Parcs"].Annee_Avis.unique()
 
     liste = df.Annee_Avis.unique()
-    res = st.multiselect("Sectionnez la ou les années d'avis souhaité(es)",liste, valeur_def)
+    res = st.multiselect("Sélectionnez la ou les années d'avis souhaité(es)",liste, valeur_def)
     sol = []
     # On crée une liste où se trouve les notes qui ne sont pas dans la liste
     for i in liste:
@@ -80,7 +80,7 @@ if selection == 'Parcs':
         valeur_def = st.session_state["Parcs"].Mois_Avis.unique()
 
     liste = df.Mois_Avis.unique()
-    res = st.multiselect("Sectionnez la ou les mois d'avis souhaité(s)",liste, valeur_def)
+    res = st.multiselect("Sélectionnez la ou les mois d'avis souhaité(s)",liste, valeur_def)
     sol = []
     # On crée une liste où se trouve les notes qui ne sont pas dans la liste
     for i in liste:
@@ -100,7 +100,7 @@ if selection == 'Parcs':
         valeur_def = st.session_state["Parcs"].Annee_Sejour.unique()
 
     # liste = df.Annee_Sejour.unique()
-    # res= st.multiselect('Sectionner la ou les années de séjour souhaité(s)',liste)
+    # res= st.multiselect('Sélectionnez la ou les années de séjour souhaité(s)',liste)
     # sol = []
     # # On crée une liste où se trouvent les notes qui ne sont pas dans la liste
     # for i in liste:
@@ -119,7 +119,7 @@ if selection == 'Parcs':
         valeur_def = st.session_state["Parcs"].Mois_Sejour.unique()
 
     liste = df.Mois_Sejour.unique()
-    res = st.multiselect('Sectionnez la ou les mois de séjour souhaité(s)',liste, valeur_def)
+    res = st.multiselect('Sélectionnez la ou les mois de séjour souhaité(s)',liste, valeur_def)
     sol = []
     # On crée une liste où se trouvent les notes qui ne sont pas dans la liste
     for i in liste:
@@ -137,13 +137,13 @@ if selection == 'Parcs':
         valeur_def = st.session_state["Parcs"].Situation.unique()
 
     liste = df.Situation.unique()
-    res = st.multiselect('Sectionnez la ou les situations souhaité(s)',liste, valeur_def)
+    res = st.multiselect('Sélectionnez la ou les situations souhaité(s)',liste, valeur_def)
     sol = []
     # On crée une liste où se trouvent les notes qui ne sont pas dans la liste
     for i in liste:
        if i not in res :
            sol.append(i)
-       # Ici si aucune valeur selectionné, on a toutes les données à la base
+       # Ici si aucune valeur selectionnée, on a toutes les données en base
        if len(sol) != len(liste):
            # On supprime les éléments non choisie dans la liste déroulante a selection multiple
            for i in sol:
@@ -155,13 +155,13 @@ if selection == 'Parcs':
         valeur_def = st.session_state["Parcs"].Pays.unique()
 
     liste = df.Pays.unique()
-    res = st.multiselect('Sectionnez la ou les pays souhaité(s)',liste, valeur_def)
+    res = st.multiselect('Sélectionnez la ou les pays souhaité(s)',liste, valeur_def)
     sol = []
     # On crée une liste où se trouvent les notes qui ne sont pas dans la liste
     for i in liste:
        if i not in res :
            sol.append(i)
-       # Ici si aucune valeur selectionnée, on à toutes les données à la base
+       # Ici si aucune valeur selectionnée, on à toutes les données en base
        if len(sol) != len(liste):
            # On supprime les éléments non choisis dans la liste déroulante à selection multiple
            for i in sol:
@@ -207,7 +207,7 @@ if selection == 'Hotels':
 
     # Création de la liste de selection des notes
     liste = df.Note.unique()
-    res = st.multiselect('Sectionnez la ou les notes souhaitée(s)',liste, (valeur_def))
+    res = st.multiselect('Sélectionnez la ou les notes souhaitée(s)',liste, (valeur_def))
     sol = []
     # On crée une liste où se trouve les notes qui ne sont pas dans la liste
     for i in liste:
@@ -229,7 +229,7 @@ if selection == 'Hotels':
         valeur_def_annee_avis_hotels = st.session_state["Hotels"].Annee_Avis.unique()
 
     liste_annee_avis_hotels = df.Annee_Avis.unique()
-    res_annee_avis_hotels = st.multiselect("Sectionnez la ou les années d'avis souhaité(s)",liste_annee_avis_hotels, valeur_def_annee_avis_hotels)
+    res_annee_avis_hotels = st.multiselect("Sélectionnez la ou les années d'avis souhaité(s)",liste_annee_avis_hotels, valeur_def_annee_avis_hotels)
     sol_annee_avis_hotels = []
     # On crée une liste où se trouve les notes qui ne sont pas dans la liste
     for i in liste_annee_avis_hotels :
@@ -248,13 +248,13 @@ if selection == 'Hotels':
         valeur_def = st.session_state["Hotels"].Mois_Avis.unique()
 
     liste = df.Mois_Avis.unique()
-    res = st.multiselect("Sectionner le ou les mois d'avis souhaité(s)",liste, valeur_def)
+    res = st.multiselect("Sélectionnez le ou les mois d'avis souhaité(s)",liste, valeur_def)
     sol = []
     # On crée une liste où se trouvent les notes qui ne sont pas dans la liste
     for i in liste:
         if i not in res :
             sol.append(i)
-        # Ici si aucune valeur selectionnée, on à toute les données en base
+        # Ici si aucune valeur selectionnée, on à toutes les données en base
         if len(sol) != len(liste):
             # On supprime les éléments non choisis dans la liste déroulante à selection multiple
             for i in sol:
@@ -268,7 +268,7 @@ if selection == 'Hotels':
         valeur_def = st.session_state["Hotels"].Annee_Sejour.unique()
 
     # liste = df.Annee_Sejour.unique()
-    # res= st.multiselect('Sectionnez la ou les années de séjour souhaitée(s)',liste,)
+    # res= st.multiselect('Sélectionnez la ou les années de séjour souhaitée(s)',liste,)
     # sol = []
     # # On crée une liste où se trouvent les notes qui ne sont pas dans la liste
     # for i in liste:
@@ -287,7 +287,7 @@ if selection == 'Hotels':
         valeur_def = st.session_state["Hotels"].Mois_Sejour.unique()
 
     liste = df.Mois_Sejour.unique()
-    res = st.multiselect('Sectionnez la ou les mois de séjour souhaité(s)',liste, valeur_def)
+    res = st.multiselect('Sélectionnez la ou les mois de séjour souhaité(s)',liste, valeur_def)
     sol = []
     # On crée une liste où se trouvent les notes qui ne sont pas dans la liste
     for i in liste:
@@ -305,7 +305,7 @@ if selection == 'Hotels':
         valeur_def = st.session_state["Hotels"].Pays.unique()
 
     liste = df.Pays.unique()
-    res = st.multiselect('Sectionnez le ou les pays souhaité(s)',liste, valeur_def)
+    res = st.multiselect('Sélectionnez le ou les pays souhaité(s)',liste, valeur_def)
     sol = []
     # On crée une liste où se trouvent les notes qui ne sont pas dans la liste
     for i in liste:
