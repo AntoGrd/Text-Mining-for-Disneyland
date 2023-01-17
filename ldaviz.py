@@ -24,25 +24,6 @@ def lda(commentaires,ntopics, npasses):
     bow_corpus = [dictionary.doc2bow(doc) for doc in tokens]
     lda_model = gensim.models.LdaMulticore(bow_corpus, num_topics = ntopics, id2word = dictionary, passes = npasses)
     
-    topics = []
-    for idx, topic in lda_model.print_topics(-1) :
-        topics.append(topic)
-    #calcul de la cohérence du modèle
-    coherence_model_lda = CoherenceModel(model=lda_model, texts=tokens, dictionary=dictionary)
-    coherence_lda = coherence_model_lda.get_coherence()
-
-    all_topic_model = []
-    for i in range(len(topics)):
-        str = topics[i].split(' + ')
-        topic_model = []
-        for j in range(10):
-            weight = str[j][0:5]
-            word = str[j][7:len(str[j])-1]
-            topic_model.append((weight, word))
-        all_topic_model.append(topic_model)
-        
-    df_topic_model = pd.DataFrame(all_topic_model)
-    
     vis_data = pyLDAvis.gensim_models.prepare(lda_model, bow_corpus, dictionary) 
     pyLDAvis.display(vis_data)
     st.write(pyLDAvis.show(vis_data)) #si marche pas, essayer : st.pydeck_chart(vis_data.to_dict())
