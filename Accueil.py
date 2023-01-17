@@ -15,7 +15,7 @@ if __name__ == '__main__':
 # Choix du monument
 
 monument = ['Choix du lieu',"Parcs", "Hotels"]
-selection = st.selectbox(f'Choisisez si vous voulez des informations sur les parcs ou les hôtels',monument)
+selection = st.selectbox(f'Choisissez si vous voulez des informations sur les parcs ou les hôtels',monument)
 st.session_state['monument'] = selection
 
 ################################### PARCS ######################################################################
