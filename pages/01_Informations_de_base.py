@@ -8,17 +8,17 @@ if st.session_state['monument']  == 'Parcs':
     # Choix des différents graphiques
     Diagramme = st.sidebar.radio(
         "Quel diagramme voulez-vous afficher ?",
-        ("Nombre d'avis par années", "Répartition des notes", 'Différence des notes entre les français et les étrangers','Répartition des commentaires avec ou sans photos','Répartition des différents types de groupe',"Nombre d'avis par pays"))
+        ("Nombre d'avis par année", "Répartition des notes", 'Différence des notes entre les français et les étrangers','Répartition des commentaires avec ou sans photos','Répartition des différents types de groupe',"Nombre d'avis par pays"))
 
     # Affichage des graphiques
-    if Diagramme == "Nombre d'avis par années":
+    if Diagramme == "Nombre d'avis par année":
         st.subheader("Nombre d'avis par année")
         st.bar_chart(nombre_avis_par_années(st.session_state['Parcs']))
     if Diagramme == "Répartition des notes":
-        st.subheader('Répartition des notes attribué par le lieux choisie')
+        st.subheader('Répartition des notes attribuées selon le lieu choisi')
         st.pyplot(répartition_des_notes(st.session_state['Parcs']))
-    if Diagramme == "Différence des notes entre les français et les étrangers":
-        st.subheader('Différence des notes entre les français et les étrangers')
+    if Diagramme == "Différence des notes entre les Français et les étrangers":
+        st.subheader('Différence des notes entre les Français et les étrangers')
         st.pyplot(notes1(st.session_state['Parcs']))
     if Diagramme == "Répartition des commentaires avec ou sans photos":
         st.subheader('Répartition des commentaires avec ou sans photos')
@@ -35,17 +35,17 @@ if st.session_state['monument']  == 'Hotels':
     # Choix des différents graphiques
     Diagramme = st.sidebar.radio(
         "Quel diagramme voulez-vous afficher ?",
-        ("Nombre d'avis par années", "Répartition des notes", 'Différence des notes entre les français et les étrangers','Répartition des commentaires avec ou sans photos',"Nombre d'avis par pays"))
+        ("Nombre d'avis par année", "Répartition des notes", 'Différence des notes entre les français et les étrangers','Répartition des commentaires avec ou sans photos',"Nombre d'avis par pays"))
 
     # Affichage des graphiques
-    if Diagramme == "Nombre d'avis par années":
+    if Diagramme == "Nombre d'avis par années*":
         st.subheader("Nombre d'avis par année")
         st.bar_chart(nombre_avis_par_années(st.session_state['Hotels']))
     if Diagramme == "Répartition des notes":
-        st.subheader('Répartition des notes attribué par le lieux choisie')
+        st.subheader('Répartition des notes attribuées selon le lieu choisi')
         st.pyplot(répartition_des_notes(st.session_state['Hotels']))
-    if Diagramme == "Différence des notes entre les français et les étrangers":
-        st.subheader('Différence des notes entre les français et les étrangers')
+    if Diagramme == "Différence des notes entre les Français et les étrangers":
+        st.subheader('Différence des notes entre les Français et les étrangers')
         st.pyplot(notes1(st.session_state['Hotels']))
     if Diagramme == "Répartition des commentaires avec ou sans photos":
         st.subheader('Répartition des commentaires avec ou sans photos')
