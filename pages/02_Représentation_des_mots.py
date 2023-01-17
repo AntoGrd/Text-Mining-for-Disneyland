@@ -1,5 +1,5 @@
 import streamlit as st
-from Récupération des x mots les plus présents.py import mots_significatif_par_note2
+from Récupération_des_x_mots_les_plus_présents.py import mots_significatif_par_note2
 from fonctions_analyse import representation_mots
 
 st.title("Répartition des mots")
