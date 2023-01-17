@@ -6,28 +6,29 @@ import plotly.express as px
 from Analyse_de_base_hotels import nombre_avis_par_années,répartition_des_notes
 
 def main():
-    st.header("Choix du lieu")
+    st.header("Trip Advisor Avis Clients")
+   
 
 if __name__ == '__main__':
     main()
 
 # Choix du monument
 
-monument = ['Choix du lieu','Parcs','Hotels']
+monument = ['Choix du lieu',"Parcs 🎢", "Hotels 🏨"]
 selection = st.selectbox(f'Choisisez si vous voulez des informations sur les parcs ou les hotels',monument)
 st.session_state['monument'] = selection
 
 ################################### PARCS ######################################################################
 
-if selection == 'Parcs':
+if selection == 'Parcs 🎢':
     st.write('Attention vous devez valider vos données en cliquant sur Oui en bas de page')
-    liste = ['ParcDisney','Studio']
-    res = st.multiselect("Sectionnez un (des) parc(s) et/ou un (des) hotel(s)) ",liste, (['ParcDisney','Studio']))
+    liste = ['ParcDisney 🌈','Studio 🎬']
+    res = st.multiselect("Sectionnez un (des) parc(s) et/ou un (des) hotel(s)) ",liste, (['ParcDisney 🌈','Studio 🎬']))
     df = pd.DataFrame()
     for i in res:
-        if i == 'ParcDisney':
+        if i == 'ParcDisney 🌈':
              df = df.append(pd.read_csv("C:/Disney/Disneyland_Paris_clean.csv", sep=","))
-        if i == 'Studio':
+        if i == 'Studio 🎬':
              
             df = df.append(pd.read_csv("C:/Disney/Walt_Disney_Studios_Park_clean.csv", sep=","))
 
@@ -180,23 +181,23 @@ if selection == 'Parcs':
 
 ###################### HOTELS ##############################################################################################################
 
-if selection == 'Hotels':
+if selection == 'Hotels 🏨':
     st.write('Attention vous devez valider vos données en cliquant sur Oui en bas de page')
-    liste = ['Cheyenne','Davy_Crockett','Marvel','Newport','Santa_Fe','Sequoia']
-    res = st.multiselect("Sectionne un (des) parc(s) et/ou un (des) hotel(s)) ",liste, (['Cheyenne','Davy_Crockett','Marvel','Newport','Santa_Fe','Sequoia']) )
+    liste = ['Cheyenne 🤠 ','Davy_Crockett 🏹','Marvel🦸‍♀️','Newport','Santa_Fe 🏜️','Sequoia 🌲']
+    res = st.multiselect("Sectionne un (des) parc(s) et/ou un (des) hotel(s)) ",liste, (['Cheyenne 🤠 ','Davy_Crockett 🏹','Marvel🦸‍♀️','Newport','Santa_Fe 🏜️','Sequoia 🌲']) )
     df = pd.DataFrame()
     for i in res:
-        if i == 'Cheyenne':
+        if i == 'Cheyenne 🤠':
             df = df.append(pd.read_csv("C:/Disney_app/hotel_cheyenne_clean.csv", sep=","))
-        if i == 'Davy_Crockett':
+        if i == 'Davy_Crockett 🏹':
             df = df.append(pd.read_csv("C:/Disney_app/hotel_davy_crockett_clean.csv", sep=","))
-        if i == 'Marvel':
+        if i == 'Marvel 🦸‍♀️':
             df = df.append(pd.read_csv("C:/Disney_app/hotel_marvel_clean.csv", sep=","))
         if i == 'Newport':
             df = df.append(pd.read_csv("C:/Disney_app/hotel_newport_clean.csv", sep=","))
-        if i == 'Santa_Fe':
+        if i == 'Santa_Fe 🏜️':
             df = df.append(pd.read_csv("C:/Disney_app/hotel_santa_fe_clean.csv", sep=","))
-        if i == 'Sequoia':
+        if i == 'Sequoia 🌲':
             df = df.append(pd.read_csv("C:/Disney_app/hotel_sequoia_clean.csv", sep=","))
 
     if 'Hotels' not in st.session_state :
