@@ -32,7 +32,3 @@ import os
 os.chdir("C:/Users/Sam/Documents/GitHub/Text-Mining-for-Disneyland/data_translate")
 a = pd.read_csv("hotel_sante_fe_ope.csv")
         
-
-
-
-

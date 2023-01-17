@@ -368,7 +368,7 @@ def applyCountry(i):
                 list_city.append("None")
         
         if i == "hotel_davy_crockett" and  i == "Disneyland_Paris":
-            list_pays = list_pays[:-1]
+            del list_pays[-1]
             
             
         tab["Pays_recod"] = list_pays
