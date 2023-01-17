@@ -13,7 +13,7 @@ import streamlit as st
 #npasses : nombre de passages sur le data set pour établir le topic model
 # plus il y a de passages, meilleur est le score de cohérence (à partir de 10000 passages on est
 #censés avoir un score très proche de 70% donc assez satisfaisant mais très long, peut être tester avec
-# ~100 dans un premier temps)
+# testé avec ~100 dans un premier temps, on a environs 50% c'est pas mal)
 
 def lda(commentaires,ntopics, npasses):
     tokens = commentaires.apply(lambda x: x.replace("[","").replace("]","").replace("'","").split(","))
