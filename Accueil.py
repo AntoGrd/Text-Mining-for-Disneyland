@@ -183,8 +183,8 @@ if selection == 'Parcs':
 
 if selection == 'Hotels':
     st.write('Attention vous devez valider vos données en cliquant sur Oui en bas de page')
-    liste = ['Cheyenne 🤠 ','Davy_Crockett 🏹','Marvel🦸‍♀️','Newport','Santa_Fe 🏜️','Sequoia 🌲']
-    res = st.multiselect("Sectionne un (des) parc(s) et/ou un (des) hotel(s)) ",liste, (['Cheyenne 🤠 ','Davy_Crockett 🏹','Marvel🦸‍♀️','Newport','Santa_Fe 🏜️','Sequoia 🌲']) )
+    liste = ['Cheyenne 🤠 ','Davy_Crockett 🏹','Marvel🦸‍♀️','Newport 🏨','Santa_Fe 🏜️','Sequoia 🌲']
+    res = st.multiselect("Sectionne un (des) parc(s) et/ou un (des) hotel(s)) ",liste, (['Cheyenne 🤠','Davy_Crockett 🏹','Marvel 🦸‍♀️','Newport 🏨','Santa_Fe 🏜️','Sequoia 🌲']) )
     df = pd.DataFrame()
     for i in res:
         if i == 'Cheyenne 🤠':
@@ -193,7 +193,7 @@ if selection == 'Hotels':
             df = df.append(pd.read_csv("C:/Disney_app/hotel_davy_crockett_clean.csv", sep=","))
         if i == 'Marvel 🦸‍♀️':
             df = df.append(pd.read_csv("C:/Disney_app/hotel_marvel_clean.csv", sep=","))
-        if i == 'Newport':
+        if i == 'Newport 🏨':
             df = df.append(pd.read_csv("C:/Disney_app/hotel_newport_clean.csv", sep=","))
         if i == 'Santa_Fe 🏜️':
             df = df.append(pd.read_csv("C:/Disney_app/hotel_santa_fe_clean.csv", sep=","))
