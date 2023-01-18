@@ -87,14 +87,9 @@ for i in namesParc:
     tab.to_csv(str(i) + ".csv", index=False, encoding = 'utf-8-sig')
 
 
+#df = pd.concat([df_1, df_2])
+#df.drop_duplicates(keep=False)
 
-#test recup nouveau cxommentaire
-"""
-df = pd.read_csv("hotel_marvel.csv")
-driver = webdriver.Chrome("C:/Users/Sam/Documents/SISE/Text mining/Driver/chromedriver.exe")
-tab = scrap_hotel.Scraping_NouveauAvis_hotel(url_hotel[0], driver, df)
-"""
-   
 
 #<<<<<<< HEAD
 #namesHotel = ["Hotel_New_York_The_Art_of_Marvel", "Disney_Newport_Bay_Club","Disney_Hotel_Cheyenne","Disney_Davy_Crockett_Ranch"]

@@ -123,8 +123,10 @@ def scrapping_hotel(url_hotel, driver):
     return(df)
 
 
-def Scraping_NouveauAvis_hotel(url_hotel, driver, tab):
-    time.sleep(1)
+
+
+def scrapping_Nouveaux_hotel(url_hotel, driver, mois):
+    
     driver.get(url_hotel)
     
     time.sleep(2)
@@ -142,12 +144,9 @@ def Scraping_NouveauAvis_hotel(url_hotel, driver, tab):
     presence_photo = []
     liste_dateAvis = []
     liste_dateSejour = []
-    test_list = []
-
     # boucle pour recuperer les donnees
     #page=1 
     #while(page<4): #juste pour tester
-    compt = 0
     while(True) :
         
         
@@ -158,10 +157,7 @@ def Scraping_NouveauAvis_hotel(url_hotel, driver, tab):
             #Titre commentaire 
             try:
                 titre = avis.find(attrs = {"class": "KgQgP MC _S b S6 H5 _a"})
-                
                 liste_titre_comm.append(titre.text)
-                
-            
                 #print(titre.text)
             except:
                 liste_titre_comm.append("None")
@@ -170,9 +166,7 @@ def Scraping_NouveauAvis_hotel(url_hotel, driver, tab):
             try:
                 
                 comment = avis.find(attrs = {"class": "fIrGe _T"})
-                
                 liste_comm.append(comment.text)
-                
             except:
                 liste_comm.append("None")
               
@@ -229,36 +223,25 @@ def Scraping_NouveauAvis_hotel(url_hotel, driver, tab):
             except:
                 
                 presence_photo.append("no")
-                
-            
-            test = liste_dateAvis[compt] + liste_loc[compt] + liste_note[compt]
-            test_list.append(test)
-            if test in tab["id"].to_list():
-                accord = True
-            else:
-                accord = False
-                compt +=1  
         
-       
-        time.sleep(2)
         
-        if accord == True:
+        pos = date_sejour.find(":")
+        temp = date_sejour[pos +2 : len(date_sejour)]
+        temp = temp.split()[0]
+        
+        if mois != temp:
             driver.quit()
             break
-        else:
+        
+        time.sleep(2)
+        try:
             driver.find_element(by=By.CSS_SELECTOR, value='.ui_button.nav.next.primary').click()
-    
+        except:
+            
+            driver.quit()
+            break
         #page=page+1
     #fin de la boucle 
-    df = pd.DataFrame(list(zip(liste_titre_comm, liste_comm,liste_dateAvis,liste_dateSejour, liste_loc, liste_note, presence_photo, test_list)),
-                   columns =['titre_comm', 'comm',"dateAvis","dateSejour",'loc','note','photo', 'id'])
-    
-    df = df.iloc[:-1,:]
-    df.drop_duplicates(keep = 'first', inplace=True)
-
-    for z in range(df.shape[0]):
-        for i in range(tab.shape[0]):
-        
-            if(tab["id"].tolist()[i] == df["id"].tolist()[z]) == True:
-                df["id"].tolist().remove(df["id"].tolist()[z])
+    df = pd.DataFrame(list(zip(liste_titre_comm, liste_comm,liste_dateAvis,liste_dateSejour, liste_loc, liste_note, presence_photo)),
+                   columns =['titre_comm', 'comm',"dateAvis","dateSejour",'loc','note','photo'])
     return(df)
