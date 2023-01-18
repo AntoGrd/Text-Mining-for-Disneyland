@@ -11,16 +11,14 @@ def nombre_avis_par_années(df):
   return res
 
 def répartition_des_notes(df):
-  cols = df['Note']
+  cols = df['Note'].unique()
   val = df['Note'].value_counts()
   fig = go.Figure(data=[go.Pie(labels = cols, values = val)])
   return fig
 
 def notes(df):
-  comptage=df['langue'].value_counts()
-  comptage.plot(kind='bar',stacked=True,ylabel="Nombre de répondants",xlabel="Langue de l'avis")
-  st.pyplot
-  st.set_option('deprecation.showPyplotGlobalUse', False)
+  res = df.langue.value_counts()
+  return res
 
 def notes1(df):
   T=pd.crosstab(df['langue']=='fr',df['Note'], normalize='index')
@@ -29,13 +27,13 @@ def notes1(df):
   st.set_option('deprecation.showPyplotGlobalUse', False)
 
 def photo_ou_non(df):
-  cols = df['Photo']
+  cols = df['Photo'].unique()
   val = df['Photo'].value_counts()
   fig = go.Figure(data=[go.Pie(labels = cols, values = val)])
   return fig
 
 def situation_famille(df):
-  cols = df['Situation']
+  cols = df['Situation'].unique()
   val = df['Situation'].value_counts()
   fig = go.Figure(data=[go.Pie(labels = cols, values = val)])
   return fig
@@ -50,3 +48,6 @@ def nuage_de_mots(df):
   plt.imshow(wordCloud, interpolation="bilinear")
   plt.axis('off')
   st.pyplot()
+
+
+
