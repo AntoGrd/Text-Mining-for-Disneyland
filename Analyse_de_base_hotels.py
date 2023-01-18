@@ -2,18 +2,19 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import streamlit as st
-from sklearn.feature_extraction.text import CountVectorizer
+import plotly.express as px
+import wordcloud as wc
+import plotly.graph_objs as go
 
 def nombre_avis_par_années(df):
   res = df.Annee_Avis.value_counts()
   return res
 
 def répartition_des_notes(df):
-  cols = ['b','c','y','orange','r']
+  cols = df['Note']
   val = df['Note'].value_counts()
-  val.plot.pie(autopct='%1.1f%%', shadow= True,colors=cols)
-  st.pyplot
-  st.set_option('deprecation.showPyplotGlobalUse', False)
+  fig = go.Figure(data=[go.Pie(labels = cols, values = val)])
+  return fig
 
 def notes(df):
   comptage=df['langue'].value_counts()
@@ -28,19 +29,24 @@ def notes1(df):
   st.set_option('deprecation.showPyplotGlobalUse', False)
 
 def photo_ou_non(df):
-  cols = ['b','c','y','orange','r']
+  cols = df['Photo']
   val = df['Photo'].value_counts()
-  val.plot.pie(autopct='%1.1f%%', shadow= True,colors=cols)
-  st.pyplot
-  st.set_option('deprecation.showPyplotGlobalUse', False)
+  fig = go.Figure(data=[go.Pie(labels = cols, values = val)])
+  return fig
 
 def situation_famille(df):
-  cols = ['b','c','y','orange','r']
+  cols = df['Situation']
   val = df['Situation'].value_counts()
-  val.plot.pie(autopct='%1.1f%%', shadow= True,colors=cols)
-  st.pyplot
-  st.set_option('deprecation.showPyplotGlobalUse', False)
+  fig = go.Figure(data=[go.Pie(labels = cols, values = val)])
+  return fig
 
 def par_pays(df):
   res = df.Pays.value_counts()
   return res
+
+def nuage_de_mots(df):
+  data = df.commentaire
+  wordCloud = wc.WordCloud(background_color="white", width=800, height=600, max_words=100).generate(str(data))
+  plt.imshow(wordCloud, interpolation="bilinear")
+  plt.axis('off')
+  st.pyplot()
