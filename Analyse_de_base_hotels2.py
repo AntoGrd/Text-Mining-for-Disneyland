@@ -59,7 +59,7 @@ def situation_famille(df):
   st.pyplot
   st.set_option('deprecation.showPyplotGlobalUse', False)
   
-
+@st.cache
 def par_pays(df):
   data=df['Pays'].value_counts().reset_index()
   data.columns = ['Pays', 'Nombre']
