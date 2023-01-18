@@ -8,7 +8,7 @@ if st.session_state['monument']  == 'Parcs':
     # Choix des différents graphiques
     Diagramme = st.sidebar.radio(
         "Quel diagramme voulez-vous afficher ?",
-        ("Nombre d'avis par année", "Répartition des notes", 'Différence des notes entre les français et les étrangers','Répartition des commentaires avec ou sans photos','Répartition des différents types de groupe',"Nombre d'avis par pays"))
+        ("Nombre d'avis par année", "Répartition des noDifférence des notes entre les français et les étrangers','Répartition des commentaires avec ou sans photos','Répartition des différents types de groupe',"Nombre d'avis par pays"))
 
     # Affichage des graphiques
     if Diagramme == "Nombre d'avis par année":
