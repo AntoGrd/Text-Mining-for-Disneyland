@@ -1,48 +1,37 @@
-
+import streamlit as st
 import pandas as pd
 import numpy as np
 import ast
 from gensim.models import Word2Vec
 import matplotlib.pyplot as plt
+import plotly.graph_objects as go
 
-parcDisney = pd.read_csv("/content/Disneyland_Paris_clean.csv", sep=",")
-studio = pd.read_csv("/content/Walt_Disney_Studios_Park_clean.csv", sep = ',')
-
-def most_similar_mots(df,liste_mots):
+def most_similar_mots(df, mot):
     liste = [ast.literal_eval(x) for x in df.commentaire]
-    modele = Word2Vec(liste,vector_size=2,window=5)
+    modele = Word2Vec(liste, vector_size=2, window=5)
     words = modele.wv
-    for i in range (0,len(liste_mots)):
-        print(liste_mots[i])
-        print(words.most_similar(liste_mots[i]))
-        print('\n')
+    if mot in words:
+        similaires = words.most_similar(mot)
+        st.write(f"Mots similaires à '{mot}':")
+        st.write(similaires)
+    else:
+        st.write(f"Le mot '{mot}' n'est pas présent dans le vocabulaire du modèle.")
         
-mots = ['prix','attente','animation','enfant','très','long']
-most_similar_mots(parcDisney, mots)
-
-def most_similarity_mots(df,liste_mots):
+def most_similarity_mots(df, mot1, mot2):
     liste = [ast.literal_eval(x) for x in df.commentaire]
-    modele = Word2Vec(liste,vector_size=2,window=5)
+    modele = Word2Vec(liste, vector_size=2, window=5)
     words = modele.wv
-    for i in range (0,len(liste_mots)):
-        for j in range (0,len(liste_mots)):
-            if i != j :
-                print('Similarité entre', liste_mots[i], 'et',liste_mots[j])
-                print(words.similarity(liste_mots[i], liste_mots[j]))
-                print('\n')
+    sim = words.similarity(mot1, mot2)
+    st.write(f"Similarité entre {mot1} et {mot2} : {sim}")
 
-most_similarity_mots(parcDisney, mots)
-
-def representation_mots (df, liste_mots):
+def representation_mots(df, liste_mots):
     liste = [ast.literal_eval(x) for x in df.commentaire]
-    modele = Word2Vec(liste,vector_size=2,window=5)
+    modele = Word2Vec(liste, vector_size=2, window=5)
     words = modele.wv
-    df = pd.DataFrame(words.vectors,columns=["V1","V2"], index = words.key_to_index.keys())
+    df = pd.DataFrame(words.vectors, columns=["V1","V2"], index = words.key_to_index.keys())
     dfMots = df.loc[liste_mots,:]
-    plt.scatter(dfMots.V1,dfMots.V2, s= 0.5)
+    fig = go.Figure(data=[go.Scatter(x=dfMots.V1, y=dfMots.V2, mode='markers', text=dfMots.index)])
+    fig.update_layout(title={"text": "Répresentation des mots"})
     for i in range (dfMots.shape[0]):
-        plt.annotate(dfMots.index[i],(dfMots.V1[i],dfMots.V2[i]))
-    plt.show()
-    
-representation_mots(parcDisney, mots)
-
+        fig.add_trace(go.Scatter(x=[dfMots.V1[i]], y=[dfMots.V2[i]], mode='text', text=[dfMots.index[i]]))
+    st.plotly_chart(fig)
