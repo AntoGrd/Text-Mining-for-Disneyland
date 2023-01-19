@@ -147,43 +147,42 @@ if selection == 'Parcs':
            # On supprime les éléments non choisie dans la liste déroulante a selection multiple
            for i in sol:
                df.drop(df[df['Situation'] == i].index,inplace=True) 
-    
+        
     if 'Parcs' not in st.session_state :
         valeur_def = df['Pays'].unique()
     else :
         valeur_def = st.session_state["Parcs"].Pays.unique()
 
     liste = df.Pays.unique()
-    res = st.multiselect('Sélectionnez la ou les pays souhaité(s)',liste, valeur_def)
+    res = st.multiselect('Sectionner le ou les pays souhaité(s)',liste, valeur_def)
     sol = []
-    # On crée une liste où se trouvent les notes qui ne sont pas dans la liste
+    # On crée une liste où se trouve les notes qui ne sont pas dans la liste
     for i in liste:
        if i not in res :
            sol.append(i)
-       # Ici si aucune valeur selectionnée, on à toutes les données en base
+       # Ici si aucune valeur selectionné, on à toute les données à la base
        if len(sol) != len(liste):
-           # On supprime les éléments non choisis dans la liste déroulante à selection multiple
+           # On supprime les éléments non choisie dans la liste déroulante a selection multiple
            for i in sol:
                df.drop(df[df['Pays'] == i].index,inplace=True) 
 
     # Affichage du dataframe précédement selectionné
-    st.subheader('Données du lieu choisi')
+    st.subheader('Donnée du lieux choisi')
     st.write(df)
 
-    st.text('La base sélectionnée contient : ' + str(df.shape[0]) + " lignes")
+    st.text('Taille de la base sélectionner contient : ' + str(df.shape[0]) + " lignes")
 
-    st.write('La Base de données vous convient-elle?')
+    st.write('La Base de données vous convient elle?')
     button = st.button('Oui')
     # Si validation du bouton => création d'une variable globale (en gros qu'on peut utiliser dans toute l'appli)
     if button:
         st.session_state['Parcs'] = df
 
 ###################### HOTELS ##############################################################################################################
-
 if selection == 'Hotels':
     st.write('Attention vous devez valider vos données en cliquant sur Oui en bas de page')
-    liste = ['Cheyenne 🤠 ','Davy_Crockett 🏹','Marvel🦸‍♀️','Newport 🏨','Santa_Fe 🏜️','Sequoia 🌲']
-    res = st.multiselect("Sectionne un (des) parc(s) et/ou un (des) hotel(s)) ",liste, (['Cheyenne 🤠','Davy_Crockett 🏹','Marvel 🦸‍♀️','Newport 🏨','Santa_Fe 🏜️','Sequoia 🌲']) )
+    liste = ['Cheyenne 🤠','Davy_Crockett 🏹','Marvel🦸‍♀️','Newport 🏨','Santa_Fe 🏜️','Sequoia 🌲']
+    res = st.multiselect("Sectionne un (des) parc(s) et/ou un (des) hotel(s)) ",liste, 'Cheyenne 🤠')
     df = pd.DataFrame()
     for i in res:
         if i == 'Cheyenne 🤠':
@@ -198,7 +197,7 @@ if selection == 'Hotels':
             df = df.append(pd.read_csv("C:/Disney_app/hotel_santa_fe_clean.csv", sep=","))
         elif i == 'Sequoia 🌲':
             df = df.append(pd.read_csv("C:/Disney_app/hotel_sequoia_clean.csv", sep=","))
-
+        
     if 'Hotels' not in st.session_state :
         valeur_def = df['Note'].unique()
     else :
@@ -206,7 +205,7 @@ if selection == 'Hotels':
 
     # Création de la liste de selection des notes
     liste = df.Note.unique()
-    res = st.multiselect('Sélectionnez la ou les notes souhaitée(s)',liste, (valeur_def))
+    res = st.multiselect('Sectionner la ou les notes souhaité(s)',liste, (valeur_def))
     sol = []
     # On crée une liste où se trouve les notes qui ne sont pas dans la liste
     for i in liste:
@@ -214,9 +213,9 @@ if selection == 'Hotels':
             # On transfome les élément en entier (car c'est leur type dans le df)
             i = int(i)
             sol.append(i)
-        # Ici si aucune valeur selectionnée, on a toute les données en base
+        # Ici si aucune valeur selectionner, on à toute les données à la base
         if len(sol) != len(liste):
-            # On supprime les éléments non choisis dans la liste déroulante à selection multiple
+            # On supprime les éléments non choisie dans la liste déroulante a selection multiple
             for i in sol:
                 df.drop(df[df['Note'] == i].index,inplace=True)
 
@@ -228,7 +227,7 @@ if selection == 'Hotels':
         valeur_def_annee_avis_hotels = st.session_state["Hotels"].Annee_Avis.unique()
 
     liste_annee_avis_hotels = df.Annee_Avis.unique()
-    res_annee_avis_hotels = st.multiselect("Sélectionnez la ou les années d'avis souhaité(s)",liste_annee_avis_hotels, valeur_def_annee_avis_hotels)
+    res_annee_avis_hotels = st.multiselect("Sectionner la ou les années d'avis souhaité(s)",liste_annee_avis_hotels, valeur_def_annee_avis_hotels)
     sol_annee_avis_hotels = []
     # On crée une liste où se trouve les notes qui ne sont pas dans la liste
     for i in liste_annee_avis_hotels :
@@ -237,7 +236,7 @@ if selection == 'Hotels':
         print(sol_annee_avis_hotels)
         # Ici si aucune valeur selectionné, on à toute les données à la base
         if len(sol_annee_avis_hotels) != len(liste_annee_avis_hotels):
-            # On supprime les éléments non choisis dans la liste déroulante à selection multiple
+            # On supprime les éléments non choisie dans la liste déroulante a selection multiple
             for i in sol_annee_avis_hotels:
                 df.drop(df[df['Annee_Avis'] == i].index,inplace=True)
 
@@ -247,15 +246,15 @@ if selection == 'Hotels':
         valeur_def = st.session_state["Hotels"].Mois_Avis.unique()
 
     liste = df.Mois_Avis.unique()
-    res = st.multiselect("Sélectionnez le ou les mois d'avis souhaité(s)",liste, valeur_def)
+    res = st.multiselect("Sectionner la ou les mois d'avis souhaité(s)",liste, valeur_def)
     sol = []
-    # On crée une liste où se trouvent les notes qui ne sont pas dans la liste
+    # On crée une liste où se trouve les notes qui ne sont pas dans la liste
     for i in liste:
         if i not in res :
             sol.append(i)
-        # Ici si aucune valeur selectionnée, on à toutes les données en base
+        # Ici si aucune valeur selectionné, on à toute les données à la base
         if len(sol) != len(liste):
-            # On supprime les éléments non choisis dans la liste déroulante à selection multiple
+            # On supprime les éléments non choisie dans la liste déroulante a selection multiple
             for i in sol:
                 df.drop(df[df['Mois_Avis'] == i].index,inplace=True)
 
@@ -267,16 +266,16 @@ if selection == 'Hotels':
         valeur_def = st.session_state["Hotels"].Annee_Sejour.unique()
 
     # liste = df.Annee_Sejour.unique()
-    # res= st.multiselect('Sélectionnez la ou les années de séjour souhaitée(s)',liste,)
+    # res= st.multiselect('Sectionner la ou les années de séjour souhaité(s)',liste,)
     # sol = []
-    # # On crée une liste où se trouvent les notes qui ne sont pas dans la liste
+    # # On crée une liste où se trouve les notes qui ne sont pas dans la liste
     # for i in liste:
     #    if i not in res :
     #        sol.append(i)
     #    print(sol)
-    #    # Ici si aucune valeur selectionnée, on a toute les données en base
+    #    # Ici si aucune valeur selectionné, on à toute les données à la base
     #    if len(sol) != len(liste):
-    #        # On supprime les éléments non choisis dans la liste déroulante à selection multiple
+    #        # On supprime les éléments non choisie dans la liste déroulante a selection multiple
     #        for i in sol:
     #            df.drop(df[df['Annee_Sejour'] == i].index,inplace=True)
 
@@ -286,15 +285,15 @@ if selection == 'Hotels':
         valeur_def = st.session_state["Hotels"].Mois_Sejour.unique()
 
     liste = df.Mois_Sejour.unique()
-    res = st.multiselect('Sélectionnez la ou les mois de séjour souhaité(s)',liste, valeur_def)
+    res = st.multiselect('Sectionner la ou les mois de séjour souhaité(s)',liste, valeur_def)
     sol = []
-    # On crée une liste où se trouvent les notes qui ne sont pas dans la liste
+    # On crée une liste où se trouve les notes qui ne sont pas dans la liste
     for i in liste:
        if i not in res :
            sol.append(i)
-       # Ici si aucune valeur selectionnée, on à toute les données en base
+       # Ici si aucune valeur selectionné, on à toute les données à la base
        if len(sol) != len(liste):
-           # On supprime les éléments non choisis dans la liste déroulante à selection multiple
+           # On supprime les éléments non choisie dans la liste déroulante a selection multiple
            for i in sol:
                df.drop(df[df['Mois_Sejour'] == i].index,inplace=True)
  
@@ -304,25 +303,27 @@ if selection == 'Hotels':
         valeur_def = st.session_state["Hotels"].Pays.unique()
 
     liste = df.Pays.unique()
-    res = st.multiselect('Sélectionnez le ou les pays souhaité(s)',liste, valeur_def)
+    res = st.multiselect('Sectionner la ou les pays souhaité(s)',liste, valeur_def)
     sol = []
-    # On crée une liste où se trouvent les notes qui ne sont pas dans la liste
+    # On crée une liste où se trouve les notes qui ne sont pas dans la liste
     for i in liste:
        if i not in res :
            sol.append(i)
-       # Ici si aucune valeur selectionnée, on à toute les données en base
+       # Ici si aucune valeur selectionné, on à toute les données à la base
        if len(sol) != len(liste):
-           # On supprime les éléments non choisis dans la liste déroulante à selection multiple
+           # On supprime les éléments non choisie dans la liste déroulante a selection multiple
            for i in sol:
                df.drop(df[df['Pays'] == i].index,inplace=True) 
 
+############################## Session_state ################################
+
     # Affichage du dataframe précédement selectionné
-    st.subheader('Données du lieu choisi')
+    st.subheader('Donnée du lieux choisi')
     st.write(df)
 
-    st.text('La base sélectionnée contient : ' + str(df.shape[0]) + " lignes")
+    st.text('Taille de la base sélectionner contient : ' + str(df.shape[0]) + " lignes")
 
-    st.write('La Base de données vous convient-elle?')
+    st.write('La Base de données vous convient elle?')
     # Si validation du bouton => création d'une variable globale (en gros qu'on peut utiliser dans toute l'appli)
     button = st.button('Oui')
     if button:
