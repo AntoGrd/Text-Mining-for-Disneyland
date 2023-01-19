@@ -4,6 +4,12 @@ from sklearn.feature_extraction.text import CountVectorizer
 from gensim.models import Word2Vec
 import streamlit as st
 import plotly.graph_objects as go
+import pandas as pd
+import numpy as np
+from sklearn.feature_extraction.text import CountVectorizer
+from gensim.models import Word2Vec
+import streamlit as st
+import plotly.graph_objects as go
 
 parseur = CountVectorizer()
 ParcDisney = (pd.read_csv("C:/Users/laura/Downloads/Text-Mining-for-Disneyland-main (1)/Text-Mining-for-Disneyland-main/data_clean/Disneyland_Paris_clean.csv", sep=","))
@@ -77,7 +83,6 @@ def x_mots_plus_courants(df, nb_mots = 5):
     imp2 = imp1.sort_values(by = 'freq', ascending = False)
     top_des_mots = (imp2['terme'].head(nb_mots))
     return (top_des_mots)
-
 
 #######################################################################################
 
