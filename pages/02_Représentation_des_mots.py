@@ -3,7 +3,7 @@ from Analyse_de_base_hotels import nuage_de_mots
 from X_mots import mots_significatif_par_note2,x_mots_plus_courants
 from fonctions_analyse import representation_mots
 from Idaviz import lda
-from Similarité_de_mots import most_similar_mots,most_similarity_mots,representation_mots
+from Similarité_de_mots import most_similar_mots,most_similarity_mots,representation_mots2
 
 st.title("Répartition des mots")
 
@@ -38,7 +38,9 @@ if Diagramme == "Vecorisation de mots les plus courant":
         if st.session_state['monument']  == 'Parcs':
             st.plotly_chart(representation_mots(st.session_state["Parcs"], "commentaire",st.session_state['nb_mots']))
         if st.session_state['monument']  == 'Hotels':
-            st.plotly_chart(representation_mots(st.session_state["Parcs"], "commentaire",st.session_state['nb_mots']))              
+            st.write(st.session_state['Hotels'])
+            st.write(st.session_state['nb_mots'])
+            st.plotly_chart(representation_mots(st.session_state["Hotels"], "commentaire",st.session_state['nb_mots']))              
 
 if Diagramme == "Nuage de mots":
     st.header("Nuage de mots")
@@ -92,9 +94,9 @@ if Diagramme == 'Similarité des mots3':
     st.session_state['nb_mots'] = nb_mots
     if st.session_state['monument'] == 'Parcs':
         selection = x_mots_plus_courants(st.session_state['Parcs'],st.session_state['nb_mots'])
-        option = st.multiselect('Selectionner un mots 1 ', selection)
-        st.pyplot(representation_mots(st.session_state['Parcs'], option))
+        option = st.multiselect('Selectionner un mots (Pour selectionner tous les mots plus rapidement cliquer sur controle et entrée)', selection, selection.head(10))
+        st.pyplot(representation_mots2(st.session_state['Parcs'], option))
     if st.session_state['monument'] == 'Hotels':
         selection = x_mots_plus_courants(st.session_state['Hotels'],st.session_state['nb_mots'])
-        option = st.multiselect('Selectionner un mots 1', selection)
-        st.pyplot(representation_mots(st.session_state['Hotels'], option))
+        option = st.multiselect('Selectionner un mots (Pour selectionner tous les mots plus rapidement cliquer sur controle et entrée)', selection, selection.head(10))
+        st.pyplot(representation_mots2(st.session_state['Hotels'], option))
