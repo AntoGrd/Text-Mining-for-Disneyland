@@ -5,6 +5,13 @@ from cleanData import clean_data_hotel, clean_data_parc,clean_commentaire
 from traduction import translate
 import os
 import pandas as pd
+import fonctions_analyse
+from fonctions_analyse import get_continent, add_Sentiment, applyCountry
+from geopy.geocoders import Nominatim
+from tqdm import tqdm
+tqdm.pandas()
+from dask import delayed      
+
 
 url_hotel = ["https://www.tripadvisor.fr/Hotel_Review-g1182377-d262678-Reviews-Disney_Hotel_New_York_The_Art_of_Marvel-Chessy_Marne_la_Vallee_Seine_et_Marne_Ile_de_F.html",
              "https://www.tripadvisor.fr/Hotel_Review-g1182377-d262679-Reviews-Disney_Newport_Bay_Club-Chessy_Marne_la_Vallee_Seine_et_Marne_Ile_de_France.html",
@@ -55,9 +62,7 @@ for i in nom_hotels:
     tab=pd.read_csv(str(i) + ".csv")
     os.chdir(r"C:\Users\Sam\Documents\GitHub\Text-Mining-for-Disneyland")
     translate(tab)
-    tab = clean_data_hotel(tab)
-    tab = clean_commentaire(tab)
-    tab.to_csv(str(i) + "_clean.csv", index=False, encoding = 'utf-8-sig')
+    tab.to_csv(str(i) + "_fr.csv", index=False, encoding = 'utf-8-sig')
 
 
 for i in namesParc:
@@ -65,26 +70,25 @@ for i in namesParc:
     tab=pd.read_csv(str(i) + ".csv")
     os.chdir(r"C:\Users\Sam\Documents\GitHub\Text-Mining-for-Disneyland")
     translate(tab)
-    tab = clean_data_parc(tab)
-    tab = clean_commentaire(tab)
-    tab.to_csv(str(i) + "_clean.csv", index=False, encoding = 'utf-8-sig')
+    tab.to_csv("C:/Users/Sam/Documents/GitHub/Text-Mining-for-Disneyland/data_translate/" + str(i) + "_fr.csv", index=False, encoding = 'utf-8-sig')
 
 
+#Ajout des pays et villes recodées 
+#Ajout des continents 
+#Nettoyage des fichiers 
+geolocator  = Nominatim(user_agent = "geoapiExercises")
 
-#ajout de la colonne id 
-for i in nom_hotels:
+nom_sites =  ["hotel_sequoia","hotel_cheyenne", "hotel_sante_fe","hotel_davy_crockett","Disneyland_Paris", "Walt_Disney_Studios_Park"]   
+
+for i in nom_sites:
     
-    os.chdir("C:/Users/Sam/Documents/GitHub/Text-Mining-for-Disneyland/data")
-    tab=pd.read_csv(str(i) + ".csv")
-    tab["id"] = tab["dateAvis"] + tab["loc"] +  tab["note"] 
-    tab.to_csv(str(i) + ".csv", index=False, encoding = 'utf-8-sig')
-
-for i in namesParc:
+    y = delayed(applyCountry)(str(i))
+    tab = pd.DataFrame(y.compute())
     
-    os.chdir("C:/Users/Sam/Documents/GitHub/Text-Mining-for-Disneyland/data")
-    tab=pd.read_csv(str(i) + ".csv")
-    tab["id"] = tab["dateAvis"] + tab["loc"] +  tab["note"] 
-    tab.to_csv(str(i) + ".csv", index=False, encoding = 'utf-8-sig')
+    tab.to_csv("C:/Users/Sam/Documents/GitHub/Text-Mining-for-Disneyland/data_translate/" + str(i) + "_ope.csv")
+    
+
+
 
 
 #df = pd.concat([df_1, df_2])
@@ -115,6 +119,14 @@ for i in namesParc:
 #=======
 
 #>>>>>>> 7ae12a5be5d37fffcac9fdac4f2e8dddcc4e86b9
+
+
+
+
+
+
+
+
 
 
 
