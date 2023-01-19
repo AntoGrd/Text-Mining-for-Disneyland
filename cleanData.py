@@ -24,7 +24,8 @@ mots_vides_1 = stopwords.words('french') + mots_vides_2
 chiffres = list("0123456789")
 mois_debut=['janv','févr','mars','avr','mai','juin','juil','août','sept','oct','nov','déc']
 mois_entier=['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre']
-            
+
+
 
 def nettoyage_doc(doc_param):
     #passage en minuscule

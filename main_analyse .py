@@ -17,18 +17,13 @@ from dask import delayed
 geolocator  = Nominatim(user_agent = "geoapiExercises")
 
 nom_sites =  ["hotel_sequoia","hotel_cheyenne", "hotel_sante_fe","hotel_davy_crockett","Disneyland_Paris", "Walt_Disney_Studios_Park"]
-nom_sites =  ["Disneyland_Paris", "Walt_Disney_Studios_Park"]
+nom_sites =  ["hotel_davy_crockett", "Disneyland_Paris"]
    
 
 for i in nom_sites:
     
-    y = delayed(applyCountry)("hotel_davy_crockett")
+    y = delayed(applyCountry)(str(i))
     tab = pd.DataFrame(y.compute())
     
-    tab.to_csv("C:/Users/Sam/Documents/GitHub/Text-Mining-for-Disneyland/data_translate/" + "hotel_davy_crockett_ope.csv")
+    tab.to_csv("C:/Users/Sam/Documents/GitHub/Text-Mining-for-Disneyland/data_translate/" + str(i) + "_ope.csv")
     
-
-import os 
-os.chdir("C:/Users/Sam/Documents/GitHub/Text-Mining-for-Disneyland/data_translate")
-a = pd.read_csv("hotel_sante_fe_ope.csv")
-        
