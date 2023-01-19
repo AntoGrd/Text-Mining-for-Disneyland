@@ -79,7 +79,6 @@ def add_Sentiment(df):
     return df 
 
 
-
 #####################Graphique#########################
 """
 allWords = ' '.join([twts for twts in d_sentiment["titre_commentaire_nolist"]])
@@ -104,25 +103,21 @@ def wordCloud(df, colonne):
     
 
 #select annee
-def graph_sentiment(df , col, color, annee = "None"):
+def graph_sentiment(df , col, annee = "None"):
     
-    if annee =="None":
-        fig = px.histogram(df, x=col,color=color)
-        
+    if annee == "None":
+        data = df[col]
     else:
-        d_annee = df[(df['Annee_Sejour'] == annee) ].reset_index(drop=True)
-        fig = px.histogram(d_annee, x=col,color=color)
-        
+        data = df[(df['Annee_Sejour'] == annee)][col]
+
+    fig = go.Figure(data=[go.Histogram(x=data)])
     fig.update_layout(
-        title_text='Sentiment of reviews', # title of plot
-        xaxis_title_text=color, # xaxis label
-        yaxis_title_text='Count', # yaxis label
-        bargap=0.2, 
-        bargroupgap=0.1
+        title='Sentiment of reviews',
+        xaxis_title='Sentiment',
+        yaxis_title='Count'
     )
-    
-    
     return fig
+
 
 def representation_mots(df,colonne,nb_mots = 10):
     
@@ -143,6 +138,7 @@ def representation_mots(df,colonne,nb_mots = 10):
     title_text='Représentation vectorielle des ' + str(nb_mots) + " les plus présents"
     )
     return fig
+    
 
 
 
