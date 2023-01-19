@@ -323,7 +323,6 @@ def applyCountry(i):
             tab = clean_data_parc(tab)
         else:
             tab = clean_data_hotel(tab)
-        tab = clean_commentaire(tab)
         
         #d_sentiment = add_Sentiment(tab) #ajouter la colonne sentiment sur les commentaires
         
