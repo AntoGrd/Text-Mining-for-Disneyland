@@ -29,9 +29,6 @@ import plotly.express as px
 import sys
 
 sys.setrecursionlimit(20000)
-os.chdir("C:/Users/Sam/Documents/GitHub/Text-Mining-for-Disneyland/data_clean")
-
-d_sentiment = pd.read_csv("hotel_marvel_clean.csv", sep=",")
 
 os.chdir("C:/Users/Sam/Downloads/archive")
 
@@ -124,8 +121,8 @@ def get_top_keywords(n_terms, X,clusters,vectorizer):
 
 
 #Plot topics function. Code from: https://scikit-learn.org/stable/auto_examples/applications/plot_topics_extraction_with_nmf_lda.html
-def plot_top_words(model, feature_names, n_top_words, title):
-    fig, axes = plt.subplots(6, 5, figsize=(30, 30), sharex=True)
+def plot_top_words(model, feature_names, n_top_words, title,nb_cluster):
+    fig, axes = plt.subplots(nb_cluster, figsize=(30, 30), sharex=True)
     axes = axes.flatten()
     for topic_idx, topic in enumerate(model.components_):
         top_features_ind = topic.argsort()[:-n_top_words - 1:-1]
@@ -161,7 +158,7 @@ def text_cluistering(df, colonne, nb_cluster, ntherm) :
     X_lda = lda.fit(X)
     feature_names = vector.get_feature_names()
 
-    top_word = plot_top_words(X_lda, feature_names, ntherm, ' ')
+    top_word = plot_top_words(X_lda, feature_names, ntherm, ' ',nb_cluster)
 
         
     # initialize KMeans with 3 clusters
@@ -170,8 +167,6 @@ def text_cluistering(df, colonne, nb_cluster, ntherm) :
     #kmeans.fit(X)
     clusters = kmeans.labels_
     
-    Sim = get_top_keywords(10,X,clusters,vector) #cluster des mots
-
     # initialize PCA with 2 components
     pca = PCA(n_components=2, random_state=42)
     # pass X to the pca
@@ -216,74 +211,3 @@ def text_cluistering(df, colonne, nb_cluster, ntherm) :
 
     #return 
     return fig,top_word,coude
-
-#appel fonction
-a, b ,c = text_cluistering(d_sentiment, "titre_commentaire", 2, 10)
-
-
-
-#CAH à partir de scipy
-from scipy.cluster.hierarchy import dendrogram, linkage,fcluster
-
-#pour transformation en MDT
-from sklearn.feature_extraction.text import CountVectorizer
-
-
-#fonction pour construire une typologie à partir
-#d'une représentation des termes, qu'elle soit entraînée ou pré-entraînée
-#seuil par défaut = 1, mais le but est d'avoir 4 groupes
-#corpus ici se présente sous la forme d'une liste de listes de tokens
-def my_cah_from_doc2vec(df, colonne,trained,seuil=1.0,nbTermes=7, nbcluster = 5):
-
-    #matrice doc2vec pour la représentation à 100 dim.
-    #entraînée via word2vec sur les documents du corpus
-    mat = my_corpora_2_vec(df[str(colonne)],trained)
-
-    #dimension
-    #mat.shape
-
-    #générer la matrice des liens
-    Z = linkage(mat,method='ward',metric='euclidean')
-
-    #affichage du dendrogramme avec le seuil
-    plt.title("CAH")
-    dendrogram(Z,orientation='left',color_threshold=seuil)
-    plt.show()
-
-    #découpage en 4 classes
-    grCAH = fcluster(Z,t=seuil,criterion='distance')
-    #print(grCAH)
-
-    #***************************
-    #interprétation des clusters
-    #***************************
-    
-    #parseur
-    parseur = CountVectorizer(binary=True)
-
-    
-    #matrice MDT
-    mdt = parseur.fit_transform(df[str(colonne)]).toarray()
-    print("Dim. matrice documents-termes = {}".format(mdt.shape))
-    
-    #passer en revue les groupes
-    for num_cluster in range(np.max(grCAH)):
-        print("")
-        #numéro du cluster à traiter
-        print("Numero du cluster = {}".format(num_cluster+1))
-        groupe = np.where(grCAH==num_cluster+1,1,0)
-        effectifs = np.unique(groupe,return_counts=True)
-        print("Effectifs = {}".format(effectifs[1][1]))
-        #calcul de co-occurence
-        cooc = np.apply_along_axis(func1d=lambda x: np.sum(x*groupe),axis=0,arr=mdt)
-        #print(cooc)
-        #création d'un data frame intermédiaire
-        tmpDF = pd.DataFrame(data=cooc,columns=['freq'],index=parseur.get_feature_names_out())    
-        #affichage des "nbTermes" termes les plus fréquents
-        print(tmpDF.sort_values(by='freq',ascending=False).iloc[:nbTermes,:])
-        
-    #renvoyer l'indicateur d'appartenance aux groupes
-    return grCAH, mat
-
-
-my_cah_from_doc2vec(d_sentiment, "titre_commentaire",trained,seuil=1.0,nbTermes=7)
