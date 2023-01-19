@@ -377,3 +377,37 @@ def applyCountry(i):
         list_city = []
 
         return tab
+
+
+#localisation des touristes effectif
+def getMap(df):
+    
+    D_map = df[["Pays_recod", "Contient_recod"]]
+
+
+    D_map_bis = pd.DataFrame(D_map.groupby(by=(["Contient_recod"])).count())
+    D_map_bis = D_map_bis.reset_index()
+    D_map_bis.columns = ["continent", "effectif"]
+    D_map_bis = D_map_bis[D_map_bis.continent != "None"]
+    D_map_bis["effectif"] = D_map_bis.effectif.astype(float)
+    
+    lat_continent = [8.783195, 34.0479,54.526,54.526,-22.7359,-8.7832]
+    long_continent = [34.508523, 100.6197,15.2551,-105.2551, 140.0187,-55.4915]
+    continent = ["Africa", "Asia", "Europe", "North America", "Oceania", "South America"]
+
+    df_map = pd.DataFrame(list(zip(continent, lat_continent, long_continent)),
+                      columns =['continent','lat_continent','long_continent'])
+     
+    
+    df_map = df_map.merge(D_map_bis, on='continent', how='left')
+
+    
+    fig = px.scatter_geo(df_map, lat ="lat_continent", lon= "long_continent" , color="continent",
+                     hover_name="continent", size = df_map["effectif"],
+                     projection="natural earth")
+    fig.update_traces(textposition='top center')
+    fig.update_layout(
+       title_text = "Provenance des touristes" ,
+        height=800)
+    
+    return fig
