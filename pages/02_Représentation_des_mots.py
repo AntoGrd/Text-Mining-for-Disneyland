@@ -1,9 +1,11 @@
 import streamlit as st
 from Analyse_de_base_hotels import nuage_de_mots
-from X_mots import mots_significatif_par_note2,x_mots_plus_courants
+from Récupération_des_x_mots_les_plus_présents import mots_significatif_par_note2,x_mots_plus_courants
 from fonctions_analyse import representation_mots
 from Idaviz import lda
 from Similarité_de_mots import most_similar_mots,most_similarity_mots,representation_mots2
+import numpy as np
+from PIL import Image
 
 st.title("Répartition des mots")
 
@@ -38,16 +40,16 @@ if Diagramme == "Vecorisation de mots les plus courant":
         if st.session_state['monument']  == 'Parcs':
             st.plotly_chart(representation_mots(st.session_state["Parcs"], "commentaire",st.session_state['nb_mots']))
         if st.session_state['monument']  == 'Hotels':
-            st.write(st.session_state['Hotels'])
             st.write(st.session_state['nb_mots'])
             st.plotly_chart(representation_mots(st.session_state["Hotels"], "commentaire",st.session_state['nb_mots']))              
 
 if Diagramme == "Nuage de mots":
+    image = np.array(Image.open("C:/Users/laura/dossier/mask.jpg"))
     st.header("Nuage de mots")
     if st.session_state['monument']  == 'Parcs':
-        st.write(nuage_de_mots(st.session_state["Parcs"]))
+        st.write(nuage_de_mots(st.session_state["Parcs"],image))
     if st.session_state['monument']  == 'Hotels':
-        st.write(nuage_de_mots(st.session_state["Hotels"]))             
+        st.write(nuage_de_mots(st.session_state["Hotels"],image))             
 
 if Diagramme == "graph antoine":
     if button:
@@ -67,7 +69,7 @@ if Diagramme == 'Similarité des mots':
         st.write(most_similar_mots(st.session_state['Parcs'], option))
     if st.session_state['monument'] == 'Hotels':
         selection = x_mots_plus_courants(st.session_state['Hotels'],st.session_state['nb_mots'])
-        option = st.selectbox('Selectionner un mots', 'selection')
+        option = st.selectbox('Selectionner un mots', selection)
         st.write(most_similar_mots(st.session_state['Hotels'], option))
 
 
@@ -84,8 +86,8 @@ if Diagramme == 'Similarité des mots2':
     if st.session_state['monument'] == 'Hotels':
         selection = x_mots_plus_courants(st.session_state['Hotels'],st.session_state['nb_mots'])
         selection2 = x_mots_plus_courants(st.session_state['Hotels'],st.session_state['nb_mots'])
-        option = st.radio('Selectionner un mots 1', selection)
-        option2 = st.radio('Selectionner un mots 2', selection2)
+        option = st.selectbox('Selectionner un mots 1', selection)
+        option2 = st.selectbox('Selectionner un mots 2', selection2)
         st.write(most_similarity_mots(st.session_state['Hotels'], option, option2))
 
 if Diagramme == 'Similarité des mots3':
