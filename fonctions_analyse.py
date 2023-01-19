@@ -126,7 +126,6 @@ def graph_sentiment(df , col, color, annee = "None"):
 
 def representation_mots(df,colonne,nb_mots = 10):
     
-
     liste = [ast.literal_eval(x) for x in df[str(colonne)]]
     modele = Word2Vec(liste,vector_size=2,window=5)
     words = modele.wv
@@ -141,10 +140,9 @@ def representation_mots(df,colonne,nb_mots = 10):
 
     fig.update_layout(
         height=800,
-    title_text='Représentation vectorielle des' + str(nb_mots) + "les plus présents"
+    title_text='Représentation vectorielle des ' + str(nb_mots) + " les plus présents"
     )
-    
-    fig.show()
+    return fig
 
 
 
