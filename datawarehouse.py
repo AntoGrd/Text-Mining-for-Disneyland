@@ -7,42 +7,19 @@ os.chdir(r"C:\Documents\travail\LYON2\M2\text_mining\projet_disney\projet_disney
 #os.chdir(r"C:\Documents\travail\LYON2\M2\text_mining\projet_disney\projet_disney\tables")
 #tab_commentaire=pd.read_csv("tab_commentaire.csv")
 
-tab=pd.read_csv("hotel_cheyenne_fr.csv")
-tab2=pd.read_csv("hotel_davy_crockett_fr.csv")  
-tab3=pd.read_csv("hotel_marvel_fr.csv")
-tab4=pd.read_csv("hotel_newport_fr.csv")
-tab5=pd.read_csv("hotel_sante_fe_fr.csv")
-tab6=pd.read_csv("hotel_sequoia_fr.csv")
-tab7=pd.read_csv("Disneyland_Paris_fr.csv")
-tab8=pd.read_csv("Walt_Disney_Studios_Park_fr.csv")
+tab1=pd.read_csv("hotel_cheyenne_ope.csv")
+tab2=pd.read_csv("hotel_davy_crockett_ope.csv")  
+tab3=pd.read_csv("hotel_marvel_ope.csv")
+tab4=pd.read_csv("hotel_newport_ope.csv")
+tab5=pd.read_csv("hotel_sante_fe_ope.csv")
+tab6=pd.read_csv("hotel_sequoia_ope.csv")
+tab7=pd.read_csv("Disneyland_Paris_ope.csv")
+tab8=pd.read_csv("Walt_Disney_Studios_Park_ope.csv")
 
-tab = clean_data_hotel(tab)
-tab2 = clean_data_hotel(tab2)
-tab3 = clean_data_hotel(tab3)
-tab4 = clean_data_hotel(tab4)
-tab5 = clean_data_hotel(tab5)
-tab6 = clean_data_hotel(tab6)
-tab7 = clean_data_parc(tab7)
-tab8 = clean_data_parc(tab8)
-tab.info()
-tab3.to_csv('azefze.csv', index=False, encoding = 'utf-8-sig')
-
-#je vire les avis avec pintade et Rachaécritunavis(févr 
-#à intégrer dans les df
-#tab['Mois_Avis'].value_counts()
-#tab6['Mois_Avis'].value_counts()
-#tab['Mois_Avis']=="Rachaécritunavis(févr"
-
-#tab.loc[(tab['Mois_Avis']=="Rachaécritunavis(févr"),:]
-tab=tab.drop(254)
-#tab6.loc[(tab6['Mois_Avis']=="Pintade"),:]
-tab6=tab6.drop(10414)
-
-
-liste_tab_hotels=[tab,tab2,tab3,tab4,tab5,tab6]
+liste_tab_hotels=[tab1,tab2,tab3,tab4,tab5,tab6]
 liste_tab_parcs=[tab7,tab8]
-#Creation des tables
 
+#Creation des tables
 #table Lieux_disney
 lieux_disney=["hotel_cheyenne","hotel_davy_crockett","hotel_marvel","hotel_newport","hotel_sante_fe","hotel_sequoia","Disneyland_Paris","Walt_Disney_Studios_Park"]
 tab_lieux_disney=pd.DataFrame({'ID_lieux_disney':[1,2,3,4,5,6,7,8],'Lieux_disney':lieux_disney})
@@ -64,16 +41,11 @@ for i in range(0,len(liste_tab_hotels)):
 for i in range(0,len(liste_tab_parcs)):
     liste_tab_parcs[i]['Annee_Avis']=liste_tab_parcs[i]['Annee_Avis'].replace("None", 0)
     liste_tab_parcs[i]['Annee_Avis']=liste_tab_parcs[i]['Annee_Avis'].astype(int)
-    
-#liste_tab_parcs[0]['Annee_Avis']=liste_tab_hotels[1]['Annee_Avis'].astype(int)
-#liste_tab_parcs[1]['Annee_Avis']=liste_tab_hotels[1]['Annee_Avis'].astype(int)
-#liste_tab_parcs[1]['Annee_Avis'].value_counts()   
-#liste_tab_parcs[1].info()
 
 parcs=pd.concat([tab7,tab8])
 parcs.insert(12,"Nom",liste_lieux_parcs)
 
-hotels=pd.concat([tab,tab2,tab3,tab4,tab5,tab6],ignore_index=True)
+hotels=pd.concat([tab1,tab2,tab3,tab4,tab5,tab6],ignore_index=True)
 hotels.insert(11,"Nom",liste_lieux_hotels)
 
 #table Notes
@@ -93,9 +65,16 @@ tab_langues=[*hotels["langue"],*parcs["langue"]]
 tab_langues=pd.DataFrame(list(set(tab_langues)),columns = ['langue'])
 tab_langues.insert(0,'ID_langue',range(1,1+len(tab_langues)))
 
-#table Date_avis
-#A revoir : années entre parc et hotel en double jsp pk
 
+#table Lieu
+tab_ville=pd.DataFrame([*hotels["Ville_recod"],*parcs["Ville_recod"]])
+tab_pays=pd.DataFrame([*hotels["Pays_recod"],*parcs["Pays_recod"]])
+tab_continent=pd.DataFrame([*hotels["Contient_recod"],*parcs["Contient_recod"]])
+tab_lieu=pd.DataFrame({'Ville':tab_ville[0],'Pays':tab_pays[0],'Contient':tab_continent[0]})
+tab_lieu.drop_duplicates(keep = 'first', inplace=True)
+tab_lieu.insert(0,'ID_lieu',range(1,1+len(tab_lieu)))
+
+#table Date_avis
 tabma=pd.DataFrame([*hotels["Mois_Avis"],*parcs["Mois_Avis"]])
 tabaa=pd.DataFrame([*hotels["Annee_Avis"],*parcs["Annee_Avis"]])
 
@@ -108,15 +87,7 @@ tab_date_avis.drop_duplicates(keep = 'first', inplace=True)
 tab_date_avis.insert(0,'ID_date_avis',range(1,1+len(tab_date_avis)))
 
 tab_date_avis['Mois_avis'].value_counts()
-
-#hotels["Annee_Avis"].dtypes
-#parcs["Annee_Avis"].value_counts()
-#len(parcs["Annee_Avis"])
-
-#tab_date_avis.value_counts()
-#tab_date_avis['Annee_avis'].dtypes
-#tab_date_avis.iloc[6,:]==tab_date_avis.iloc[148,:]
-#tab_date_avis.iloc[6,1].dtypes
+tab_date_avis['Annee_avis'].value_counts()
 #table Date_sejour
 #il y a un commentaire où mois = one (supprimer l'avis ?) (peut etre un None ?) 
 hotels['Annee_Sejour']=hotels['Annee_Sejour'].replace(np.nan, 0)
@@ -136,12 +107,6 @@ tab_date_sejour=pd.DataFrame({'Mois_sejour':tabms[0],'Annee_sejour':tabas[0]})
 tab_date_sejour.drop_duplicates(keep = 'first', inplace=True)
 tab_date_sejour.insert(0,'ID_date_sejour',range(1,1+len(tab_date_sejour)))
 tab_date_sejour['Annee_sejour'].value_counts()
-
-#Lieux (pour l'instant je laisse de côté)
-tabp=[*hotels["Pays"],*parcs["Pays"]]
-tabp=list(set(tabp))
-tabv=[*hotels["Ville"],*parcs["Ville"]]
-tabv=list(set(tabv))
 
 
 ###Création table commentaire
@@ -169,13 +134,21 @@ tab_commentaire['Date_Sejour']=tab_commentaire['Mois_Sejour']+tab_commentaire['A
 date_sejour=tab_date_sejour['Mois_sejour']+tab_date_sejour['Annee_sejour'].apply(str)
 tab_commentaire['Date_Sejour']=tab_commentaire["Date_Sejour"].replace(date_sejour.values.tolist(),tab_date_sejour["ID_date_sejour"].values.tolist())
 
+len(date_sejour)
+
+tab_commentaire['Lieu']=tab_commentaire['Ville_recod']+tab_commentaire['Pays_recod']+tab_commentaire['Contient_recod'].apply(str)
+lieu=tab_lieu['Ville']+tab_lieu['Pays']+tab_lieu['Contient'].apply(str)
+tab_commentaire["Lieu"]=tab_commentaire["Lieu"].replace(lieu.values.tolist(),tab_lieu['ID_lieu'].values.tolist())
+
 tab_commentaire=tab_commentaire.drop(['Mois_Avis','Annee_Avis','Mois_Sejour','Annee_Sejour'], axis=1)
-tab_commentaire=tab_commentaire.drop(['Ville','Pays'], axis=1) #temporairement
+tab_commentaire=tab_commentaire.drop(['Ville','Pays','latitude_city','longitude_city','Pays_recod','Contient_recod','lat_Pays','Lon_Pays','Ville_recod'], axis=1) #temporairement
 
 tab_commentaire.insert(0,'ID_commentaire',range(1,1+len(tab_commentaire)))
 
+tab_commentaire.info()
+
 print(tab_commentaire.columns.values)
-tab_commentaire.set_axis(['ID_commentaire','titre_commentaire', 'commentaire', 'ID_note','ID_photo','ID_langue','ID_lieux_disney','ID_situation','ID_produit','ID_date_sejour','ID_date_avis'], axis='columns', inplace=True)
+tab_commentaire.set_axis(['ID_commentaire','titre_commentaire', 'commentaire', 'ID_note','ID_photo','ID_langue','ID_lieux_disney','ID_situation','ID_produit','ID_date_sejour','ID_date_avis','ID_lieu'], axis='columns', inplace=True)
 
 os.chdir(r"C:\Documents\travail\LYON2\M2\text_mining\projet_disney\projet_disney\tables")
 tab_commentaire.to_csv('tab_commentaire.csv', index=False, encoding = 'utf-8-sig')
@@ -186,6 +159,7 @@ tab_situations.to_csv('tab_situations.csv', index=False, encoding = 'utf-8-sig')
 tab_lieux_disney.to_csv('tab_lieux_disney.csv', index=False, encoding = 'utf-8-sig')
 tab_type.to_csv('tab_produit.csv', index=False, encoding = 'utf-8-sig')
 tab_date_avis.to_csv('tab_date_avis.csv', index=False, encoding = 'utf-8-sig')
+tab_lieu.to_csv('tab_lieu.csv', index=False, encoding = 'utf-8-sig')
 tab_date_sejour.to_csv('tab_date_sejour.csv', index=False, encoding = 'utf-8-sig')
 
 
