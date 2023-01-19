@@ -23,14 +23,13 @@ st.session_state['monument'] = selection
 if selection == 'Parcs':
     st.write('Attention, vous devez valider vos données en cliquant sur Oui en bas de page')
     liste = ['ParcDisney 🌈','Studio 🎬']
-    res = st.multiselect("Sélectionnez un (des) parc(s) et/ou un (des) hotel(s)) ",liste, (['ParcDisney 🌈','Studio 🎬']))
+    res = st.multiselect("Sélectionnez un (des) parc(s) et/ou un (des) hotel(s)) ",liste, liste)
     df = pd.DataFrame()
     for i in res:
         if i == 'ParcDisney 🌈':
-             df = df.append(pd.read_csv("C:/Disney/Disneyland_Paris_clean.csv", sep=","))
-        if i == 'Studio 🎬':
-             
-            df = df.append(pd.read_csv("C:/Disney/Walt_Disney_Studios_Park_clean.csv", sep=","))
+             df = df.append(pd.read_csv("C:/Users/laura/OneDrive/Bureau/Disneyland_Paris_clean.csv", sep=","))
+        elif i == 'Studio 🎬':
+            df = df.append(pd.read_csv("C:/Users/laura/OneDrive/Bureau/Walt_Disney_Studios_Park_clean.csv", sep=","))
 
     if 'Parcs' not in st.session_state :
         valeur_def = df['Note'].unique()
@@ -39,7 +38,7 @@ if selection == 'Parcs':
 
     # Création de la liste de selection des notes
     liste = df.Note.unique()
-    res = st.multiselect('Sectionnez la ou les notes souhaitée(s)',liste, (valeur_def))
+    res = st.multiselect('Sectionnez la ou les notes souhaitée(s)',liste, valeur_def)
     sol = []
     # On crée une liste où se trouve les notes qui ne sont pas dans la liste
     for i in liste:
@@ -188,16 +187,16 @@ if selection == 'Hotels':
     df = pd.DataFrame()
     for i in res:
         if i == 'Cheyenne 🤠':
-            df = df.append(pd.read_csv("C:/Disney_app/hotel_cheyenne_clean.csv", sep=","))
-        if i == 'Davy_Crockett 🏹':
+            df = df.append(pd.read_csv("C:/Users/laura/OneDrive/Bureau/hotel_cheyenne_clean.csv", sep=","))
+        elif i == 'Davy_Crockett 🏹':
             df = df.append(pd.read_csv("C:/Disney_app/hotel_davy_crockett_clean.csv", sep=","))
-        if i == 'Marvel 🦸‍♀️':
+        elif i == 'Marvel 🦸‍♀️':
             df = df.append(pd.read_csv("C:/Disney_app/hotel_marvel_clean.csv", sep=","))
-        if i == 'Newport 🏨':
+        elif i == 'Newport 🏨':
             df = df.append(pd.read_csv("C:/Disney_app/hotel_newport_clean.csv", sep=","))
-        if i == 'Santa_Fe 🏜️':
+        elif i == 'Santa_Fe 🏜️':
             df = df.append(pd.read_csv("C:/Disney_app/hotel_santa_fe_clean.csv", sep=","))
-        if i == 'Sequoia 🌲':
+        elif i == 'Sequoia 🌲':
             df = df.append(pd.read_csv("C:/Disney_app/hotel_sequoia_clean.csv", sep=","))
 
     if 'Hotels' not in st.session_state :
