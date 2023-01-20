@@ -37,7 +37,7 @@ def nettoyage_doc(doc_param):
     doc = "".join([w for w in list(doc) if not w in chiffres])
     #transformer le document en liste de termes par tokénisation
     doc = word_tokenize(doc)
-    #lematisation de chaque terme
+    #lemmatisation de chaque terme
     doc = [lem.lemmatize(terme) for terme in doc]
     #retirer les stopwords
     doc = [w for w in doc if not w in mots_vides_1]
