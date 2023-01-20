@@ -59,4 +59,3 @@ if st.session_state['monument']  == 'Hotels':
     if Diagramme == "Nombre d'avis par pays":
         st.subheader("Nombre d'avis par pays")
         st.bar_chart(par_pays(st.session_state['Hotels']))
-   
