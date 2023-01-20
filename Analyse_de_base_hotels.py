@@ -21,10 +21,11 @@ def notes(df):
   return res
 
 def notes1(df):
-  T=pd.crosstab(df['langue']=='fr',df['Note'], normalize='index')
-  T.plot.barh()
-  st.pyplot
-  st.set_option('deprecation.showPyplotGlobalUse', False)
+  data=pd.crosstab(df['langue']=='fr',df['Note'], normalize='index')
+  fig=px.bar(data_frame=data, color='Note', range_x=('true', 'false'),
+  title='Ventilation des notes chez les non-francophones (false) versus les francophones (true)')
+  return fig
+
 
 def photo_ou_non(df):
   cols = df['Photo'].unique()
@@ -42,9 +43,9 @@ def par_pays(df):
   res = df.Pays.value_counts()
   return res
 
-def nuage_de_mots(df):
+def nuage_de_mots(df,mask):
   data = df.commentaire
-  wordCloud = wc.WordCloud(background_color="white", width=800, height=600, max_words=100).generate(str(data))
+  wordCloud = wc.WordCloud(background_color="white", width=800, height=600, max_words=100, mask=mask).generate(str(data))
   plt.imshow(wordCloud, interpolation="bilinear")
   plt.axis('off')
   st.pyplot()
