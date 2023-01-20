@@ -4,7 +4,6 @@ Created on Thu Jan  5 15:48:46 2023
 
 @author: Sam
 """
-
 # import required sklearn libs
 from sklearn.datasets import fetch_20newsgroups
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -27,13 +26,6 @@ from plotly.offline import plot
 import plotly.express as px
 
 import sys
-
-sys.setrecursionlimit(20000)
-
-os.chdir("C:/Users/Sam/Downloads/archive")
-
-trained = keyedvectors.load_word2vec_format("GoogleNews-vectors-negative300.bin",binary=True,unicode_errors='ignore')
-
 
 #fonction pour transformer un document en vecteur
 #à partir des tokens qui le composent
@@ -119,7 +111,6 @@ def get_top_keywords(n_terms, X,clusters,vectorizer):
     return dicts
 
 
-
 #Plot topics function. Code from: https://scikit-learn.org/stable/auto_examples/applications/plot_topics_extraction_with_nmf_lda.html
 def plot_top_words(model, feature_names, n_top_words, title,nb_cluster):
     fig, axes = plt.subplots(nb_cluster, figsize=(30, 30), sharex=True)
@@ -140,7 +131,6 @@ def plot_top_words(model, feature_names, n_top_words, title,nb_cluster):
         fig.suptitle(title, fontsize=40)
     plt.subplots_adjust(top=0.90, bottom=0.05, wspace=0.90, hspace=0.3)
     plt.show()
-    
 
 def text_cluistering(df, colonne, nb_cluster, ntherm) : 
     
@@ -156,9 +146,9 @@ def text_cluistering(df, colonne, nb_cluster, ntherm) :
     #creation cluster avce LDA
     lda = LatentDirichletAllocation(n_components=nb_cluster, learning_decay=0.9)
     X_lda = lda.fit(X)
-    feature_names = vector.get_feature_names()
+    feature_names = vector.get_feature_names_out()
 
-    top_word = plot_top_words(X_lda, feature_names, ntherm, ' ',nb_cluster)
+    top_word = plot_top_words(X_lda, feature_names, ntherm, ' ',  nb_cluster)
 
         
     # initialize KMeans with 3 clusters
@@ -167,6 +157,8 @@ def text_cluistering(df, colonne, nb_cluster, ntherm) :
     #kmeans.fit(X)
     clusters = kmeans.labels_
     
+    Sim = get_top_keywords(10,X,clusters,vector) #cluster des mots
+
     # initialize PCA with 2 components
     pca = PCA(n_components=2, random_state=42)
     # pass X to the pca
@@ -209,5 +201,5 @@ def text_cluistering(df, colonne, nb_cluster, ntherm) :
             'xanchor': 'center',
             'yanchor': 'top'})
 
-    #return 
-    return fig,top_word,coude
+    #return
+    return coude,fig,top_word
