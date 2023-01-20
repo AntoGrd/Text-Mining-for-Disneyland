@@ -5,8 +5,9 @@ Created on Wed Jan  4 15:01:56 2023
 @author: Sam
 """
 
+
 import ast
-from collections import Iterable
+#from collections import Iterable
 from nltk.probability import FreqDist
 from textblob import Blobber
 from textblob_fr import PatternTagger, PatternAnalyzer
@@ -30,16 +31,17 @@ from tqdm import tqdm
 tqdm.pandas()
 from geopy.geocoders import Nominatim
 from gensim.models import Word2Vec
-from cleanData import clean_data_hotel,clean_commentaire,clean_data_parc
+import plotly.graph_objects as go
+#from cleanData import clean_data_hotel,clean_commentaire,clean_data_parc
 
 #Transform list 
-def flatten(lis):
-     for item in lis:
-         if isinstance(item, Iterable) and not isinstance(item, str):
-             for x in flatten(item):
-                 yield x
-         else:        
-             yield item
+#def flatten(lis):
+#     for item in lis:
+#         if isinstance(item, Iterable) and not isinstance(item, str):
+#             for x in flatten(item):
+#                 yield x
+#         else:        
+#             yield item
 
 # Initialisation de SentimentIntensityAnalyzer.
 #ajout des entiments 
@@ -200,11 +202,10 @@ def applyCountry(i):
         
         os.chdir("C:/Users/Sam/Documents/GitHub/Text-Mining-for-Disneyland/data_translate")
         tab=pd.read_csv(str(i) + "_fr.csv")
-        if i == "Disneyland_Paris" or i == "Walt_Disney_Studios_Park" :
-            
-            tab = clean_data_parc(tab)
-        else:
-            tab = clean_data_hotel(tab)
+        #if i == "Disneyland_Paris" or i == "Walt_Disney_Studios_Park" :
+        #    tab = clean_data_parc(tab)
+        #else:
+        #    tab = clean_data_hotel(tab)
         
         #d_sentiment = add_Sentiment(tab) #ajouter la colonne sentiment sur les commentaires
         
