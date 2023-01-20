@@ -1,8 +1,7 @@
 import streamlit as st
 from fonctions_analyse import graph_sentiment,add_Sentiment
-from Text_clustering import get_top_keywords
 
-st.title('hgv')
+st.title('Analyse des sentiments')
 
 Diagramme = st.sidebar.radio(
     "Selectionner sur quelles informations l'analyse des sentiments doit-elle être faite ?",
@@ -12,8 +11,34 @@ if Diagramme == "Les titres":
     col = 'sentiment_titre_commentaire'
 elif Diagramme == "Les commentaires":
     col = 'sentiment_commentaire'
+
+
+monument = ['Non','Oui']
+selection = st.selectbox(f'Voulez-vous le graphique de sentiment pour une année précise',monument)
+option = 'None'
+
+
 if st.session_state['monument'] == 'Hotels':
-    data = st.session_state['Hotels']
-elif st.session_state['monument']  == 'Parcs':
-    data = st.session_state['Parcs']
-st.plotly_chart(graph_sentiment(add_Sentiment(data),col))
+    st.session_state['Hotels_sentiment'] = add_Sentiment(st.session_state['Hotels'])
+    année = st.session_state['Hotels_sentiment'].Annee_Avis.unique()
+    if selection == 'Non':
+        option = 'None'
+    elif selection == 'Oui':
+        option = st.selectbox('Selectionner l\' année que vous souhaitez', année)
+    st.plotly_chart(graph_sentiment(st.session_state['Hotels_sentiment'],col, option))
+
+elif st.session_state['monument']  == 'Parcs':  
+    st.session_state['Parcs_sentiment'] = add_Sentiment(st.session_state['Parcs'])
+    année = st.session_state['Parcs_sentiment'].Annee_Avis.unique()
+    if selection == 'Non':
+        option = 'None'
+    elif selection == 'Oui':
+        option = st.selectbox('Selectionner l\' année que vous souhaitez', année)
+    st.plotly_chart(graph_sentiment(st.session_state['Parcs_sentiment'],col, option))
+
+
+
+
+
+
+
