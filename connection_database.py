@@ -17,6 +17,9 @@ produit=pd.read_csv("tab_produit.csv")
 lieu=pd.read_csv("tab_lieu.csv")
 situations=pd.read_csv("tab_situations.csv")
 
+
+lieu.info()
+
 #connection to database
 #il faut créer dans db nommée disney_land avant de pouvoir se connecter et ajouter les tables
 cnx = mysql.connector.connect(user='root',
@@ -88,7 +91,6 @@ for i, row in photo.iterrows():
     cursor.execute(query, tuple(row))
 cnx.commit()
 
-
 #table produit
 table = 'produit'
 query = f'CREATE TABLE {table} (ID_produit INT PRIMARY KEY, Produit VARCHAR(5))'
@@ -98,7 +100,6 @@ for i, row in produit.iterrows():
     query = f"INSERT INTO {table} ({','.join(produit.columns)}) VALUES (%s, %s)"
     cursor.execute(query, tuple(row))
 cnx.commit()
-
 
 #table situations
 table = 'situations'
@@ -117,7 +118,6 @@ cursor.execute(query)
 query = f'SET SESSION sql_mode="NO_AUTO_VALUE_ON_ZERO"'
 cursor.execute(query)  
 
-
 #table lieu
 table = 'lieu'
 query = f'CREATE TABLE {table} (ID_lieu INT PRIMARY KEY, Ville TEXT CHARACTER SET utf8, Pays TEXT CHARACTER SET utf8, Continent TEXT CHARACTER SET utf8)'
@@ -128,28 +128,21 @@ for i, row in lieu.iterrows():
     cursor.execute(query, tuple(row))
 cnx.commit()
 
-
 #table commentaire
 table = 'commentaire'
-query = f'CREATE TABLE {table} (ID_commentaire INT PRIMARY KEY, titre_commentaire TEXT CHARACTER SET utf8, commentaire TEXT CHARACTER SET utf8, ID_note INT, ID_photo INT, ID_langue INT, ID_lieux_disney INT, ID_situation INT, ID_produit INT, ID_date_sejour INT, ID_date_avis INT, FOREIGN KEY (ID_note) REFERENCES note(ID_note),FOREIGN KEY (ID_photo) REFERENCES photo(ID_photo),FOREIGN KEY (ID_langue) REFERENCES langues(ID_langue),FOREIGN KEY (ID_lieux_disney) REFERENCES lieux_disney(ID_lieux_disney),FOREIGN KEY (ID_situation) REFERENCES situations(ID_situation),FOREIGN KEY (ID_produit) REFERENCES produit(ID_produit),FOREIGN KEY (ID_date_sejour) REFERENCES date_sejour(ID_date_sejour),FOREIGN KEY (ID_date_avis) REFERENCES date_avis(ID_date_avis),FOREIGN KEY (ID_lieu) REFERENCES produit(ID_lieu))'
+query = f'CREATE TABLE {table} (ID_commentaire INT PRIMARY KEY, titre_commentaire TEXT CHARACTER SET utf8, commentaire TEXT CHARACTER SET utf8, ID_note INT, ID_photo INT, ID_langue INT, ID_lieux_disney INT, ID_situation INT, ID_produit INT, ID_date_sejour INT, ID_date_avis INT, ID_lieu INT, FOREIGN KEY (ID_note) REFERENCES note(ID_note),FOREIGN KEY (ID_photo) REFERENCES photo(ID_photo),FOREIGN KEY (ID_langue) REFERENCES langues(ID_langue),FOREIGN KEY (ID_lieux_disney) REFERENCES lieux_disney(ID_lieux_disney),FOREIGN KEY (ID_situation) REFERENCES situations(ID_situation),FOREIGN KEY (ID_produit) REFERENCES produit(ID_produit),FOREIGN KEY (ID_date_sejour) REFERENCES date_sejour(ID_date_sejour),FOREIGN KEY (ID_date_avis) REFERENCES date_avis(ID_date_avis),FOREIGN KEY (ID_lieu) REFERENCES lieu(ID_lieu))'
 
 cursor.execute(query)
-                
                                                                                              
 for i, row in commentaire.iterrows():
     query = f"INSERT INTO {table} ({','.join(commentaire.columns)}) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
     cursor.execute(query, tuple(row))
 cnx.commit()
 
-
-query = f'DROP DATABASE `disney_land`'
-cursor.execute(query)
-
 cnx.close()
 
-lieu.info()
-lieu.ID_lieu.value_counts()
-lieu.Ville.value_counts()
+
+
 
 
 
