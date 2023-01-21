@@ -5,18 +5,17 @@ import matplotlib.pyplot as plt
 import plotly.express as px
 from Analyse_de_base_hotels import nombre_avis_par_années,répartition_des_notes
 import mysql.connector
+from cleanData import clean_commentaire
+
 
 mydb = mysql.connector.connect(
   host="localhost",
   user="root",
-  password="root",
+  password="",
   database="disney_land"
 )
 
 mycursor = mydb.cursor()
-
-
-
 
 
 def main():
@@ -43,11 +42,12 @@ if selection == 'Parcs':
         if i == 'ParcDisney 🌈':
             parc_disney = "SELECT titre_commentaire, commentaire, Mois_avis, Annee_avis, Mois_sejour, Annee_sejour, langue, Ville, Pays,Continent, Note, presence_photo, Situation FROM commentaire, date_avis, date_sejour,langues,lieu,lieux_disney, note, photo, produit, situations where commentaire.ID_note = note.ID_note and  commentaire.ID_photo = photo.ID_photo  and commentaire.ID_langue = langues.ID_langue and commentaire.ID_lieux_disney = lieux_disney.ID_lieux_disney and commentaire.ID_situation = situations.ID_situation and commentaire.ID_produit = produit.ID_produit and commentaire.ID_date_sejour = date_sejour.ID_date_sejour and commentaire.ID_date_avis = date_avis.ID_date_avis and commentaire.ID_lieu = lieu.ID_lieu and lieux_disney.Lieux_disney = 'Disneyland_Paris' "
             df = pd.read_sql(parc_disney,mydb)
-            
+            df = clean_commentaire(df)
         elif i == 'Studio 🎬':
             parc_studio = "SELECT titre_commentaire, commentaire, Mois_avis, Annee_avis, Mois_sejour, Annee_sejour, langue, Ville, Pays, Continent,Note, presence_photo, Situation FROM commentaire, date_avis, date_sejour,langues,lieu,lieux_disney, note, photo, produit, situations where commentaire.ID_note = note.ID_note and  commentaire.ID_photo = photo.ID_photo  and commentaire.ID_langue = langues.ID_langue and commentaire.ID_lieux_disney = lieux_disney.ID_lieux_disney and commentaire.ID_situation = situations.ID_situation and commentaire.ID_produit = produit.ID_produit and commentaire.ID_date_sejour = date_sejour.ID_date_sejour and commentaire.ID_date_avis = date_avis.ID_date_avis and commentaire.ID_lieu = lieu.ID_lieu and lieux_disney.Lieux_disney = 'Walt_Disney_Studios_Park' "
             df = pd.read_sql(parc_studio,mydb)
-
+            df = clean_commentaire(df)
+            
     if 'Parcs' not in st.session_state :
         valeur_def = df['Note'].unique()
     else :
@@ -77,7 +77,7 @@ if selection == 'Parcs':
         valeur_def = st.session_state["Parcs"].Annee_avis.unique()
 
     liste = df.Annee_avis.unique()
-    res = st.multiselect("Sélectionnez la ou les années d'avis souhaité(es)",liste, valeur_def)
+    res = st.multiselect("Sélectionnez la ou les années d'avis souhaité(es)",liste, liste)
     sol = []
     # On crée une liste où se trouve les notes qui ne sont pas dans la liste
     for i in liste:
@@ -96,7 +96,7 @@ if selection == 'Parcs':
         valeur_def = st.session_state["Parcs"].Mois_avis.unique()
 
     liste = df.Mois_avis.unique()
-    res = st.multiselect("Sélectionnez la ou les mois d'avis souhaité(s)",liste, valeur_def)
+    res = st.multiselect("Sélectionnez la ou les mois d'avis souhaité(s)",liste, liste)
     sol = []
     # On crée une liste où se trouve les notes qui ne sont pas dans la liste
     for i in liste:
@@ -135,7 +135,7 @@ if selection == 'Parcs':
         valeur_def = st.session_state["Parcs"].Mois_sejour.unique()
 
     liste = df.Mois_sejour.unique()
-    res = st.multiselect('Sélectionnez la ou les mois de séjour souhaité(s)',liste, valeur_def)
+    res = st.multiselect('Sélectionnez la ou les mois de séjour souhaité(s)',liste, liste)
     sol = []
     # On crée une liste où se trouvent les notes qui ne sont pas dans la liste
     for i in liste:
@@ -153,7 +153,7 @@ if selection == 'Parcs':
         valeur_def = st.session_state["Parcs"].Situation.unique()
 
     liste = df.Situation.unique()
-    res = st.multiselect('Sélectionnez la ou les situations souhaité(s)',liste, valeur_def)
+    res = st.multiselect('Sélectionnez la ou les situations souhaité(s)',liste, liste)
     sol = []
     # On crée une liste où se trouvent les notes qui ne sont pas dans la liste
     for i in liste:
@@ -171,7 +171,7 @@ if selection == 'Parcs':
         valeur_def = st.session_state["Parcs"].Pays.unique()
 
     liste = df.Pays.unique()
-    res = st.multiselect('Sectionner le ou les pays souhaité(s)',liste, valeur_def)
+    res = st.multiselect('Sectionner le ou les pays souhaité(s)',liste, liste)
     sol = []
     # On crée une liste où se trouve les notes qui ne sont pas dans la liste
     for i in liste:
@@ -205,21 +205,27 @@ if selection == 'Hotels':
         if i == 'Cheyenne 🤠':
             hotel_cheyenne = "SELECT titre_commentaire, commentaire, Mois_avis, Annee_avis, Mois_sejour, Annee_sejour, langue, Ville, Pays, Continent,Note, presence_photo, Situation FROM commentaire, date_avis, date_sejour,langues,lieu,lieux_disney, note, photo, produit, situations where commentaire.ID_note = note.ID_note and  commentaire.ID_photo = photo.ID_photo  and commentaire.ID_langue = langues.ID_langue and commentaire.ID_lieux_disney = lieux_disney.ID_lieux_disney and commentaire.ID_situation = situations.ID_situation and commentaire.ID_produit = produit.ID_produit and commentaire.ID_date_sejour = date_sejour.ID_date_sejour and commentaire.ID_date_avis = date_avis.ID_date_avis and commentaire.ID_lieu = lieu.ID_lieu and lieux_disney.Lieux_disney = 'hotel_cheyenne' "
             df = pd.read_sql(hotel_cheyenne,mydb)
+            df = clean_commentaire(df)
         elif i == 'Davy_Crockett 🏹':
             hotel_davy_crockett = "SELECT titre_commentaire, commentaire, Mois_avis, Annee_avis, Mois_sejour, Annee_sejour, langue, Ville, Pays, Continent,Note, presence_photo, Situation FROM commentaire, date_avis, date_sejour,langues,lieu,lieux_disney, note, photo, produit, situations where commentaire.ID_note = note.ID_note and  commentaire.ID_photo = photo.ID_photo  and commentaire.ID_langue = langues.ID_langue and commentaire.ID_lieux_disney = lieux_disney.ID_lieux_disney and commentaire.ID_situation = situations.ID_situation and commentaire.ID_produit = produit.ID_produit and commentaire.ID_date_sejour = date_sejour.ID_date_sejour and commentaire.ID_date_avis = date_avis.ID_date_avis and commentaire.ID_lieu = lieu.ID_lieu and lieux_disney.Lieux_disney = 'hotel_davy_crockett' "
             df = pd.read_sql(hotel_davy_crockett,mydb)
+            df = clean_commentaire(df)
         elif i == 'Marvel 🦸‍♀️':
             hotel_marvel = "SELECT titre_commentaire, commentaire, Mois_avis, Annee_avis, Mois_sejour, Annee_sejour, langue, Ville, Pays, Continent,Note, presence_photo, Situation FROM commentaire, date_avis, date_sejour,langues,lieu,lieux_disney, note, photo, produit, situations where commentaire.ID_note = note.ID_note and  commentaire.ID_photo = photo.ID_photo  and commentaire.ID_langue = langues.ID_langue and commentaire.ID_lieux_disney = lieux_disney.ID_lieux_disney and commentaire.ID_situation = situations.ID_situation and commentaire.ID_produit = produit.ID_produit and commentaire.ID_date_sejour = date_sejour.ID_date_sejour and commentaire.ID_date_avis = date_avis.ID_date_avis and commentaire.ID_lieu = lieu.ID_lieu and lieux_disney.Lieux_disney = 'hotel_marvel' "
             df = pd.read_sql(hotel_marvel,mydb)
+            df = clean_commentaire(df)
         elif i == 'Newport 🏨':
             hotel_newport = "SELECT titre_commentaire, commentaire, Mois_avis, Annee_avis, Mois_sejour, Annee_sejour, langue, Ville, Pays, Continent,Note, presence_photo, Situation FROM commentaire, date_avis, date_sejour,langues,lieu,lieux_disney, note, photo, produit, situations where commentaire.ID_note = note.ID_note and  commentaire.ID_photo = photo.ID_photo  and commentaire.ID_langue = langues.ID_langue and commentaire.ID_lieux_disney = lieux_disney.ID_lieux_disney and commentaire.ID_situation = situations.ID_situation and commentaire.ID_produit = produit.ID_produit and commentaire.ID_date_sejour = date_sejour.ID_date_sejour and commentaire.ID_date_avis = date_avis.ID_date_avis and commentaire.ID_lieu = lieu.ID_lieu and lieux_disney.Lieux_disney = 'hotel_newport' "
             df = pd.read_sql(hotel_newport,mydb)
+            df = clean_commentaire(df)
         elif i == 'Santa_Fe 🏜️':
             hotel_sante_fe = "SELECT titre_commentaire, commentaire, Mois_avis, Annee_avis, Mois_sejour, Annee_sejour, langue, Ville, Pays, Continent,Note, presence_photo, Situation FROM commentaire, date_avis, date_sejour,langues,lieu,lieux_disney, note, photo, produit, situations where commentaire.ID_note = note.ID_note and  commentaire.ID_photo = photo.ID_photo  and commentaire.ID_langue = langues.ID_langue and commentaire.ID_lieux_disney = lieux_disney.ID_lieux_disney and commentaire.ID_situation = situations.ID_situation and commentaire.ID_produit = produit.ID_produit and commentaire.ID_date_sejour = date_sejour.ID_date_sejour and commentaire.ID_date_avis = date_avis.ID_date_avis and commentaire.ID_lieu = lieu.ID_lieu and lieux_disney.Lieux_disney = 'hotel_sante_fe' "
             df = pd.read_sql(hotel_sante_fe,mydb)
+            df = clean_commentaire(df)
         elif i == 'Sequoia 🌲':
             hotel_sequoia = "SELECT titre_commentaire, commentaire, Mois_avis, Annee_avis, Mois_sejour, Annee_sejour, langue, Ville, Pays, Continent,Note, presence_photo, Situation FROM commentaire, date_avis, date_sejour,langues,lieu,lieux_disney, note, photo, produit, situations where commentaire.ID_note = note.ID_note and  commentaire.ID_photo = photo.ID_photo  and commentaire.ID_langue = langues.ID_langue and commentaire.ID_lieux_disney = lieux_disney.ID_lieux_disney and commentaire.ID_situation = situations.ID_situation and commentaire.ID_produit = produit.ID_produit and commentaire.ID_date_sejour = date_sejour.ID_date_sejour and commentaire.ID_date_avis = date_avis.ID_date_avis and commentaire.ID_lieu = lieu.ID_lieu and lieux_disney.Lieux_disney = 'hotel_sequoia' "
             df = pd.read_sql(hotel_sequoia,mydb)
+            df = clean_commentaire(df)
         
     if 'Hotels' not in st.session_state :
         valeur_def = df['Note'].unique()
@@ -269,7 +275,7 @@ if selection == 'Hotels':
         valeur_def = st.session_state["Hotels"].Mois_avis.unique()
 
     liste = df.Mois_avis.unique()
-    res = st.multiselect("Sectionner la ou les mois d'avis souhaité(s)",liste, valeur_def)
+    res = st.multiselect("Sectionner la ou les mois d'avis souhaité(s)",liste, liste)
     sol = []
     # On crée une liste où se trouve les notes qui ne sont pas dans la liste
     for i in liste:
@@ -308,7 +314,7 @@ if selection == 'Hotels':
         valeur_def = st.session_state["Hotels"].Mois_sejour.unique()
 
     liste = df.Mois_sejour.unique()
-    res = st.multiselect('Sectionner la ou les mois de séjour souhaité(s)',liste, valeur_def)
+    res = st.multiselect('Sectionner la ou les mois de séjour souhaité(s)',liste, liste)
     sol = []
     # On crée une liste où se trouve les notes qui ne sont pas dans la liste
     for i in liste:
@@ -326,7 +332,7 @@ if selection == 'Hotels':
         valeur_def = st.session_state["Hotels"].Pays.unique()
 
     liste = df.Pays.unique()
-    res = st.multiselect('Sectionner la ou les pays souhaité(s)',liste, valeur_def)
+    res = st.multiselect('Sectionner la ou les pays souhaité(s)',liste, liste)
     sol = []
     # On crée une liste où se trouve les notes qui ne sont pas dans la liste
     for i in liste:

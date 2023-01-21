@@ -12,11 +12,9 @@ if Diagramme == "Les titres":
 elif Diagramme == "Les commentaires":
     col = 'sentiment_commentaire'
 
-
 monument = ['Non','Oui']
 selection = st.selectbox(f'Voulez-vous le graphique de sentiment pour une année précise',monument)
 option = 'None'
-
 
 if st.session_state['monument'] == 'Hotels':
     st.session_state['Hotels_sentiment'] = add_Sentiment(st.session_state['Hotels'])

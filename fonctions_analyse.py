@@ -68,9 +68,9 @@ def add_Sentiment(df):
     
     for item in liste :
         
-        liste_sentiment = ScoreSentiment(df[item])
+        liste_sentiment = ScoreSentiment(df[item].astype(str))
         
-        comm_ = [ast.literal_eval(x) for x in df[item].tolist()]
+        comm_ = [ast.literal_eval(str(x)) for x in df[item].tolist()]
 
         comm_clean =[" ".join(doc) for doc in comm_]
 
@@ -110,7 +110,7 @@ def graph_sentiment(df , col, annee = "None"):
     if annee == "None":
         data = df[col]
     else:
-        data = df[(df['Annee_Sejour'] == annee)][col]
+        data = df[(df['Annee_sejour'] == annee)][col]
 
     fig = go.Figure(data=[go.Histogram(x=data)])
     fig.update_layout(
