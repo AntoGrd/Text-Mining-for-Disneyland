@@ -1,0 +1,4712 @@
+﻿ID_lieu,Ville,Pays,Continent
+1,None,None,None
+2,Dijon,France,Europe
+3,Glasgow,Royaume-Uni,Europe
+4,Cannock Chase,Royaume-Uni,Europe
+5,Edmonton,Canada,North America
+6,Cité de Westminster,Royaume-Uni,Europe
+7,Madrid,Espagne,Europe
+8,Trani,Italie,Europe
+9,Leuze,Belgique,Europe
+10,South Tyneside,Royaume-Uni,Europe
+11,Durham,États-Unis d'Amérique,North America
+12,Santander,Espagne,Europe
+13,Welwyn Hatfield,Royaume-Uni,Europe
+14,La Corogne,Espagne,Europe
+15,Lyon,France,Europe
+16,Lucerne,Suisse,Europe
+17,Swansea,Royaume-Uni,Europe
+18,Lisbonne,Portugal,Europe
+19,Huntingdonshire,Royaume-Uni,Europe
+20,Lille,France,Europe
+21,Belfast,Royaume-Uni,Europe
+22,Giugliano in Campania,Italie,Europe
+23,Bristol,Royaume-Uni,Europe
+24,arrondissement de Sidi Belyout,Maroc,Africa
+25,Rome,Italie,Europe
+26,Allerdale,Royaume-Uni,Europe
+27,Naples,Italie,Europe
+28,Heerlen,Pays-Bas,Europe
+29,Agrigente,Italie,Europe
+30,Catane,Italie,Europe
+31,Birmingham,Royaume-Uni,Europe
+32,Leeds,Royaume-Uni,Europe
+33,Manchester,Royaume-Uni,Europe
+34,Derbyshire Dales,Royaume-Uni,Europe
+35,Nantes,France,Europe
+36,Alverca do Ribatejo,Portugal,Europe
+37,Norwich,Royaume-Uni,Europe
+38,Dundee,Royaume-Uni,Europe
+39,Florence,Italie,Europe
+40,Valladolid,Espagne,Europe
+41,Ségovie,Espagne,Europe
+42,Alméria,Espagne,Europe
+43,Terni,Italie,Europe
+44,South Oxfordshire,Royaume-Uni,Europe
+45,Cardiff,Royaume-Uni,Europe
+46,Doncaster,Royaume-Uni,Europe
+47,Tameside,Royaume-Uni,Europe
+48,Porto,Portugal,Europe
+49,Dublin,Irlande,Europe
+50,Stuttgart,Allemagne,Europe
+51,Budapest,Hongrie,Europe
+52,Basingstoke and Deane,Royaume-Uni,Europe
+53,Valence,France,Europe
+54,Alcobendas,Espagne,Europe
+55,Sydney,Australie,Oceania
+56,Curitiba,Brésil,South America
+57,Terrassa,Espagne,Europe
+58,Badalona,Espagne,Europe
+59,Cork,Irlande,Europe
+60,Strasbourg,France,Europe
+61,Bogota,Colombie,South America
+62,Cambridge,Royaume-Uni,Europe
+63,Mole Valley,Royaume-Uni,Europe
+64,Édimbourg,Royaume-Uni,Europe
+65,Dort,Pays-Bas,Europe
+66,Liverpool,Royaume-Uni,Europe
+67,Liège,Belgique,Europe
+68,Annecy,France,Europe
+69,Barcelone,Espagne,Europe
+70,High Peak,Royaume-Uni,Europe
+71,Copenhague,Danemark,Europe
+72,Avignon,France,Europe
+73,Rio de Janeiro,Brésil,South America
+74,Burgos,Espagne,Europe
+75,São Paulo,Brésil,South America
+76,Santa Cruz de Ténérife,Espagne,Europe
+77,Laudun-l'Ardoise,France,Europe
+78,Nice,France,Europe
+79,Poitiers,France,Europe
+80,Richmond,États-Unis d'Amérique,North America
+81,Aberdeen,Royaume-Uni,Europe
+82,Saragosse,Espagne,Europe
+83,Malmö ou Malmoe,Suède,Europe
+84,Limoges,France,Europe
+85,Herne,Allemagne,Europe
+86,Qingyang,Chine,Asia
+87,Bordeaux,France,Europe
+88,Bilbao,Espagne,Europe
+89,Hart,Royaume-Uni,Europe
+90,Milan,Italie,Europe
+91,Malaga,Espagne,Europe
+92,Aix-en-Provence,France,Europe
+93,Zoetermeer,Pays-Bas,Europe
+94,Prague,Tchéquie,Europe
+95,Oviède,Espagne,Europe
+96,Rother,Royaume-Uni,Europe
+97,Belo Horizonte,Brésil,South America
+98,Vitoria-Gasteiz,Espagne,Europe
+99,Clermont-Ferrand,France,Europe
+100,Maastricht,Pays-Bas,Europe
+101,Tignieu-Jameyzieu,France,Europe
+102,Saint-Étienne,France,Europe
+103,Nîmes,France,Europe
+104,Toulon,France,Europe
+105,Orléans,France,Europe
+106,Amsterdam,Pays-Bas,Europe
+107,Tacna,Pérou,South America
+108,Portsmouth,Royaume-Uni,Europe
+109,Vienne,Autriche,Europe
+110,Darmstadt,Allemagne,Europe
+111,Mons,Belgique,Europe
+112,Séville,Espagne,Europe
+113,North Hertfordshire,Royaume-Uni,Europe
+114,Reims,France,Europe
+115,Londres,Royaume-Uni,Europe
+116,Caniço,Portugal,Europe
+117,Gênes,Italie,Europe
+118,Hertsmere,Royaume-Uni,Europe
+119,Cité de Wakefield,Royaume-Uni,Europe
+120,Paris,France,Europe
+121,La Haye,Pays-Bas,Europe
+122,Badajoz,Espagne,Europe
+123,Marown,Île de Man,Europe
+124,Brest,France,Europe
+125,Swale,Royaume-Uni,Europe
+126,Venise,Italie,Europe
+127,Fylde,Royaume-Uni,Europe
+128,Athènes,Grèce,Europe
+129,Sheffield,Royaume-Uni,Europe
+130,Toulouse,France,Europe
+131,San Nicolás de los Arroyos,Argentine,South America
+132,Angers,France,Europe
+133,Santa Coloma de Gramenet,Espagne,Europe
+134,Wrexham,Royaume-Uni,Europe
+135,Ajaccio,France,Europe
+136,Leicester,Royaume-Uni,Europe
+137,Amiens,France,Europe
+138,Saint-Louis,États-Unis d'Amérique,North America
+139,West Suffolk,Royaume-Uni,Europe
+140,Cagliari,Italie,Europe
+141,Metz,France,Europe
+142,Paphos,Chypre,Asia
+143,Borough de Pendle,Royaume-Uni,Europe
+144,Zwolle,Pays-Bas,Europe
+145,São Domingos e Vale de Água,Portugal,Europe
+146,Newcastle upon Tyne,Royaume-Uni,Europe
+147,Kuala Lumpur,Malaisie,Asia
+148,Bologne,Italie,Europe
+149,Test Valley,Royaume-Uni,Europe
+150,Δημοτική Ενότητα Ηρακλείου,Grèce,Europe
+151,Leganés,Espagne,Europe
+152,Montreuil,France,Europe
+153,Toluca,Mexique,North America
+154,Coventry,Royaume-Uni,Europe
+155,Turin,Italie,Europe
+156,Mid Suffolk,Royaume-Uni,Europe
+157,Lausanne,Suisse,Europe
+158,Troyes,France,Europe
+159,Doha,Qatar,Asia
+160,Bruxelles,Belgique,Europe
+161,Chambéry,France,Europe
+162,Montpellier,France,Europe
+163,Salerne,Italie,Europe
+164,Pierre,États-Unis d'Amérique,North America
+165,North Devon,Royaume-Uni,Europe
+166,Sunnyvale,États-Unis d'Amérique,North America
+167,Turku,Finlande,Europe
+168,Anaheim,États-Unis d'Amérique,North America
+169,Lérida,Espagne,Europe
+170,Gravesham,Royaume-Uni,Europe
+171,Dunkerque,France,Europe
+172,Milvignes,Suisse,Europe
+173,Zurich,Suisse,Europe
+174,Vogtei,Allemagne,Europe
+175,Santos,Brésil,South America
+176,Marseille,France,Europe
+177,Algeciras,Espagne,Europe
+178,Georgetown,Guyana,South America
+179,Linz,Autriche,Europe
+180,Xérès,Espagne,Europe
+181,La Nouvelle-Orléans,États-Unis d'Amérique,North America
+182,Broxtowe,Royaume-Uni,Europe
+183,Breckland,Royaume-Uni,Europe
+184,Belfort,France,Europe
+185,Cherwell,Royaume-Uni,Europe
+186,Linköping,Suède,Europe
+187,Gagar Kar-Zhong,Bhoutan,Asia
+188,Berne,Suisse,Europe
+189,Chicago,États-Unis d'Amérique,North America
+190,Viseu,Portugal,Europe
+191,Derby,Royaume-Uni,Europe
+192,Bellevue,États-Unis d'Amérique,North America
+193,Bottrop,Allemagne,Europe
+194,Louvain,Belgique,Europe
+195,Gand,Belgique,Europe
+196,Sunderland,Royaume-Uni,Europe
+197,Porto Alegre,Brésil,South America
+198,Hamilton,Canada,North America
+199,Cité de Bradford,Royaume-Uni,Europe
+200,Halifax,Canada,North America
+201,Capelo,Pérou,South America
+202,Charlottetown,Canada,North America
+203,Indianapolis,États-Unis d'Amérique,North America
+204,Bath,Royaume-Uni,Europe
+205,South Kesteven,Royaume-Uni,Europe
+206,Malines,Belgique,Europe
+207,Massa,Italie,Europe
+208,Kiryū,Japon,Asia
+209,Namur,Belgique,Europe
+210,Bucarest,Roumanie,Europe
+211,Gijon,Espagne,Europe
+212,Tangerang Selatan,Indonésie,Asia
+213,Getafe,Espagne,Europe
+214,Tempe,États-Unis d'Amérique,North America
+215,Modène,Italie,Europe
+216,Vila Nova de Santo André,Portugal,Europe
+217,Le Cap,Afrique du Sud,Africa
+218,Torrejón de Ardoz,Espagne,Europe
+219,Tunbridge Wells,Royaume-Uni,Europe
+220,Charleroi,Belgique,Europe
+221,Hampton,États-Unis d'Amérique,North America
+222,Nottingham,Royaume-Uni,Europe
+223,Plumstead Township,États-Unis d'Amérique,North America
+224,Le Havre,France,Europe
+225,Caen,France,Europe
+226,San Borja,Pérou,South America
+227,Toruń,Pologne,Europe
+228,Coïmbre,Portugal,Europe
+229,Coni,Italie,Europe
+230,Constanța,Roumanie,Europe
+231,Salamanque,Espagne,Europe
+232,Novare,Italie,Europe
+233,Carlisle,Royaume-Uni,Europe
+234,Castelló de la Plana,Espagne,Europe
+235,Hambourg,Allemagne,Europe
+236,Wolverhampton,Royaume-Uni,Europe
+237,Milton Keynes,Royaume-Uni,Europe
+238,Châtel-en-Trièves,France,Europe
+239,Thanet,Royaume-Uni,Europe
+240,Macon,États-Unis d'Amérique,North America
+241,Tolède,Espagne,Europe
+242,Padoue,Italie,Europe
+243,San Juan de Lurigancho,Pérou,South America
+244,Ulm,Allemagne,Europe
+245,Tilbourg,Pays-Bas,Europe
+246,Perpignan,France,Europe
+247,Nimègue,Pays-Bas,Europe
+248,Marbella,Espagne,Europe
+249,Rouen,France,Europe
+250,Southampton,Royaume-Uni,Europe
+251,Hull,Royaume-Uni,Europe
+252,Beaupréau-en-Mauges,France,Europe
+253,Chelmsford,Royaume-Uni,Europe
+254,Petrópolis,Brésil,South America
+255,New York,États-Unis d'Amérique,North America
+256,Dunfermline,Royaume-Uni,Europe
+257,Kirklees,Royaume-Uni,Europe
+258,Francfort-sur-le-Main,Allemagne,Europe
+259,Oxford,Royaume-Uni,Europe
+260,Exeter,Royaume-Uni,Europe
+261,Le Mans,France,Europe
+262,Aoste,Italie,Europe
+263,East Devon,Royaume-Uni,Europe
+264,Anvers,Belgique,Europe
+265,Cleveland,États-Unis d'Amérique,North America
+266,Grenoble,France,Europe
+267,Portimão,Portugal,Europe
+268,Reus,Espagne,Europe
+269,Vigo,Espagne,Europe
+270,Las Palmas de Grande Canarie,Espagne,Europe
+271,Mansfield,États-Unis d'Amérique,North America
+272,Ryedale,Royaume-Uni,Europe
+273,West Lancashire,Royaume-Uni,Europe
+274,Villeurbanne,France,Europe
+275,Bassetlaw,Royaume-Uni,Europe
+276,Rotterdam,Pays-Bas,Europe
+277,Odivelas,Portugal,Europe
+278,Albacete,Espagne,Europe
+279,Gérone,Espagne,Europe
+280,Lugo,Espagne,Europe
+281,Castle Point,Royaume-Uni,Europe
+282,Hinckley and Bosworth,Royaume-Uni,Europe
+283,Three Rivers,Royaume-Uni,Europe
+284,Los Angeles,États-Unis d'Amérique,North America
+285,Wyre,Royaume-Uni,Europe
+286,Sabadell,Espagne,Europe
+287,Alicante,Espagne,Europe
+288,Vérone,Italie,Europe
+289,(Old) Ottawa,Canada,North America
+290,Mérida,Espagne,Europe
+291,Palma,Espagne,Europe
+292,Reno,États-Unis d'Amérique,North America
+293,Basta Tahta,Liban,Asia
+294,Espoo,Finlande,Europe
+295,Ravenne,Italie,Europe
+296,York,Royaume-Uni,Europe
+297,Boston,États-Unis d'Amérique,North America
+298,Salt Lake City,États-Unis d'Amérique,North America
+299,Rivière-du-Loup,Canada,North America
+300,North Tyneside,Royaume-Uni,Europe
+301,Linares,Espagne,Europe
+302,Kazan,Russie,Europe
+303,Preston,Royaume-Uni,Europe
+304,Plymouth,Royaume-Uni,Europe
+305,Sassari,Italie,Europe
+306,Mendip,Royaume-Uni,Europe
+307,Tournai,Belgique,Europe
+308,Lincoln,États-Unis d'Amérique,North America
+309,East Hertfordshire,Royaume-Uni,Europe
+310,Itajaí,Brésil,South America
+311,City of Syracuse,États-Unis d'Amérique,North America
+312,Nancy,France,Europe
+313,Palerme,Italie,Europe
+314,Limerick,Irlande,Europe
+315,Ribble Valley,Royaume-Uni,Europe
+316,Bergen,Norvège,Europe
+317,North Coventry Township,États-Unis d'Amérique,North America
+318,Reggio de Calabre,Italie,Europe
+319,Cantorbéry,Royaume-Uni,Europe
+320,Bangkok,Thaïlande,Asia
+321,Peterborough,Royaume-Uni,Europe
+322,Salford,Royaume-Uni,Europe
+323,Vale of White Horse,Royaume-Uni,Europe
+324,Tamworth,Australie,Oceania
+325,White Rock,Canada,North America
+326,Rennes,France,Europe
+327,South Somerset,Royaume-Uni,Europe
+328,Reignier-Ésery,France,Europe
+329,Cuenca,Espagne,Europe
+330,Hagen,Allemagne,Europe
+331,Chamrousse,France,Europe
+332,Bréda,Pays-Bas,Europe
+333,South Lakeland,Royaume-Uni,Europe
+334,Arun,Royaume-Uni,Europe
+335,Folkestone and Hythe,Royaume-Uni,Europe
+336,Worcester,États-Unis d'Amérique,North America
+337,Santa Ana,États-Unis d'Amérique,North America
+338,Wurtzbourg,Allemagne,Europe
+339,Ashfield,Royaume-Uni,Europe
+340,Hereford,Royaume-Uni,Europe
+341,Sedgemoor,Royaume-Uni,Europe
+342,Gemeinde Herzogenburg,Autriche,Europe
+343,Melilla,Espagne,Europe
+344,Winterthour,Suisse,Europe
+345,Alcalá de Henares,Espagne,Europe
+346,Ferrol,Espagne,Europe
+347,Monaco,Monaco,Europe
+348,La Rochelle,France,Europe
+349,Bangor,États-Unis d'Amérique,North America
+350,Teignbridge,Royaume-Uni,Europe
+351,Larnaca,Chypre,Asia
+352,Bois-le-Duc,Pays-Bas,Europe
+353,Colchester,Royaume-Uni,Europe
+354,Rives-d'Autise,France,Europe
+355,Bari,Italie,Europe
+356,Venlo,Pays-Bas,Europe
+357,Arelaune-en-Seine,France,Europe
+358,Ceuta,Espagne,Europe
+359,Brighton,Royaume-Uni,Europe
+360,Chester,Royaume-Uni,Europe
+361,Biñan,Philippines,Asia
+362,Évora,Portugal,Europe
+363,Tampa,États-Unis d'Amérique,North America
+364,Duisbourg,Allemagne,Europe
+365,Amersfoort,Pays-Bas,Europe
+366,East Cambridgeshire,Royaume-Uni,Europe
+367,Saint-Jacques-de-Compostelle,Espagne,Europe
+368,Mataró,Espagne,Europe
+369,Gibraltar,Gibraltar,Europe
+370,Haverhill,États-Unis d'Amérique,North America
+371,Olivenza,Espagne,Europe
+372,Anchorage,États-Unis d'Amérique,North America
+373,Vila Nova de Gaia,Portugal,Europe
+374,Stamford,États-Unis d'Amérique,North America
+375,Genève,Suisse,Europe
+376,Chichester,Royaume-Uni,Europe
+377,Ville d'Anaunia,Italie,Europe
+378,Airdrie,Canada,North America
+379,Truro,Royaume-Uni,Europe
+380,Moscou,Russie,Europe
+381,Saint-Denis,France,Europe
+382,Theix-Noyalo,France,Europe
+383,Bâle,Suisse,Europe
+384,Ate,Pérou,South America
+385,Bedford Township,États-Unis d'Amérique,North America
+386,Melbourne,Australie,Oceania
+387,Orlando,États-Unis d'Amérique,North America
+388,Zoeterwoude,Pays-Bas,Europe
+389,Aubazines,France,Europe
+390,Linwood-Central-Heathcote Community,Nouvelle-Zélande,Oceania
+391,Lagos,Nigéria,Africa
+392,Wychavon,Royaume-Uni,Europe
+393,Besançon,France,Europe
+394,Espiet,France,Europe
+395,Bovisio Masciago,Italie,Europe
+396,Jundiaí,Brésil,South America
+397,Wolfsbourg,Allemagne,Europe
+398,Orée d'Anjou,France,Europe
+399,Municipalité de Macao,Chine,Asia
+400,Trece Martires,Philippines,Asia
+401,Bangalore,Inde,Asia
+402,Lima,Pérou,South America
+403,Londonderry/Derry,Royaume-Uni,Europe
+404,Ely,Royaume-Uni,Europe
+405,Drammen,Norvège,Europe
+406,Lisburn,Royaume-Uni,Europe
+407,Móstoles,Espagne,Europe
+408,San Cristóbal de La Laguna,Espagne,Europe
+409,Montréal,Canada,North America
+410,Utrecht,Pays-Bas,Europe
+411,Carrollton,États-Unis d'Amérique,North America
+412,Halle-sur-Saale,Allemagne,Europe
+413,Pistoia,Italie,Europe
+414,San Martín de Porres,Pérou,South America
+415,Gloucester,Royaume-Uni,Europe
+416,Sandwell,Royaume-Uni,Europe
+417,Séoul,Corée du Sud,Asia
+418,Wellington,Nouvelle-Zélande,Oceania
+419,Cotswold,Royaume-Uni,Europe
+420,Winchester,Royaume-Uni,Europe
+421,Helsinki,Finlande,Europe
+422,Trieste,Italie,Europe
+423,Bruges,Belgique,Europe
+424,Newry,Royaume-Uni,Europe
+425,Borough de Spelthorne,Royaume-Uni,Europe
+426,Portland,États-Unis d'Amérique,North America
+427,Garden Grove,États-Unis d'Amérique,North America
+428,Ananindeua,Brésil,South America
+429,Brunswick,Allemagne,Europe
+430,Vincent-Froideville,France,Europe
+431,Huelva,Espagne,Europe
+432,Santa Maria da Feira,Portugal,Europe
+433,Mid Devon,Royaume-Uni,Europe
+434,Tarragone,Espagne,Europe
+435,Latina,Italie,Europe
+436,Ruy-Montceau,France,Europe
+437,Rushmoor,Royaume-Uni,Europe
+438,La Pola Siero,Espagne,Europe
+439,Orihuela,Espagne,Europe
+440,Tonbridge and Malling,Royaume-Uni,Europe
+441,Nuremberg,Allemagne,Europe
+442,Ribeirão Preto,Brésil,South America
+443,Stoke-on-Trent,Royaume-Uni,Europe
+444,Kōtō,Japon,Asia
+445,Cascais e Estoril,Portugal,Europe
+446,Vejle,Danemark,Europe
+447,Amber Valley,Royaume-Uni,Europe
+448,Istanbul,Turquie,Asia
+449,East Lindsey,Royaume-Uni,Europe
+450,Δημοτική Ενότητα Θεσαλονίκης,Grèce,Europe
+451,Redditch,Royaume-Uni,Europe
+452,Valle de Yerri/Deierri,Espagne,Europe
+453,Vancouver,Canada,North America
+454,Newcastle,Afrique du Sud,Africa
+455,Aveiro,Portugal,Europe
+456,Livourne,Italie,Europe
+457,Cluj-Napoca,Roumanie,Europe
+458,Forlì,Italie,Europe
+459,Cordoue,Espagne,Europe
+460,Ouarzazate,Maroc,Africa
+461,Logroño,Espagne,Europe
+462,Reigate and Banstead,Royaume-Uni,Europe
+463,Torrent,Espagne,Europe
+464,Irvine,États-Unis d'Amérique,North America
+465,Leverkusen,Allemagne,Europe
+466,Parla,Espagne,Europe
+467,Tel Aviv-Yafo,Israël,Asia
+468,Salzgitter,Allemagne,Europe
+469,Matosinhos,Portugal,Europe
+470,Ruremonde,Pays-Bas,Europe
+471,Querença Tôr e Benafim,Portugal,Europe
+472,Messine,Italie,Europe
+473,Laveno-Mombello,Italie,Europe
+474,São João da Madeira,Portugal,Europe
+475,Pembroke,Canada,North America
+476,Berlin,Allemagne,Europe
+477,Miami Beach,États-Unis d'Amérique,North America
+478,Esposende,Portugal,Europe
+479,Florac Trois Rivières,France,Europe
+480,Gemeinde Egg,Autriche,Europe
+481,Potsdam,Allemagne,Europe
+482,Gemeinde Deutsch-Wagram,Autriche,Europe
+483,Toronto,Canada,North America
+484,Newport,États-Unis d'Amérique,North America
+485,Moulins-sur-Tardoire,France,Europe
+486,King's Lynn and West Norfolk,Royaume-Uni,Europe
+487,Brașov,Roumanie,Europe
+488,Essouvert,France,Europe
+489,Belgrade,Serbie,Europe
+490,Helmond,Pays-Bas,Europe
+491,Iași,Roumanie,Europe
+492,Guadalajara,Mexique,North America
+493,Essen,Allemagne,Europe
+494,Haarlem,Pays-Bas,Europe
+495,Gandia,Espagne,Europe
+496,Epping Forest,Royaume-Uni,Europe
+497,Grenade,Espagne,Europe
+498,Municipal District of Cobh,Irlande,Europe
+499,Tours,France,Europe
+500,Arnhem,Pays-Bas,Europe
+501,Chaumes-en-Retz,France,Europe
+502,Loire-Authion,France,Europe
+503,Cartaxo,Portugal,Europe
+504,Quincy,États-Unis d'Amérique,North America
+505,Prato,Italie,Europe
+506,Mur-sur-Allier,France,Europe
+507,Faro,Portugal,Europe
+508,Pampelune,Espagne,Europe
+509,Jérusalem,Israël,Asia
+510,Oadby and Wigston,Royaume-Uni,Europe
+511,Algés Linda-a-Velha e Cruz Quebrada-Dafundo,Portugal,Europe
+512,Guimarães,Portugal,Europe
+513,Pise,Italie,Europe
+514,Carlsruhe,Allemagne,Europe
+515,Inverness,Royaume-Uni,Europe
+516,Somerset West and Taunton,Royaume-Uni,Europe
+517,Casorate Primo,Italie,Europe
+518,Île de Hong Kong,Chine,Asia
+519,Cáceres,Espagne,Europe
+520,Cologne,Allemagne,Europe
+521,Calamba,Philippines,Asia
+522,Port-Valais,Suisse,Europe
+523,Barletta,Italie,Europe
+524,Lancaster,États-Unis d'Amérique,North America
+525,Wealden,Royaume-Uni,Europe
+526,Newark and Sherwood,Royaume-Uni,Europe
+527,Episkopi Pafou,Chypre,Asia
+528,Pléneuf-Val-André,France,Europe
+529,Singapour,Singapour,Asia
+530,Uruguaiana,Brésil,South America
+531,Lège-Cap-Ferret,France,Europe
+532,Lancaster,Royaume-Uni,Europe
+533,Fredericton,Canada,North America
+534,Valence,Espagne,Europe
+535,Minneapolis,États-Unis d'Amérique,North America
+536,Dignano,Italie,Europe
+537,Mid Sussex,Royaume-Uni,Europe
+538,Mannheim,Allemagne,Europe
+539,Trondheim,Norvège,Europe
+540,Paderno Dugnano,Italie,Europe
+541,Saint-Gall,Suisse,Europe
+542,Leipzig,Allemagne,Europe
+543,Union Township,États-Unis d'Amérique,North America
+544,Hyndburn,Royaume-Uni,Europe
+545,Mauges-sur-Loire,France,Europe
+546,South Staffordshire,Royaume-Uni,Europe
+547,Vigevano,Italie,Europe
+548,Natal,Brésil,South America
+549,Vandellòs i l'Hospitalet de l'Infant,Espagne,Europe
+550,Rushcliffe,Royaume-Uni,Europe
+551,Buenos Aires,Argentine,South America
+552,Montevideo,Uruguay,South America
+553,Reggio d'Émilie,Italie,Europe
+554,Southend-on-Sea,Royaume-Uni,Europe
+555,Wyre Forest,Royaume-Uni,Europe
+556,San José,Costa Rica,North America
+557,Rishon LeZion,Israël,Asia
+558,Mulhouse,France,Europe
+559,Bratislava,Slovaquie,Europe
+560,Alger,Algérie,Africa
+561,Nuneaton and Bedworth,Royaume-Uni,Europe
+562,Mealhada,Portugal,Europe
+563,Cassel,Allemagne,Europe
+564,Ávila,Espagne,Europe
+565,Carthagène,Espagne,Europe
+566,Hô Chi Minh-Ville,Viêt Nam,Asia
+567,Cadix,Espagne,Europe
+568,Acapulco,Mexique,North America
+569,Alcorcón,Espagne,Europe
+570,Tokologo Local Municipality,Afrique du Sud,Africa
+571,Elx / Elche,Espagne,Europe
+572,East Suffolk,Royaume-Uni,Europe
+573,Argences en Aubrac,France,Europe
+574,Vantaa,Finlande,Europe
+575,Rio Maior,Portugal,Europe
+576,Almaty,Kazakhstan,Asia
+577,Setúbal,Portugal,Europe
+578,Bico e Cristelo,Portugal,Europe
+579,Asuncion,Paraguay,South America
+580,Falagueira-Venda Nova,Portugal,Europe
+581,Galway,Irlande,Europe
+582,Vratislavie,Pologne,Europe
+583,Cinisello Balsamo,Italie,Europe
+584,Courtrai,Belgique,Europe
+585,Middelbourg,Pays-Bas,Europe
+586,Düsseldorf,Allemagne,Europe
+587,Port-Louis,Maurice,Africa
+588,Saskatoon,Canada,North America
+589,Rhodes,France,Europe
+590,Almada,Portugal,Europe
+591,Almere,Pays-Bas,Europe
+592,Sainte-Marie-du-Câtel,Guernesey,Europe
+593,Granzay-Gript,France,Europe
+594,Tarcenay-Foucherans,France,Europe
+595,Dubrovnik,Croatie,Europe
+596,Fayetteville,États-Unis d'Amérique,North America
+597,Bonn,Allemagne,Europe
+598,Lipa,Philippines,Asia
+599,Epsom and Ewell,Royaume-Uni,Europe
+600,Val d'Oingt,France,Europe
+601,Salisbury,Royaume-Uni,Europe
+602,Daejeon,Corée du Sud,Asia
+603,Beauvallon,France,Europe
+604,Mayence,Allemagne,Europe
+605,Higüey,République dominicaine,North America
+606,Florianópolis,Brésil,South America
+607,Sarrola-Carcopino,France,Europe
+608,Valdallière,France,Europe
+609,Lugano,Suisse,Europe
+610,Port-Bail-sur-Mer,France,Europe
+611,Calais,France,Europe
+612,Haute-Sorne,Suisse,Europe
+613,Charm El Cheikh,Égypte,Africa
+614,Phuket,Thaïlande,Asia
+615,Minsk,Bélarus,Europe
+616,Injoux-Génissiat,France,Europe
+617,Crans-Montana,Suisse,Europe
+618,Dantzig,Pologne,Europe
+619,Bichkek,Kirghizistan,Asia
+620,Essarts-en-Bocage,France,Europe
+621,Voronej,Russie,Europe
+622,Cartago,Costa Rica,North America
+623,Bielle,Italie,Europe
+624,Borough de Charnwood,Royaume-Uni,Europe
+625,Kaiserslautern,Allemagne,Europe
+626,Ripon,Royaume-Uni,Europe
+627,Assen,Pays-Bas,Europe
+628,Perth,Australie,Oceania
+629,Carthagène,Colombie,South America
+630,Horta,Portugal,Europe
+631,Emmen,Pays-Bas,Europe
+632,Boulogne-Billancourt,France,Europe
+633,Garbagnate Milanese,Italie,Europe
+634,Wiesbaden,Allemagne,Europe
+635,Val de Briey,France,Europe
+636,Stratford-on-Avon,Royaume-Uni,Europe
+637,Hanovre,Allemagne,Europe
+638,Beaumont,États-Unis d'Amérique,North America
+639,Cairns,Australie,Oceania
+640,Clèves,Allemagne,Europe
+641,Oberhausen,Allemagne,Europe
+642,South Norfolk,Royaume-Uni,Europe
+643,Dortmund,Allemagne,Europe
+644,Valorbiquet,France,Europe
+645,South Derbyshire,Royaume-Uni,Europe
+646,West Devon,Royaume-Uni,Europe
+647,Charleston,États-Unis d'Amérique,North America
+648,Rabat,Maroc,Africa
+649,Les Monts d'Aunay,France,Europe
+650,La Plagne-Tarentaise,France,Europe
+651,Leyde,Pays-Bas,Europe
+652,Area G (Lac La Hache/108 Mile Ranch),Canada,North America
+653,Odense,Danemark,Europe
+654,دهستان قره قویون شمالی,Iran,Asia
+655,Hambleton,Royaume-Uni,Europe
+656,Mesnil-Roc'h,France,Europe
+657,Wilmington,États-Unis d'Amérique,North America
+658,St Albans,Royaume-Uni,Europe
+659,Torridge,Royaume-Uni,Europe
+660,Richmond,Royaume-Uni,Europe
+661,Pilsen,Tchéquie,Europe
+662,Groningue,Pays-Bas,Europe
+663,Eindhoven,Pays-Bas,Europe
+664,Magdebourg,Allemagne,Europe
+665,Brême,Allemagne,Europe
+666,أم ليله,Émirats arabes unis,Asia
+667,Surrey Heath,Royaume-Uni,Europe
+668,Gelsenkirchen,Allemagne,Europe
+669,Blaison-Saint-Sulpice,France,Europe
+670,Mohammédia,Maroc,Africa
+671,Colorado Springs,États-Unis d'Amérique,North America
+672,Delft,Pays-Bas,Europe
+673,Heidelberg,Allemagne,Europe
+674,East Staffordshire,Royaume-Uni,Europe
+675,Neuss,Allemagne,Europe
+676,Terres-de-Caux,France,Europe
+677,Argenteuil,France,Europe
+678,Cressensac-Sarrazac,France,Europe
+679,Aix-la-Chapelle,Allemagne,Europe
+680,Hanau,Allemagne,Europe
+681,Machecoul-Saint-Même,France,Europe
+682,Eden,Royaume-Uni,Europe
+683,West Oxfordshire,Royaume-Uni,Europe
+684,Beaussais-sur-Mer,France,Europe
+685,Château-Gontier-sur-Mayenne,France,Europe
+686,Vair-sur-Loire,France,Europe
+687,Les Hauts-d'Anjou,France,Europe
+688,Villedieu-les-Poêles-Rouffigny,France,Europe
+689,New Forest,Royaume-Uni,Europe
+690,Wuppertal,Allemagne,Europe
+691,Brissac-Loire-Aubance,France,Europe
+692,Livarot-Pays-d'Auge,France,Europe
+693,Binic-Étables-sur-Mer,France,Europe
+694,Waverley,Royaume-Uni,Europe
+695,Washington,États-Unis d'Amérique,North America
+696,Offenbach-sur-le-Main,Allemagne,Europe
+697,The Villages,États-Unis d'Amérique,North America
+698,Δημοτική Ενότητα Αντιρρίου,Grèce,Europe
+699,Téteghem-Coudekerque-Village,France,Europe
+700,Parañaque,Philippines,Asia
+701,City of Rochester,États-Unis d'Amérique,North America
+702,Launceston,Australie,Oceania
+703,Ostende,Belgique,Europe
+704,Winnipeg,Canada,North America
+705,Modiin-Maccabim-Reout,Israël,Asia
+706,Lagos da Beira e Lajeosa,Portugal,Europe
+707,Kiel,Allemagne,Europe
+708,Charvieu-Chavagneux,France,Europe
+709,Stirling,Royaume-Uni,Europe
+710,Aalborg,Danemark,Europe
+711,Pont de Montvert - Sud Mont Lozère,France,Europe
+712,Hamm,Allemagne,Europe
+713,Град Сремска Митровица,Serbie,Europe
+714,Bernay-Saint-Martin,France,Europe
+715,Chattanooga,États-Unis d'Amérique,North America
+716,Saint-Pétersbourg,Russie,Europe
+717,Horsens,Danemark,Europe
+718,Milizac-Guipronvel,France,Europe
+719,Gennes-Val-de-Loire,France,Europe
+720,Mesnils-sur-Iton,France,Europe
+721,Ancône,Italie,Europe
+722,Harborough,Royaume-Uni,Europe
+723,Tuban,Indonésie,Asia
+724,Sartilly-Baie-Bocage,France,Europe
+725,Capdenac,France,Europe
+726,Val-de-Ruz,Suisse,Europe
+727,Trois-Rivières,Canada,North America
+728,Waterloo,États-Unis d'Amérique,North America
+729,Sèvremoine,France,Europe
+730,Terranjou,France,Europe
+731,Chanverrie,France,Europe
+732,La Hague,France,Europe
+733,Franceville,Gabon,Africa
+734,Papeete,France,Europe
+735,Palo Alto,États-Unis d'Amérique,North America
+736,Chambaron sur Morge,France,Europe
+737,Bergisch Gladbach,Allemagne,Europe
+738,Enschede,Pays-Bas,Europe
+739,Barcelos,Portugal,Europe
+740,Rebecq-Rognon,Belgique,Europe
+741,Ludwigshafen am Rhein,Allemagne,Europe
+742,Les Monts-d'Andaine,France,Europe
+743,Borough d'Erewash,Royaume-Uni,Europe
+744,Cugy (FR),Suisse,Europe
+745,San Francisco,États-Unis d'Amérique,North America
+746,Lichfield,Royaume-Uni,Europe
+747,Elmbridge,Royaume-Uni,Europe
+748,Uttlesford,Royaume-Uni,Europe
+749,Santa Monica,États-Unis d'Amérique,North America
+750,Dacorum,Royaume-Uni,Europe
+751,Kolding,Danemark,Europe
+752,St. Joseph,États-Unis d'Amérique,North America
+753,Wuling,Chine,Asia
+754,Sarrebruck,Allemagne,Europe
+755,Lagoa e Carvoeiro,Portugal,Europe
+756,Al-Aïn,Émirats arabes unis,Asia
+757,North Warwickshire,Royaume-Uni,Europe
+758,Gatineau,Canada,North America
+759,Erfurt,Allemagne,Europe
+760,Plateau d'Hauteville,France,Europe
+761,Chemillé-en-Anjou,France,Europe
+762,Petah Tikva,Israël,Asia
+763,Santa Fé,Panamá,North America
+764,Montréverd,France,Europe
+765,Lamballe-Armor,France,Europe
+766,Barbezieux-Saint-Hilaire,France,Europe
+767,Châtelaudren-Plouagat,France,Europe
+768,Follo,Italie,Europe
+769,Denver,États-Unis d'Amérique,North America
+770,Djeddah,Arabie saoudite,Asia
+771,Marlborough,États-Unis d'Amérique,North America
+772,Les Ancizes-Comps,France,Europe
+773,Valence-en-Poitou,France,Europe
+774,Lelystad,Pays-Bas,Europe
+775,Salins-Fontaine,France,Europe
+776,Antananarivo,Madagascar,Africa
+777,Ubaye-Serre-Ponçon,France,Europe
+778,Valle de Egüés/Eguesibar,Espagne,Europe
+779,Calderdale,Royaume-Uni,Europe
+780,North West Leicestershire,Royaume-Uni,Europe
+781,Jönköping,Suède,Europe
+782,Kavala,Grèce,Europe
+783,Le Val d'Hazey,France,Europe
+784,Sofia,Bulgarie,Europe
+785,Torigny-les-Villes,France,Europe
+786,Roskilde,Danemark,Europe
+787,Broadland,Royaume-Uni,Europe
+788,Bochum,Allemagne,Europe
+789,Borough londonien de Hillingdon,Royaume-Uni,Europe
+790,Chennai,Inde,Asia
+791,Gourri,Chypre,Asia
+792,West Lindsey,Royaume-Uni,Europe
+793,Val-de-Moder,France,Europe
+794,Val d'Anast,France,Europe
+795,Palmerston North City,Nouvelle-Zélande,Oceania
+796,Fenland,Royaume-Uni,Europe
+797,Westfield,États-Unis d'Amérique,North America
+798,Navour-sur-Grosne,France,Europe
+799,Saint-Eutrope-de-Born,France,Europe
+800,Ormont-Dessus,Suisse,Europe
+801,Erlangen,Allemagne,Europe
+802,Groslée-Saint-Benoit,France,Europe
+803,Clos du Doubs,Suisse,Europe
+804,Copeland,Royaume-Uni,Europe
+805,Augsbourg,Allemagne,Europe
+806,Laredo,États-Unis d'Amérique,North America
+807,Koweït,Koweït,Asia
+808,None,Antarctica,Antarctica
+809,Gloucester,None,None
+810,None,Royaume-Uni,Europe
+811,Cité de Westminster,None,None
+812,Swale,None,None
+813,Paris,Royaume-Uni,Europe
+814,Johannesbourg,France,Europe
+815,Dunfermline,Afrique du Sud,Africa
+816,Limoges,Royaume-Uni,Europe
+817,None,France,Europe
+818,Clermont-Ferrand,None,None
+819,Hart,France,Europe
+820,Test Valley,None,None
+821,Milton Keynes,None,None
+822,Las Palmas de Grande Canarie,None,None
+823,None,Espagne,Europe
+824,Hart,None,None
+825,Anvers,None,None
+826,Salisbury,Belgique,Europe
+827,Munich,Royaume-Uni,Europe
+828,None,Allemagne,Europe
+829,East Devon,None,None
+830,Barcelone,None,None
+831,York,None,None
+832,Châtel-en-Trièves,None,None
+833,Teignbridge,None,None
+834,Bilbao,Royaume-Uni,Europe
+835,Trois-Rivières,None,None
+836,None,Canada,North America
+837,Pérouse,Royaume-Uni,Europe
+838,Manchester,Italie,Europe
+839,Birmingham,None,None
+840,Milan,Royaume-Uni,Europe
+841,None,Italie,Europe
+842,Liège,None,None
+843,Bristol,Belgique,Europe
+844,Welwyn Hatfield,None,None
+845,Glasgow,None,None
+846,Lincoln,Royaume-Uni,Europe
+847,Plymouth,États-Unis d'Amérique,North America
+848,Manchester,None,None
+849,Milan,None,None
+850,Castle Point,Italie,Europe
+851,Charleroi,None,None
+852,None,Belgique,Europe
+853,Wychavon,None,None
+854,Dunkerque,Royaume-Uni,Europe
+855,Toulouse,Royaume-Uni,Europe
+856,South Lakeland,France,Europe
+857,Genève,Royaume-Uni,Europe
+858,None,Suisse,Europe
+859,Hildesheim,None,None
+860,Paris,Allemagne,Europe
+861,Genève,None,None
+862,Barcelone,Royaume-Uni,Europe
+863,West Suffolk,Espagne,Europe
+864,Reus,None,None
+865,Cité de Westminster,Espagne,Europe
+866,Bologne,None,None
+867,Dacorum,Italie,Europe
+868,Naples,None,None
+869,Heidelberg,None,None
+870,Bedford Township,Allemagne,Europe
+871,None,États-Unis d'Amérique,North America
+872,Édimbourg,None,None
+873,Nouméa,None,None
+874,Francfort-sur-le-Main,France,Europe
+875,Vancouver,None,None
+876,Sheffield,Canada,North America
+877,Cincinnati,Royaume-Uni,Europe
+878,Allerdale,None,None
+879,Saint-Sébastien,Royaume-Uni,Europe
+880,North Warwickshire,Espagne,Europe
+881,Cork,None,None
+882,Liverpool,Irlande,Europe
+883,Rother,None,None
+884,Liège,Royaume-Uni,Europe
+885,Pérouse,Belgique,Europe
+886,Leeds,None,None
+887,Les Hauts-d'Anjou,None,None
+888,Liverpool,None,None
+889,Lille,None,None
+890,Nottingham,France,Europe
+891,Londres,France,Europe
+892,Parla,Royaume-Uni,Europe
+893,Dundalk,None,None
+894,York,États-Unis d'Amérique,North America
+895,Lausanne,Royaume-Uni,Europe
+896,Oviède,None,None
+897,Cité de Wakefield,None,None
+898,Bristol,None,None
+899,Norwich,None,None
+900,Vigo,Royaume-Uni,Europe
+901,Duisbourg,None,None
+902,Argentonnay,Royaume-Uni,Europe
+903,Newcastle upon Tyne,None,None
+904,Bruxelles,Royaume-Uni,Europe
+905,Rennes,None,None
+906,Adélaïde,None,None
+907,None,Australie,Oceania
+908,North Devon,None,None
+909,Santa Ana,None,None
+910,Cologne,Italie,Europe
+911,Lincoln,Allemagne,Europe
+912,Sydney,None,None
+913,Sainte-Marie-du-Câtel,Australie,Oceania
+914,Elmbridge,Guernesey,Europe
+915,Chelmsford,None,None
+916,Saint-Étienne,None,None
+917,Cardiff,None,None
+918,Ribble Valley,None,None
+919,Bois-le-Duc,Royaume-Uni,Europe
+920,None,Pays-Bas,Europe
+921,St Albans,None,None
+922,Bordeaux,None,None
+923,Cité de Westminster,France,Europe
+924,Amsterdam,None,None
+925,Plymouth,Pays-Bas,Europe
+926,Cork,Royaume-Uni,Europe
+927,Fredrikstad,Irlande,Europe
+928,None,Norvège,Europe
+929,East Lindsey,None,None
+930,Londres,None,None
+931,Limerick,Royaume-Uni,Europe
+932,Cardiff,Irlande,Europe
+933,South Tyneside,None,None
+934,Haarlem,None,None
+935,North West Leicestershire,None,None
+936,Fylde,None,None
+937,Lethbridge,Royaume-Uni,Europe
+938,Vogtei,Canada,North America
+939,Castle Point,Allemagne,Europe
+940,Portsmouth,None,None
+941,Gemeinde Herzogenburg,Royaume-Uni,Europe
+942,Sheffield,Autriche,Europe
+943,Santa Fé,Royaume-Uni,Europe
+944,None,Panamá,North America
+945,Hull,None,None
+946,Adélaïde,Australie,Oceania
+947,Pretoria,Afrique du Sud,Africa
+948,Phoenix,États-Unis d'Amérique,North America
+949,Nanaimo,Canada,North America
+950,Limassol,Chypre,Asia
+951,North Kesteven,Royaume-Uni,Europe
+952,Dundalk,États-Unis d'Amérique,North America
+953,אשדוד,Israël,Asia
+954,Concord,États-Unis d'Amérique,North America
+955,Balneário Camboriú,Brésil,South America
+956,Pozzaglio ed Uniti,Italie,Europe
+957,Onesse-Laharie,France,Europe
+958,Hyderabad,Inde,Asia
+959,Christchurch,Nouvelle-Zélande,Oceania
+960,Caracas,Venezuela,South America
+961,Area C (Stuart Lake/Omineca Valley),Canada,North America
+962,Vire Normandie,France,Europe
+963,Unorganized North Algoma,Canada,North America
+964,South Hams,Royaume-Uni,Europe
+965,Muharraq,Bahreïn,Asia
+966,Trévise,Italie,Europe
+967,Philadelphie,États-Unis d'Amérique,North America
+968,Conseil régional de Ramat Negev,Israël,Asia
+969,Nouméa,France,Europe
+970,Harlingen,États-Unis d'Amérique,North America
+971,Sacramento,États-Unis d'Amérique,North America
+972,Towson,États-Unis d'Amérique,North America
+973,Paderborn,Allemagne,Europe
+974,Sarpsborg,Norvège,Europe
+975,Virginia Beach,États-Unis d'Amérique,North America
+976,Saint Paul,États-Unis d'Amérique,North America
+977,Montaigu-Vendée,France,Europe
+978,Stavanger,Norvège,Europe
+979,Dos Hermanas,Espagne,Europe
+980,Holon,Israël,Asia
+981,Munich,Allemagne,Europe
+982,Rives-en-Seine,France,Europe
+983,Raleigh,États-Unis d'Amérique,North America
+984,Fussa,Japon,Asia
+985,Brno,Tchéquie,Europe
+986,Risch-Rotkreuz,Suisse,Europe
+987,Lefkoşa Türk Belediyesi,Chypre,Asia
+988,Raanana,Israël,Asia
+989,Cancún,Mexique,North America
+990,Split,Croatie,Europe
+991,Brunstatt-Didenheim,France,Europe
+992,Buraydah,Arabie saoudite,Asia
+993,Bakou,Azerbaïdjan,Asia
+994,Bistrița,Roumanie,Europe
+995,Rio Claro,Brésil,South America
+996,Oceanside,États-Unis d'Amérique,North America
+997,Murcie,Espagne,Europe
+998,Johnson City,États-Unis d'Amérique,North America
+999,Atlanta,États-Unis d'Amérique,North America
+1000,Miami,États-Unis d'Amérique,North America
+1001,Tioumen,Russie,Europe
+1002,Boca Raton,États-Unis d'Amérique,North America
+1003,Gold Coast City,Australie,Oceania
+1004,Rancho Cucamonga,États-Unis d'Amérique,North America
+1005,Lusseray,France,Europe
+1006,Nijni Novgorod,Russie,Europe
+1007,Las Vegas,États-Unis d'Amérique,North America
+1008,Johannesbourg,Afrique du Sud,Africa
+1009,Rockford,États-Unis d'Amérique,North America
+1010,Mascate,Oman,Asia
+1011,Oakland,États-Unis d'Amérique,North America
+1012,New Delhi,Inde,Asia
+1013,Austin,États-Unis d'Amérique,North America
+1014,Boise,États-Unis d'Amérique,North America
+1015,Viterbe,Italie,Europe
+1016,Pérouse,Italie,Europe
+1017,Oslo,Norvège,Europe
+1018,Maceió,Brésil,South America
+1019,New Haven,États-Unis d'Amérique,North America
+1020,Fort Wayne,États-Unis d'Amérique,North America
+1021,Freetown,Sierra Leone,Africa
+1022,District d'Adur,Royaume-Uni,Europe
+1023,Ankara,Turquie,Asia
+1024,Glarus Süd,Suisse,Europe
+1025,Ratisbonne,Allemagne,Europe
+1026,Mercurol-Veaunes,France,Europe
+1027,Huntington Beach,États-Unis d'Amérique,North America
+1028,Scottsdale,États-Unis d'Amérique,North America
+1029,Houston,États-Unis d'Amérique,North America
+1030,San Antonio,États-Unis d'Amérique,North America
+1031,Ayamonte,Espagne,Europe
+1032,Braga,Portugal,Europe
+1033,千代田区,Japon,Asia
+1034,Malemort,France,Europe
+1035,Arlington,États-Unis d'Amérique,North America
+1036,Rijeka,Croatie,Europe
+1037,Bielsko-Biała,Pologne,Europe
+1038,Craven,Royaume-Uni,Europe
+1039,Costa da Caparica,Portugal,Europe
+1040,District de Huangpu,Chine,Asia
+1041,Braddan,Île de Man,Europe
+1042,Borba,Portugal,Europe
+1043,Timmendorfer Strand,Allemagne,Europe
+1044,Växjö,Suède,Europe
+1045,Ingolstadt,Allemagne,Europe
+1046,Settat,Maroc,Africa
+1047,San Diego,États-Unis d'Amérique,North America
+1048,Odessa,Ukraine,Europe
+1049,Marennes-Hiers-Brouage,France,Europe
+1050,Invercargill City,Nouvelle-Zélande,Oceania
+1051,Kamloops,Canada,North America
+1052,Calgary,Canada,North America
+1053,Alghero,Italie,Europe
+1054,Antalya,Turquie,Asia
+1055,Hachiōji,Japon,Asia
+1056,Port-au-Prince,Haïti,North America
+1057,Pordenone,Italie,Europe
+1058,Grad Dubrovnik,Croatie,Europe
+1059,Santa Clarita,États-Unis d'Amérique,North America
+1060,Gemeinde Amstetten,Autriche,Europe
+1061,Stellenbosch Local Municipality,Afrique du Sud,Africa
+1062,Parme,Italie,Europe
+1063,Kitchener,Canada,North America
+1064,Kingsley Township,États-Unis d'Amérique,North America
+1065,Williamsburg,États-Unis d'Amérique,North America
+1066,Molina de Segura,Espagne,Europe
+1067,Randers,Danemark,Europe
+1068,Indaiatuba,Brésil,South America
+1069,Accra,Ghana,Africa
+1070,Poznań,Pologne,Europe
+1071,Remscheid,Allemagne,Europe
+1072,Münster,Allemagne,Europe
+1073,Mézidon Vallée d'Auge,France,Europe
+1074,Alice Springs,Australie,Oceania
+1075,Reykjavik,Islande,Europe
+1076,Murwara,Inde,Asia
+1077,Niterói,Brésil,South America
+1078,Gazzada Schianno,Italie,Europe
+1079,Argentat-sur-Dordogne,France,Europe
+1080,Monnetier-Mornex,France,Europe
+1081,La Valette,Malte,Europe
+1082,Mestre,Italie,Europe
+1083,Sundsvalls Gustav Adolfs distrikt,Suède,Europe
+1084,Pesaro,Italie,Europe
+1085,Lousã e Vilarinho,Portugal,Europe
+1086,Marratxí,Espagne,Europe
+1087,Hôpital-Camfrout,France,Europe
+1088,La Grande-Béroche,Suisse,Europe
+1089,Savegre,Costa Rica,North America
+1090,Borough de Rossendale,Royaume-Uni,Europe
+1091,North Vancouver,Canada,North America
+1092,Loretz-d'Argenton,France,Europe
+1093,Moyon Villages,France,Europe
+1094,Yanbu,Arabie saoudite,Asia
+1095,Terres-de-Haute-Charente,France,Europe
+1096,Beilin,Chine,Asia
+1097,Granges-Aumontzey,France,Europe
+1098,Flint,États-Unis d'Amérique,North America
+1099,Krefeld,Allemagne,Europe
+1100,Jakarta,Indonésie,Asia
+1101,Canberra,Australie,Oceania
+1102,Grosseto,Italie,Europe
+1103,Sienne,Italie,Europe
+1104,Monte San Pietro,Italie,Europe
+1105,Dayton,États-Unis d'Amérique,North America
+1106,Le Chesnay-Rocquencourt,France,Europe
+1107,Fès,Maroc,Africa
+1108,Marktgemeinde Schruns,Autriche,Europe
+1109,Oran,Algérie,Africa
+1110,Jesús María,Pérou,South America
+1111,Hsinchu,Taïwan,Asia
+1112,Glendale,États-Unis d'Amérique,North America
+1113,Le Caire,Égypte,Africa
+1114,Puente Piedra,Pérou,South America
+1115,Bendigo,Australie,Oceania
+1116,Haïfa,Israël,Asia
+1117,Fortaleza,Brésil,South America
+1118,Dakar,Sénégal,Africa
+1119,Bamako,Mali,Africa
+1120,Darwin,Australie,Oceania
+1121,Rostock,Allemagne,Europe
+1122,Laboe,Allemagne,Europe
+1123,Salem,États-Unis d'Amérique,North America
+1124,Nairobi,Kenya,Africa
+1125,Harare,Zimbabwe,Africa
+1126,Göteborg,Suède,Europe
+1127,Lorca,Espagne,Europe
+1128,Manama,Bahreïn,Asia
+1129,Amman,Jordanie,Asia
+1130,East Hampshire,Royaume-Uni,Europe
+1131,Mateh Yehuda,Israël,Asia
+1132,Forest of Dean,Royaume-Uni,Europe
+1133,Pékin,Chine,Asia
+1134,Springfield,États-Unis d'Amérique,North America
+1135,Paraiso,Panamá,North America
+1136,Mayronnes,France,Europe
+1137,South Ribble,Royaume-Uni,Europe
+1138,Calcutta,Inde,Asia
+1139,Burlington,États-Unis d'Amérique,North America
+1140,Kiev,Ukraine,Europe
+1141,Aurora,États-Unis d'Amérique,North America
+1142,Saldanha Bay Local Municipality,Afrique du Sud,Africa
+1143,Tuluá,Colombie,South America
+1144,arrondissement de Marrakech-Medina,Maroc,Africa
+1145,Fort Myers,États-Unis d'Amérique,North America
+1146,The Municipal District of Cappamore — Kilmallock,Irlande,Europe
+1147,Reutlingen,Allemagne,Europe
+1148,Charlotte,États-Unis d'Amérique,North America
+1149,Santo André,Brésil,South America
+1150,Damas,Syrie,Asia
+1151,Khobar,Arabie saoudite,Asia
+1152,Zagreb,Croatie,Europe
+1153,Charjah,Émirats arabes unis,Asia
+1154,Ljubljana,Slovénie,Europe
+1155,Épagny Metz-Tessy,France,Europe
+1156,Les Vallées de la Vanne,France,Europe
+1157,Vœuil-et-Giget,France,Europe
+1158,Madison,États-Unis d'Amérique,North America
+1159,Abou Dabi,Émirats arabes unis,Asia
+1160,Petit-Caux,France,Europe
+1161,Hildesheim,Allemagne,Europe
+1162,Vilnius,Lituanie,Europe
+1163,Mahikeng Local Municipality,Afrique du Sud,Africa
+1164,Riga,Lettonie,Europe
+1165,Divatte-sur-Loire,France,Europe
+1166,Siegen,Allemagne,Europe
+1167,Seongnam,Corée du Sud,Asia
+1168,Fuenlabrada,Espagne,Europe
+1169,Newcastle-Maitland,Australie,Oceania
+1170,Cavan-Monaghan,Canada,North America
+1171,Playa del Carmen,Mexique,North America
+1172,Vaughan,Canada,North America
+1173,Marbois,France,Europe
+1174,Issoire,France,Europe
+1175,Amagasaki,Japon,Asia
+1176,Bassillac et Auberoche,France,Europe
+1177,Denton,États-Unis d'Amérique,North America
+1178,Nouakchott,Mauritanie,Africa
+1179,Montsenelle,France,Europe
+1180,Durban,Afrique du Sud,Africa
+1181,Auchay-sur-Vendée,France,Europe
+1182,Manille,Philippines,Asia
+1183,Erie,États-Unis d'Amérique,North America
+1184,Berat,Albanie,Europe
+1185,Gemeinde Hinterbrühl,Autriche,Europe
+1186,San Jose,États-Unis d'Amérique,North America
+1187,Funchal,Portugal,Europe
+1188,Guayaquil,Équateur,South America
+1189,Williamsport,États-Unis d'Amérique,North America
+1190,Quito,Équateur,South America
+1191,Ponta Delgada,Portugal,Europe
+1192,Olhão,Portugal,Europe
+1193,Les Châteliers,France,Europe
+1194,Praia Grande,Brésil,South America
+1195,St Asaph,Royaume-Uni,Europe
+1196,Ermesinde,Portugal,Europe
+1197,Municipio de Comodoro Rivadavia,Argentine,South America
+1198,Nassau,Les Bahamas,North America
+1199,Póvoa de Varzim,Portugal,Europe
+1200,Figueira da Foz,Portugal,Europe
+1201,Saint-Martin-lez-Tatinghem,France,Europe
+1202,Trente,Italie,Europe
+1203,Barakaldo,Espagne,Europe
+1204,Gujō,Japon,Asia
+1205,Alpendorada Várzea e Torrão,Portugal,Europe
+1206,Phnom Penh,Cambodge,Asia
+1207,Bacoor,Philippines,Asia
+1208,Maputo,Mozambique,Africa
+1209,Dacca,Bangladesh,Asia
+1210,Kissimmee,États-Unis d'Amérique,North America
+1211,Castrillón,Espagne,Europe
+1212,Rosario,Argentine,South America
+1213,Monza,Italie,Europe
+1214,Meyssac,France,Europe
+1215,Raguse,Italie,Europe
+1216,North Norfolk,Royaume-Uni,Europe
+1217,Oldenbourg,Allemagne,Europe
+1218,Quesada,Costa Rica,North America
+1219,Udine,Italie,Europe
+1220,Le Rousset-Marizy,France,Europe
+1221,uMfolozi Local Municipality,Afrique du Sud,Africa
+1222,Torres Vedras,Portugal,Europe
+1223,Comezzano-Cizzago,Italie,Europe
+1224,Solingen,Allemagne,Europe
+1225,Pasadena,États-Unis d'Amérique,North America
+1226,Augusta,États-Unis d'Amérique,North America
+1227,Chalcis,Grèce,Europe
+1228,Tallinn,Estonie,Europe
+1229,Salzbourg,Autriche,Europe
+1230,Graz,Autriche,Europe
+1231,Oklahoma City,États-Unis d'Amérique,North America
+1232,Recklinghausen,Allemagne,Europe
+1233,Burbank,États-Unis d'Amérique,North America
+1234,Pickerington,États-Unis d'Amérique,North America
+1235,Montereale Valcellina,Italie,Europe
+1236,Trapani,Italie,Europe
+1237,Sepang,Malaisie,Asia
+1238,La Valle Agordina,Italie,Europe
+1239,Schwerin,Allemagne,Europe
+1240,San Cristóbal de las Casas,Mexique,North America
+1241,Klagenfurt,Autriche,Europe
+1242,Tanger,Maroc,Africa
+1243,Port-Vila,Vanuatu,Oceania
+1244,Fort Worth,États-Unis d'Amérique,North America
+1245,Les Velluire-sur-Vendée,France,Europe
+1246,Tacoma,États-Unis d'Amérique,North America
+1247,Cangas de Onís,Espagne,Europe
+1248,Castels et Bézenac,France,Europe
+1249,Valsamoggia,Italie,Europe
+1250,Val-Couesnon,France,Europe
+1251,Townsville,Australie,Oceania
+1252,Vexin-sur-Epte,France,Europe
+1253,Pelotas,Brésil,South America
+1254,Oeiras e São Julião da Barra Paço de Arcos e Caxias,Portugal,Europe
+1255,Bombay,Inde,Asia
+1256,Târgoviște,Roumanie,Europe
+1257,Pickering,Canada,North America
+1258,Honiara,Salomon,Oceania
+1259,Fougerolles-Saint-Valbert,France,Europe
+1260,West Pikeland Township,États-Unis d'Amérique,North America
+1261,l'Hospitalet de Llobregat,Espagne,Europe
+1262,Ducey-les-Chéris,France,Europe
+1263,Tulsa,États-Unis d'Amérique,North America
+1264,Recife,Brésil,South America
+1265,Laurentian Valley,Canada,North America
+1266,Alto Reno Terme,Italie,Europe
+1267,Vila do Conde,Portugal,Europe
+1268,Suginami,Japon,Asia
+1269,Villorsonnens,Suisse,Europe
+1270,Amesbury,États-Unis d'Amérique,North America
+1271,Cotia,Brésil,South America
+1272,Coquitlam,Canada,North America
+1273,Cracovie,Pologne,Europe
+1274,Fafe,Portugal,Europe
+1275,Elizabethtown,États-Unis d'Amérique,North America
+1276,Aarhus,Danemark,Europe
+1277,Loures,Portugal,Europe
+1278,Lübeck,Allemagne,Europe
+1279,Cordenons,Italie,Europe
+1280,Trofa,Portugal,Europe
+1281,Carcavelos e Parede,Portugal,Europe
+1282,Bressana Bottarone,Italie,Europe
+1283,Le Pont-de-Claix,France,Europe
+1284,Schlangen,Allemagne,Europe
+1285,Mont-Albert,Canada,North America
+1286,Cayenne,France,Europe
+1287,坂戸市,Japon,Asia
+1288,Ann Arbor,États-Unis d'Amérique,North America
+1289,Dresde,Allemagne,Europe
+1290,Valongo,Portugal,Europe
+1291,Greater Sudbury,Canada,North America
+1292,Tauranga,Nouvelle-Zélande,Oceania
+1293,Alcobasa,Portugal,Europe
+1294,Sandefjord,Norvège,Europe
+1295,Bydgoszcz,Pologne,Europe
+1296,Montemor-o-Novo,Portugal,Europe
+1297,Beja,Portugal,Europe
+1298,Ploiești,Roumanie,Europe
+1299,Islamabad,Pakistan,Asia
+1300,Montval-sur-Loir,France,Europe
+1301,East London,Afrique du Sud,Africa
+1302,Tejutepeque,Salvador,North America
+1303,Kfar Saba,Israël,Asia
+1304,Oradea,Roumanie,Europe
+1305,Teramo,Italie,Europe
+1306,Chaves,Portugal,Europe
+1307,Thornton,États-Unis d'Amérique,North America
+1308,Ílhavo,Portugal,Europe
+1309,Trèves,Allemagne,Europe
+1310,Cesny-les-Sources,France,Europe
+1311,Vila Nova de Famalicão,Portugal,Europe
+1312,Bédouès-Cocurès,France,Europe
+1313,Oliveira de Azeméis,Portugal,Europe
+1314,Abrantes,Portugal,Europe
+1315,Vila Franca de Xira,Portugal,Europe
+1316,Kozhikode,Inde,Asia
+1317,Borgo Virgilio,Italie,Europe
+1318,Chūō,Japon,Asia
+1319,Coblence,Allemagne,Europe
+1320,Brugelette (section),Belgique,Europe
+1321,Blancs-Coteaux,France,Europe
+1322,Val de Virvée,France,Europe
+1323,Thury-Harcourt-le-Hom,France,Europe
+1324,Noyant-Villages,France,Europe
+1325,Calvos de Randín,Espagne,Europe
+1326,João Pessoa,Brésil,South America
+1327,Tresa,Suisse,Europe
+1328,Clarksville,États-Unis d'Amérique,North America
+1329,Urtenen-Schönbühl,Suisse,Europe
+1330,Auckland,Nouvelle-Zélande,Oceania
+1331,Newcastle,Australie,Oceania
+1332,Seattle,États-Unis d'Amérique,North America
+1333,Valambray,France,Europe
+1334,Surprise,États-Unis d'Amérique,North America
+1335,Fort Lauderdale,États-Unis d'Amérique,North America
+1336,Amarillo,États-Unis d'Amérique,North America
+1337,North Perth,Canada,North America
+1338,Mississauga,Canada,North America
+1339,Honolulu,États-Unis d'Amérique,North America
+1340,Vulbens,France,Europe
+1341,Manassas,États-Unis d'Amérique,North America
+1342,Crêts-en-Belledonne,France,Europe
+1343,Viña del Mar,Chili,South America
+1344,Cité de Londres,Royaume-Uni,Europe
+1345,Galați,Roumanie,Europe
+1346,Mortain-Bocage,France,Europe
+1347,Netanya,Israël,Asia
+1348,Mytilène,Grèce,Europe
+1349,Tampere,Finlande,Europe
+1350,Londrina,Brésil,South America
+1351,Cours,France,Europe
+1352,Saint-Cast-le-Guildo,France,Europe
+1353,Staffordshire Moorlands,Royaume-Uni,Europe
+1354,Gurugram,Inde,Asia
+1355,Masevaux-Niederbruck,France,Europe
+1356,Brazzaville,Congo-Brazzaville,Africa
+1357,Innsbruck,Autriche,Europe
+1358,Sines,Portugal,Europe
+1359,Morcenx-la-Nouvelle,France,Europe
+1360,Astana,Kazakhstan,Asia
+1361,Larissa,Grèce,Europe
+1362,Whangārei,Nouvelle-Zélande,Oceania
+1363,District de Yinzhou,Chine,Asia
+1364,Hanoï,Viêt Nam,Asia
+1365,Västerås,Suède,Europe
+1366,Gütersloh,Allemagne,Europe
+1367,Bethlehem,États-Unis d'Amérique,North America
+1368,Perth,Royaume-Uni,Europe
+1369,Elvas,Portugal,Europe
+1370,Dallas,États-Unis d'Amérique,North America
+1371,Fairfax,États-Unis d'Amérique,North America
+1372,Alexandroúpoli,Grèce,Europe
+1373,Détroit,États-Unis d'Amérique,North America
+1374,Makati,Philippines,Asia
+1375,South Cambridgeshire,Royaume-Uni,Europe
+1376,Marietta,États-Unis d'Amérique,North America
+1377,Samara,Russie,Europe
+1378,Medellín,Colombie,South America
+1379,Käerjeng,Luxembourg,Europe
+1380,Naperville,États-Unis d'Amérique,North America
+1381,Montrevault-sur-Èvre,France,Europe
+1382,Diera-Zehren,Allemagne,Europe
+1383,Malvern Hills,Royaume-Uni,Europe
+1384,Chassal-Molinges,France,Europe
+1385,Antonne-et-Trigonant,France,Europe
+1386,Port-Jérôme-sur-Seine,France,Europe
+1387,Berry,Canada,North America
+1388,Santo Tirso,Portugal,Europe
+1389,Klaipėda,Lituanie,Europe
+1390,Rety,France,Europe
+1391,La Sure en Chartreuse,France,Europe
+1392,Rio das Ostras,Brésil,South America
+1393,Dornburg-Camburg,Allemagne,Europe
+1394,Umeå,Suède,Europe
+1395,Oron,Suisse,Europe
+1396,Treis-Sants-en-Ouche,France,Europe
+1397,Cidade da Maia,Portugal,Europe
+1398,Etaux,France,Europe
+1399,Gemeinde Loosdorf,Autriche,Europe
+1400,Fort McMurray,Canada,North America
+1401,Δημοτική Ενότητα Πυλαρέων,Grèce,Europe
+1402,Val-de-Bonnieure,France,Europe
+1403,Runnymede,Royaume-Uni,Europe
+1404,Valle-di-Mezzana,France,Europe
+1405,District de Futian,Chine,Asia
+1406,Abilene,États-Unis d'Amérique,North America
+1407,Sunshine Coast Regional,Australie,Oceania
+1408,Sousse,Tunisie,Africa
+1409,Pensacola,États-Unis d'Amérique,North America
+1410,Çanakkale Merkez,Turquie,Asia
+1411,Selkirk,Canada,North America
+1412,Lubbock,États-Unis d'Amérique,North America
+1413,A'ali,Bahreïn,Asia
+1414,Caldas da Rainha,Portugal,Europe
+1415,Le Pirée,Grèce,Europe
+1416,Cincinnati,États-Unis d'Amérique,North America
+1417,Pittsburgh,États-Unis d'Amérique,North America
+1418,Euless,États-Unis d'Amérique,North America
+1419,Gillette,États-Unis d'Amérique,North America
+1420,Rock Springs,États-Unis d'Amérique,North America
+1421,Blonay - Saint-Légier,Suisse,Europe
+1422,Syracuse,Italie,Europe
+1423,Naberejnye Tchelny,Russie,Europe
+1424,Hagenthal-le-Bas,France,Europe
+1425,Municipal District of Macroom,Irlande,Europe
+1426,Noáin (Valle de Elorz)/Noain (Elortzibar),Espagne,Europe
+1427,Gilroy,États-Unis d'Amérique,North America
+1428,Osnabrück,Allemagne,Europe
+1429,Grosseto-Prugna,France,Europe
+1430,Le Val-d'Esnoms,France,Europe
+1431,Hartford,États-Unis d'Amérique,North America
+1432,Riells i Viabrea,Espagne,Europe
+1433,Celle-Lévescault,France,Europe
+1434,Espinho,Portugal,Europe
+1435,Apesia,Chypre,Asia
+1436,San Jose del Monte,Philippines,Asia
+1437,Montego Bay,Jamaïque,North America
+1438,Arkhangelsk,Russie,Europe
+1439,Koursk,Russie,Europe
+1440,Réthymnon,Grèce,Europe
+1441,Val Terbi,Suisse,Europe
+1442,Lubango,Angola,Africa
+1443,Saint-Sébastien,Espagne,Europe
+1444,Itacoatiara,Brésil,South America
+1445,Drummondville,Canada,North America
+1446,Nelson,Nouvelle-Zélande,Oceania
+1447,Las Piñas,Philippines,Asia
+1448,Stillwater,États-Unis d'Amérique,North America
+1449,Greater Kokstad Local Municipality,Afrique du Sud,Africa
+1450,Fredericksburg,États-Unis d'Amérique,North America
+1451,Blue Springs,États-Unis d'Amérique,North America
+1452,Bursa,Turquie,Asia
+1453,Blantyre,Malawi,Africa
+1454,Chatham,Canada,North America
+1455,Bandung,Indonésie,Asia
+1456,Leeuwarden,Pays-Bas,Europe
+1457,Alor Gajah,Malaisie,Asia
+1458,Hofheim am Taunus,Allemagne,Europe
+1459,Mookgopong Local Municipality,Afrique du Sud,Africa
+1460,Illapel,Chili,South America
+1461,Alexandrie,Égypte,Africa
+1462,Jerago con Orago,Italie,Europe
+1463,Jugon-les-Lacs-Commune-Nouvelle,France,Europe
+1464,Bellevigne-en-Layon,France,Europe
+1465,Uppsala,Suède,Europe
+1466,Саратов,Russie,Europe
+1467,Wingersheim les Quatre Bans,France,Europe
+1468,Newport,Royaume-Uni,Europe
+1469,Kaysersberg-Vignoble,France,Europe
+1470,Trafford,Royaume-Uni,Europe
+1471,Iekaterinbourg,Russie,Europe
+1472,Obninsk,Russie,Europe
+1473,Val-de-Charmey,Suisse,Europe
+1474,Mar del Plata,Argentine,South America
+1475,San Carlos de Bariloche,Argentine,South America
+1476,Elgin,États-Unis d'Amérique,North America
+1477,Campo Grande,Brésil,South America
+1478,Abuja,Nigéria,Africa
+1479,Saint-Domingue,République dominicaine,North America
+1480,Campinas,Brésil,South America
+1481,Goiânia,Brésil,South America
+1482,Δημοτική Ενότητα Κορινθίων,Grèce,Europe
+1483,Jaworzno,Pologne,Europe
+1484,Зеленоград,Russie,Europe
+1485,Santa Cruz de la Sierra,Bolivie,South America
+1486,Saint Petersburg,États-Unis d'Amérique,North America
+1487,Porsgrunn,Norvège,Europe
+1488,Penafiel,Portugal,Europe
+1489,Santarém,Portugal,Europe
+1490,Gävle,Suède,Europe
+1491,Comano Terme,Italie,Europe
+1492,Macaé,Brésil,South America
+1493,Δημοτική Ενότητα Ναυπλιέων,Grèce,Europe
+1494,Simi Valley,États-Unis d'Amérique,North America
+1495,Moulins en Bessin,France,Europe
+1496,Grande Prairie,Canada,North America
+1497,Campos do Jordão,Brésil,South America
+1498,Puerto Vallarta,Mexique,North America
+1499,Perímetro Urbano Popayán,Colombie,South America
+1500,Saint Charles,États-Unis d'Amérique,North America
+1501,Téhéran,Iran,Asia
+1502,Mönchengladbach,Allemagne,Europe
+1503,Barueri,Brésil,South America
+1504,Macedo de Cavaleiros,Portugal,Europe
+1505,Castelli Calepio,Italie,Europe
+1506,Illnau-Effretikon,Suisse,Europe
+1507,Itatiba,Brésil,South America
+1508,Agadir,Maroc,Africa
+1509,Piré-Chancé,France,Europe
+1510,Paragominas,Brésil,South America
+1511,Monterrey,Mexique,North America
+1512,Topeka,États-Unis d'Amérique,North America
+1513,Tirana,Albanie,Europe
+1514,Póvoa de Santa Iria,Portugal,Europe
+1515,Andria,Italie,Europe
+1516,Commune de Dessalines,Haïti,North America
+1517,Corona,États-Unis d'Amérique,North America
+1518,Sibiu,Roumanie,Europe
+1519,El Cajon,États-Unis d'Amérique,North America
+1520,Paramaribo,Suriname,South America
+1521,Greensburg,États-Unis d'Amérique,North America
+1522,Chilliwack,Canada,North America
+1523,Pembroke Pines,États-Unis d'Amérique,North America
+1524,Torrevieja,Espagne,Europe
+1525,Wollongong City Council,Australie,Oceania
+1526,Perímetro Urbano Pasto,Colombie,South America
+1527,Ville de Sarajevo,Bosnie-et-Herzégovine,Europe
+1528,Marigny-Le-Lozon,France,Europe
+1529,Debrecen,Hongrie,Europe
+1530,Surabaya,Indonésie,Asia
+1531,Aime-la-Plagne,France,Europe
+1532,Piracicaba,Brésil,South America
+1533,Stainach-Pürgg,Autriche,Europe
+1534,Kristiansand,Norvège,Europe
+1535,Ponta Grossa,Brésil,South America
+1536,Faaa,France,Europe
+1537,Frisco,États-Unis d'Amérique,North America
+1538,Maringá,Brésil,South America
+1539,Nicosie,Chypre,Asia
+1540,Takarazuka,Japon,Asia
+1541,Arad,Roumanie,Europe
+1542,Communauté rurale de Dendeye Gouy Gui,Sénégal,Africa
+1543,Malia,Chypre,Asia
+1544,Carapicuíba,Brésil,South America
+1545,Chandigarh,Inde,Asia
+1546,São José do Rio Preto,Brésil,South America
+1547,Oujda,Maroc,Africa
+1548,Turlock,États-Unis d'Amérique,North America
+1549,Passo Fundo,Brésil,South America
+1550,Hobart,Australie,Oceania
+1551,Apodaca,Mexique,North America
+1552,Catanduva,Brésil,South America
+1553,Koutaïssi,Géorgie,Asia
+1554,Armagh,Royaume-Uni,Europe
+1555,Beaumontois en Périgord,France,Europe
+1556,São José dos Campos,Brésil,South America
+1557,Putrajaya,Malaisie,Asia
+1558,Δημοτική Ενότητα Αρτέμιδος,Grèce,Europe
+1559,Izmir,Turquie,Asia
+1560,Kocaeli,Turquie,Asia
+1561,Δημοτική Ενότητα Αρτεμισίων,Grèce,Europe
+1562,Belém,Brésil,South America
+1563,Seixal,Portugal,Europe
+1564,Kaohsiung,Taïwan,Asia
+1565,Porto Velho,Brésil,South America
+1566,Lages,Brésil,South America
+1567,Lakeland,États-Unis d'Amérique,North America
+1568,Baton Rouge,États-Unis d'Amérique,North America
+1569,Perimetro Urbano Pereira,Colombie,South America
+1570,Potchefstroom,Afrique du Sud,Africa
+1571,Marrakech,Maroc,Africa
+1572,São Carlos,Brésil,South America
+1573,Caboolture,Australie,Oceania
+1574,Blumenau,Brésil,South America
+1575,Ostrava,Tchéquie,Europe
+1576,Ilanz/Glion,Suisse,Europe
+1577,Smederevo,Serbie,Europe
+1578,Luleå,Suède,Europe
+1579,Breggia,Suisse,Europe
+1580,Kaliningrad,Russie,Europe
+1581,Hillsboro,États-Unis d'Amérique,North America
+1582,Fillière,France,Europe
+1583,Patras,Grèce,Europe
+1584,Douala II,Cameroun,Africa
+1585,Taichung,Taïwan,Asia
+1586,Myrtle Beach,États-Unis d'Amérique,North America
+1587,Minato,Japon,Asia
+1588,São Bernardo do Campo,Brésil,South America
+1589,Taipei,Taïwan,Asia
+1590,Tijuana,Mexique,North America
+1591,Petaling Jaya,Malaisie,Asia
+1592,Santiago de Querétaro,Mexique,North America
+1593,Perímetro Urbano Bucaramanga,Colombie,South America
+1594,Celje,Slovénie,Europe
+1595,Rivière-Nipissis,Canada,North America
+1596,Giannitsá,Grèce,Europe
+1597,José Luis Bustamante y Rivero,Pérou,South America
+1598,Araucária,Brésil,South America
+1599,Babergh,Royaume-Uni,Europe
+1600,Kharkiv,Ukraine,Europe
+1601,Shepparton,Australie,Oceania
+1602,North East Derbyshire,Royaume-Uni,Europe
+1603,Osaka,Japon,Asia
+1604,Tulkarem,Palestinian Territory,Asia
+1605,Ocala,États-Unis d'Amérique,North America
+1606,Oumm al Qaïwaïn,Émirats arabes unis,Asia
+1607,Laghnimyine,Maroc,Africa
+1608,Canoas,Brésil,South America
+1609,Jaipur,Inde,Asia
+1610,Szczecin,Pologne,Europe
+1611,Skopje,Macédoine du Nord,Europe
+1612,Karachi,Pakistan,Asia
+1613,Karlstad,Suède,Europe
+1614,Milwaukee,États-Unis d'Amérique,North America
+1615,Lviv,Ukraine,Europe
+1616,Halmstad,Suède,Europe
+1617,Ahmedabad,Inde,Asia
+1618,La Mecque,Arabie saoudite,Asia
+1619,Gosford,Australie,Oceania
+1620,Vadodara,Inde,Asia
+1621,Serguiev Possad,Russie,Europe
+1622,Ville de Saint-Marin,Saint-Marin,Europe
+1623,Salamanque,None,None
+1624,Miami,None,None
+1625,Rome,Royaume-Uni,Europe
+1626,Malaga,Italie,Europe
+1627,Rome,None,None
+1628,Bombay,None,None
+1629,None,Inde,Asia
+1630,Terni,None,None
+1631,Moscou,None,None
+1632,None,Russie,Europe
+1633,Maceió,None,None
+1634,None,Brésil,South America
+1635,Melbourne,None,None
+1636,Los Angeles,Australie,Oceania
+1637,Callao,None,None
+1638,Manchester,Pérou,South America
+1639,Stirling,None,None
+1640,Verzasca,None,None
+1641,Palerme,None,None
+1642,Milwaukee,Italie,Europe
+1643,Cagliari,États-Unis d'Amérique,North America
+1644,Gijon,Italie,Europe
+1645,Kaliningrad,Espagne,Europe
+1646,Djeddah,Russie,Europe
+1647,None,Arabie saoudite,Asia
+1648,Saint-Domingue,None,None
+1649,Samara,République dominicaine,North America
+1650,Dublin,None,None
+1651,Bonn,Irlande,Europe
+1652,Getafe,None,None
+1653,La Canée,None,None
+1654,Oslo,Grèce,Europe
+1655,Bombay,Norvège,Europe
+1656,Terni,Inde,Asia
+1657,East Hertfordshire,None,None
+1658,Los Angeles,Royaume-Uni,Europe
+1659,Reggio d'Émilie,États-Unis d'Amérique,North America
+1660,Nottingham,Italie,Europe
+1661,Bilbao,None,None
+1662,Falagueira-Venda Nova,None,None
+1663,Marseille,Portugal,Europe
+1664,San Diego,None,None
+1665,Gravesham,None,None
+1666,Kaliningrad,Royaume-Uni,Europe
+1667,Doha,Russie,Europe
+1668,None,Qatar,Asia
+1669,Modène,None,None
+1670,Saragosse,Italie,Europe
+1671,Wollongong City Council,Espagne,Europe
+1672,Munich,None,None
+1673,Cité de Westminster,Allemagne,Europe
+1674,Francfort-sur-le-Main,Italie,Europe
+1675,Nottingham,None,None
+1676,Covilhã,None,None
+1677,Cité de Westminster,Portugal,Europe
+1678,São Paulo,Belgique,Europe
+1679,Atlanta,None,None
+1680,Île de Hong Kong,États-Unis d'Amérique,North America
+1681,None,Chine,Asia
+1682,São Paulo,None,None
+1683,Stainach-Pürgg,Brésil,South America
+1684,None,Autriche,Europe
+1685,Miami,Italie,Europe
+1686,Malmö ou Malmoe,None,None
+1687,None,Suède,Europe
+1688,Cagliari,None,None
+1689,Mascate,None,None
+1690,None,Oman,Asia
+1691,Bucarest,None,None
+1692,None,Roumanie,Europe
+1693,Ingolstadt,None,None
+1694,Albacete,None,None
+1695,Tombouctou,None,None
+1696,None,Mali,Africa
+1697,Eindhoven,None,None
+1698,Londres,Pays-Bas,Europe
+1699,Cudillero,Royaume-Uni,Europe
+1700,Fort Wayne,None,None
+1701,Cité de Wakefield,États-Unis d'Amérique,North America
+1702,Turin,None,None
+1703,Saint-Louis,Italie,Europe
+1704,Leeds,États-Unis d'Amérique,North America
+1705,Santa Maria da Feira,Royaume-Uni,Europe
+1706,Stuttgart,Portugal,Europe
+1707,Alcalá de Henares,Allemagne,Europe
+1708,Municipal District of Macroom,Espagne,Europe
+1709,None,Irlande,Europe
+1710,Jodhpur,None,None
+1711,Antalya,None,None
+1712,Derby,Turquie,Asia
+1713,Alicante,None,None
+1714,Torrejón de Ardoz,Italie,Europe
+1715,Quezon City,Espagne,Europe
+1716,None,Philippines,Asia
+1717,Lisbonne,None,None
+1718,Koweït,Portugal,Europe
+1719,None,Koweït,Asia
+1720,Pak Kret,None,None
+1721,None,Thaïlande,Asia
+1722,Doncaster,None,None
+1723,Rio de Janeiro,Royaume-Uni,Europe
+1724,New York,None,None
+1725,Naples,États-Unis d'Amérique,North America
+1726,Tunbridge Wells,Italie,Europe
+1727,Paris,None,None
+1728,Caen,None,None
+1729,Paris,Italie,Europe
+1730,Thanet,Italie,Europe
+1731,Strasbourg,None,None
+1732,Complexe résidentiel de Dhahran,None,None
+1733,Tulsa,None,None
+1734,Vantaa,États-Unis d'Amérique,North America
+1735,None,Finlande,Europe
+1736,Lausanne,None,None
+1737,Singapour,Suisse,Europe
+1738,Norwich,Singapour,Asia
+1739,Doha,None,None
+1740,Guarulhos,Inde,Asia
+1741,Munich,Brésil,South America
+1742,Salisbury,None,None
+1743,Sydney,Royaume-Uni,Europe
+1744,Hertsmere,None,None
+1745,Lima,None,None
+1746,Cagliari,Pérou,South America
+1747,Groningue,None,None
+1748,Koweït,Pays-Bas,Europe
+1749,Lyon,Koweït,Asia
+1750,Murcie,France,Europe
+1751,Lancaster,None,None
+1752,Liège,États-Unis d'Amérique,North America
+1753,Strasbourg,Belgique,Europe
+1754,Cleveland,France,Europe
+1755,Swansea,None,None
+1756,Newark and Sherwood,None,None
+1757,Sandwell,None,None
+1758,Istanbul,Royaume-Uni,Europe
+1759,Sydney,Turquie,Asia
+1760,Dunfermline,None,None
+1761,Kozani,Canada,North America
+1762,None,Grèce,Europe
+1763,Belo Horizonte,None,None
+1764,Lugano,None,None
+1765,Bucarest,Suisse,Europe
+1766,Bombay,Roumanie,Europe
+1767,Bergen,None,None
+1768,San Francisco,Italie,Europe
+1769,Rouen,Royaume-Uni,Europe
+1770,Amsterdam,Royaume-Uni,Europe
+1771,Lyon,Pays-Bas,Europe
+1772,Bruxelles,None,None
+1773,Pampelune,Belgique,Europe
+1774,Bangalore,None,None
+1775,Chennai,Royaume-Uni,Europe
+1776,Recife,None,None
+1777,Rome,Brésil,South America
+1778,Liverpool,France,Europe
+1779,Strasbourg,Royaume-Uni,Europe
+1780,Lipa,France,Europe
+1781,Gandia,None,None
+1782,Hampton,Espagne,Europe
+1783,Tavares,None,None
+1784,Singapour,États-Unis d'Amérique,North America
+1785,None,Singapour,Asia
+1786,Erfurt,Royaume-Uni,Europe
+1787,Naples,Royaume-Uni,Europe
+1788,Barcelone,Italie,Europe
+1789,La Valle Agordina,Norvège,Europe
+1790,Salamanque,Italie,Europe
+1791,Rotterdam,None,None
+1792,Spearfish,None,None
+1793,Toulon,None,None
+1794,Mytichtchi,None,None
+1795,Prague,Royaume-Uni,Europe
+1796,Cité de Westminster,Tchéquie,Europe
+1797,Santo Tirso,Royaume-Uni,Europe
+1798,None,Portugal,Europe
+1799,Bergen,Royaume-Uni,Europe
+1800,Nottingham,Norvège,Europe
+1801,Boston,None,None
+1802,Nimègue,None,None
+1803,City of Rochester,Pays-Bas,Europe
+1804,Kiev,États-Unis d'Amérique,North America
+1805,None,Ukraine,Europe
+1806,Sheffield,None,None
+1807,Hyderabad,None,None
+1808,Catane,Inde,Asia
+1809,New Delhi,None,None
+1810,Barcelone,Russie,Europe
+1811,Manchester,Espagne,Europe
+1812,Aberdeen,France,Europe
+1813,South Derbyshire,None,None
+1814,Le Mans,None,None
+1815,Dublin,France,Europe
+1816,Gérone,None,None
+1817,Saint-Jean de Terre-Neuve,None,None
+1818,Madrid,France,Europe
+1819,Prato,None,None
+1820,Barrie,Italie,Europe
+1821,Vadodara,None,None
+1822,South Tyneside,Inde,Asia
+1823,Johannesbourg,None,None
+1824,None,Afrique du Sud,Africa
+1825,Oxford,None,None
+1826,Portimão,None,None
+1827,Montpellier,Portugal,Europe
+1828,Bilbao,France,Europe
+1829,Terni,Irlande,Europe
+1830,Arnhem,None,None
+1831,Kiev,Pays-Bas,Europe
+1832,Perímetro Urbano Santiago de Cali,None,None
+1833,None,Colombie,South America
+1834,Santander,None,None
+1835,Derby,None,None
+1836,Örebro,None,None
+1837,Dijon,None,None
+1838,Helmond,Brésil,South America
+1839,Madrid,Pays-Bas,Europe
+1840,Hambourg,None,None
+1841,Almere,France,Europe
+1842,Rome,Pays-Bas,Europe
+1843,Madrid,None,None
+1844,East Hertfordshire,Espagne,Europe
+1845,Séville,Norvège,Europe
+1846,Chicago,Espagne,Europe
+1847,Zurich,Italie,Europe
+1848,Djizak,Suisse,Europe
+1849,None,Ouzbékistan,Asia
+1850,Forlì,None,None
+1851,Harrisonburg,Italie,Europe
+1852,Valladolid,None,None
+1853,East Devon,Espagne,Europe
+1854,Palerme,Royaume-Uni,Europe
+1855,Belfast,None,None
+1856,Cluj-Napoca,Russie,Europe
+1857,Newcastle upon Tyne,Roumanie,Europe
+1858,Toruń,None,None
+1859,Moscou,Pologne,Europe
+1860,Toulouse,None,None
+1861,Gijon,None,None
+1862,Teignbridge,Espagne,Europe
+1863,Amman,Royaume-Uni,Europe
+1864,Johannesbourg,Jordanie,Asia
+1865,Patras,États-Unis d'Amérique,North America
+1866,Reims,None,None
+1867,Ljubljana,None,None
+1868,Cité de Wakefield,Slovénie,Europe
+1869,Vale of White Horse,None,None
+1870,Fuenlabrada,Royaume-Uni,Europe
+1871,Rennes,Espagne,Europe
+1872,Catane,None,None
+1873,Messine,None,None
+1874,Lille,Italie,Europe
+1875,Utrecht,None,None
+1876,Berne,Italie,Europe
+1877,New Forest,None,None
+1878,Úbeda,None,None
+1879,Paris,États-Unis d'Amérique,North America
+1880,Wychavon,France,Europe
+1881,Madrid,Royaume-Uni,Europe
+1882,Erlangen,None,None
+1883,La Haye,None,None
+1884,Stoke-on-Trent,None,None
+1885,Budva,None,None
+1886,None,Monténégro,Europe
+1887,Gemeinde Mittelberg,None,None
+1888,Torres Novas,None,None
+1889,Saragosse,None,None
+1890,Wyre,Espagne,Europe
+1891,Santa Fé,None,None
+1892,Malmö ou Malmoe,Inde,Asia
+1893,Saint-Pétersbourg,None,None
+1894,Basta Tahta,Pays-Bas,Europe
+1895,Poznań,Liban,Asia
+1896,Santander,Pologne,Europe
+1897,Avignon,None,None
+1898,Cambridge,France,Europe
+1899,Wolfsbourg,Royaume-Uni,Europe
+1900,Athènes,Allemagne,Europe
+1901,South Somerset,None,None
+1902,Sydney,Espagne,Europe
+1903,Naples,Pays-Bas,Europe
+1904,Guwahati,Italie,Europe
+1905,Turin,Pays-Bas,Europe
+1906,Zurich,None,None
+1907,Perpignan,Suisse,Europe
+1908,Terni,France,Europe
+1909,Herne,Italie,Europe
+1910,Cordoue,None,None
+1911,Annecy,Italie,Europe
+1912,Messine,Portugal,Europe
+1913,Barakaldo,None,None
+1914,Trieste,Espagne,Europe
+1915,Tbilissi,Italie,Europe
+1916,Porto,Géorgie,Asia
+1917,Surabaya,None,None
+1918,Dublin,Indonésie,Asia
+1919,Käerjeng,Irlande,Europe
+1920,None,Luxembourg,Europe
+1921,Rivera,None,None
+1922,None,Uruguay,South America
+1923,Djeddah,None,None
+1924,San Juan,None,None
+1925,Rome,États-Unis d'Amérique,North America
+1926,San Antonio,None,None
+1927,Δημοτική Ενότητα Αγρινίου,None,None
+1928,Coïmbre,None,None
+1929,Birmingham,Portugal,Europe
+1930,Perth,None,None
+1931,Salerne,Royaume-Uni,Europe
+1932,Bâle,None,None
+1933,Salerne,None,None
+1934,Aix-en-Provence,None,None
+1935,Fortaleza,None,None
+1936,Pampelune,Brésil,South America
+1937,Agrigente,Espagne,Europe
+1938,Metz,None,None
+1939,Prague,France,Europe
+1940,Fujisawa,Tchéquie,Europe
+1941,None,Japon,Asia
+1942,Banja Luka,None,None
+1943,None,Bosnie-et-Herzégovine,Europe
+1944,Los Angeles,None,None
+1945,Haïfa,None,None
+1946,None,Israël,Asia
+1947,San Juan de Lurigancho,None,None
+1948,Londres,Pérou,South America
+1949,Berlin,Royaume-Uni,Europe
+1950,Harborough,None,None
+1951,Melilla,Royaume-Uni,Europe
+1952,Borough de Charnwood,None,None
+1953,Vantaa,None,None
+1954,Chicago,Royaume-Uni,Europe
+1955,Dakar,États-Unis d'Amérique,North America
+1956,Copenhague,Sénégal,Africa
+1957,Coïmbre,Danemark,Europe
+1958,Leipzig,Portugal,Europe
+1959,Troyes,None,None
+1960,Markham,None,None
+1961,Ankara,None,None
+1962,None,Turquie,Asia
+1963,Valence,None,None
+1964,Brighton,France,Europe
+1965,District d'Adur,None,None
+1966,Alméria,Royaume-Uni,Europe
+1967,Lille,Royaume-Uni,Europe
+1968,La Rochelle,None,None
+1969,Hanovre,None,None
+1970,Bilbao,Allemagne,Europe
+1971,Plymouth,None,None
+1972,Winchester,Espagne,Europe
+1973,Adélaïde,Royaume-Uni,Europe
+1974,Angers,None,None
+1975,Tampa,France,Europe
+1976,Dunkerque,None,None
+1977,Séville,None,None
+1978,Gwalior,None,None
+1979,Chicago,None,None
+1980,Oberhausen,États-Unis d'Amérique,North America
+1981,Copenhague,Allemagne,Europe
+1982,Franco da Rocha,Danemark,Europe
+1983,Poitiers,Italie,Europe
+1984,Montpellier,Royaume-Uni,Europe
+1985,Saint-Pétersbourg,États-Unis d'Amérique,North America
+1986,Torrejón de Ardoz,None,None
+1987,Messine,Espagne,Europe
+1988,Reno,Brésil,South America
+1989,Reggio d'Émilie,Royaume-Uni,Europe
+1990,Lima,Royaume-Uni,Europe
+1991,None,Pérou,South America
+1992,Marseille,None,None
+1993,Poznań,France,Europe
+1994,None,Pologne,Europe
+1995,Campinas,None,None
+1996,Provo,Brésil,South America
+1997,Terni,États-Unis d'Amérique,North America
+1998,Thiruvananthapuram,Italie,Europe
+1999,West Lancashire,None,None
+2000,Leganés,Royaume-Uni,Europe
+2001,San Francisco,Espagne,Europe
+2002,Tours,Royaume-Uni,Europe
+2003,Novare,France,Europe
+2004,Matosinhos,None,None
+2005,Istanbul,Portugal,Europe
+2006,Athènes,None,None
+2007,Dublin,Grèce,Europe
+2008,Palma,None,None
+2009,Cité de Bradford,None,None
+2010,Chicago,Italie,Europe
+2011,Castelló de la Plana,États-Unis d'Amérique,North America
+2012,Oslo,Espagne,Europe
+2013,Vancouver,Norvège,Europe
+2014,Δημοτική Ενότητα Θεσαλονίκης,Canada,North America
+2015,Leganés,None,None
+2016,San Francisco,None,None
+2017,Malaga,None,None
+2018,Arlington,None,None
+2019,Essen,None,None
+2020,Rio de Janeiro,Allemagne,Europe
+2021,Santos,None,None
+2022,Moscou,Brésil,South America
+2023,Petrópolis,Russie,Europe
+2024,Orlando,Brésil,South America
+2025,Scottsdale,None,None
+2026,Καστοριά,États-Unis d'Amérique,North America
+2027,Kingston,None,None
+2028,Paris,Jamaïque,North America
+2029,Wuppertal,Royaume-Uni,Europe
+2030,Madrid,Allemagne,Europe
+2031,Bastimentos,None,None
+2032,Monterrey,None,None
+2033,Paris,Mexique,North America
+2034,Castelló de la Plana,France,Europe
+2035,Nîmes,Espagne,Europe
+2036,Helmond,None,None
+2037,Lyon,None,None
+2038,Paris,Afrique du Sud,Africa
+2039,Jakarta,None,None
+2040,None,Indonésie,Asia
+2041,Philadelphie,None,None
+2042,Sydney,États-Unis d'Amérique,North America
+2043,Ségovie,None,None
+2044,Aoste,None,None
+2045,Bath,Italie,Europe
+2046,Prague,None,None
+2047,None,Tchéquie,Europe
+2048,Bangor,None,None
+2049,Uberlândia,France,Europe
+2050,Porto,Italie,Europe
+2051,Bedford Township,Portugal,Europe
+2052,Kobé,None,None
+2053,Boulogne-Billancourt,None,None
+2054,Amiens,None,None
+2055,Norwich,Espagne,Europe
+2056,Sorocaba,None,None
+2057,Tolède,France,Europe
+2058,Teresópolis,None,None
+2059,Durban,Brésil,South America
+2060,Montpellier,None,None
+2061,Folkestone and Hythe,Brésil,South America
+2062,Johannesbourg,Pérou,South America
+2063,Kirov,None,None
+2064,Paris,Russie,Europe
+2065,Buenos Aires,France,Europe
+2066,None,Argentine,South America
+2067,Argenteuil,None,None
+2068,Bakou,None,None
+2069,None,Azerbaïdjan,Asia
+2070,Folkestone and Hythe,None,None
+2071,Le Havre,Royaume-Uni,Europe
+2072,Lyon,Portugal,Europe
+2073,Toronto,None,None
+2074,Duisbourg,Canada,North America
+2075,Paris,Irlande,Europe
+2076,Mons,France,Europe
+2077,Orléans,None,None
+2078,Stoke-on-Trent,France,Europe
+2079,Linwood-Central-Heathcote Community,Royaume-Uni,Europe
+2080,None,Nouvelle-Zélande,Oceania
+2081,Brest,None,None
+2082,Nancy,None,None
+2083,Breckland,None,None
+2084,Catane,France,Europe
+2085,Skopje,Belgique,Europe
+2086,Inverness,Macédoine du Nord,Europe
+2087,Lyon,Mexique,North America
+2088,Allerdale,Suisse,Europe
+2089,Vancouver,Royaume-Uni,Europe
+2090,Vila Nova de Gaia,None,None
+2091,Madrid,Portugal,Europe
+2092,Cardiff,Pays-Bas,Europe
+2093,Gênes,None,None
+2094,Berlin,None,None
+2095,Dublin,Allemagne,Europe
+2096,Auckland,Irlande,Europe
+2097,Cardiff,France,Europe
+2098,Dantzig,France,Europe
+2099,Bielle,None,None
+2100,Nîmes,None,None
+2101,Sandwell,France,Europe
+2102,Belgrade,None,None
+2103,None,Serbie,Europe
+2104,Southampton,None,None
+2105,Leicester,None,None
+2106,Phuket,Royaume-Uni,Europe
+2107,Bangkok,None,None
+2108,Istanbul,None,None
+2109,Seattle,Turquie,Asia
+2110,Allerdale,États-Unis d'Amérique,North America
+2111,Buenos Aires,États-Unis d'Amérique,North America
+2112,Amritsar,None,None
+2113,Gourri,None,None
+2114,None,Chypre,Asia
+2115,Dijon,Suisse,Europe
+2116,Perímetro Urbano Santiago de Cali,France,Europe
+2117,Tejutepeque,None,None
+2118,Rennes,Salvador,North America
+2119,Talloires-Montmin,France,Europe
+2120,Porto,None,None
+2121,Basingstoke and Deane,Portugal,Europe
+2122,Nantes,Espagne,Europe
+2123,Randers,None,None
+2124,None,Danemark,Europe
+2125,Faaa,None,None
+2126,New York,France,Europe
+2127,Petrópolis,None,None
+2128,Borough de Charnwood,Brésil,South America
+2129,Trois-Rivières,Pays-Bas,Europe
+2130,Valence,Canada,North America
+2131,Antalya,France,Europe
+2132,Milan,Turquie,Asia
+2133,Ajaccio,Russie,Europe
+2134,Durham,None,None
+2135,Lima,États-Unis d'Amérique,North America
+2136,Budapest,None,None
+2137,Annecy,Hongrie,Europe
+2138,Istanbul,France,Europe
+2139,Paris,Turquie,Asia
+2140,Coventry,France,Europe
+2141,Basta Tahta,None,None
+2142,None,Liban,Asia
+2143,Bordeaux,Allemagne,Europe
+2144,Derbyshire Dales,None,None
+2145,Shepparton,Panamá,North America
+2146,Porto Alegre,Australie,Oceania
+2147,Dublin,Brésil,South America
+2148,Kirklees,None,None
+2149,Francfort-sur-le-Main,Royaume-Uni,Europe
+2150,Oxford,Allemagne,Europe
+2151,Xiamen,None,None
+2152,Arun,Chine,Asia
+2153,Huntington Beach,None,None
+2154,Moscou,Royaume-Uni,Europe
+2155,Sydney,Russie,Europe
+2156,Curitiba,None,None
+2157,Mons,Afrique du Sud,Africa
+2158,Swansea,Belgique,Europe
+2159,Porto,Royaume-Uni,Europe
+2160,Mérida,France,Europe
+2161,Salzbourg,Espagne,Europe
+2162,Nice,None,None
+2163,Bucarest,France,Europe
+2164,Worcester,Portugal,Europe
+2165,Brașov,None,None
+2166,Everett,None,None
+2167,Madrid,Italie,Europe
+2168,Reigate and Banstead,None,None
+2169,Buenos Aires,Royaume-Uni,Europe
+2170,Phoenix,Brésil,South America
+2171,Prague,États-Unis d'Amérique,North America
+2172,Balneário Camboriú,None,None
+2173,Lagos,France,Europe
+2174,Badalona,Nigéria,Africa
+2175,Gemeinde Galtür,None,None
+2176,Manchester,Autriche,Europe
+2177,Belfast,Inde,Asia
+2178,Cancún,None,None
+2179,Nancy,Mexique,North America
+2180,Nantes,None,None
+2181,Allerdale,France,Europe
+2182,Rosario,None,None
+2183,Xérès,Royaume-Uni,Europe
+2184,Foz do Iguaçu,None,None
+2185,New Delhi,Espagne,Europe
+2186,Severn,None,None
+2187,Geelong,None,None
+2188,Auckland,None,None
+2189,Santana de Parnaíba,None,None
+2190,Southampton,Brésil,South America
+2191,La Haye,Australie,Oceania
+2192,Budapest,Pays-Bas,Europe
+2193,None,Hongrie,Europe
+2194,Carlisle,None,None
+2195,Buenos Aires,None,None
+2196,South Hams,None,None
+2197,Helsinki,None,None
+2198,Mons,None,None
+2199,La Corogne,None,None
+2200,Limoges,None,None
+2201,Charleroi,France,Europe
+2202,Exeter,Belgique,Europe
+2203,Apodaca,Australie,Oceania
+2204,Kazan,Mexique,North America
+2205,Sydney,Salvador,North America
+2206,Illapel,None,None
+2207,Cité de Westminster,Chili,South America
+2208,Ostende,Royaume-Uni,Europe
+2209,Aix-en-Provence,Belgique,Europe
+2210,Κομοτηνή,France,Europe
+2211,Kiev,None,None
+2212,Cairns,None,None
+2213,Buenos Aires,Australie,Oceania
+2214,Milan,Canada,North America
+2215,Cambridge,Italie,Europe
+2216,Figueira da Foz,None,None
+2217,Melbourne,Royaume-Uni,Europe
+2218,Saragosse,Australie,Oceania
+2219,Bielsko-Biała,Royaume-Uni,Europe
+2220,Düsseldorf,None,None
+2221,Athènes,Inde,Asia
+2222,Paris,Grèce,Europe
+2223,Kuching,None,None
+2224,Porto Alegre,Malaisie,Asia
+2225,Turin,Belgique,Europe
+2226,Singapour,Royaume-Uni,Europe
+2227,Gainesville,Singapour,Asia
+2228,Bruxelles,États-Unis d'Amérique,North America
+2229,Amsterdam,Portugal,Europe
+2230,Bath,None,None
+2231,Metz,Argentine,South America
+2232,Knoxville,Pérou,South America
+2233,Tampa,None,None
+2234,Dort,Italie,Europe
+2235,Paris,Pays-Bas,Europe
+2236,Porto,Espagne,Europe
+2237,Ravenne,None,None
+2238,Vitoria-Gasteiz,None,None
+2239,Montevideo,Espagne,Europe
+2240,Turin,Uruguay,South America
+2241,Washington,None,None
+2242,Toulon,Royaume-Uni,Europe
+2243,Odivelas,None,None
+2244,Grenoble,None,None
+2245,Cluj-Napoca,None,None
+2246,(Old) Ottawa,None,None
+2247,Linwood-Central-Heathcote Community,None,None
+2248,Terni,Belgique,Europe
+2249,Nice,Italie,Europe
+2250,Perpignan,None,None
+2251,Bristol,Espagne,Europe
+2252,Kaliningrad,None,None
+2253,Gênes,Russie,Europe
+2254,Nagoya,None,None
+2255,San Jose,Japon,Asia
+2256,Valence,États-Unis d'Amérique,North America
+2257,Rome,Portugal,Europe
+2258,Amiens,Italie,Europe
+2259,Agrigente,Australie,Oceania
+2260,Barcelone,Irlande,Europe
+2261,Lugo,None,None
+2262,Ripon,None,None
+2263,Orlando,Royaume-Uni,Europe
+2264,Bogota,États-Unis d'Amérique,North America
+2265,Riffa,Colombie,South America
+2266,None,Bahreïn,Asia
+2267,Rome,Espagne,Europe
+2268,Orlando,None,None
+2269,Nuremberg,None,None
+2270,Tours,Allemagne,Europe
+2271,Le Cap,None,None
+2272,Xérès,None,None
+2273,Helmond,Royaume-Uni,Europe
+2274,Gibraltar,None,None
+2275,Allerdale,Gibraltar,Europe
+2276,Ryedale,None,None
+2277,Newcastle upon Tyne,Espagne,Europe
+2278,Mid Sussex,None,None
+2279,Leeds,Italie,Europe
+2280,Δημοτική Ενότητα Θεσαλονίκης,None,None
+2281,Caen,Grèce,Europe
+2282,Adélaïde,France,Europe
+2283,Los Angeles,France,Europe
+2284,Vigevano,États-Unis d'Amérique,North America
+2285,Bendigo,None,None
+2286,Lille,Australie,Oceania
+2287,Aix-la-Chapelle,France,Europe
+2288,Fortaleza,Allemagne,Europe
+2289,Vitoria-Gasteiz,Royaume-Uni,Europe
+2290,Chester,Espagne,Europe
+2291,Саратов,Royaume-Uni,Europe
+2292,Cité de Westminster,Russie,Europe
+2293,Westfield,None,None
+2294,Édimbourg,France,Europe
+2295,Le Cap,Royaume-Uni,Europe
+2296,Sorocaba,Pays-Bas,Europe
+2297,Gênes,Brésil,South America
+2298,千代田区,None,None
+2299,Montréal,None,None
+2300,Bombay,Canada,North America
+2301,Wyre Forest,None,None
+2302,Truro,None,None
+2303,Édimbourg,Espagne,Europe
+2304,Dortmund,None,None
+2305,Les Monts d'Aunay,Royaume-Uni,Europe
+2306,Timișoara,Royaume-Uni,Europe
+2307,Bogota,None,None
+2308,Trévise,None,None
+2309,Leyde,None,None
+2310,Doncaster,France,Europe
+2311,Hambourg,Royaume-Uni,Europe
+2312,East Suffolk,États-Unis d'Amérique,North America
+2313,East Suffolk,None,None
+2314,Châtel-en-Trièves,Royaume-Uni,Europe
+2315,Athènes,France,Europe
+2316,Ávila,None,None
+2317,Limoges,Espagne,Europe
+2318,Teresina,France,Europe
+2319,Chennai,None,None
+2320,Pampelune,None,None
+2321,Rio de Janeiro,Pays-Bas,Europe
+2322,Linhares,None,None
+2323,Cardiff,Pérou,South America
+2324,Hayward,None,None
+2325,Cité de Westminster,États-Unis d'Amérique,North America
+2326,Denver,None,None
+2327,New York,Royaume-Uni,Europe
+2328,Nantes,Royaume-Uni,Europe
+2329,Saint-Pétersbourg,France,Europe
+2330,Lancaster,Russie,Europe
+2331,Monaco,None,None
+2332,Moscou,Monaco,Europe
+2333,Melbourne,Russie,Europe
+2334,Pasadena,None,None
+2335,Lugo,États-Unis d'Amérique,North America
+2336,Livourne,Royaume-Uni,Europe
+2337,Belfast,Italie,Europe
+2338,Marbella,Royaume-Uni,Europe
+2339,Santo André,Espagne,Europe
+2340,Londres,Brésil,South America
+2341,Rostock,Royaume-Uni,Europe
+2342,Tarragone,Portugal,Europe
+2343,Lyon,Espagne,Europe
+2344,South Tyneside,France,Europe
+2345,Leicester,Italie,Europe
+2346,Dublin,Italie,Europe
+2347,Rio de Janeiro,None,None
+2348,Kiryū,Azerbaïdjan,Asia
+2349,Leeds,Japon,Asia
+2350,Odessa,Royaume-Uni,Europe
+2351,Wyre Forest,Ukraine,Europe
+2352,Belgrade,Royaume-Uni,Europe
+2353,Bath,France,Europe
+2354,Leeds,Suisse,Europe
+2355,Rome,France,Europe
+2356,Southend-on-Sea,Espagne,Europe
+2357,Haarlem,France,Europe
+2358,Mestre,Royaume-Uni,Europe
+2359,Valladolid,Italie,Europe
+2360,Marbella,Belgique,Europe
+2361,Singapour,Espagne,Europe
+2362,Vladivostok,None,None
+2363,Santa Rosa,Royaume-Uni,Europe
+2364,Pozzaglio ed Uniti,France,Europe
+2365,Sunshine Coast Regional,None,None
+2366,Sunderland,None,None
+2367,Odivelas,Belgique,Europe
+2368,Peterborough,None,None
+2369,Poitiers,Royaume-Uni,Europe
+2370,Sheffield,France,Europe
+2371,Clermont-Ferrand,Royaume-Uni,Europe
+2372,Bordeaux,Royaume-Uni,Europe
+2373,Almaty,None,None
+2374,None,Kazakhstan,Asia
+2375,Saito,None,None
+2376,Vogtei,Japon,Asia
+2377,Limerick,None,None
+2378,Forest of Dean,None,None
+2379,Vogtei,Royaume-Uni,Europe
+2380,Cáceres,None,None
+2381,Wrexham,None,None
+2382,Athènes,Royaume-Uni,Europe
+2383,Vigo,None,None
+2384,Belfast,Espagne,Europe
+2385,Nîmes,Royaume-Uni,Europe
+2386,Moscou,France,Europe
+2387,Milton Keynes,Espagne,Europe
+2388,North Hertfordshire,None,None
+2389,Paris,Espagne,Europe
+2390,Osaka,Irlande,Europe
+2391,Madrid,Japon,Asia
+2392,Saint-Denis,Espagne,Europe
+2393,Gand,Royaume-Uni,Europe
+2394,Mons,Espagne,Europe
+2395,Le Caire,None,None
+2396,None,Égypte,Africa
+2397,Carthagène,None,None
+2398,Surrey Heath,None,None
+2399,Exeter,None,None
+2400,Arica,None,None
+2401,Lausanne,Chili,South America
+2402,Raleigh,Suisse,Europe
+2403,Xanthi,None,None
+2404,Haarlem,Grèce,Europe
+2405,Saragosse,Royaume-Uni,Europe
+2406,Lac de Neuchâtel (NE),None,None
+2407,Cantorbéry,None,None
+2408,Alghero,Royaume-Uni,Europe
+2409,Kharkiv,None,None
+2410,Aberdeen,None,None
+2411,Tangerang,Russie,Europe
+2412,Caen,Hongrie,Europe
+2413,Mid Suffolk,France,Europe
+2414,Alverca do Ribatejo,Royaume-Uni,Europe
+2415,Tejutepeque,Royaume-Uni,Europe
+2416,Budapest,Salvador,North America
+2417,Cannock Chase,None,None
+2418,Toulouse,Pays-Bas,Europe
+2419,Barcelone,France,Europe
+2420,Greenville,Royaume-Uni,Europe
+2421,Valladolid,Royaume-Uni,Europe
+2422,Vargas Guerra,None,None
+2423,Rebecq-Rognon,None,None
+2424,La Plata,Belgique,Europe
+2425,Wyre,None,None
+2426,Lanús,Royaume-Uni,Europe
+2427,Düsseldorf,Argentine,South America
+2428,Alexandria,None,None
+2429,Colombo,None,None
+2430,None,Sri Lanka,Asia
+2431,Tours,None,None
+2432,Le Havre,Finlande,Europe
+2433,Fort Lauderdale,France,Europe
+2434,Édimbourg,États-Unis d'Amérique,North America
+2435,Getafe,Royaume-Uni,Europe
+2436,Louvain,None,None
+2437,Nancy,Belgique,Europe
+2438,Santander,Italie,Europe
+2439,Dundee,None,None
+2440,Copenhague,None,None
+2441,Seattle,Danemark,Europe
+2442,Thanet,None,None
+2443,Braga,None,None
+2444,Syracuse,Portugal,Europe
+2445,Borough de Spelthorne,Italie,Europe
+2446,Fort Worth,Royaume-Uni,Europe
+2447,Athènes,États-Unis d'Amérique,North America
+2448,Arun,None,None
+2449,Alto do Seixalinho Santo André e Verderena,France,Europe
+2450,Grad Pula,None,None
+2451,None,Croatie,Europe
+2452,Whangārei,None,None
+2453,Téhéran,None,None
+2454,None,Iran,Asia
+2455,Santa Coloma de Gramenet,None,None
+2456,Doncaster,Espagne,Europe
+2457,Basta Tahta,France,Europe
+2458,Washington,Royaume-Uni,Europe
+2459,Jérusalem,Royaume-Uni,Europe
+2460,Worcester,Israël,Asia
+2461,Londres,États-Unis d'Amérique,North America
+2462,Cheongju,Royaume-Uni,Europe
+2463,None,Corée du Sud,Asia
+2464,Lagos,None,None
+2465,Moscou,Nigéria,Africa
+2466,Trieste,Russie,Europe
+2467,Kaiserslautern,Italie,Europe
+2468,Valence,Allemagne,Europe
+2469,Taubaté,France,Europe
+2470,Manurewa,Brésil,South America
+2471,Chicago,Nouvelle-Zélande,Oceania
+2472,Hambourg,France,Europe
+2473,Lyon,Allemagne,Europe
+2474,Nairobi,France,Europe
+2475,None,Kenya,Africa
+2476,Launceston,None,None
+2477,Vienne,Espagne,Europe
+2478,Turin,Autriche,Europe
+2479,Singapour,None,None
+2480,Sandefjord,None,None
+2481,Adélaïde,Norvège,Europe
+2482,Chandigarh,None,None
+2483,Katerini,None,None
+2484,Southampton,Grèce,Europe
+2485,arrondissement de Sidi Belyout,None,None
+2486,Milan,Maroc,Africa
+2487,Reno,Italie,Europe
+2488,Birmingham,Roumanie,Europe
+2489,Edmonton,None,None
+2490,Ostende,Espagne,Europe
+2491,Amiens,Belgique,Europe
+2492,Eilat,None,None
+2493,Augusta,Royaume-Uni,Europe
+2494,Porto Alegre,États-Unis d'Amérique,North America
+2495,Melbourne,États-Unis d'Amérique,North America
+2496,Grenoble,Belgique,Europe
+2497,Calcutta,France,Europe
+2498,Brno,None,None
+2499,Catane,Pays-Bas,Europe
+2500,Portsmouth,Italie,Europe
+2501,Amiens,Russie,Europe
+2502,Haïfa,France,Europe
+2503,Pampelune,Israël,Asia
+2504,Waterloo,Espagne,Europe
+2505,Winchester,États-Unis d'Amérique,North America
+2506,Pampelune,Royaume-Uni,Europe
+2507,San Diego,Espagne,Europe
+2508,Ripon,Italie,Europe
+2509,Brest,Russie,Europe
+2510,Séville,France,Europe
+2511,Melbourne,Espagne,Europe
+2512,Harborough,Australie,Oceania
+2513,Tavira,None,None
+2514,Lucerne,None,None
+2515,Guadalajara,None,None
+2516,None,Mexique,North America
+2517,Troyes,Italie,Europe
+2518,Istanbul,Italie,Europe
+2519,Lisbonne,Turquie,Asia
+2520,Cork,Portugal,Europe
+2521,Alexandrie,None,None
+2522,دهستان زرین,Espagne,Europe
+2523,Belfort,Iran,Asia
+2524,High Peak,Grèce,Europe
+2525,Melbourne,France,Europe
+2526,Caen,Australie,Oceania
+2527,Tel Aviv-Yafo,None,None
+2528,Uttlesford,Israël,Asia
+2529,Tamworth,None,None
+2530,Melbourne,Italie,Europe
+2531,Le Castelet,Australie,Oceania
+2532,Entroncamento,Espagne,Europe
+2533,Bursa,Portugal,Europe
+2534,Florence,None,None
+2535,Colombo,Canada,North America
+2536,Zoetermeer,Grèce,Europe
+2537,Katowice,Pays-Bas,Europe
+2538,千代田区,Pologne,Europe
+2539,Perpignan,Japon,Asia
+2540,Amman,None,None
+2541,Moscou,Jordanie,Asia
+2542,Reims,Russie,Europe
+2543,West Suffolk,None,None
+2544,Gloucester,Irlande,Europe
+2545,Calamba,Royaume-Uni,Europe
+2546,Poznań,None,None
+2547,Amarillo,France,Europe
+2548,Vogtei,None,None
+2549,Phoenix,None,None
+2550,Pérouse,États-Unis d'Amérique,North America
+2551,Bruxelles,Italie,Europe
+2552,Evansville,France,Europe
+2553,Linares,États-Unis d'Amérique,North America
+2554,Linz,Espagne,Europe
+2555,Madrid,Autriche,Europe
+2556,Bologne,Espagne,Europe
+2557,Badalona,None,None
+2558,Braga,Royaume-Uni,Europe
+2559,Saint-Louis,Portugal,Europe
+2560,Istanbul,États-Unis d'Amérique,North America
+2561,Stoke-on-Trent,Turquie,Asia
+2562,Porto Alegre,Royaume-Uni,Europe
+2563,Istanbul,Brésil,South America
+2564,Basingstoke and Deane,None,None
+2565,Belfast,Ukraine,Europe
+2566,Hertsmere,France,Europe
+2567,Nouméa,Suisse,Europe
+2568,Fenland,France,Europe
+2569,Londres,Espagne,Europe
+2570,Illapel,Australie,Oceania
+2571,Wyre,Chili,South America
+2572,Florianópolis,None,None
+2573,Paris,Brésil,South America
+2574,Roullet-Saint-Estèphe,France,Europe
+2575,Pietermaritzburg,Espagne,Europe
+2576,Melbourne,Afrique du Sud,Africa
+2577,Borough de Pendle,None,None
+2578,Tarnobrzeg,Royaume-Uni,Europe
+2579,Toulon,Pologne,Europe
+2580,Funchal,None,None
+2581,Astoria,None,None
+2582,Oxford,Espagne,Europe
+2583,Marbella,Brésil,South America
+2584,Hart,Espagne,Europe
+2585,Ruremonde,Royaume-Uni,Europe
+2586,Bergen,Pays-Bas,Europe
+2587,Barcelone,Norvège,Europe
+2588,Cork,Russie,Europe
+2589,Oran,None,None
+2590,Sienne,Algérie,Africa
+2591,Volos,Italie,Europe
+2592,Plymouth,Italie,Europe
+2593,Gävle,None,None
+2594,Namur,None,None
+2595,Kiryū,Hongrie,Europe
+2596,Metz,Japon,Asia
+2597,Lincoln,France,Europe
+2598,Bangalore,Russie,Europe
+2599,Newark and Sherwood,France,Europe
+2600,Vila do Conde,Grèce,Europe
+2601,Mestre,None,None
+2602,Belfast,France,Europe
+2603,Kuala Lumpur,None,None
+2604,Lagos,Malaisie,Asia
+2605,None,Nigéria,Africa
+2606,Cité de Westminster,Italie,Europe
+2607,Derbyshire Dales,Allemagne,Europe
+2608,Lincoln,None,None
+2609,Δημοτική Ενότητα Θεσαλονίκης,Royaume-Uni,Europe
+2610,Antofagasta,None,None
+2611,Barcelone,Chili,South America
+2612,Funchal,Royaume-Uni,Europe
+2613,Malaga,Portugal,Europe
+2614,Lausanne,Italie,Europe
+2615,Fundão,None,None
+2616,Stoke-on-Trent,Portugal,Europe
+2617,Rybnik,Portugal,Europe
+2618,Murcie,Pologne,Europe
+2619,Wolverhampton,Espagne,Europe
+2620,Worcester,None,None
+2621,Moscou,États-Unis d'Amérique,North America
+2622,Madrid,Russie,Europe
+2623,Taipei,Singapour,Asia
+2624,None,Taïwan,Asia
+2625,Mole Valley,None,None
+2626,Aarhus,None,None
+2627,Trois-Rivières,Danemark,Europe
+2628,Dijon,Canada,North America
+2629,South Kesteven,France,Europe
+2630,Mar del Plata,Italie,Europe
+2631,Kiev,Australie,Oceania
+2632,Moscou,Allemagne,Europe
+2633,Iași,None,None
+2634,Rio de Janeiro,Roumanie,Europe
+2635,Nakano,Brésil,South America
+2636,City of Syracuse,Japon,Asia
+2637,Cambridge,États-Unis d'Amérique,North America
+2638,Leeuwarden,Royaume-Uni,Europe
+2639,Göteborg,None,None
+2640,Parla,Suède,Europe
+2641,Reggio de Calabre,Royaume-Uni,Europe
+2642,Querença Tôr e Benafim,Oman,Asia
+2643,Pérouse,None,None
+2644,Padoue,Royaume-Uni,Europe
+2645,Nicosie,None,None
+2646,Chandigarh,Chypre,Asia
+2647,Novi Sad,Inde,Asia
+2648,Avignon,Serbie,Europe
+2649,Bendigo,France,Europe
+2650,Vérone,None,None
+2651,Havre,Italie,Europe
+2652,Livourne,None,None
+2653,Perpignan,Italie,Europe
+2654,Pune City,None,None
+2655,Swansea,Inde,Asia
+2656,Alicante,Royaume-Uni,Europe
+2657,South Oxfordshire,Espagne,Europe
+2658,Montréal,Italie,Europe
+2659,Naples,Canada,North America
+2660,Rouen,None,None
+2661,Омск,France,Europe
+2662,Olsztyn,Russie,Europe
+2663,Londonderry/Derry,None,None
+2664,Manama,None,None
+2665,Durham,Bahreïn,Asia
+2666,Eugene,None,None
+2667,Fichtenau,None,None
+2668,Lisbonne,Allemagne,Europe
+2669,South Staffordshire,Portugal,Europe
+2670,Cité de Westminster,Colombie,South America
+2671,Hull,Allemagne,Europe
+2672,Liverpool,Italie,Europe
+2673,Alméria,Grèce,Europe
+2674,City of Rochester,Espagne,Europe
+2675,Conseil régional de Ramat Negev,None,None
+2676,Lyon,Israël,Asia
+2677,Osaka,Ukraine,Europe
+2678,Basingstoke and Deane,États-Unis d'Amérique,North America
+2679,Basingstoke and Deane,Australie,Oceania
+2680,Tel Aviv-Yafo,Royaume-Uni,Europe
+2681,Dourados,None,None
+2682,Porto,Brésil,South America
+2683,Copiapó,None,None
+2684,None,Chili,South America
+2685,Sakai,Italie,Europe
+2686,Cascais e Estoril,Japon,Asia
+2687,Taubaté,None,None
+2688,Wolverhampton,None,None
+2689,Bois-le-Duc,France,Europe
+2690,São Paulo,France,Europe
+2691,Lyon,Brésil,South America
+2692,Barrie,None,None
+2693,Bassetlaw,Canada,North America
+2694,Balneário Camboriú,Royaume-Uni,Europe
+2695,Fuenlabrada,Brésil,South America
+2696,Cangas de Onís,None,None
+2697,Marseille,Espagne,Europe
+2698,Tel Aviv-Yafo,États-Unis d'Amérique,North America
+2699,São Paulo,Israël,Asia
+2700,Saragosse,Brésil,South America
+2701,Long Beach,Espagne,Europe
+2702,Chester,None,None
+2703,District de Huangpu,France,Europe
+2704,La Romaine,France,Europe
+2705,Glasgow,France,Europe
+2706,Mons,Royaume-Uni,Europe
+2707,Baguio,Italie,Europe
+2708,Rushcliffe,None,None
+2709,South Holland,None,None
+2710,San Juan de Lurigancho,France,Europe
+2711,Florence,Pays-Bas,Europe
+2712,Barcelone,Brésil,South America
+2713,Las Palmas de Grande Canarie,Italie,Europe
+2714,Saint-Pétersbourg,Royaume-Uni,Europe
+2715,Aalborg,None,None
+2716,Örebro,Pays-Bas,Europe
+2717,Tarragone,None,None
+2718,Gorizia,None,None
+2719,Chambéry,Russie,Europe
+2720,Os-Marsillon,None,None
+2721,Calcutta,Royaume-Uni,Europe
+2722,Uppsala,Inde,Asia
+2723,Podgorica,None,None
+2724,Izmir,None,None
+2725,Birmingham,Turquie,Asia
+2726,Dublin,Royaume-Uni,Europe
+2727,Sukkur,Royaume-Uni,Europe
+2728,None,Pakistan,Asia
+2729,Oklahoma City,None,None
+2730,Cáceres,États-Unis d'Amérique,North America
+2731,Chelmsford,Tchéquie,Europe
+2732,Copenhague,Royaume-Uni,Europe
+2733,Rio de Janeiro,Danemark,Europe
+2734,Växjö,Brésil,South America
+2735,Hachiōji,Suède,Europe
+2736,Villeurbanne,None,None
+2737,Besançon,None,None
+2738,Toronto,France,Europe
+2739,Bordeaux,Irlande,Europe
+2740,Limassol,France,Europe
+2741,Clermont-Ferrand,Chypre,Asia
+2742,Mascate,Brésil,South America
+2743,North Tyneside,Portugal,Europe
+2744,Glasgow,Allemagne,Europe
+2745,Basingstoke and Deane,Espagne,Europe
+2746,Kirchberg (SG),Royaume-Uni,Europe
+2747,Prague,Suisse,Europe
+2748,Liverpool,Tchéquie,Europe
+2749,Mesquite,None,None
+2750,Frenelles-en-Vexin,None,None
+2751,Tournai,Russie,Europe
+2752,Metz,Belgique,Europe
+2753,Gandia,Belgique,Europe
+2754,Las Vegas,Espagne,Europe
+2755,Arequipa,Royaume-Uni,Europe
+2756,Paris,Belgique,Europe
+2757,Palerme,France,Europe
+2758,La Corogne,Italie,Europe
+2759,Sedgemoor,None,None
+2760,Melton,Royaume-Uni,Europe
+2761,Preston,None,None
+2762,Las Vegas,Royaume-Uni,Europe
+2763,Le Havre,États-Unis d'Amérique,North America
+2764,Burlington,France,Europe
+2765,Pékin,None,None
+2766,Tachkent,Chine,Asia
+2767,Hambleton,None,None
+2768,Yecla,France,Europe
+2769,Naples,Danemark,Europe
+2770,Izmir,Italie,Europe
+2771,Oakville,None,None
+2772,Saint-Denis,None,None
+2773,Durban,Roumanie,Europe
+2774,Corona,None,None
+2775,The Woodlands,None,None
+2776,Turin,États-Unis d'Amérique,North America
+2777,Stainach-Pürgg,None,None
+2778,Paris,Autriche,Europe
+2779,Aveiro,Espagne,Europe
+2780,Londonderry/Derry,Portugal,Europe
+2781,Salford,None,None
+2782,Oviède,Royaume-Uni,Europe
+2783,Linwood-Central-Heathcote Community,Espagne,Europe
+2784,Harborough,Nouvelle-Zélande,Oceania
+2785,La Haye,Qatar,Asia
+2786,Reggio d'Émilie,Belgique,Europe
+2787,Bratislava,France,Europe
+2788,None,Slovaquie,Europe
+2789,Aveiro,Australie,Oceania
+2790,Johannesbourg,Royaume-Uni,Europe
+2791,Bruxelles,France,Europe
+2792,Padoue,None,None
+2793,Séoul,Liban,Asia
+2794,Bacolod,Corée du Sud,Asia
+2795,Santa Clarita,Philippines,Asia
+2796,Oslo,None,None
+2797,Campinas,France,Europe
+2798,Parme,None,None
+2799,Coventry,None,None
+2800,Riazan,None,None
+2801,Dublin,Espagne,Europe
+2802,Chelmsford,Afrique du Sud,Africa
+2803,Naples,Afrique du Sud,Africa
+2804,Anaheim,None,None
+2805,Staffordshire Moorlands,Italie,Europe
+2806,Cordoue,Royaume-Uni,Europe
+2807,La Plata,None,None
+2808,None,Malaisie,Asia
+2809,Moncton,None,None
+2810,Basta Tahta,Canada,North America
+2811,Dallas,None,None
+2812,Lanús,États-Unis d'Amérique,North America
+2813,Cuenca,None,None
+2814,Wiesbaden,None,None
+2815,Madrid,Australie,Oceania
+2816,Boston,Espagne,Europe
+2817,Édimbourg,Portugal,Europe
+2818,Campina Grande,None,None
+2819,Los Angeles,Brésil,South America
+2820,Ploiești,None,None
+2821,South Lakeland,None,None
+2822,Leeds,Grèce,Europe
+2823,Bundaberg,Royaume-Uni,Europe
+2824,Constanța,None,None
+2825,Lviv,None,None
+2826,Dundee,Ukraine,Europe
+2827,Vienne,Royaume-Uni,Europe
+2828,Colchester,Autriche,Europe
+2829,Portland,None,None
+2830,Barletta,États-Unis d'Amérique,North America
+2831,Bombay,Australie,Oceania
+2832,Pretoria,Australie,Oceania
+2833,Rome,Afrique du Sud,Africa
+2834,Vitoria-Gasteiz,Colombie,South America
+2835,Δημοτική Ενότητα Θεσαλονίκης,Espagne,Europe
+2836,Perth,Grèce,Europe
+2837,Lo Barnechea,None,None
+2838,KwaDukuza Local Municipality,Belgique,Europe
+2839,Kalouga,Afrique du Sud,Africa
+2840,Vale of White Horse,Russie,Europe
+2841,Lérida,Royaume-Uni,Europe
+2842,Boston,Royaume-Uni,Europe
+2843,Mulhouse,États-Unis d'Amérique,North America
+2844,Montreuil,None,None
+2845,Buenos Aires,Turquie,Asia
+2846,Turin,Argentine,South America
+2847,Setúbal,Royaume-Uni,Europe
+2848,Allerdale,Italie,Europe
+2849,Lisbonne,Espagne,Europe
+2850,Milan,Portugal,Europe
+2851,Redditch,Italie,Europe
+2852,Stoke-on-Trent,Pays-Bas,Europe
+2853,Lérida,France,Europe
+2854,Uppsala,None,None
+2855,Moscou,Suède,Europe
+2856,New Delhi,Russie,Europe
+2857,Buenos Aires,Russie,Europe
+2858,Municipalité de Varna,Argentine,South America
+2859,None,Bulgarie,Europe
+2860,Bico e Cristelo,None,None
+2861,Dantzig,Portugal,Europe
+2862,Maceió,Panamá,North America
+2863,Bruxelles,Brésil,South America
+2864,Amsterdam,France,Europe
+2865,Cité de Wakefield,Pays-Bas,Europe
+2866,Berlin,Brésil,South America
+2867,Belfort,None,None
+2868,San Francisco,Royaume-Uni,Europe
+2869,Le Caire,États-Unis d'Amérique,North America
+2870,Norwich,Égypte,Africa
+2871,Brazzaville,France,Europe
+2872,Rome,Congo-Brazzaville,Africa
+2873,Gatineau,None,None
+2874,Quatre Bornes,Canada,North America
+2875,Athènes,Maurice,Africa
+2876,Gandia,Grèce,Europe
+2877,Bombay,Espagne,Europe
+2878,Palerme,Russie,Europe
+2879,Derbyshire Dales,Italie,Europe
+2880,Stuttgart,None,None
+2881,Gurugram,None,None
+2882,Vienne,Italie,Europe
+2883,Manassas,None,None
+2884,São Paulo,Singapour,Asia
+2885,Le Caire,France,Europe
+2886,Budapest,Égypte,Africa
+2887,Worcester,Hongrie,Europe
+2888,Lipa,None,None
+2889,Toronto,Philippines,Asia
+2890,Calcutta,None,None
+2891,Nouakchott,None,None
+2892,Singapour,Mauritanie,Africa
+2893,Ōtsu,None,None
+2894,Almada,None,None
+2895,Poitiers,None,None
+2896,Newcastle upon Tyne,France,Europe
+2897,District de Huangpu,Royaume-Uni,Europe
+2898,Naples,France,Europe
+2899,Murcie,None,None
+2900,Newport,None,None
+2901,Doncaster,États-Unis d'Amérique,North America
+2902,Cité de Westminster,Singapour,Asia
+2903,Donetsk,Espagne,Europe
+2904,Sydney,Ukraine,Europe
+2905,Cardiff,Australie,Oceania
+2906,Colorado Springs,None,None
+2907,Milan,États-Unis d'Amérique,North America
+2908,Huechuraba,None,None
+2909,Île de Hong Kong,None,None
+2910,Craven,Chine,Asia
+2911,Singapour,France,Europe
+2912,Atlanta,Singapour,Asia
+2913,Ankara,États-Unis d'Amérique,North America
+2914,San Martín de Porres,Turquie,Asia
+2915,East Hertfordshire,Inde,Asia
+2916,Kazan,Italie,Europe
+2917,Istanbul,Japon,Asia
+2918,Chennai,Turquie,Asia
+2919,Manchester,Inde,Asia
+2920,Odense,None,None
+2921,Recife,Danemark,Europe
+2922,Nantes,Brésil,South America
+2923,Nîmes,Tchéquie,Europe
+2924,Chtip,None,None
+2925,Minsk,Macédoine du Nord,Europe
+2926,None,Bélarus,Europe
+2927,Santa Ana,Espagne,Europe
+2928,Cité de Westminster,Belgique,Europe
+2929,Atlanta,Suisse,Europe
+2930,Gijon,Allemagne,Europe
+2931,São Paulo,Espagne,Europe
+2932,Vila Velha,None,None
+2933,Las Palmas de Grande Canarie,Brésil,South America
+2934,Clermont-Ferrand,Espagne,Europe
+2935,Mid Sussex,Australie,Oceania
+2936,Trieste,Royaume-Uni,Europe
+2937,Haverhill,None,None
+2938,Livourne,Allemagne,Europe
+2939,Nîmes,Italie,Europe
+2940,Zagreb,Inde,Asia
+2941,Delft,Croatie,Europe
+2942,Matanzas,None,None
+2943,None,Cuba,North America
+2944,Calais,None,None
+2945,Guarulhos,None,None
+2946,Badajoz,Inde,Asia
+2947,Tolède,None,None
+2948,City of Rochester,None,None
+2949,Surprise,None,None
+2950,Izmir,États-Unis d'Amérique,North America
+2951,Lyon,Turquie,Asia
+2952,Peniche,None,None
+2953,Tamworth,Russie,Europe
+2954,Seixal,None,None
+2955,Dresde,Portugal,Europe
+2956,Phoenix,Allemagne,Europe
+2957,Alghero,Russie,Europe
+2958,Marseille,Royaume-Uni,Europe
+2959,Oviède,France,Europe
+2960,Pérouse,Russie,Europe
+2961,Odintsovo,France,Europe
+2962,Newport,Russie,Europe
+2963,Ripon,États-Unis d'Amérique,North America
+2964,Doha,Espagne,Europe
+2965,Le Cap,Qatar,Asia
+2966,East Staffordshire,None,None
+2967,Kiev,Royaume-Uni,Europe
+2968,Viterbe,Royaume-Uni,Europe
+2969,City of Syracuse,None,None
+2970,Vancouver,États-Unis d'Amérique,North America
+2971,Cité de Bradford,Canada,North America
+2972,Leeds,Brésil,South America
+2973,Chișinău,Royaume-Uni,Europe
+2974,Cardiff,Moldavie,Europe
+2975,Tournai,None,None
+2976,Lille,Belgique,Europe
+2977,Bakou,Roumanie,Europe
+2978,Kiev,Azerbaïdjan,Asia
+2979,Gijon,Ukraine,Europe
+2980,Carlisle,Inde,Asia
+2981,Argenteuil,Espagne,Europe
+2982,Bangalore,France,Europe
+2983,Milan,Inde,Asia
+2984,Jacksonville,None,None
+2985,Voronej,États-Unis d'Amérique,North America
+2986,Oberhausen,None,None
+2987,Alméria,Pays-Bas,Europe
+2988,Dacca,None,None
+2989,Madison,Bangladesh,Asia
+2990,Barcelone,États-Unis d'Amérique,North America
+2991,Durban,Espagne,Europe
+2992,Calcutta,Afrique du Sud,Africa
+2993,Iekaterinbourg,None,None
+2994,Mountain View,Russie,Europe
+2995,Rosario,États-Unis d'Amérique,North America
+2996,Redditch,Allemagne,Europe
+2997,Itu,None,None
+2998,Wollongong City Council,None,None
+2999,Epping Forest,Australie,Oceania
+3000,Lausanne,France,Europe
+3001,Pittsburgh,Royaume-Uni,Europe
+3002,New York,Suisse,Europe
+3003,Manchester,Salvador,North America
+3004,São Paulo,Royaume-Uni,Europe
+3005,Essen,Thaïlande,Asia
+3006,Nice,Brésil,South America
+3007,Vienne,None,None
+3008,Chennai,Portugal,Europe
+3009,Moscou,Inde,Asia
+3010,Bonn,None,None
+3011,Fortaleza,Suisse,Europe
+3012,Monaco,Italie,Europe
+3013,Sainte-Marie-du-Câtel,Monaco,Europe
+3014,None,Guernesey,Europe
+3015,Dunkerque,Espagne,Europe
+3016,Basta Tahta,Russie,Europe
+3017,Sheffield,Italie,Europe
+3018,Lyon,Royaume-Uni,Europe
+3019,Paris,Pérou,South America
+3020,Dundalk,Royaume-Uni,Europe
+3021,Bréda,None,None
+3022,Orléans,Pays-Bas,Europe
+3023,Moscou,Belgique,Europe
+3024,Agrigente,Royaume-Uni,Europe
+3025,Sheffield,Pays-Bas,Europe
+3026,Canberra,None,None
+3027,Cité de Westminster,Australie,Oceania
+3028,Tarragone,France,Europe
+3029,Parksville,None,None
+3030,Leiria,None,None
+3031,Brême,Italie,Europe
+3032,Bréda,France,Europe
+3033,None,Monaco,Europe
+3034,Palma,États-Unis d'Amérique,North America
+3035,Addis-Abeba,None,None
+3036,None,Éthiopie,Africa
+3037,Singapour,Pérou,South America
+3038,Bergen,Singapour,Asia
+3039,Birmingham,Belgique,Europe
+3040,Turin,Singapour,Asia
+3041,Newcastle upon Tyne,Italie,Europe
+3042,Malmö ou Malmoe,Royaume-Uni,Europe
+3043,Visakhapatnam,France,Europe
+3044,Rio de Janeiro,Russie,Europe
+3045,Auckland,Espagne,Europe
+3046,Wellington,Royaume-Uni,Europe
+3047,Elgin,Italie,Europe
+3048,Liverpool,États-Unis d'Amérique,North America
+3049,San Carlos de Bariloche,Royaume-Uni,Europe
+3050,La Haye,Argentine,South America
+3051,Anvers,France,Europe
+3052,Colchester,None,None
+3053,Bâle,Royaume-Uni,Europe
+3054,Buenos Aires,Suisse,Europe
+3055,Rives-d'Autise,None,None
+3056,City of Syracuse,Royaume-Uni,Europe
+3057,Cité de Westminster,Irlande,Europe
+3058,Tavira,Royaume-Uni,Europe
+3059,Cologne,États-Unis d'Amérique,North America
+3060,Blumenau,Allemagne,Europe
+3061,Rome,Belgique,Europe
+3062,San Miguel de Tucumán,None,None
+3063,Trévise,Royaume-Uni,Europe
+3064,Metz,Italie,Europe
+3065,Kuala Lumpur,Royaume-Uni,Europe
+3066,Horsens,Pays-Bas,Europe
+3067,Toulouse,Danemark,Europe
+3068,Cordoue,France,Europe
+3069,Budapest,Espagne,Europe
+3070,Malines,None,None
+3071,Faridabad,None,None
+3072,Rotterdam,Inde,Asia
+3073,Dundalk,Pays-Bas,Europe
+3074,Tirana,Royaume-Uni,Europe
+3075,None,Albanie,Europe
+3076,Brighton,None,None
+3077,North Norfolk,None,None
+3078,Fredericton,None,None
+3079,Amsterdam,Canada,North America
+3080,Eden,None,None
+3081,Marbella,None,None
+3082,Durham,Espagne,Europe
+3083,Glasgow,Espagne,Europe
+3084,Paris,Chypre,Asia
+3085,Porto Alegre,None,None
+3086,Pise,None,None
+3087,Nicosie,Royaume-Uni,Europe
+3088,Gijon,France,Europe
+3089,Florianópolis,États-Unis d'Amérique,North America
+3090,Gand,None,None
+3091,Manchester,Belgique,Europe
+3092,Biñan,Royaume-Uni,Europe
+3093,Cleveland,Philippines,Asia
+3094,Portimão,États-Unis d'Amérique,North America
+3095,Bucarest,Iran,Asia
+3096,Nice,Royaume-Uni,Europe
+3097,Logroño,None,None
+3098,Bruxelles,Suisse,Europe
+3099,Leicester,États-Unis d'Amérique,North America
+3100,Knoxville,Royaume-Uni,Europe
+3101,Waterloo,None,None
+3102,Somerset West and Taunton,None,None
+3103,City of Yonkers,Royaume-Uni,Europe
+3104,Oxford,Irlande,Europe
+3105,Rome,Turquie,Asia
+3106,Tallinn,Italie,Europe
+3107,None,Estonie,Europe
+3108,Baguio,None,None
+3109,Portsmouth,Philippines,Asia
+3110,Bordeaux,États-Unis d'Amérique,North America
+3111,Liège,France,Europe
+3112,Sundsvalls Gustav Adolfs distrikt,Canada,North America
+3113,Cassel,None,None
+3114,Rijeka,None,None
+3115,Ceuta,Croatie,Europe
+3116,Londres,Allemagne,Europe
+3117,São João das Lampas e Terrugem,None,None
+3118,Monaco,France,Europe
+3119,Malaga,Monaco,Europe
+3120,Capelo,None,None
+3121,Marbois,None,None
+3122,Poços de Caldas,France,Europe
+3123,Soumy,None,None
+3124,Póvoa de Varzim,Allemagne,Europe
+3125,Parla,None,None
+3126,Exeter,Espagne,Europe
+3127,Kfar Saba,None,None
+3128,Lille,Israël,Asia
+3129,Budapest,Royaume-Uni,Europe
+3130,Moscou,Hongrie,Europe
+3131,Durham,Russie,Europe
+3132,São Pedro da Aldeia,Argentine,South America
+3133,Valladolid,Brésil,South America
+3134,Sheffield,Espagne,Europe
+3135,Kazan,Royaume-Uni,Europe
+3136,Sotchi,None,None
+3137,Saint-Étienne,Russie,Europe
+3138,Sri Jayawardenapura Kotte,France,Europe
+3139,Ate,Sri Lanka,Asia
+3140,Badajoz,Finlande,Europe
+3141,Toronto,Espagne,Europe
+3142,La Haye,Canada,North America
+3143,Montpellier,Pays-Bas,Europe
+3144,Birmingham,France,Europe
+3145,Kluang,None,None
+3146,Rancagua,Royaume-Uni,Europe
+3147,Ayamonte,None,None
+3148,Badajoz,None,None
+3149,Moscou,Espagne,Europe
+3150,Baltimore,None,None
+3151,Wiesbaden,Russie,Europe
+3152,Orlando,Allemagne,Europe
+3153,Marratxí,États-Unis d'Amérique,North America
+3154,São Paulo,États-Unis d'Amérique,North America
+3155,Madrid,Brésil,South America
+3156,Charlotte,Espagne,Europe
+3157,Southampton,États-Unis d'Amérique,North America
+3158,Malaga,Royaume-Uni,Europe
+3159,Commune Cayes-Jacmel,None,None
+3160,None,Haïti,North America
+3161,Norwich,Italie,Europe
+3162,Aveiro,None,None
+3163,Blaison-Saint-Sulpice,None,None
+3164,Saint-Louis,None,None
+3165,Haïfa,Allemagne,Europe
+3166,Palma,Russie,Europe
+3167,Waverley,None,None
+3168,(Old) Ottawa,Royaume-Uni,Europe
+3169,Sydney,Canada,North America
+3170,East Cambridgeshire,Australie,Oceania
+3171,Saint Paul,None,None
+3172,千代田区,France,Europe
+3173,Salzbourg,Japon,Asia
+3174,Kazan,None,None
+3175,Tarragone,Royaume-Uni,Europe
+3176,Franklin,Royaume-Uni,Europe
+3177,La Rochelle,États-Unis d'Amérique,North America
+3178,Carlsruhe,Australie,Oceania
+3179,Móstoles,Allemagne,Europe
+3180,Hillsboro,Espagne,Europe
+3181,La Corogne,Royaume-Uni,Europe
+3182,São Paulo,Grèce,Europe
+3183,None,Jordanie,Asia
+3184,Brantôme en Périgord,États-Unis d'Amérique,North America
+3185,Taipei,France,Europe
+3186,Grand Bourgtheroulde,Taïwan,Asia
+3187,Kingsley Township,None,None
+3188,Nagaoka,États-Unis d'Amérique,North America
+3189,Bruxelles,Japon,Asia
+3190,Chambéry,None,None
+3191,Venise,France,Europe
+3192,Zurich,Russie,Europe
+3193,Toulouse,Suisse,Europe
+3194,Tavira,Russie,Europe
+3195,Rennes,Jordanie,Asia
+3196,Turin,France,Europe
+3197,Dundee,France,Europe
+3198,Troyes,Royaume-Uni,Europe
+3199,Houston,None,None
+3200,Mansfield,None,None
+3201,Brest,États-Unis d'Amérique,North America
+3202,Marseille,Argentine,South America
+3203,Omaha,None,None
+3204,Birmingham,États-Unis d'Amérique,North America
+3205,Southampton,France,Europe
+3206,Christchurch,None,None
+3207,Los Angeles,Espagne,Europe
+3208,Alicante,France,Europe
+3209,Anvers,Royaume-Uni,Europe
+3210,Natal,Belgique,Europe
+3211,Pune City,France,Europe
+3212,Newport,France,Europe
+3213,Paris,Portugal,Europe
+3214,Lima,France,Europe
+3215,Zoetermeer,None,None
+3216,Belfast,Brésil,South America
+3217,Caen,Royaume-Uni,Europe
+3218,A'ali,France,Europe
+3219,Brest,Royaume-Uni,Europe
+3220,Lyon,Irlande,Europe
+3221,Orléans,Italie,Europe
+3222,Komsomolsk-sur-l'Amour,None,None
+3223,Nottingham,Russie,Europe
+3224,San Borja,None,None
+3225,Granzay-Gript,Royaume-Uni,Europe
+3226,Tamworth,Royaume-Uni,Europe
+3227,Orléans,Russie,Europe
+3228,Burgos,None,None
+3229,Le Pirée,Royaume-Uni,Europe
+3230,Cambridge,None,None
+3231,Düsseldorf,France,Europe
+3232,São Bernardo do Campo,Allemagne,Europe
+3233,Southend-on-Sea,Brésil,South America
+3234,Larissa,None,None
+3235,Singapour,Grèce,Europe
+3236,Tilbourg,Singapour,Asia
+3237,Carlisle,France,Europe
+3238,Buenos Aires,Allemagne,Europe
+3239,Winchester,None,None
+3240,Las Vegas,None,None
+3241,Fujaïrah,France,Europe
+3242,Bridgetown,Émirats arabes unis,Asia
+3243,None,Barbade,North America
+3244,Lyon,Suisse,Europe
+3245,Hué,France,Europe
+3246,None,Viêt Nam,Asia
+3247,Campo Grande,None,None
+3248,District de Nyarugenge,Brésil,South America
+3249,District de Futian,Rwanda,Africa
+3250,Cité de Westminster,Chine,Asia
+3251,Teramo,Royaume-Uni,Europe
+3252,Pampelune,Italie,Europe
+3253,Bassetlaw,Espagne,Europe
+3254,Faro,None,None
+3255,Lisbonne,Irlande,Europe
+3256,Johannesbourg,Portugal,Europe
+3257,Genève,France,Europe
+3258,Gand,Suisse,Europe
+3259,Elmbridge,None,None
+3260,Cologne,None,None
+3261,Blumenau,None,None
+3262,Viseu,Royaume-Uni,Europe
+3263,Tonbridge and Malling,None,None
+3264,Bordeaux,Suisse,Europe
+3265,Dijon,Espagne,Europe
+3266,Sydney,France,Europe
+3267,Torrance,Australie,Oceania
+3268,Chichester,France,Europe
+3269,Rennes,Italie,Europe
+3270,Mansfield,Royaume-Uni,Europe
+3271,Rabat,Brésil,South America
+3272,Santos,Maroc,Africa
+3273,Latina,Brésil,South America
+3274,Antalya,Italie,Europe
+3275,Metz,Portugal,Europe
+3276,Blumenau,France,Europe
+3277,Mayence,None,None
+3278,Lugo,France,Europe
+3279,San Antonio,Espagne,Europe
+3280,District de Huangpu,None,None
+3281,Kuala Lumpur,Espagne,Europe
+3282,Minsk,Royaume-Uni,Europe
+3283,Le Havre,Bélarus,Europe
+3284,Aracaju,France,Europe
+3285,Plymouth,Brésil,South America
+3286,Kirklees,Portugal,Europe
+3287,La Rochelle,Royaume-Uni,Europe
+3288,Newcastle upon Tyne,Israël,Asia
+3289,Thane,Royaume-Uni,Europe
+3290,La Corogne,Suisse,Europe
+3291,Salford,Portugal,Europe
+3292,Vigevano,None,None
+3293,Buenos Aires,Italie,Europe
+3294,Colombo,Argentine,South America
+3295,Aoste,France,Europe
+3296,Bangalore,Royaume-Uni,Europe
+3297,Pelotas,None,None
+3298,Mulhouse,Brésil,South America
+3299,Les Monts d'Aunay,Espagne,Europe
+3300,Perth,Espagne,Europe
+3301,San Francisco,Australie,Oceania
+3302,Guipry-Messac,France,Europe
+3303,Manchester,France,Europe
+3304,Dacorum,None,None
+3305,Koweït,Turquie,Asia
+3306,Cincinnati,France,Europe
+3307,Troyes,Brésil,South America
+3308,Cascais e Estoril,Royaume-Uni,Europe
+3309,Terni,Portugal,Europe
+3310,Campinas,Italie,Europe
+3311,Manchester,Brésil,South America
+3312,Nantes,Russie,Europe
+3313,Nicosie,France,Europe
+3314,None,Mauritanie,Africa
+3315,Bedford Township,None,None
+3316,Mossoró,Brésil,South America
+3317,Bologne,Brésil,South America
+3318,Brighton,Italie,Europe
+3319,Catane,Royaume-Uni,Europe
+3320,Poços de Caldas,None,None
+3321,Melbourne,Pays-Bas,Europe
+3322,Milan,Irlande,Europe
+3323,Alger,None,None
+3324,Madrid,Algérie,Africa
+3325,Madrid,Belgique,Europe
+3326,Viseu,Espagne,Europe
+3327,Nagakute,France,Europe
+3328,Tbilissi,Australie,Oceania
+3329,Pouso Alegre,Géorgie,Asia
+3330,Bruxelles,Espagne,Europe
+3331,Bangkok,Belgique,Europe
+3332,Adélaïde,Thaïlande,Asia
+3333,Móstoles,Australie,Oceania
+3334,Lyon,Italie,Europe
+3335,Linwood-Central-Heathcote Community,Brésil,South America
+3336,Kuala Lumpur,Australie,Oceania
+3337,Terni,Malaisie,Asia
+3338,Rockville,None,None
+3339,Naples,Belgique,Europe
+3340,Louvain,Brésil,South America
+3341,Reggio de Calabre,None,None
+3342,Pachuca,None,None
+3343,Curitiba,Espagne,Europe
+3344,Totana,None,None
+3345,Brampton,Espagne,Europe
+3346,Halifax,None,None
+3347,Curitiba,France,Europe
+3348,Guarulhos,Brésil,South America
+3349,Ajaccio,None,None
+3350,Bento Gonçalves,None,None
+3351,Bila Tserkva,None,None
+3352,Vienne,Ukraine,Europe
+3353,Châtel-en-Trièves,Autriche,Europe
+3354,Perímetro Urbano Barranquilla,Italie,Europe
+3355,Bassetlaw,None,None
+3356,Amman,Espagne,Europe
+3357,Manama,France,Europe
+3358,Jundiaí,Bahreïn,Asia
+3359,Cleveland,None,None
+3360,Mendip,Indonésie,Asia
+3361,Naples,Brésil,South America
+3362,La Haye,Brésil,South America
+3363,Perímetro Urbano Santiago de Cali,Royaume-Uni,Europe
+3364,Orée d'Anjou,None,None
+3365,Orlando,Espagne,Europe
+3366,Colchester,États-Unis d'Amérique,North America
+3367,São Luís,None,None
+3368,Nottingham,Brésil,South America
+3369,Basta Tahta,Royaume-Uni,Europe
+3370,Worcester,Royaume-Uni,Europe
+3371,Porto,États-Unis d'Amérique,North America
+3372,Athènes,Portugal,Europe
+3373,Castle Point,None,None
+3374,Geraldton,None,None
+3375,Strasbourg,Australie,Oceania
+3376,Amsterdam,Pérou,South America
+3377,New York,Pays-Bas,Europe
+3378,Subotica,États-Unis d'Amérique,North America
+3379,Huntingdonshire,None,None
+3380,Ílhavo,None,None
+3381,Auckland,Italie,Europe
+3382,Caguas,None,None
+3383,Bruxelles,Inde,Asia
+3384,Hyndburn,None,None
+3385,Bedford Township,Royaume-Uni,Europe
+3386,Oslo,États-Unis d'Amérique,North America
+3387,Leeds,Norvège,Europe
+3388,Tonbridge and Malling,Danemark,Europe
+3389,Alcorcón,None,None
+3390,Djeddah,Espagne,Europe
+3391,La Corogne,Arabie saoudite,Asia
+3392,Terrassa,None,None
+3393,Kirklees,États-Unis d'Amérique,North America
+3394,Eindhoven,Royaume-Uni,Europe
+3395,Kozani,Pays-Bas,Europe
+3396,São Paulo,Italie,Europe
+3397,None,Gibraltar,Europe
+3398,Kharkiv,Suisse,Europe
+3399,Nouakchott,Ukraine,Europe
+3400,Mansfield,Mauritanie,Africa
+3401,Houston,Russie,Europe
+3402,Redditch,None,None
+3403,Montréal,Royaume-Uni,Europe
+3404,Bath,Canada,North America
+3405,Palma,Royaume-Uni,Europe
+3406,Breckland,Espagne,Europe
+3407,Lagoa e Carvoeiro,None,None
+3408,Rother,France,Europe
+3409,Bahia Blanca,None,None
+3410,Cité de Westminster,Grèce,Europe
+3411,Grosseto,None,None
+3412,Austin,None,None
+3413,Giugliano in Campania,Portugal,Europe
+3414,Belo Horizonte,Italie,Europe
+3415,Somerset West and Taunton,France,Europe
+3416,Ponta Delgada,France,Europe
+3417,Bologne,Portugal,Europe
+3418,Tangerang,None,None
+3419,Lisbonne,Indonésie,Asia
+3420,Tunbridge Wells,None,None
+3421,Annecy,Royaume-Uni,Europe
+3422,District d'Adur,France,Europe
+3423,Stavanger,None,None
+3424,Grenoble,Norvège,Europe
+3425,Houston,France,Europe
+3426,Halifax,Royaume-Uni,Europe
+3427,Hô Chi Minh-Ville,Canada,North America
+3428,El General,Viêt Nam,Asia
+3429,None,Costa Rica,North America
+3430,Richmond,None,None
+3431,Bratislava,None,None
+3432,East Hampshire,None,None
+3433,Patras,Royaume-Uni,Europe
+3434,Palerme,Grèce,Europe
+3435,Messine,Royaume-Uni,Europe
+3436,Lisbonne,Royaume-Uni,Europe
+3437,Chicago,France,Europe
+3438,Paphos,None,None
+3439,Guwahati,None,None
+3440,Caen,Inde,Asia
+3441,New Delhi,Royaume-Uni,Europe
+3442,Venlo,États-Unis d'Amérique,North America
+3443,Barcelone,Pays-Bas,Europe
+3444,Séoul,Espagne,Europe
+3445,Marseille,États-Unis d'Amérique,North America
+3446,South Lakeland,Espagne,Europe
+3447,Tilbourg,None,None
+3448,Lima,Pays-Bas,Europe
+3449,Madrid,Pérou,South America
+3450,Coïmbre,Espagne,Europe
+3451,Brazzaville,None,None
+3452,Paris,Congo-Brazzaville,Africa
+3453,Montpellier,Belgique,Europe
+3454,La Rochefoucauld-en-Angoumois,None,None
+3455,Séoul,None,None
+3456,Juiz de Fora,France,Europe
+3457,Bucarest,Pays-Bas,Europe
+3458,Rio de Janeiro,Espagne,Europe
+3459,Durham,Autriche,Europe
+3460,Rennes,États-Unis d'Amérique,North America
+3461,Eindhoven,Italie,Europe
+3462,Portland,Pays-Bas,Europe
+3463,Rio de Janeiro,États-Unis d'Amérique,North America
+3464,Pierre,None,None
+3465,Alice Springs,États-Unis d'Amérique,North America
+3466,East Suffolk,Brésil,South America
+3467,Medellín,None,None
+3468,Split,None,None
+3469,Cité de Westminster,Croatie,Europe
+3470,Winchester,France,Europe
+3471,Dunkerque,Grèce,Europe
+3472,Cherwell,None,None
+3473,Utrecht,Royaume-Uni,Europe
+3474,Cité de Westminster,Azerbaïdjan,Asia
+3475,João Pessoa,Espagne,Europe
+3476,New York,Brésil,South America
+3477,Khobar,Royaume-Uni,Europe
+3478,Bristol,Arabie saoudite,Asia
+3479,Tilbourg,Royaume-Uni,Europe
+3480,Villeurbanne,Suisse,Europe
+3481,Trondheim,Royaume-Uni,Europe
+3482,New Delhi,Norvège,Europe
+3483,Minsk,None,None
+3484,Chandler,Bélarus,Europe
+3485,Yecla,Royaume-Uni,Europe
+3486,Jersey City,Espagne,Europe
+3487,Perímetro Urbano Barranquilla,None,None
+3488,Alicante,Colombie,South America
+3489,Cité de Wakefield,Belgique,Europe
+3490,East Hertfordshire,Irlande,Europe
+3491,Fuenlabrada,Allemagne,Europe
+3492,Noguinsk,Espagne,Europe
+3493,Cherwell,Russie,Europe
+3494,Espoo,None,None
+3495,Bari,None,None
+3496,Aberdeen,Italie,Europe
+3497,São José,Royaume-Uni,Europe
+3498,Chelmsford,France,Europe
+3499,Новосибирск,Indonésie,Asia
+3500,Venise,Espagne,Europe
+3501,Honolulu,Égypte,Africa
+3502,Ciudad Juárez,None,None
+3503,Santa Cruz de Ténérife,None,None
+3504,Nice,Espagne,Europe
+3505,Leeds,France,Europe
+3506,Tours,Singapour,Asia
+3507,Al-Aïn,None,None
+3508,Francfort-sur-le-Main,Émirats arabes unis,Asia
+3509,Vladimir,None,None
+3510,Bruxelles,Russie,Europe
+3511,St Albans,Allemagne,Europe
+3512,Portland,Royaume-Uni,Europe
+3513,Clermont-Ferrand,États-Unis d'Amérique,North America
+3514,Tamworth,France,Europe
+3515,Rosario,Royaume-Uni,Europe
+3516,Oberhausen,Royaume-Uni,Europe
+3517,Plymouth,Chine,Asia
+3518,Sedgemoor,États-Unis d'Amérique,North America
+3519,Val de Virvée,Royaume-Uni,Europe
+3520,Bethléem,Royaume-Uni,Europe
+3521,Moscou,Palestinian Territory,Asia
+3522,Sedgemoor,Russie,Europe
+3523,Kelowna,None,None
+3524,Glasgow,Canada,North America
+3525,Lège-Cap-Ferret,Royaume-Uni,Europe
+3526,Pattaya,None,None
+3527,Garden Grove,Indonésie,Asia
+3528,Kiev,Allemagne,Europe
+3529,Cherwell,Ukraine,Europe
+3530,Fredrikstad,None,None
+3531,Guimarães,Norvège,Europe
+3532,Louvain,Portugal,Europe
+3533,Bombay,Royaume-Uni,Europe
+3534,Zoetermeer,France,Europe
+3535,Dublin,Australie,Oceania
+3536,Badajoz,France,Europe
+3537,Brighton,Russie,Europe
+3538,Santa Maria da Feira,None,None
+3539,Rio de Janeiro,France,Europe
+3540,Milan,Espagne,Europe
+3541,Garden Grove,Italie,Europe
+3542,Lübeck,Belgique,Europe
+3543,Glasgow,États-Unis d'Amérique,North America
+3544,Helsinki,Espagne,Europe
+3545,Mashhad,None,None
+3546,Annecy,None,None
+3547,Simi Valley,None,None
+3548,Ananindeua,None,None
+3549,Vicente López,None,None
+3550,None,Salvador,North America
+3551,Turin,Brésil,South America
+3552,Brunswick,None,None
+3553,Rotterdam,Allemagne,Europe
+3554,Mar del Plata,Pays-Bas,Europe
+3555,eMalahleni,Royaume-Uni,Europe
+3556,Cité de Westminster,Afrique du Sud,Africa
+3557,Strasbourg,Espagne,Europe
+3558,The Villages,France,Europe
+3559,Cordoue,Suisse,Europe
+3560,Cité de Westminster,Suisse,Europe
+3561,Stratford-on-Avon,Canada,North America
+3562,Reykjavik,None,None
+3563,None,Islande,Europe
+3564,千代田区,États-Unis d'Amérique,North America
+3565,Santa Fé,Japon,Asia
+3566,São Paulo,Panamá,North America
+3567,Bréda,Belgique,Europe
+3568,Wollongong City Council,Canada,North America
+3569,Kissimmee,None,None
+3570,Basingstoke and Deane,France,Europe
+3571,Limeira,None,None
+3572,Limoges,Brésil,South America
+3573,Bruges,None,None
+3574,Vincent-Froideville,États-Unis d'Amérique,North America
+3575,Oldenbourg,None,None
+3576,Mid Suffolk,Allemagne,Europe
+3577,Ogresgala pagasts,Royaume-Uni,Europe
+3578,Tolède,Lettonie,Europe
+3579,Astana,None,None
+3580,Valence,Kazakhstan,Asia
+3581,Téhéran,Liban,Asia
+3582,Oslo,France,Europe
+3583,Madison,France,Europe
+3584,East Devon,France,Europe
+3585,Santa Maria da Feira,France,Europe
+3586,Tours,Portugal,Europe
+3587,Porto Alegre,France,Europe
+3588,Liège,Brésil,South America
+3589,Lyon,Belgique,Europe
+3590,São Luís,Royaume-Uni,Europe
+3591,Berlin,Afrique du Sud,Africa
+3592,Turin,Allemagne,Europe
+3593,Mid Devon,Turquie,Asia
+3594,Winston-Salem,None,None
+3595,Mannheim,None,None
+3596,Bristol,France,Europe
+3597,La Haye,Royaume-Uni,Europe
+3598,Badajoz,Pays-Bas,Europe
+3599,Chambéry,Royaume-Uni,Europe
+3600,Djeddah,Qatar,Asia
+3601,Annaba,None,None
+3602,None,Algérie,Africa
+3603,Lyon,Australie,Oceania
+3604,Itajaí,None,None
+3605,Ferrol,None,None
+3606,Annecy,Espagne,Europe
+3607,Calgary,None,None
+3608,Melbourne,Irlande,Europe
+3609,La Pola Siero,None,None
+3610,Nuevo Laredo,Portugal,Europe
+3611,Venise,Mexique,North America
+3612,Rushmoor,None,None
+3613,Auckland,Royaume-Uni,Europe
+3614,Cité de Westminster,Nouvelle-Zélande,Oceania
+3615,Andria,France,Europe
+3616,Pesaro,None,None
+3617,Perpignan,Espagne,Europe
+3618,Stuttgart,France,Europe
+3619,Ségovie,Allemagne,Europe
+3620,Liège,Espagne,Europe
+3621,Bratislava,Royaume-Uni,Europe
+3622,Terena (São Pedro),Slovaquie,Europe
+3623,Huelva,None,None
+3624,Luanda,Espagne,Europe
+3625,None,Angola,Africa
+3626,Elmbridge,Espagne,Europe
+3627,Salamanque,Royaume-Uni,Europe
+3628,Liendo,None,None
+3629,Metz,Jordanie,Asia
+3630,Hull,Espagne,Europe
+3631,Bucarest,Brésil,South America
+3632,Gand,Liban,Asia
+3633,Lugo,Belgique,Europe
+3634,Valle de Yerri/Deierri,Italie,Europe
+3635,Münster,None,None
+3636,Alméria,None,None
+3637,Zurich,Espagne,Europe
+3638,Fylde,Portugal,Europe
+3639,Koweït,Espagne,Europe
+3640,Miami,Royaume-Uni,Europe
+3641,Barakaldo,États-Unis d'Amérique,North America
+3642,Spokane,Brésil,South America
+3643,Neuss,None,None
+3644,Koweït,None,None
+3645,Paramaribo,None,None
+3646,None,Suriname,South America
+3647,Hermosillo,None,None
+3648,Moscou,Mexique,North America
+3649,Preston,France,Europe
+3650,Séville,Brésil,South America
+3651,Charleroi,Espagne,Europe
+3652,Huelva,Belgique,Europe
+3653,Doha,Royaume-Uni,Europe
+3654,Paris,Qatar,Asia
+3655,New York,Italie,Europe
+3656,Mataró,États-Unis d'Amérique,North America
+3657,Nouakchott,États-Unis d'Amérique,North America
+3658,Naples,Mauritanie,Africa
+3659,Londres,Italie,Europe
+3660,Wolverhampton,Russie,Europe
+3661,Ribeirão Preto,Royaume-Uni,Europe
+3662,Lille,Brésil,South America
+3663,Pampelune,France,Europe
+3664,Newport,Inde,Asia
+3665,Teignbridge,Italie,Europe
+3666,Sabadell,Royaume-Uni,Europe
+3667,Birmingham,Italie,Europe
+3668,Oakville,France,Europe
+3669,Allerdale,Espagne,Europe
+3670,Djeddah,Royaume-Uni,Europe
+3671,Lichfield,None,None
+3672,Lège-Cap-Ferret,None,None
+3673,Cherwell,Espagne,Europe
+3674,Valence,Royaume-Uni,Europe
+3675,Plymouth,France,Europe
+3676,Општина Топола,Espagne,Europe
+3677,Londres,Serbie,Europe
+3678,Reutlingen,None,None
+3679,Birmingham,Allemagne,Europe
+3680,Nicosie,Australie,Oceania
+3681,Curitiba,Chypre,Asia
+3682,Irvine,Brésil,South America
+3683,Layton,États-Unis d'Amérique,North America
+3684,Athènes,Suisse,Europe
+3685,Lincoln,Grèce,Europe
+3686,West Pikeland Township,None,None
+3687,Cary,None,None
+3688,La Corogne,France,Europe
+3689,Herne,France,Europe
+3690,Cardiff,Allemagne,Europe
+3691,Municipal District of Macroom,France,Europe
+3692,Gemeinde Bichlbach,Espagne,Europe
+3693,Alméria,Italie,Europe
+3694,Canoas,None,None
+3695,Bedford Township,Espagne,Europe
+3696,Tarragone,États-Unis d'Amérique,North America
+3697,Vérone,Royaume-Uni,Europe
+3698,Odessa,Pérou,South America
+3699,Alcalá de Henares,None,None
+3700,Anvers,Brésil,South America
+3701,Courtrai,None,None
+3702,New York,Belgique,Europe
+3703,South Kesteven,États-Unis d'Amérique,North America
+3704,Coventry,Allemagne,Europe
+3705,Laredo,None,None
+3706,Vaughan,None,None
+3707,Cuenca,Canada,North America
+3708,Sines,None,None
+3709,Amber Valley,Portugal,Europe
+3710,Teignbridge,France,Europe
+3711,Craven,None,None
+3712,Plymouth,Irlande,Europe
+3713,Paris,Oman,Asia
+3714,Trois-Rivières,Espagne,Europe
+3715,Cidade da Maia,Canada,North America
+3716,Mole Valley,États-Unis d'Amérique,North America
+3717,Gütersloh,France,Europe
+3718,Paris,Inde,Asia
+3719,Galway,France,Europe
+3720,Bursa,Espagne,Europe
+3721,Las Palmas de Grande Canarie,Singapour,Asia
+3722,Lelystad,None,None
+3723,Vérone,Pays-Bas,Europe
+3724,Breckland,Italie,Europe
+3725,San Salvador,None,None
+3726,Ижевск,None,None
+3727,Berne,None,None
+3728,Turin,Royaume-Uni,Europe
+3729,San José,France,Europe
+3730,Le Caire,Costa Rica,North America
+3731,Copeland,None,None
+3732,North Hertfordshire,Portugal,Europe
+3733,New Delhi,France,Europe
+3734,Agadir,Inde,Asia
+3735,None,Maroc,Africa
+3736,Barcelone,Nouvelle-Zélande,Oceania
+3737,Dos Hermanas,Italie,Europe
+3738,Chelmsford,Espagne,Europe
+3739,Aÿ-Champagne,None,None
+3740,Porto,France,Europe
+3741,Bonn,Liban,Asia
+3742,Durham,France,Europe
+3743,l'Hospitalet de Llobregat,Royaume-Uni,Europe
+3744,Novi Sad,France,Europe
+3745,Boulogne-Billancourt,États-Unis d'Amérique,North America
+3746,Mönchengladbach,France,Europe
+3747,Los Angeles,Allemagne,Europe
+3748,Breckland,Ukraine,Europe
+3749,Stratford-on-Avon,None,None
+3750,Corona,Royaume-Uni,Europe
+3751,Annecy,États-Unis d'Amérique,North America
+3752,Ponce,None,None
+3753,Milan,Russie,Europe
+3754,Oujda,None,None
+3755,Dunkerque,Brésil,South America
+3756,Réthymnon,Belgique,Europe
+3757,Goiânia,None,None
+3758,Vienne,Brésil,South America
+3759,Leeds,Espagne,Europe
+3760,Hradec Králové,None,None
+3761,Gurugram,Tchéquie,Europe
+3762,Tonbridge and Malling,États-Unis d'Amérique,North America
+3763,Stuttgart,Espagne,Europe
+3764,Rio de Janeiro,Norvège,Europe
+3765,Alcobendas,None,None
+3766,São Paulo,Égypte,Africa
+3767,Zurich,Mexique,North America
+3768,Duque de Caxias,None,None
+3769,Erfurt,None,None
+3770,Clermont-Ferrand,Irlande,Europe
+3771,Avignon,Italie,Europe
+3772,Besançon,Espagne,Europe
+3773,Delft,Roumanie,Europe
+3774,Leverkusen,None,None
+3775,Cité de Westminster,Koweït,Asia
+3776,Oxford,Arabie saoudite,Asia
+3777,Conseil régional de la vallée de Hefer,France,Europe
+3778,Bombay,Israël,Asia
+3779,Seattle,Inde,Asia
+3780,Tuxtla Gutiérrez,None,None
+3781,Toulouse,Mexique,North America
+3782,Thornton,None,None
+3783,Zagreb,États-Unis d'Amérique,North America
+3784,Huelva,Italie,Europe
+3785,Madison,None,None
+3786,South Ribble,États-Unis d'Amérique,North America
+3787,เกาะสมุย,Royaume-Uni,Europe
+3788,Perth,Thaïlande,Asia
+3789,Marseille,Australie,Oceania
+3790,Miami,France,Europe
+3791,Thousand Oaks,None,None
+3792,Gênes,France,Europe
+3793,Helsinki,Italie,Europe
+3794,Lyon,Finlande,Europe
+3795,Naples,Espagne,Europe
+3796,Sunderland,France,Europe
+3797,Villeurbanne,Royaume-Uni,Europe
+3798,Saint Paul,Espagne,Europe
+3799,Paris,Colombie,South America
+3800,Taipei,None,None
+3801,Bombay,Taïwan,Asia
+3802,Glasgow,Belgique,Europe
+3803,Pindamonhangaba,None,None
+3804,La Canée,Brésil,South America
+3805,Galway,None,None
+3806,East Lindsey,Irlande,Europe
+3807,Cuiabá,None,None
+3808,Dijon,Brésil,South America
+3809,San Antonio,Italie,Europe
+3810,Bruxelles,Pérou,South America
+3811,Plymouth,Espagne,Europe
+3812,Novorossiisk,Royaume-Uni,Europe
+3813,Utrecht,France,Europe
+3814,Milan,Danemark,Europe
+3815,Elx / Elche,États-Unis d'Amérique,North America
+3816,Amber Valley,France,Europe
+3817,Омск,None,None
+3818,Iaroslavl,None,None
+3819,Détroit,None,None
+3820,Louvain,France,Europe
+3821,Viterbe,None,None
+3822,Delhi,Italie,Europe
+3823,Amsterdam,Inde,Asia
+3824,York,Pays-Bas,Europe
+3825,Linwood-Central-Heathcote Community,Inde,Asia
+3826,Lisburn,Australie,Oceania
+3827,Perímetro Urbano Bucaramanga,France,Europe
+3828,Saskatoon,Colombie,South America
+3829,Le Caire,Canada,North America
+3830,Paris,Égypte,Africa
+3831,Forlì,France,Europe
+3832,Municipalité de Varna,Italie,Europe
+3833,Katmandou,None,None
+3834,None,Népal,Asia
+3835,Saint-Martin-la-Pallu,None,None
+3836,Moscou,Irlande,Europe
+3837,Le Mans,Royaume-Uni,Europe
+3838,Tournai,Inde,Asia
+3839,Nicosie,Belgique,Europe
+3840,Aveiro,Royaume-Uni,Europe
+3841,Alto Reno Terme,États-Unis d'Amérique,North America
+3842,Huber Heights,None,None
+3843,Melilla,None,None
+3844,Columbus,None,None
+3845,Toulouse,États-Unis d'Amérique,North America
+3846,Gravesham,France,Europe
+3847,Winterthour,None,None
+3848,Bogor,None,None
+3849,Cité de Westminster,Indonésie,Asia
+3850,Mackay,Royaume-Uni,Europe
+3851,Dort,Espagne,Europe
+3852,Bakou,Espagne,Europe
+3853,Paris,Azerbaïdjan,Asia
+3854,Sabadell,None,None
+3855,Téhéran,France,Europe
+3856,Brighton,Iran,Asia
+3857,Paderno Dugnano,None,None
+3858,Semerciler Mahallesi,None,None
+3859,Rouen,Turquie,Asia
+3860,Izmir,Espagne,Europe
+3861,Chester,Turquie,Asia
+3862,Logroño,Italie,Europe
+3863,Pampelune,États-Unis d'Amérique,North America
+3864,San Jose,None,None
+3865,Castelló de la Plana,None,None
+3866,Mersin,Royaume-Uni,Europe
+3867,Bilbao,Turquie,Asia
+3868,Δημοτική Ενότητα Παραβόλας,Espagne,Europe
+3869,Istanbul,Grèce,Europe
+3870,Montevideo,Thaïlande,Asia
+3871,Costa Mesa,Uruguay,South America
+3872,Växjö,États-Unis d'Amérique,North America
+3873,Karratha,None,None
+3874,Jaipur,None,None
+3875,Funchal,Espagne,Europe
+3876,Norwich,Portugal,Europe
+3877,Sandwell,Brésil,South America
+3878,Carthagène,Royaume-Uni,Europe
+3879,South Oxfordshire,Colombie,South America
+3880,Idaho Falls,France,Europe
+3881,Bombay,États-Unis d'Amérique,North America
+3882,Bucarest,Inde,Asia
+3883,Cité de Westminster,Autriche,Europe
+3884,São Bernardo do Campo,France,Europe
+3885,Mississauga,Brésil,South America
+3886,Hamadan,None,None
+3887,Salt Lake City,Iran,Asia
+3888,Bristol,États-Unis d'Amérique,North America
+3889,Naples,Portugal,Europe
+3890,Hanovre,Italie,Europe
+3891,Bathurst,None,None
+3892,Montpellier,Australie,Oceania
+3893,Andria,None,None
+3894,San Jose,Italie,Europe
+3895,Wychavon,Italie,Europe
+3896,Taroudant,Portugal,Europe
+3897,New Delhi,Italie,Europe
+3898,Indianapolis,Inde,Asia
+3899,Barreiras,États-Unis d'Amérique,North America
+3900,Swansea,Brésil,South America
+3901,Lübeck,Royaume-Uni,Europe
+3902,Auckland,France,Europe
+3903,Melbourne,Nouvelle-Zélande,Oceania
+3904,Édimbourg,Australie,Oceania
+3905,Somerset West and Taunton,Argentine,South America
+3906,Concord,Royaume-Uni,Europe
+3907,Arnhem,Royaume-Uni,Europe
+3908,Hialeah,None,None
+3909,Zielona Góra,Russie,Europe
+3910,Genève,Pologne,Europe
+3911,Montpellier,Espagne,Europe
+3912,Dijon,Royaume-Uni,Europe
+3913,Alicante,Chine,Asia
+3914,Chandler,None,None
+3915,أم ليله,France,Europe
+3916,Fortaleza,Émirats arabes unis,Asia
+3917,Chester,Brésil,South America
+3918,Anchorage,None,None
+3919,Papeete,États-Unis d'Amérique,North America
+3920,Delft,France,Europe
+3921,Gênes,Inde,Asia
+3922,Parañaque,Royaume-Uni,Europe
+3923,Δημοτική Ενότητα Θεσαλονίκης,Inde,Asia
+3924,Barcelone,Grèce,Europe
+3925,Dresde,None,None
+3926,Cluj-Napoca,France,Europe
+3927,New Delhi,Roumanie,Europe
+3928,Anvers,Inde,Asia
+3929,New Delhi,Belgique,Europe
+3930,Manille,None,None
+3931,Bochum,Philippines,Asia
+3932,Cavan-Monaghan,None,None
+3933,Plymouth,Turquie,Asia
+3934,Wolverhampton,France,Europe
+3935,Santander,Royaume-Uni,Europe
+3936,Cotia,None,None
+3937,Valladolid,France,Europe
+3938,Ryedale,Espagne,Europe
+3939,Hyderabad,Royaume-Uni,Europe
+3940,Edmonton,Inde,Asia
+3941,Vitoria-Gasteiz,Canada,North America
+3942,Vantaa,Royaume-Uni,Europe
+3943,Abidjan,None,None
+3944,None,Côte d’Ivoire,Africa
+3945,Algeciras,None,None
+3946,Londres,Argentine,South America
+3947,New Delhi,Qatar,Asia
+3948,Bangalore,Monaco,Europe
+3949,Saint-Jacques-de-Compostelle,None,None
+3950,Liverpool,Espagne,Europe
+3951,Oberwil-Lieli,Royaume-Uni,Europe
+3952,Preston,Suisse,Europe
+3953,San José,Indonésie,Asia
+3954,Naples,Costa Rica,North America
+3955,Berlin,Italie,Europe
+3956,Madrid,Argentine,South America
+3957,Marseille,Russie,Europe
+3958,Chennai,France,Europe
+3959,Vitoria-Gasteiz,Inde,Asia
+3960,Sherbrooke,Espagne,Europe
+3961,Kaiserslautern,None,None
+3962,Portsmouth,Allemagne,Europe
+3963,Dijon,Italie,Europe
+3964,Francfort-sur-le-Main,Belgique,Europe
+3965,Ankara,Espagne,Europe
+3966,East Hertfordshire,Brésil,South America
+3967,Pune City,Espagne,Europe
+3968,Troyes,Inde,Asia
+3969,Lérida,None,None
+3970,Glasgow,Australie,Oceania
+3971,Mons,Japon,Asia
+3972,Yawata,Italie,Europe
+3973,Madrid,États-Unis d'Amérique,North America
+3974,Hyderabad,France,Europe
+3975,Valence,Inde,Asia
+3976,Los Angeles,Pérou,South America
+3977,Khobar,None,None
+3978,Maastricht,None,None
+3979,Terrassa,Pays-Bas,Europe
+3980,Paris,Australie,Oceania
+3981,Zwolle,France,Europe
+3982,Carlsruhe,États-Unis d'Amérique,North America
+3983,Trani,None,None
+3984,Lisbonne,Australie,Oceania
+3985,Dublin,Portugal,Europe
+3986,Lisburn,None,None
+3987,Klaipėda,Royaume-Uni,Europe
+3988,Elgin,Lituanie,Europe
+3989,Besançon,Royaume-Uni,Europe
+3990,Hanovre,Royaume-Uni,Europe
+3991,Rouen,Belgique,Europe
+3992,Anvers,Australie,Oceania
+3993,Le Caire,Belgique,Europe
+3994,Cloverdale,None,None
+3995,Limoges,États-Unis d'Amérique,North America
+3996,City of Rochester,Inde,Asia
+3997,Aarhus,Royaume-Uni,Europe
+3998,Francfort-sur-le-Main,Danemark,Europe
+3999,Charleroi,Royaume-Uni,Europe
+4000,Terni,Australie,Oceania
+4001,Rabat,None,None
+4002,Augsbourg,None,None
+4003,New Delhi,Allemagne,Europe
+4004,Utrecht,Espagne,Europe
+4005,Kirklees,Pays-Bas,Europe
+4006,千代田区,Royaume-Uni,Europe
+4007,Crans-Montana,Allemagne,Europe
+4008,South Oxfordshire,Suisse,Europe
+4009,Dublin,Russie,Europe
+4010,Poznań,Royaume-Uni,Europe
+4011,Amersfoort,None,None
+4012,Rotterdam,Portugal,Europe
+4013,Turin,Norvège,Europe
+4014,千代田区,Italie,Europe
+4015,Graz,France,Europe
+4016,Toulouse,Autriche,Europe
+4017,Elvas,Espagne,Europe
+4018,Bordeaux,Russie,Europe
+4019,Barletta,Singapour,Asia
+4020,Odessa,None,None
+4021,Novo Hamburgo,None,None
+4022,Rouen,Espagne,Europe
+4023,Rome,Inde,Asia
+4024,Bremerhaven,Italie,Europe
+4025,Cantorbéry,Allemagne,Europe
+4026,Zagreb,Royaume-Uni,Europe
+4027,Gloucester,Australie,Oceania
+4028,Lisbonne,Brésil,South America
+4029,Erevan,Portugal,Europe
+4030,Saint-Pétersbourg,Arménie,Asia
+4031,Rome,Allemagne,Europe
+4032,Alicante,Italie,Europe
+4033,Eindhoven,France,Europe
+4034,Dublin,Argentine,South America
+4035,Turin,Irlande,Europe
+4036,Waterloo,Royaume-Uni,Europe
+4037,Somerset West and Taunton,Turquie,Asia
+4038,Cordenons,Allemagne,Europe
+4039,San Martín de Porres,Inde,Asia
+4040,Ponta Delgada,None,None
+4041,Trofa,None,None
+4042,Huntingdonshire,Belgique,Europe
+4043,Mourmansk,Royaume-Uni,Europe
+4044,York,Australie,Oceania
+4045,Diwaniya,Allemagne,Europe
+4046,Munich,Irak,Asia
+4047,Madrid,Pologne,Europe
+4048,Alexandria,Espagne,Europe
+4049,Saint-Louis,Royaume-Uni,Europe
+4050,Vale of White Horse,Espagne,Europe
+4051,Leipzig,None,None
+4052,North Vancouver,None,None
+4053,Cologne,Royaume-Uni,Europe
+4054,Tuban,Royaume-Uni,Europe
+4055,Abou Dabi,Indonésie,Asia
+4056,None,Émirats arabes unis,Asia
+4057,Ulm,None,None
+4058,Denver,Allemagne,Europe
+4059,Manchester,États-Unis d'Amérique,North America
+4060,Lagos,Royaume-Uni,Europe
+4061,Lausanne,Nigéria,Africa
+4062,Paris,Suisse,Europe
+4063,Borough de Spelthorne,None,None
+4064,São Luís,Inde,Asia
+4065,Angra dos Reis,Brésil,South America
+4066,Atlanta,Brésil,South America
+4067,Quarteira,None,None
+4068,Kirklees,Ukraine,Europe
+4069,Himeji,Royaume-Uni,Europe
+4070,Chennai,Japon,Asia
+4071,District d'Adur,Allemagne,Europe
+4072,Torrevieja,Royaume-Uni,Europe
+4073,Bois-le-Duc,Espagne,Europe
+4074,Metz,Gibraltar,Europe
+4075,Île de Hong Kong,France,Europe
+4076,Haïfa,Brésil,South America
+4077,Plymouth,Israël,Asia
+4078,Southend-on-Sea,None,None
+4079,Guadalajara,Royaume-Uni,Europe
+4080,Genève,Mexique,North America
+4081,Mulhouse,None,None
+4082,Asuncion,None,None
+4083,None,Paraguay,South America
+4084,Toronto,Royaume-Uni,Europe
+4085,Abuja,Mauritanie,Africa
+4086,Bath,États-Unis d'Amérique,North America
+4087,Campinas,Australie,Oceania
+4088,Melbourne,Brésil,South America
+4089,Remscheid,Australie,Oceania
+4090,South Oxfordshire,Allemagne,Europe
+4091,Skopje,None,None
+4092,Lisbonne,Macédoine du Nord,Europe
+4093,Hamilton,None,None
+4094,Minneapolis,None,None
+4095,Lexington,États-Unis d'Amérique,North America
+4096,Sheffield,Chypre,Asia
+4097,Minneapolis,Royaume-Uni,Europe
+4098,Pavón,None,None
+4099,Rimouski,None,None
+4100,Aveiro,Canada,North America
+4101,Reigate and Banstead,Portugal,Europe
+4102,Perth,Hongrie,Europe
+4103,Auburn,None,None
+4104,Bassetlaw,Irlande,Europe
+4105,Düsseldorf,Danemark,Europe
+4106,Strasbourg,Allemagne,Europe
+4107,Ostende,États-Unis d'Amérique,North America
+4108,Basingstoke and Deane,Belgique,Europe
+4109,Belfast,Portugal,Europe
+4110,Loures,None,None
+4111,arrondissement de Sidi Belyout,Portugal,Europe
+4112,Sotchi,Maroc,Africa
+4113,Guadalajara,Russie,Europe
+4114,Murcie,Mexique,North America
+4115,Oakland,Royaume-Uni,Europe
+4116,Trapani,None,None
+4117,Almere,None,None
+4118,Saint-Pétersbourg,Pays-Bas,Europe
+4119,Ajman,None,None
+4120,Cardiff,Émirats arabes unis,Asia
+4121,Zama,None,None
+4122,Gand,Iran,Asia
+4123,Édimbourg,Canada,North America
+4124,Berne,Royaume-Uni,Europe
+4125,Cidade da Maia,None,None
+4126,Vienne,Portugal,Europe
+4127,Milan,France,Europe
+4128,Cidade da Maia,Royaume-Uni,Europe
+4129,Marseille,Italie,Europe
+4130,Kiryū,None,None
+4131,Tours,Japon,Asia
+4132,Venise,None,None
+4133,Madrid,Salvador,North America
+4134,Fujisawa,France,Europe
+4135,Leicester,Japon,Asia
+4136,Las Vegas,Inde,Asia
+4137,Nicosie,États-Unis d'Amérique,North America
+4138,Cuernavaca,None,None
+4139,Alcalá de Henares,Mexique,North America
+4140,Ermesinde,Espagne,Europe
+4141,Allerdale,Portugal,Europe
+4142,Krefeld,None,None
+4143,Cobán,None,None
+4144,None,Guatemala,North America
+4145,Venise,Royaume-Uni,Europe
+4146,Orléans,Espagne,Europe
+4147,Vila Velha,Allemagne,Europe
+4148,Bilbao,Brésil,South America
+4149,Katowice,Royaume-Uni,Europe
+4150,Bristol,Canada,North America
+4151,Pembroke Pines,None,None
+4152,Rushmoor,Irlande,Europe
+4153,Bath,Espagne,Europe
+4154,East Suffolk,France,Europe
+4155,Le Caire,Royaume-Uni,Europe
+4156,Östersund,Brésil,South America
+4157,Namur,Suède,Europe
+4158,Ústí nad Labem,None,None
+4159,Cork,Tchéquie,Europe
+4160,Mid Suffolk,None,None
+4161,Porto,Russie,Europe
+4162,Cracovie,None,None
+4163,Dublin,Canada,North America
+4164,Passo Fundo,None,None
+4165,South Hams,France,Europe
+4166,Malaga,États-Unis d'Amérique,North America
+4167,Metz,Espagne,Europe
+4168,Tejutepeque,Suisse,Europe
+4169,Dublin,Salvador,North America
+4170,Barcelos,None,None
+4171,Whitehall,Salvador,North America
+4172,Doncaster,Portugal,Europe
+4173,Oslo,Royaume-Uni,Europe
+4174,Abuja,None,None
+4175,Bilbao,Portugal,Europe
+4176,Ate,France,Europe
+4177,Pordenone,None,None
+4178,Liège,Italie,Europe
+4179,Cardiff,États-Unis d'Amérique,North America
+4180,Newcastle upon Tyne,Argentine,South America
+4181,Falun,Brésil,South America
+4182,Manaus,Suède,Europe
+4183,Glasgow,Brésil,South America
+4184,Glasgow,Italie,Europe
+4185,Piélagos,Espagne,Europe
+4186,Rio das Ostras,None,None
+4187,Waverley,Brésil,South America
+4188,Mindelo,Sri Lanka,Asia
+4189,None,Cap-Vert,Africa
+4190,Bielefeld,None,None
+4191,Nice,Belgique,Europe
+4192,Galway,Royaume-Uni,Europe
+4193,Santa Ana,Irlande,Europe
+4194,Parañaque,Italie,Europe
+4195,Naples,Philippines,Asia
+4196,Saint-Étienne,Brésil,South America
+4197,Le Havre,None,None
+4198,Namur,Italie,Europe
+4199,Edmonton,Royaume-Uni,Europe
+4200,Séville,Italie,Europe
+4201,Viseu,None,None
+4202,Daugavpils,None,None
+4203,None,Lettonie,Europe
+4204,Uttlesford,None,None
+4205,La Rochelle,Suisse,Europe
+4206,Waterloo,France,Europe
+4207,Peterborough,France,Europe
+4208,Cuenca,Australie,Oceania
+4209,Aberdeen,Espagne,Europe
+4210,Darwin,None,None
+4211,Southampton,Pérou,South America
+4212,Oviède,Italie,Europe
+4213,Cartaxo,None,None
+4214,Les Îles-de-la-Madeleine,Royaume-Uni,Europe
+4215,Marbella,Nouvelle-Zélande,Oceania
+4216,Birmingham,Espagne,Europe
+4217,Amsterdam,Australie,Oceania
+4218,Cancún,Royaume-Uni,Europe
+4219,Tambo Grande,France,Europe
+4220,Florianópolis,Espagne,Europe
+4221,Valence,Brésil,South America
+4222,Norwich,France,Europe
+4223,Houston,Turquie,Asia
+4224,Kirklees,France,Europe
+4225,Rotterdam,Royaume-Uni,Europe
+4226,Riga,Espagne,Europe
+4227,Dalton,None,None
+4228,Hertsmere,États-Unis d'Amérique,North America
+4229,Banfield,Ukraine,Europe
+4230,Cité de Westminster,Argentine,South America
+4231,Denver,Royaume-Uni,Europe
+4232,Cotabato City,France,Europe
+4233,Ad Dammam,Philippines,Asia
+4234,Cité de Westminster,Arabie saoudite,Asia
+4235,Kale Mahallesi,None,None
+4236,Sousse,Royaume-Uni,Europe
+4237,Rio de Janeiro,Tunisie,Africa
+4238,Châtel-en-Trièves,Australie,Oceania
+4239,Borough de Charnwood,Portugal,Europe
+4240,Ludhiana,None,None
+4241,Lisbonne,France,Europe
+4242,Richmond,Portugal,Europe
+4243,Dubrovnik,None,None
+4244,Istanbul,Croatie,Europe
+4245,Glasgow,Pérou,South America
+4246,Tonbridge and Malling,France,Europe
+4247,Waverley,France,Europe
+4248,Bari,Royaume-Uni,Europe
+4249,Amsterdam,Italie,Europe
+4250,Araçatuba,None,None
+4251,Édimbourg,Brésil,South America
+4252,Copenhague,France,Europe
+4253,Uberlândia,None,None
+4254,Oadby and Wigston,Belgique,Europe
+4255,Redwood City,France,Europe
+4256,Patras,None,None
+4257,Odessa,Irlande,Europe
+4258,Calcutta,Ukraine,Europe
+4259,Madrid,Danemark,Europe
+4260,Cannock Chase,France,Europe
+4261,Calgary,Royaume-Uni,Europe
+4262,Fredrikstad,Canada,North America
+4263,Jérusalem,Norvège,Europe
+4264,Heerlen,None,None
+4265,Hammamet,None,None
+4266,None,Tunisie,Africa
+4267,São Paulo,Liban,Asia
+4268,Volta Redonda,None,None
+4269,Adélaïde,Brésil,South America
+4270,Belo Horizonte,France,Europe
+4271,Oakland,None,None
+4272,Dublin,États-Unis d'Amérique,North America
+4273,Heerlen,Espagne,Europe
+4274,Osaka,None,None
+4275,Paris,Japon,Asia
+4276,Gandia,France,Europe
+4277,Arlington,Brésil,South America
+4278,Quito,Italie,Europe
+4279,Clermont-Ferrand,Équateur,South America
+4280,Madrid,Costa Rica,North America
+4281,Lincoln,Australie,Oceania
+4282,Aix-en-Provence,Italie,Europe
+4283,Calamba,None,None
+4284,Buenos Aires,Espagne,Europe
+4285,District d'Adur,Argentine,South America
+4286,Seattle,None,None
+4287,Getafe,Brésil,South America
+4288,Sparte,None,None
+4289,Wellington,None,None
+4290,Valence,Hongrie,Europe
+4291,Juiz de Fora,Pays-Bas,Europe
+4292,Amagasaki,Royaume-Uni,Europe
+4293,Ebina,Royaume-Uni,Europe
+4294,Genève,Japon,Asia
+4295,Nancy,Royaume-Uni,Europe
+4296,Mérida,None,None
+4297,Aix-en-Provence,Espagne,Europe
+4298,Bruxelles,Pays-Bas,Europe
+4299,Toulouse,Italie,Europe
+4300,Salerne,Irlande,Europe
+4301,Châtel-en-Trièves,Italie,Europe
+4302,Dortmund,Brésil,South America
+4303,La Haye,France,Europe
+4304,Saint-Denis,Pays-Bas,Europe
+4305,Édimbourg,Italie,Europe
+4306,Aalborg,États-Unis d'Amérique,North America
+4307,Oviède,Danemark,Europe
+4308,Gilbert,None,None
+4309,Vogtei,Pays-Bas,Europe
+4310,Vérone,États-Unis d'Amérique,North America
+4311,Cité de Wakefield,Turquie,Asia
+4312,Cluj-Napoca,Australie,Oceania
+4313,Kawaguchi,None,None
+4314,Saragosse,France,Europe
+4315,Gorizia,France,Europe
+4316,Wiesbaden,Italie,Europe
+4317,West Suffolk,Allemagne,Europe
+4318,Guimarães,None,None
+4319,Boulogne-Billancourt,Portugal,Europe
+4320,Ramada e Caneças,Arabie saoudite,Asia
+4321,Montréal,Portugal,Europe
+4322,Turin,Canada,North America
+4323,Île de Hong Kong,Royaume-Uni,Europe
+4324,Sunnyvale,Australie,Oceania
+4325,Wealden,États-Unis d'Amérique,North America
+4326,São Paulo,Algérie,Africa
+4327,Parañaque,None,None
+4328,Kimberley,None,None
+4329,Milan,Afrique du Sud,Africa
+4330,Bombay,Italie,Europe
+4331,Perpignan,Inde,Asia
+4332,Bologne,France,Europe
+4333,Hanau,None,None
+4334,Bangalore,Espagne,Europe
+4335,Tours,Italie,Europe
+4336,Stamford,None,None
+4337,Santos,France,Europe
+4338,Cardiff,Brésil,South America
+4339,Auteuil,None,None
+4340,Natal,Royaume-Uni,Europe
+4341,Ostende,None,None
+4342,Melbourne,Monaco,Europe
+4343,Grande Prairie,None,None
+4344,Leeds,Singapour,Asia
+4345,Liverpool,Australie,Oceania
+4346,Pathankot,None,None
+4347,Jakarta,Singapour,Asia
+4348,Calais,Espagne,Europe
+4349,Saint-Jacques-de-Compostelle,France,Europe
+4350,Ville de Sarajevo,Italie,Europe
+4351,Ann Arbor,None,None
+4352,Lyon,États-Unis d'Amérique,North America
+4353,Valladolid,Irlande,Europe
+4354,Blaison-Saint-Sulpice,Italie,Europe
+4355,l'Hospitalet de Llobregat,None,None
+4356,Delft,None,None
+4357,Plobannalec-Lesconil,None,None
+4358,Alexandrie,France,Europe
+4359,Grenoble,Brésil,South America
+4360,Alcorcón,Russie,Europe
+4361,Giugliano in Campania,None,None
+4362,Durban,None,None
+4363,Liverpool,Afrique du Sud,Africa
+4364,Lugo,Italie,Europe
+4365,Auchay-sur-Vendée,None,None
+4366,Barcelone,Australie,Oceania
+4367,Trondheim,None,None
+4368,Cité de Westminster,Norvège,Europe
+4369,Santa Cruz de Ténérife,Royaume-Uni,Europe
+4370,Cork,Espagne,Europe
+4371,Rome,Irlande,Europe
+4372,Moscou,Pays-Bas,Europe
+4373,Minneapolis,Italie,Europe
+4374,Leicester,Ukraine,Europe
+4375,Wolfsbourg,Belgique,Europe
+4376,São José dos Pinhais,None,None
+4377,São José do Rio Preto,None,None
+4378,Malé,None,None
+4379,None,Maldives,Asia
+4380,Cascais e Estoril,None,None
+4381,Stirling,France,Europe
+4382,Borough de Charnwood,Espagne,Europe
+4383,Jérusalem,Iran,Asia
+4384,Cité de Westminster,Israël,Asia
+4385,Municipal District of Cobh,None,None
+4386,Orlando,Irlande,Europe
+4387,Playa del Carmen,None,None
+4388,Madrid,Suisse,Europe
+4389,Sourgout,Italie,Europe
+4390,Preston,Espagne,Europe
+4391,Bréda,Grèce,Europe
+4392,Salamanque,Portugal,Europe
+4393,Δημοτική Ενότητα Θήρας,None,None
+4394,Perpignan,Royaume-Uni,Europe
+4395,Charleroi,Allemagne,Europe
+4396,Coimbatore,Belgique,Europe
+4397,Erie,None,None
+4398,Wealden,None,None
+4399,North Hertfordshire,France,Europe
+4400,North Kesteven,None,None
+4401,Cagliari,Pays-Bas,Europe
+4402,Tonbridge and Malling,Italie,Europe
+4403,A'ali,None,None
+4404,Irvine,Pays-Bas,Europe
+4405,Vallée de l'Ernz,États-Unis d'Amérique,North America
+4406,Trieste,France,Europe
+4407,Ancenis-Saint-Géréon,None,None
+4408,Malaga,France,Europe
+4409,Apache Junction,None,None
+4410,Basta Tahta,Irlande,Europe
+4411,Milan,Liban,Asia
+4412,Nancy,Inde,Asia
+4413,Bodø,None,None
+4414,Pittsburgh,None,None
+4415,Ely,None,None
+4416,Burbank,Royaume-Uni,Europe
+4417,Castelló de la Plana,Inde,Asia
+4418,Virginia Beach,None,None
+4419,Algeciras,France,Europe
+4420,Avignon,Royaume-Uni,Europe
+4421,Tallinn,France,Europe
+4422,Bordeaux,Estonie,Europe
+4423,Marown,None,None
+4424,None,Île de Man,Europe
+4425,San Cristóbal de La Laguna,None,None
+4426,Mole Valley,Islande,Europe
+4427,Tameside,Indonésie,Asia
+4428,Algeciras,Royaume-Uni,Europe
+4429,San Jose,Espagne,Europe
+4430,Belfort,Royaume-Uni,Europe
+4431,Schwerin,Royaume-Uni,Europe
+4432,Vila Nova de Gaia,France,Europe
+4433,Nouakchott,Royaume-Uni,Europe
+4434,Paris,Mauritanie,Africa
+4435,Zurzach,Suisse,Europe
+4436,Quilpué,Chili,South America
+4437,Paita,Pérou,South America
+4438,Tuxtla Gutiérrez,Mexique,North America
+4439,Lanús,Argentine,South America
+4440,Новосибирск,Russie,Europe
+4441,Covilhã,Portugal,Europe
+4442,Quezon City,Philippines,Asia
+4443,Pak Kret,Thaïlande,Asia
+4444,La Havane,Cuba,North America
+4445,Barrie,Canada,North America
+4446,Bodø,Norvège,Europe
+4447,Foz do Iguaçu,Brésil,South America
+4448,Knoxville,États-Unis d'Amérique,North America
+4449,Riffa,Bahreïn,Asia
+4450,La Plata,Argentine,South America
+4451,Cheongju,Corée du Sud,Asia
+4452,Manurewa,Nouvelle-Zélande,Oceania
+4453,Caxias do Sul,Brésil,South America
+4454,Colón,Panamá,North America
+4455,Schönberg (Holstein),Allemagne,Europe
+4456,Entroncamento,Portugal,Europe
+4457,Colombo,Sri Lanka,Asia
+4458,Koszalin,Pologne,Europe
+4459,Омск,Russie,Europe
+4460,Eugene,États-Unis d'Amérique,North America
+4461,Municipio de Puerto Madryn,Argentine,South America
+4462,Os-Marsillon,France,Europe
+4463,Olympia,États-Unis d'Amérique,North America
+4464,Kirchberg (SG),Suisse,Europe
+4465,Frenelles-en-Vexin,France,Europe
+4466,Arequipa,Pérou,South America
+4467,Oakville,Canada,North America
+4468,Yecla,Espagne,Europe
+4469,Santa Maria,Brésil,South America
+4470,Huechuraba,Chili,South America
+4471,Matanzas,Cuba,North America
+4472,Sorocaba,Brésil,South America
+4473,Mountain View,États-Unis d'Amérique,North America
+4474,Itu,Brésil,South America
+4475,Tavira,Portugal,Europe
+4476,Leiria,Portugal,Europe
+4477,West Palm Beach,États-Unis d'Amérique,North America
+4478,Winston-Salem,États-Unis d'Amérique,North America
+4479,Nilópolis,Brésil,South America
+4480,Albergaria-a-Velha,Portugal,Europe
+4481,São João das Lampas e Terrugem,Portugal,Europe
+4482,Poços de Caldas,Brésil,South America
+4483,Baltimore,États-Unis d'Amérique,North America
+4484,Commune Cayes-Jacmel,Haïti,North America
+4485,Pune City,Inde,Asia
+4486,Aracaju,Brésil,South America
+4487,Pouso Alegre,Brésil,South America
+4488,Caguas,États-Unis d'Amérique,North America
+4489,Brampton,Canada,North America
+4490,La Rochefoucauld-en-Angoumois,France,Europe
+4491,Juiz de Fora,Brésil,South America
+4492,Noguinsk,Russie,Europe
+4493,São José,Brésil,South America
+4494,Ciudad Juárez,Mexique,North America
+4495,Pattaya,Thaïlande,Asia
+4496,Fredrikstad,Norvège,Europe
+4497,eMalahleni,Afrique du Sud,Africa
+4498,Limeira,Brésil,South America
+4499,Annaba,Algérie,Africa
+4500,Bunkyō,Japon,Asia
+4501,Ponce,États-Unis d'Amérique,North America
+4502,Hradec Králové,Tchéquie,Europe
+4503,Iaroslavl,Russie,Europe
+4504,Katmandou,Népal,Asia
+4505,Bogor,Indonésie,Asia
+4506,Semerciler Mahallesi,Turquie,Asia
+4507,Hamadan,Iran,Asia
+4508,Taroudant,Maroc,Africa
+4509,Duque de Caxias,Brésil,South America
+4510,Abidjan,Côte d’Ivoire,Africa
+4511,Yawata,Japon,Asia
+4512,Sherbrooke,Canada,North America
+4513,Cloverdale,États-Unis d'Amérique,North America
+4514,Δημοτική Ενότητα Κερατσινίου,Grèce,Europe
+4515,Odessa,États-Unis d'Amérique,North America
+4516,Novo Hamburgo,Brésil,South America
+4517,Fundão,Portugal,Europe
+4518,Diwaniya,Irak,Asia
+4519,Mourmansk,Russie,Europe
+4520,Quarteira,Portugal,Europe
+4521,Bashkia Durrës,Albanie,Europe
+4522,Sotchi,Russie,Europe
+4523,Ajman,Émirats arabes unis,Asia
+4524,Cuernavaca,Mexique,North America
+4525,Katowice,Pologne,Europe
+4526,Fujisawa,Japon,Asia
+4527,Östersund,Suède,Europe
+4528,Ústí nad Labem,Tchéquie,Europe
+4529,Whitehall,États-Unis d'Amérique,North America
+4530,Manaus,Brésil,South America
+4531,Les Îles-de-la-Madeleine,Canada,North America
+4532,Uberlândia,Brésil,South America
+4533,Redwood City,États-Unis d'Amérique,North America
+4534,Volta Redonda,Brésil,South America
+4535,Palm Bay,États-Unis d'Amérique,North America
+4536,Sparte,Grèce,Europe
+4537,Ebina,Japon,Asia
+4538,São José dos Pinhais,Brésil,South America
+4539,Coimbatore,Inde,Asia
+4540,Vallée de l'Ernz,Luxembourg,Europe
+4541,Apache Junction,États-Unis d'Amérique,North America
+4542,Saint-Pierre-la-Noue,France,Europe
+4543,San Jose,Philippines,Asia
+4544,Val-du-Layon,France,Europe
+4545,Kochi,Inde,Asia
+4546,Tromsø,Norvège,Europe
+4547,Nagakute,Japon,Asia
+4548,Columbus,États-Unis d'Amérique,North America
+4549,Newark,États-Unis d'Amérique,North America
+4550,Klerksdorp,Afrique du Sud,Africa
+4551,Bento Gonçalves,Brésil,South America
+4552,Nashville-Davidson,États-Unis d'Amérique,North America
+4553,Kielce,Pologne,Europe
+4554,Jōetsu,Japon,Asia
+4555,Oulu,Finlande,Europe
+4556,Hazel Grove,Canada,North America
+4557,Moreno,Argentine,South America
+4558,เกาะสมุย,Thaïlande,Asia
+4559,Itaquaquecetuba,Brésil,South America
+4560,Mauá,Brésil,South America
+4561,Chișinău,Moldavie,Europe
+4562,Lomé,Togo,Africa
+4563,Roussé,Bulgarie,Europe
+4564,The Municipal District of Adare — Rathkeale,Irlande,Europe
+4565,Vila Velha,Brésil,South America
+4566,Richardson,États-Unis d'Amérique,North America
+4567,Shah Alam,Malaisie,Asia
+4568,Río Cuarto,Argentine,South America
+4569,Thane,Inde,Asia
+4570,Montgomery,États-Unis d'Amérique,North America
+4571,São Pedro da Aldeia,Brésil,South America
+4572,Navi Mumbai,Inde,Asia
+4573,Downtown Kansas City,États-Unis d'Amérique,North America
+4574,Corpus Christi,États-Unis d'Amérique,North America
+4575,Edirne,Turquie,Asia
+4576,Puerto Montt,Chili,South America
+4577,Americana,Brésil,South America
+4578,Naucalpan,Mexique,North America
+4579,Fort Collins,États-Unis d'Amérique,North America
+4580,Gqeberha,Afrique du Sud,Africa
+4581,Mandurah,Australie,Oceania
+4582,Ad Dammam,Arabie saoudite,Asia
+4583,City of Saint John,Canada,North America
+4584,New Westminster,Canada,North America
+4585,Trenton,États-Unis d'Amérique,North America
+4586,Jackson,États-Unis d'Amérique,North America
+4587,Montaren-et-Saint-Médiers,France,Europe
+4588,Quilmes,Argentine,South America
+4589,Municipio de Río Gallegos,Argentine,South America
+4590,Saint-Thégonnec Loc-Eguiner,France,Europe
+4591,Seremban,Malaisie,Asia
+4592,Thurnen,Suisse,Europe
+4593,Xanthi,Grèce,Europe
+4594,Ipoh,Malaisie,Asia
+4595,Ballarat,Australie,Oceania
+4596,Argyle,États-Unis d'Amérique,North America
+4597,Subotica,Serbie,Europe
+4598,Joliette,Canada,North America
+4599,Les Eyzies,France,Europe
+4600,Noda,Japon,Asia
+4601,Rancagua,Chili,South America
+4602,uMdoni Local Municipality,Afrique du Sud,Africa
+4603,Tangerang,Indonésie,Asia
+4604,Yokohama,Japon,Asia
+4605,Rafaela,Argentine,South America
+4606,Beed,Inde,Asia
+4607,Toyama,Japon,Asia
+4608,Leme,Brésil,South America
+4609,Vezzano Ligure,Italie,Europe
+4610,Le Castelet,France,Europe
+4611,Carentan-les-Marais,France,Europe
+4612,Ipatinga,Brésil,South America
+4613,Campos dos Goytacazes,Brésil,South America
+4614,Rovaniemi,Finlande,Europe
+4615,Tallahassee,États-Unis d'Amérique,North America
+4616,Jacksonville,États-Unis d'Amérique,North America
+4617,Kelowna,Canada,North America
+4618,Riverside,États-Unis d'Amérique,North America
+4619,Novi Sad,Serbie,Europe
+4620,Novy Ourengoï,Russie,Europe
+4621,São Leopoldo,Brésil,South America
+4622,Delhi,Inde,Asia
+4623,Waltham,États-Unis d'Amérique,North America
+4624,Mahina,France,Europe
+4625,Alto do Seixalinho Santo André e Verderena,Portugal,Europe
+4626,Opole,Pologne,Europe
+4627,Dodge City,États-Unis d'Amérique,North America
+4628,Complexe résidentiel de Dhahran,Arabie saoudite,Asia
+4629,Spokane,États-Unis d'Amérique,North America
+4630,Sopot,Pologne,Europe
+4631,Port-d'Espagne,Trinité-et-Tobago,North America
+4632,stp,États-Unis d'Amérique,North America
+4633,Baar,Allemagne,Europe
+4634,São Caetano do Sul,Brésil,South America
+4635,Djouba,Soudan du Sud,Africa
+4636,Roswell,États-Unis d'Amérique,North America
+4637,Rawson,Argentine,South America
+4638,Khimki,Russie,Europe
+4639,Lahore,Pakistan,Asia
+4640,Kadoma,Zimbabwe,Africa
+4641,Okazaki,Japon,Asia
+4642,Jyväskylä,Finlande,Europe
+4643,Ras al-Khaïma,Émirats arabes unis,Asia
+4644,Tabouk,Arabie saoudite,Asia
+4645,بەختیاری ٢١٤,Irak,Asia
+4646,Vindry-sur-Turdine,France,Europe
+4647,Kushiro,Japon,Asia
+4648,Porto Seguro,Brésil,South America
+4649,Elk Grove,États-Unis d'Amérique,North America
+4650,Bethléem,Palestinian Territory,Asia
+4651,Edmond,États-Unis d'Amérique,North America
+4652,Hamamatsu,Japon,Asia
+4653,Biloxi,États-Unis d'Amérique,North America
+4654,Conseil régional de la vallée de Hefer,Israël,Asia
+4655,Barquisimeto,Venezuela,South America
+4656,Famagouste,Chypre,Asia
+4657,Stockton,États-Unis d'Amérique,North America
+4658,Vitória,Brésil,South America
+4659,Iquique,Chili,South America
+4660,Palm Harbor,États-Unis d'Amérique,North America
+4661,San Rafael,États-Unis d'Amérique,North America
+4662,Tripoli,Libye,Africa
+4663,Formentera,Espagne,Europe
+4664,Les Avenières Veyrins-Thuellin,France,Europe
+4665,Murrieta,États-Unis d'Amérique,North America
+4666,Ioujno-Sakhalinsk,Russie,Europe
+4667,Taguig,Philippines,Asia
+4668,Mesa,États-Unis d'Amérique,North America
+4669,Higashiosaka,Japon,Asia
+4670,Moncton,Canada,North America
+4671,Atlántico,Argentine,South America
+4672,Narashino,Japon,Asia
+4673,San José del Cabo,Mexique,North America
+4674,Bitola,Macédoine du Nord,Europe
+4675,Twann-Tüscherz,Suisse,Europe
+4676,Geelong,Australie,Oceania
+4677,Warwick Township,États-Unis d'Amérique,North America
+4678,Laviana,Espagne,Europe
+4679,Rostov-sur-le-Don,Russie,Europe
+4680,Presidente Prudente,Brésil,South America
+4681,Youngstown,États-Unis d'Amérique,North America
+4682,Wodonga,Australie,Oceania
+4683,Mobile,États-Unis d'Amérique,North America
+4684,El Paso,États-Unis d'Amérique,North America
+4685,Colonia del Sacramento,Uruguay,South America
+4686,Feira de Santana,Brésil,South America
+4687,אשקלון,Israël,Asia
+4688,Contagem,Brésil,South America
+4689,Marabá,Brésil,South America
+4690,Korolev,Russie,Europe
+4691,Kawagoe,Japon,Asia
+4692,Fresno,États-Unis d'Amérique,North America
+4693,Kinshasa,République démocratique du Congo,Africa
+4694,Sourgout,Russie,Europe
+4695,Maïkop,Russie,Europe
+4696,Yiwu,Chine,Asia
+4697,Oulianovsk,Russie,Europe
+4698,Mülheim an der Ruhr,Allemagne,Europe
+4699,Chesapeake,États-Unis d'Amérique,North America
+4700,Włocławek,Pologne,Europe
+4701,Gorizia,Italie,Europe
+4702,Pleven,Bulgarie,Europe
+4703,Easton,États-Unis d'Amérique,North America
+4704,Zárate,Argentine,South America
+4705,Jounieh,Liban,Asia
+4706,Hortolândia,Brésil,South America
+4707,Rayne Township,États-Unis d'Amérique,North America
+4708,McAllen,États-Unis d'Amérique,North America
+4709,Bora-Bora,France,Europe
+4710,Bon Repos sur Blavet,France,Europe
+4711,Toowoomba,Australie,Oceania
