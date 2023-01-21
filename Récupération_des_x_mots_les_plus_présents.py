@@ -17,7 +17,7 @@ ParcDisney = (pd.read_csv("C:/Users/laura/Downloads/Text-Mining-for-Disneyland-m
 
 # Fonction qui donne les 5 (par défault) mots les plus cités dans le dataframe (df) pour toutes les notes (par défault) 
 def mots_significatif_par_note(df, variable = 'toutes', modalité = 'toutes',  nb_mots = 5):
-    # Récupération du dataframe pour toutes les notes)
+    # Récupération du dataframe pour toutes les notes
     a = df.columns
     dfnew = pd.DataFrame(columns=a)
     # Si base complète on prend tout notre dataframe
