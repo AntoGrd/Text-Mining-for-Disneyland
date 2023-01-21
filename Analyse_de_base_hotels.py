@@ -7,7 +7,7 @@ import wordcloud as wc
 import plotly.graph_objs as go
 
 def nombre_avis_par_années(df):
-  res = df.Annee_Avis.value_counts()
+  res = df.Annee_avis.value_counts()
   return res
 
 def répartition_des_notes(df):
@@ -28,8 +28,8 @@ def notes1(df):
 
 
 def photo_ou_non(df):
-  cols = df['Photo'].unique()
-  val = df['Photo'].value_counts()
+  cols = df['presence_photo'].unique()
+  val = df['presence_photo'].value_counts()
   fig = go.Figure(data=[go.Pie(labels = cols, values = val)])
   return fig
 
