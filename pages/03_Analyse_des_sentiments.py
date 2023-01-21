@@ -20,7 +20,7 @@ option = 'None'
 
 if st.session_state['monument'] == 'Hotels':
     st.session_state['Hotels_sentiment'] = add_Sentiment(st.session_state['Hotels'])
-    année = st.session_state['Hotels_sentiment'].Annee_Avis.unique()
+    année = st.session_state['Hotels_sentiment'].Annee_avis.unique()
     if selection == 'Non':
         option = 'None'
     elif selection == 'Oui':
@@ -29,7 +29,7 @@ if st.session_state['monument'] == 'Hotels':
 
 elif st.session_state['monument']  == 'Parcs':  
     st.session_state['Parcs_sentiment'] = add_Sentiment(st.session_state['Parcs'])
-    année = st.session_state['Parcs_sentiment'].Annee_Avis.unique()
+    année = st.session_state['Parcs_sentiment'].Annee_avis.unique()
     if selection == 'Non':
         option = 'None'
     elif selection == 'Oui':
