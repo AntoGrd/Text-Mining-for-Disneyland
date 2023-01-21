@@ -31,7 +31,7 @@ def mots_significatif_par_note(df, variable = 'toutes', modalité = 'toutes',  n
             if (modalité[i] == 'toutes'):
                 dfnew = df
             else :
-                # Sinon on récupère uniquement les lignes que l'on souhate
+                # Sinon on récupère uniquement les lignes que l'on souhaite
                 for j in range (0,len(modalité[i])):
                     # On récupère l'ensemble des modalités de notre variable
                     dfnew = dfnew.append(df[df[variable[i]]==modalité[i][j]])
