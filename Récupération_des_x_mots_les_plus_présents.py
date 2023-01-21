@@ -24,7 +24,7 @@ def mots_significatif_par_note(df, variable = 'toutes', modalité = 'toutes',  n
     if (variable == 'toutes') :
         if (modalité == 'toutes'):
             dfnew = df
-    # Si on choisie que quelques variables 
+    # Si on ne choisit que quelques variables 
     else :
         # Si on prend toutes les modalités on prend tout notre dataFrame
         for i in range (0,len(variable)) : 
