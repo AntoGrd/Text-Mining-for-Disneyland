@@ -38,14 +38,14 @@ def mots_significatif_par_note(df, variable = 'toutes', modalité = 'toutes',  n
     parseur = CountVectorizer()
     X = parseur.fit_transform(dfnew['commentaire'])
     mdt = X.toarray()
-    # On compte la fréquence de chaque mots dans notre DataFrame
+    # On compte la fréquence de chaque mot dans notre DataFrame
     freq_mots = np.sum(mdt,axis=0)
     # Récupération des index des mots qui reviennent le plus (ordre décroissant)
     index = np.argsort(freq_mots)
     imp = {'terme': np.asarray(parseur.get_feature_names_out())[index], 'freq':freq_mots[index]}
     imp1 = pd.DataFrame.from_dict(imp, orient='columns')
     imp2 = imp1.sort_values(by = 'freq', ascending = False)
-    # Affichage des 5 mots qui ressortent le plus (ou un autre nombre si l'on a mit autre chose que 5)
+    # Affichage des 5 mots qui ressortent le plus (ou un autre nombre si l'on a mis autre chose que 5)
     import matplotlib.pyplot as plt
     poids = imp2['freq'].head(nb_mots)
     bars = imp2['terme'].head(nb_mots)
@@ -56,14 +56,14 @@ def mots_significatif_par_note2(df, nb_mots = 5):
     # Récupération du dataframe pour toutes les notes)
     X = parseur.fit_transform(df['commentaire'])
     mdt = X.toarray()
-    # On compte la fréquence de chaque mots dans notre DataFrame
+    # On compte la fréquence de chaque mot dans notre DataFrame
     freq_mots = np.sum(mdt,axis=0)
     # Récupération des index des mots qui reviennent le plus (ordre décroissant)
     index = np.argsort(freq_mots)
     imp = {'terme': np.asarray(parseur.get_feature_names_out())[index], 'freq':freq_mots[index]}
     imp1 = pd.DataFrame.from_dict(imp, orient='columns')
     imp2 = imp1.sort_values(by = 'freq', ascending = False)
-    # Affichage des 5 mots qui ressortent le plus (ou un autre nombre si l'on a mit autre chose que 5)
+    # Affichage des 5 mots qui ressortent le plus (ou un autre nombre si l'on a mis autre chose que 5)
     import matplotlib.pyplot as plt
     poids = imp2['freq'].head(nb_mots)
     bars = imp2['terme'].head(nb_mots)
@@ -74,7 +74,7 @@ def mots_significatif_par_note2(df, nb_mots = 5):
 def x_mots_plus_courants(df, nb_mots = 5):
     X = parseur.fit_transform(df['commentaire'])
     mdt = X.toarray()
-    # On compte la fréquence de chaque mots dans notre DataFrame
+    # On compte la fréquence de chaque mot dans notre DataFrame
     freq_mots = np.sum(mdt,axis=0)
     # Récupération des index des mots qui reviennent le plus (ordre décroissant)
     index = np.argsort(freq_mots)
@@ -86,7 +86,7 @@ def x_mots_plus_courants(df, nb_mots = 5):
 
 #######################################################################################
 
-#transormer les chaines de caractères de liste en liste 
+#Transformer les chaînes de caractères de liste en liste 
 import ast
 from collections import Iterable
 from nltk.probability import FreqDist
@@ -103,7 +103,7 @@ def flatten(lis):
              yield item
 
 # Initialisation de SentimentIntensityAnalyzer.
-#ajout des entiments 
+#ajout des sentiments 
 def ScoreSentiment(vector):
     tb = Blobber(pos_tagger=PatternTagger(), analyzer=PatternAnalyzer())
      
@@ -120,7 +120,7 @@ def ScoreSentiment(vector):
     return senti_list
 
 
-#frequence de mot + ajout de la variable sentiment selon le titre du commentaire
+#frequence de mots + ajout de la variable sentiment selon le titre du commentaire
 #sentiment : define between commentaire / titre_commentaire
 def freqMot(df,sentiment, tailleliste): 
     
@@ -198,7 +198,7 @@ fig.update_layout(
 )
 fig.show()
 
-#sentiment par annees
+#sentiment par année
 fig = px.histogram(d, x="Annee_Sejour",color="sentiment")
 fig.update_layout(
     title_text='Sentiments per Year', # title of plot
