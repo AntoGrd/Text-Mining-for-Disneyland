@@ -1,11 +1,12 @@
 import streamlit as st
 from Analyse_de_base_hotels import nuage_de_mots
-from Récupération_des_x_mots_les_plus_présents import mots_significatif_par_note2,x_mots_plus_courants
+from Récupération_des_x_mots_les_plus_présents import mots_significatif_par_note2, x_mots_plus_courants
 from fonctions_analyse import representation_mots
-from Idaviz import lda
 from Similarité_de_mots import most_similar_mots,most_similarity_mots,representation_mots2
 import numpy as np
 from PIL import Image
+import requests
+from io import BytesIO
 
 st.title("Répartition des mots")
 
@@ -14,7 +15,7 @@ st.title("Répartition des mots")
 Diagramme = st.sidebar.radio(
     "Quel diagramme voulez-vous afficher ?",
     ("Histogramme des mots qui reviennent le plus", "Vecorisation de mots les plus courant",
-    "Nuage de mots","graph antoine","Similarité des mots","Similarité des mots2", "Similarité des mots3"))
+    "Nuage de mots","Similarité des mots","Similarité des mots2", "Similarité des mots3"))
 
 if Diagramme == "Histogramme des mots qui reviennent le plus":
     nb_mots = st.sidebar.slider('Combien voulez-vous afficher de mots? ', 0, 100, 5)
@@ -43,20 +44,13 @@ if Diagramme == "Vecorisation de mots les plus courant":
             st.plotly_chart(representation_mots(st.session_state["Hotels"], "commentaire",st.session_state['nb_mots']))              
 
 if Diagramme == "Nuage de mots":
-    image = np.array(Image.open("C:/Users/laura/dossier/mask.jpg"))
+    st.set_option('deprecation.showPyplotGlobalUse', False)
+    image = np.array(Image.open("mask.jpg"))
     st.header("Nuage de mots")
     if st.session_state['monument']  == 'Parcs':
         st.write(nuage_de_mots(st.session_state["Parcs"],image))
     if st.session_state['monument']  == 'Hotels':
         st.write(nuage_de_mots(st.session_state["Hotels"],image))             
-
-if Diagramme == "graph antoine":
-    if button:
-        st.header("Graph antoine")
-        if st.session_state['monument']  == 'Parcs':
-            st.write(lda(st.session_state["Parcs"]))
-        if st.session_state['monument']  == 'Hotels':
-            st.write(lda(st.session_state["Hotels"]))
 
 if Diagramme == 'Similarité des mots':
     nb_mots = st.sidebar.slider('Combien voulez-vous afficher de mots? ', 0, 100, 5)
