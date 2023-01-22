@@ -43,23 +43,18 @@ if selection == 'Parcs':
             parc_disney = "SELECT titre_commentaire, commentaire, Mois_avis, Annee_avis, Mois_sejour, Annee_sejour, langue, Ville, Pays,Continent, Note, presence_photo, Situation FROM commentaire, date_avis, date_sejour,langues,lieu,lieux_disney, note, photo, produit, situations where commentaire.ID_note = note.ID_note and  commentaire.ID_photo = photo.ID_photo  and commentaire.ID_langue = langues.ID_langue and commentaire.ID_lieux_disney = lieux_disney.ID_lieux_disney and commentaire.ID_situation = situations.ID_situation and commentaire.ID_produit = produit.ID_produit and commentaire.ID_date_sejour = date_sejour.ID_date_sejour and commentaire.ID_date_avis = date_avis.ID_date_avis and commentaire.ID_lieu = lieu.ID_lieu and lieux_disney.Lieux_disney = 'Disneyland_Paris' "
             df = pd.read_sql(parc_disney,mydb)
             df = clean_commentaire(df)
-            #titre commentaire
-            df["com_titre_cluster"] = [ast.literal_eval(str(x)) for x in df["titre_commentaire"].tolist()]
-            df["com_titre_cluster"] =[" ".join(doc) for doc in df["com_titre_cluster"]]
-            #copmmentaire
-            df["com_cluster"] = [ast.literal_eval(str(x)) for x in df["commentaire"].tolist()]
-            df["com_cluster"] =[" ".join(doc) for doc in df["com_cluster"]]
             
         elif i == 'Studio 🎬':
             parc_studio = "SELECT titre_commentaire, commentaire, Mois_avis, Annee_avis, Mois_sejour, Annee_sejour, langue, Ville, Pays, Continent,Note, presence_photo, Situation FROM commentaire, date_avis, date_sejour,langues,lieu,lieux_disney, note, photo, produit, situations where commentaire.ID_note = note.ID_note and  commentaire.ID_photo = photo.ID_photo  and commentaire.ID_langue = langues.ID_langue and commentaire.ID_lieux_disney = lieux_disney.ID_lieux_disney and commentaire.ID_situation = situations.ID_situation and commentaire.ID_produit = produit.ID_produit and commentaire.ID_date_sejour = date_sejour.ID_date_sejour and commentaire.ID_date_avis = date_avis.ID_date_avis and commentaire.ID_lieu = lieu.ID_lieu and lieux_disney.Lieux_disney = 'Walt_Disney_Studios_Park' "
             df = pd.read_sql(parc_studio,mydb)
             df = clean_commentaire(df)
-            #titre commentaire
-            df["com_titre_cluster"] = [ast.literal_eval(str(x)) for x in df["titre_commentaire"].tolist()]
-            df["com_titre_cluster"] =[" ".join(doc) for doc in df["com_titre_cluster"]]
-            #copmmentaire
-            df["com_cluster"] = [ast.literal_eval(str(x)) for x in df["commentaire"].tolist()]
-            df["com_cluster"] =[" ".join(doc) for doc in df["com_cluster"]]
+            
+     #titre commentaire
+    df["com_titre_cluster"] = [ast.literal_eval(str(x)) for x in df["titre_commentaire"].tolist()]
+    df["com_titre_cluster"] =[" ".join(doc) for doc in df["com_titre_cluster"]]
+    #copmmentaire
+    df["com_cluster"] = [ast.literal_eval(str(x)) for x in df["commentaire"].tolist()]
+    df["com_cluster"] =[" ".join(doc) for doc in df["com_cluster"]]
             
     if 'Parcs' not in st.session_state :
         valeur_def = df['Note'].unique()
@@ -220,69 +215,40 @@ if selection == 'Hotels':
             hotel_cheyenne = "SELECT titre_commentaire, commentaire, Mois_avis, Annee_avis, Mois_sejour, Annee_sejour, langue, Ville, Pays, Continent,Note, presence_photo, Situation FROM commentaire, date_avis, date_sejour,langues,lieu,lieux_disney, note, photo, produit, situations where commentaire.ID_note = note.ID_note and  commentaire.ID_photo = photo.ID_photo  and commentaire.ID_langue = langues.ID_langue and commentaire.ID_lieux_disney = lieux_disney.ID_lieux_disney and commentaire.ID_situation = situations.ID_situation and commentaire.ID_produit = produit.ID_produit and commentaire.ID_date_sejour = date_sejour.ID_date_sejour and commentaire.ID_date_avis = date_avis.ID_date_avis and commentaire.ID_lieu = lieu.ID_lieu and lieux_disney.Lieux_disney = 'hotel_cheyenne' "
             df = pd.read_sql(hotel_cheyenne,mydb)
             df = clean_commentaire(df)
-            #titre commentaire
-            df["com_titre_cluster"] = [ast.literal_eval(str(x)) for x in df["titre_commentaire"].tolist()]
-            df["com_titre_cluster"] =[" ".join(doc) for doc in df["com_titre_cluster"]]
-            #copmmentaire
-            df["com_cluster"] = [ast.literal_eval(str(x)) for x in df["commentaire"].tolist()]
-            df["com_cluster"] =[" ".join(doc) for doc in df["com_cluster"]]
-            
             
         elif i == 'Davy_Crockett 🏹':
             hotel_davy_crockett = "SELECT titre_commentaire, commentaire, Mois_avis, Annee_avis, Mois_sejour, Annee_sejour, langue, Ville, Pays, Continent,Note, presence_photo, Situation FROM commentaire, date_avis, date_sejour,langues,lieu,lieux_disney, note, photo, produit, situations where commentaire.ID_note = note.ID_note and  commentaire.ID_photo = photo.ID_photo  and commentaire.ID_langue = langues.ID_langue and commentaire.ID_lieux_disney = lieux_disney.ID_lieux_disney and commentaire.ID_situation = situations.ID_situation and commentaire.ID_produit = produit.ID_produit and commentaire.ID_date_sejour = date_sejour.ID_date_sejour and commentaire.ID_date_avis = date_avis.ID_date_avis and commentaire.ID_lieu = lieu.ID_lieu and lieux_disney.Lieux_disney = 'hotel_davy_crockett' "
             df = pd.read_sql(hotel_davy_crockett,mydb)
             df = clean_commentaire(df)
-            #titre commentaire
-            df["com_titre_cluster"] = [ast.literal_eval(str(x)) for x in df["titre_commentaire"].tolist()]
-            df["com_titre_cluster"] =[" ".join(doc) for doc in df["com_titre_cluster"]]
-            #copmmentaire
-            df["com_cluster"] = [ast.literal_eval(str(x)) for x in df["commentaire"].tolist()]
-            df["com_cluster"] =[" ".join(doc) for doc in df["com_cluster"]]
-            
         elif i == 'Marvel 🦸‍♀️':
             hotel_marvel = "SELECT titre_commentaire, commentaire, Mois_avis, Annee_avis, Mois_sejour, Annee_sejour, langue, Ville, Pays, Continent,Note, presence_photo, Situation FROM commentaire, date_avis, date_sejour,langues,lieu,lieux_disney, note, photo, produit, situations where commentaire.ID_note = note.ID_note and  commentaire.ID_photo = photo.ID_photo  and commentaire.ID_langue = langues.ID_langue and commentaire.ID_lieux_disney = lieux_disney.ID_lieux_disney and commentaire.ID_situation = situations.ID_situation and commentaire.ID_produit = produit.ID_produit and commentaire.ID_date_sejour = date_sejour.ID_date_sejour and commentaire.ID_date_avis = date_avis.ID_date_avis and commentaire.ID_lieu = lieu.ID_lieu and lieux_disney.Lieux_disney = 'hotel_marvel' "
             df = pd.read_sql(hotel_marvel,mydb)
             df = clean_commentaire(df)
-            #titre commentaire
-            df["com_titre_cluster"] = [ast.literal_eval(str(x)) for x in df["titre_commentaire"].tolist()]
-            df["com_titre_cluster"] =[" ".join(doc) for doc in df["com_titre_cluster"]]
-            #copmmentaire
-            df["com_cluster"] = [ast.literal_eval(str(x)) for x in df["commentaire"].tolist()]
-            df["com_cluster"] =[" ".join(doc) for doc in df["com_cluster"]]
+        
             
         elif i == 'Newport 🏨':
             hotel_newport = "SELECT titre_commentaire, commentaire, Mois_avis, Annee_avis, Mois_sejour, Annee_sejour, langue, Ville, Pays, Continent,Note, presence_photo, Situation FROM commentaire, date_avis, date_sejour,langues,lieu,lieux_disney, note, photo, produit, situations where commentaire.ID_note = note.ID_note and  commentaire.ID_photo = photo.ID_photo  and commentaire.ID_langue = langues.ID_langue and commentaire.ID_lieux_disney = lieux_disney.ID_lieux_disney and commentaire.ID_situation = situations.ID_situation and commentaire.ID_produit = produit.ID_produit and commentaire.ID_date_sejour = date_sejour.ID_date_sejour and commentaire.ID_date_avis = date_avis.ID_date_avis and commentaire.ID_lieu = lieu.ID_lieu and lieux_disney.Lieux_disney = 'hotel_newport' "
             df = pd.read_sql(hotel_newport,mydb)
             df = clean_commentaire(df)
-            #titre commentaire
-            df["com_titre_cluster"] = [ast.literal_eval(str(x)) for x in df["titre_commentaire"].tolist()]
-            df["com_titre_cluster"] =[" ".join(doc) for doc in df["com_titre_cluster"]]
-            #copmmentaire
-            df["com_cluster"] = [ast.literal_eval(str(x)) for x in df["commentaire"].tolist()]
-            df["com_cluster"] =[" ".join(doc) for doc in df["com_cluster"]]
-            
+  
         elif i == 'Santa_Fe 🏜️':
             hotel_sante_fe = "SELECT titre_commentaire, commentaire, Mois_avis, Annee_avis, Mois_sejour, Annee_sejour, langue, Ville, Pays, Continent,Note, presence_photo, Situation FROM commentaire, date_avis, date_sejour,langues,lieu,lieux_disney, note, photo, produit, situations where commentaire.ID_note = note.ID_note and  commentaire.ID_photo = photo.ID_photo  and commentaire.ID_langue = langues.ID_langue and commentaire.ID_lieux_disney = lieux_disney.ID_lieux_disney and commentaire.ID_situation = situations.ID_situation and commentaire.ID_produit = produit.ID_produit and commentaire.ID_date_sejour = date_sejour.ID_date_sejour and commentaire.ID_date_avis = date_avis.ID_date_avis and commentaire.ID_lieu = lieu.ID_lieu and lieux_disney.Lieux_disney = 'hotel_sante_fe' "
             df = pd.read_sql(hotel_sante_fe,mydb)
             df = clean_commentaire(df)
             #titre commentaire
-            df["com_titre_cluster"] = [ast.literal_eval(str(x)) for x in df["titre_commentaire"].tolist()]
-            df["com_titre_cluster"] =[" ".join(doc) for doc in df["com_titre_cluster"]]
-            #copmmentaire
-            df["com_cluster"] = [ast.literal_eval(str(x)) for x in df["commentaire"].tolist()]
-            df["com_cluster"] =[" ".join(doc) for doc in df["com_cluster"]]
-            
+   
         elif i == 'Sequoia 🌲':
             hotel_sequoia = "SELECT titre_commentaire, commentaire, Mois_avis, Annee_avis, Mois_sejour, Annee_sejour, langue, Ville, Pays, Continent,Note, presence_photo, Situation FROM commentaire, date_avis, date_sejour,langues,lieu,lieux_disney, note, photo, produit, situations where commentaire.ID_note = note.ID_note and  commentaire.ID_photo = photo.ID_photo  and commentaire.ID_langue = langues.ID_langue and commentaire.ID_lieux_disney = lieux_disney.ID_lieux_disney and commentaire.ID_situation = situations.ID_situation and commentaire.ID_produit = produit.ID_produit and commentaire.ID_date_sejour = date_sejour.ID_date_sejour and commentaire.ID_date_avis = date_avis.ID_date_avis and commentaire.ID_lieu = lieu.ID_lieu and lieux_disney.Lieux_disney = 'hotel_sequoia' "
             df = pd.read_sql(hotel_sequoia,mydb)
             df = clean_commentaire(df)
-            #titre commentaire
-            df["com_titre_cluster"] = [ast.literal_eval(str(x)) for x in df["titre_commentaire"].tolist()]
-            df["com_titre_cluster"] =[" ".join(doc) for doc in df["com_titre_cluster"]]
-            #copmmentaire
-            df["com_cluster"] = [ast.literal_eval(str(x)) for x in df["commentaire"].tolist()]
-            df["com_cluster"] =[" ".join(doc) for doc in df["com_cluster"]]
-        
+    #titre commentaire
+    df["com_titre_cluster"] = [ast.literal_eval(str(x)) for x in df["titre_commentaire"].tolist()]
+    df["com_titre_cluster"] =[" ".join(doc) for doc in df["com_titre_cluster"]]
+    #copmmentaire
+    df["com_cluster"] = [ast.literal_eval(str(x)) for x in df["commentaire"].tolist()]
+    df["com_cluster"] =[" ".join(doc) for doc in df["com_cluster"]]
+            
+   
     if 'Hotels' not in st.session_state :
         valeur_def = df['Note'].unique()
     else :
