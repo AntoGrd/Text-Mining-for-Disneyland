@@ -4,8 +4,8 @@ Spyder Editor
 This is a temporary script file.
 """
 
-##############file to clean data################
 
+##############file to clean data################
 import string
 import pandas as pd 
 from nltk.stem import WordNetLemmatizer
@@ -14,6 +14,11 @@ import nltk
 from nltk.corpus import stopwords
 import datetime
 import numpy as np
+import scrap_hotel
+import scrap_parc
+from traduction import translate
+from fonctions_analyse import applyCountry
+from selenium import webdriver
 
 lem = WordNetLemmatizer()
 ponctuations = set(string.punctuation)
@@ -265,18 +270,24 @@ def clean_commentaire(df):
     
     return df
 
-def ProcessNouveauComm(url, driver, date, Lieu, tab):
 
+
+def ProcessNouveauComm(url,date, Lieu, tab):
+    
+    driver = webdriver.Chrome("C:/Users/Sam/Documents/SISE/Text mining/Driver/chromedriver.exe")
+    
     if Lieu == "hotel":
         df = scrap_hotel.scrapping_Nouveaux_hotel(url, driver, date)
         translate(df)
-        df = clean_data_parc(df)
-
+        lieu = tab.Lieux_disney.tolist()[1]
+        df = applyCountry(str(lieu))
+        
     elif Lieu =="Parc" : 
         df = scrap_parc.scrapping_Nouveaux_parc(url, driver, date)
         translate(df)
-        df = clean_data_hotel(df)
-
+        lieu = tab.Lieux_disney.tolist()[1]
+        df = applyCountry(str(lieu))
+        
     # Effectuer une jointure avec l'option indicator=True
     merged = pd.merge(tab, df, on=['commentaire', 'commentaire'], how='outer', indicator=True)
 
@@ -284,6 +295,14 @@ def ProcessNouveauComm(url, driver, date, Lieu, tab):
     to_drop = merged.query('_merge == "both"').index
     # Supprimer les lignes sélectionnées du deuxième DataFrame
     df.drop(to_drop, inplace=True)
+    
+    return df 
+    
+    
+    
+    
 
-    return df
-
+    
+    
+    
+    

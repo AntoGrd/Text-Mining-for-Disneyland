@@ -5,8 +5,6 @@ from fonctions_analyse import representation_mots
 from Similarité_de_mots import most_similar_mots,most_similarity_mots,representation_mots2
 import numpy as np
 from PIL import Image
-import requests
-from io import BytesIO
 
 st.title("Répartition des mots")
 

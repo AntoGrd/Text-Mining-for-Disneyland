@@ -130,9 +130,9 @@ def plot_top_words(model, feature_names, n_top_words, title,nb_cluster):
             ax.spines[i].set_visible(False)
         fig.suptitle(title, fontsize=40)
     plt.subplots_adjust(top=0.90, bottom=0.05, wspace=0.90, hspace=0.3)
-    plt.show()
+    
 
-def text_cluistering(df, colonne, nb_cluster, ntherm) : 
+def text_clustering(df, colonne, nb_cluster, ntherm) : 
     
     #inialisation dataframe
     Dcluster = pd.DataFrame()

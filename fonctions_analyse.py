@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
 """
 Created on Wed Jan  4 15:01:56 2023
-
 @author: Sam
 """
-
 
 import ast
 #from collections import Iterable
@@ -85,10 +83,8 @@ def add_Sentiment(df):
 """
 allWords = ' '.join([twts for twts in d_sentiment["titre_commentaire_nolist"]])
 wordCloud = WordCloud(width=500, height=300, random_state=5000, max_font_size=110).generate(allWords)
-
 plt.imshow(wordCloud, interpolation="bilinear")
 plt.axis('off')
-
 plt.show()
 """
 
