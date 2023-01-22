@@ -123,8 +123,9 @@ def graph_sentiment(df , col, annee = "None"):
 
 def representation_mots(df,colonne,nb_mots = 10):
     
-    liste = [ast.literal_eval(x) for x in df[str(colonne)]]
-    modele = Word2Vec(liste,vector_size=2,window=5)
+    #liste = [ast.literal_eval(x) for x in df[str(colonne)]]
+    #modele = Word2Vec(liste,vector_size=2,window=5)
+    modele = Word2Vec(df[colonne],vector_size=2,window=5)
     words = modele.wv
     data = pd.DataFrame(words.vectors, columns=['V1','V2'], index=words.key_to_index.keys())
     mots2 = words.key_to_index.keys()

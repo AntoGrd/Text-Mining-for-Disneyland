@@ -7,7 +7,8 @@ import matplotlib.pyplot as plt
 import plotly.graph_objects as go
 
 def most_similar_mots(df, mot):
-    liste = [ast.literal_eval(x) for x in df.commentaire]
+    #liste = [ast.literal_eval(x) for x in df.commentaire]
+    liste = df.commentaire
     modele = Word2Vec(liste, vector_size=2, window=5)
     words = modele.wv
     if mot in words:
@@ -18,14 +19,16 @@ def most_similar_mots(df, mot):
         st.write(f"Le mot '{mot}' n'est pas présent dans le vocabulaire du modèle.")
         
 def most_similarity_mots(df, mot1, mot2):
-    liste = [ast.literal_eval(x) for x in df.commentaire]
+    #liste = [ast.literal_eval(x) for x in df.commentaire]
+    liste = df.commentaire
     modele = Word2Vec(liste, vector_size=2, window=5)
     words = modele.wv
     sim = words.similarity(mot1, mot2)
     st.write(f"Similarité entre {mot1} et {mot2} : {sim}")
 
 def representation_mots2(df, liste_mots):
-    liste = [ast.literal_eval(x) for x in df.commentaire]
+    #liste = [ast.literal_eval(x) for x in df.commentaire]
+    liste = df.commentaire
     modele = Word2Vec(liste, vector_size=2, window=5)
     words = modele.wv
     df = pd.DataFrame(words.vectors, columns=["V1","V2"], index = words.key_to_index.keys())

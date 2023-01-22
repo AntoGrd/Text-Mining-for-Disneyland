@@ -1,61 +1,97 @@
 import streamlit as st
-from Analyse_de_base_hotels import nombre_avis_par_années,répartition_des_notes,notes,notes1,photo_ou_non,situation_famille,par_pays
+from Analyse_de_base_hotels import nuage_de_mots
+from Récupération_des_x_mots_les_plus_présents import mots_significatif_par_note2, x_mots_plus_courants
+from fonctions_analyse import representation_mots
+from Similarité_de_mots import most_similar_mots,most_similarity_mots,representation_mots2
+import numpy as np
+from PIL import Image
+import requests
+from io import BytesIO
 
-st.subheader('Données du lieu choisi')
+st.title("Répartition des mots")
 
-#################### PARCS ##############
-if st.session_state['monument']  == 'Parcs':
-    # Choix des différents graphiques
-    Diagramme = st.sidebar.radio(
-        "Quel diagramme voulez-vous afficher ?",
-        ("Nombre d'avis par année", "Répartition des notes", 'Différence des notes entre les Français et les étrangers','Répartition des commentaires avec ou sans photos','Répartition des différents types de groupe',"Nombre d'avis par pays"))
 
-    # Affichage des graphiques
-    if Diagramme == "Nombre d'avis par année":
-        st.subheader("Nombre d'avis par année")
-        st.bar_chart(nombre_avis_par_années(st.session_state['Parcs']))
-    if Diagramme == "Répartition des notes":
-        st.subheader('Répartition des notes attribuées selon le lieu choisi')
-        st.plotly_chart(répartition_des_notes(st.session_state['Parcs']))
-    if Diagramme == "Répartition des langues des commentaires":
-        st.subheader('Répartition des langues des commentaires')
-        st.bar_chart(notes(st.session_state['Parcs']))
-    if Diagramme == "Différence des notes entre les Français et les étrangers":
-        st.subheader('Différence des notes entre les Français et les étrangers')
-        st.plotly_chart(notes1(st.session_state['Parcs']))
-    if Diagramme == "Répartition des commentaires avec ou sans photos":
-        st.subheader('Répartition des commentaires avec ou sans photos')
-        st.plotly_chart(photo_ou_non(st.session_state['Parcs']))
-    if Diagramme == "Répartition des différents types de groupe":
-        st.subheader('Répartition des différents types de groupe')
-        st.plotly_chart(situation_famille(st.session_state['Parcs']))
-    if Diagramme == "Nombre d'avis par pays":
-        st.subheader("Nombre d'avis par pays")
-        st.bar_chart(par_pays(st.session_state['Parcs']))
+# Choix des différents graphiques
+Diagramme = st.sidebar.radio(
+    "Quel diagramme voulez-vous afficher ?",
+    ("Histogramme des mots qui reviennent le plus", "Vecorisation de mots les plus courant",
+    "Nuage de mots","Similarité des mots","Similarité des mots2", "Similarité des mots3"))
 
-####################### Hotels ###################
-if st.session_state['monument']  == 'Hotels':
-    # Choix des différents graphiques
-    Diagramme = st.sidebar.radio(
-        "Quel diagramme voulez-vous afficher ?",
-        ("Nombre d'avis par année", "Répartition des notes", 'Différence des notes entre les Français et les étrangers','Répartition des commentaires avec ou sans photos',"Nombre d'avis par pays"))
+if Diagramme == "Histogramme des mots qui reviennent le plus":
+    nb_mots = st.sidebar.slider('Combien voulez-vous afficher de mots? ', 0, 100, 5)
+    st.sidebar.write('Nombre de mots choisi', nb_mots)
+    st.sidebar.write('Le nombre de mots convient-il?')
+    button = st.sidebar.button('Oui')
+    st.session_state['nb_mots'] = nb_mots
+    if button:
+        st.header("Histogramme des mots qui reviennent le plus")
+        if st.session_state['monument']  == 'Parcs':
+            st.plotly_chart(mots_significatif_par_note2(st.session_state['Parcs'],st.session_state['nb_mots']))
+        if st.session_state['monument']  == 'Hotels':
+            st.plotly_chart(mots_significatif_par_note2(st.session_state['Hotels'],st.session_state['nb_mots']))
 
-    # Affichage des graphiques
-    if Diagramme == "Nombre d'avis par année":
-        st.subheader("Nombre d'avis par année")
-        st.bar_chart(nombre_avis_par_années(st.session_state['Hotels']))
-    if Diagramme == "Répartition des notes":
-        st.subheader('Répartition des notes attribuées selon le lieu choisi')
-        st.plotly_chart(répartition_des_notes(st.session_state['Hotels']))
-    if Diagramme == "Différence des notes entre les Français et les étrangers":
-        st.subheader('Différence des notes entre les Français et les étrangers')
-        st.plotly_chart(notes1(st.session_state['Hotels']))
-    if Diagramme == "Répartition des langues des commentaires":
-        st.subheader('Répartition des langues des commentaires')
-        st.bar_chart(notes(st.session_state['Hotels']))
-    if Diagramme == "Répartition des commentaires avec ou sans photos":
-        st.subheader('Répartition des commentaires avec ou sans photos')
-        st.plotly_chart(photo_ou_non(st.session_state['Hotels']))
-    if Diagramme == "Nombre d'avis par pays":
-        st.subheader("Nombre d'avis par pays")
-        st.bar_chart(par_pays(st.session_state['Hotels']))
+if Diagramme == "Vecorisation de mots les plus courant":
+    nb_mots = st.sidebar.slider('Combien voulez-vous afficher de mots? ', 0, 100, 5)
+    st.sidebar.write('Nombre de mots choisi', nb_mots)
+    st.sidebar.write('Le nombre de mots convient-il?')
+    button = st.sidebar.button('Oui')
+    st.session_state['nb_mots'] = nb_mots
+    if button:
+        st.header("Vecorisation de mots les plus courant")
+        if st.session_state['monument']  == 'Parcs':
+            st.plotly_chart(representation_mots(st.session_state["Parcs"], "commentaire",st.session_state['nb_mots']))
+        if st.session_state['monument']  == 'Hotels':
+            st.plotly_chart(representation_mots(st.session_state["Hotels"], "commentaire",st.session_state['nb_mots']))              
+
+if Diagramme == "Nuage de mots":
+    st.set_option('deprecation.showPyplotGlobalUse', False)
+    image = np.array(Image.open("mask.jpg"))
+    st.header("Nuage de mots")
+    if st.session_state['monument']  == 'Parcs':
+        st.write(nuage_de_mots(st.session_state["Parcs"],image))
+    if st.session_state['monument']  == 'Hotels':
+        st.write(nuage_de_mots(st.session_state["Hotels"],image))             
+
+if Diagramme == 'Similarité des mots':
+    nb_mots = st.sidebar.slider('Combien voulez-vous afficher de mots? ', 0, 100, 5)
+    st.sidebar.write('Nombre de mots choisi', nb_mots)
+    st.session_state['nb_mots'] = nb_mots
+    if st.session_state['monument'] == 'Parcs':
+        selection = x_mots_plus_courants(st.session_state['Parcs'],st.session_state['nb_mots'])
+        option = st.selectbox('Selectionner un mots', selection)
+        st.write(most_similar_mots(st.session_state['Parcs'], option))
+    if st.session_state['monument'] == 'Hotels':
+        selection = x_mots_plus_courants(st.session_state['Hotels'],st.session_state['nb_mots'])
+        option = st.selectbox('Selectionner un mots', selection)
+        st.write(most_similar_mots(st.session_state['Hotels'], option))
+
+
+if Diagramme == 'Similarité des mots2':
+    nb_mots = st.sidebar.slider('Combien voulez-vous afficher de mots? ', 0, 100, 5)
+    st.sidebar.write('Nombre de mots choisi', nb_mots)
+    st.session_state['nb_mots'] = nb_mots
+    if st.session_state['monument'] == 'Parcs':
+        selection = x_mots_plus_courants(st.session_state['Parcs'],st.session_state['nb_mots'])
+        selection2 = x_mots_plus_courants(st.session_state['Parcs'],st.session_state['nb_mots'])
+        option = st.selectbox('Selectionner un mots 1 ', selection)
+        option2 = st.selectbox('Selectionner un mots 2 ', selection2)
+        st.write(most_similarity_mots(st.session_state['Parcs'], option, option2))
+    if st.session_state['monument'] == 'Hotels':
+        selection = x_mots_plus_courants(st.session_state['Hotels'],st.session_state['nb_mots'])
+        selection2 = x_mots_plus_courants(st.session_state['Hotels'],st.session_state['nb_mots'])
+        option = st.selectbox('Selectionner un mots 1', selection)
+        option2 = st.selectbox('Selectionner un mots 2', selection2)
+        st.write(most_similarity_mots(st.session_state['Hotels'], option, option2))
+
+if Diagramme == 'Similarité des mots3':
+    nb_mots = st.sidebar.slider('Combien voulez-vous afficher de mots? ', 0, 100, 5)
+    st.sidebar.write('Nombre de mots choisi', nb_mots)
+    st.session_state['nb_mots'] = nb_mots
+    if st.session_state['monument'] == 'Parcs':
+        selection = x_mots_plus_courants(st.session_state['Parcs'],st.session_state['nb_mots'])
+        option = st.multiselect('Selectionner un mots (Pour selectionner tous les mots plus rapidement cliquer sur controle et entrée)', selection, selection.head(10))
+        st.pyplot(representation_mots2(st.session_state['Parcs'], option))
+    if st.session_state['monument'] == 'Hotels':
+        selection = x_mots_plus_courants(st.session_state['Hotels'],st.session_state['nb_mots'])
+        option = st.multiselect('Selectionner un mots (Pour selectionner tous les mots plus rapidement cliquer sur controle et entrée)', selection, selection.head(10))
+        st.pyplot(representation_mots2(st.session_state['Hotels'], option))

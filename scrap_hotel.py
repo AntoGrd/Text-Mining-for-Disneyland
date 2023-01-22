@@ -149,7 +149,6 @@ def scrapping_Nouveaux_hotel(url_hotel, driver, mois):
     #while(page<4): #juste pour tester
     while(True) :
         
-        
         content  = driver.page_source
         soup = BeautifulSoup(content)
         for avis in soup.findAll("div", {'class':'YibKl MC R2 Gi z Z BB pBbQr'}):
@@ -245,3 +244,4 @@ def scrapping_Nouveaux_hotel(url_hotel, driver, mois):
     df = pd.DataFrame(list(zip(liste_titre_comm, liste_comm,liste_dateAvis,liste_dateSejour, liste_loc, liste_note, presence_photo)),
                    columns =['titre_comm', 'comm',"dateAvis","dateSejour",'loc','note','photo'])
     return(df)
+

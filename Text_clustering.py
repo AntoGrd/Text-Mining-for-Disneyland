@@ -142,6 +142,9 @@ def text_cluistering(df, colonne, nb_cluster, ntherm) :
     
 
     X = vector.fit_transform(df[str(colonne)])
+    #X = vector.fit_transform(df[colonne].astype(str))
+    #" ".join(doc) for doc in comm_
+    #df[item].astype(str)
 
     #creation cluster avce LDA
     lda = LatentDirichletAllocation(n_components=nb_cluster, learning_decay=0.9)

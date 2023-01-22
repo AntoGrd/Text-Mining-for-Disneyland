@@ -264,3 +264,26 @@ def clean_commentaire(df):
             df[col] = nettoyage_corpus(list(df[col]))
     
     return df
+
+def ProcessNouveauComm(url, driver, date, Lieu, tab):
+
+    if Lieu == "hotel":
+        df = scrap_hotel.scrapping_Nouveaux_hotel(url, driver, date)
+        translate(df)
+        df = clean_data_parc(df)
+
+    elif Lieu =="Parc" : 
+        df = scrap_parc.scrapping_Nouveaux_parc(url, driver, date)
+        translate(df)
+        df = clean_data_hotel(df)
+
+    # Effectuer une jointure avec l'option indicator=True
+    merged = pd.merge(tab, df, on=['commentaire', 'commentaire'], how='outer', indicator=True)
+
+    # Sélectionner les lignes qui ont un indicateur "both"
+    to_drop = merged.query('_merge == "both"').index
+    # Supprimer les lignes sélectionnées du deuxième DataFrame
+    df.drop(to_drop, inplace=True)
+
+    return df
+
