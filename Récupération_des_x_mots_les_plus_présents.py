@@ -16,7 +16,7 @@ parseur = CountVectorizer()
 
 def mots_significatif_par_note2(df, nb_mots = 5):
     # Récupération du dataframe pour toutes les notes)
-    X = parseur.fit_transform(df['commentaire'])
+    X = parseur.fit_transform(df['com_cluster'])
     mdt = X.toarray()
     # On compte la fréquence de chaque mot dans notre DataFrame
     freq_mots = np.sum(mdt,axis=0)
@@ -34,7 +34,7 @@ def mots_significatif_par_note2(df, nb_mots = 5):
 
 
 def x_mots_plus_courants(df, nb_mots = 5):
-    X = parseur.fit_transform(df['commentaire'])
+    X = parseur.fit_transform(df['com_cluster'])
     mdt = X.toarray()
     # On compte la fréquence de chaque mot dans notre DataFrame
     freq_mots = np.sum(mdt,axis=0)
