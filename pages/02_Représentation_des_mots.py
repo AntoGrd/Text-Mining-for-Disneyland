@@ -1,7 +1,6 @@
 import streamlit as st
 from Analyse_de_base_hotels import nuage_de_mots
-from Récupération_des_x_mots_les_plus_présents import mots_significatif_par_note2, x_mots_plus_courants
-from fonctions_analyse import representation_mots
+from fonctions_analyse import representation_mots, mots_significatif_par_note2, x_mots_plus_courants
 from Similarité_de_mots import most_similar_mots,most_similarity_mots,representation_mots2
 import numpy as np
 from PIL import Image
