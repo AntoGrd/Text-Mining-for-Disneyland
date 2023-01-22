@@ -204,7 +204,7 @@ if selection == 'Parcs':
 
     st.text('Taille de la base sélectionner contient : ' + str(df.shape[0]) + " lignes")
 
-    st.write('La Base de données vous convient elle?')
+    st.write('Pressez le bouton pour l\'application du fichier de données')
     button = st.button('Oui')
     # Si validation du bouton => création d'une variable globale (en gros qu'on peut utiliser dans toute l'appli)
     if button:
@@ -399,7 +399,7 @@ if selection == 'Hotels':
 
     st.text('Taille de la base sélectionner contient : ' + str(df.shape[0]) + " lignes")
 
-    st.write('La Base de données vous convient elle?')
+    st.write('Pressez le bouton pour l\'application du fichier de données')
     # Si validation du bouton => création d'une variable globale (en gros qu'on peut utiliser dans toute l'appli)
     button = st.button('Oui')
     if button:

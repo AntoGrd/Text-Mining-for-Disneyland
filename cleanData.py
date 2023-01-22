@@ -270,12 +270,21 @@ def clean_commentaire(df):
             df[col] = nettoyage_corpus(list(df[col]))
     
     return df
+<<<<<<< HEAD
 
 
 def ProcessNouveauComm(url,date, Lieu, tab):
     
     driver = webdriver.Chrome("C:/Documents/travail/LYON2\M2/text_mining/projet_disney/chromedriver.exe")
     
+=======
+ 
+    
+def ProcessNouveauComm(url,date, Lieu, tab):
+
+    driver = webdriver.Chrome("C:/Users/Sam/Documents/SISE/Text mining/Driver/chromedriver.exe")
+
+>>>>>>> 9c493b573747806b89cb08fc5921feb3d115c395
     if Lieu == "Hotel":
         df = scrap_hotel.scrapping_Nouveaux_hotel(url, driver, date)
         translate(df)
@@ -287,6 +296,7 @@ def ProcessNouveauComm(url,date, Lieu, tab):
         translate(df)
         df = clean_data_parc(df)
         df = applyCountry(df)
+<<<<<<< HEAD
         
     df = df[~df['commentaire'].isin(tab['commentaire'])]
 
@@ -298,6 +308,13 @@ def Add_data(column, table):
         val=i
     query='WITH new_value (value) AS (VALUES ("val")) INSERT INTO table (id, value) SELECT (SELECT COALESCE(MAX(id), 0) + 1 FROM table), value FROM new_value WHERE NOT EXISTS (SELECT 1 FROM table WHERE value = new_value.value)'
     mycursor.execute(query) 
+=======
+
+    df = df[~df['commentaire'].isin(tab['commentaire'])]
+
+    return df
+    
+>>>>>>> 9c493b573747806b89cb08fc5921feb3d115c395
 
     
     
