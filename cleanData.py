@@ -19,6 +19,7 @@ import scrap_parc
 from traduction import translate
 from fonctions_analyse import applyCountry
 from selenium import webdriver
+import requests
 
 lem = WordNetLemmatizer()
 ponctuations = set(string.punctuation)
@@ -271,36 +272,32 @@ def clean_commentaire(df):
     return df
 
 
-
 def ProcessNouveauComm(url,date, Lieu, tab):
     
-    driver = webdriver.Chrome("C:/Users/Sam/Documents/SISE/Text mining/Driver/chromedriver.exe")
+    driver = webdriver.Chrome("C:/Documents/travail/LYON2\M2/text_mining/projet_disney/chromedriver.exe")
     
-    if Lieu == "hotel":
+    if Lieu == "Hotel":
         df = scrap_hotel.scrapping_Nouveaux_hotel(url, driver, date)
         translate(df)
-        lieu = tab.Lieux_disney.tolist()[1]
-        df = applyCountry(str(lieu))
-        
+        df = clean_data_hotel(df)
+        df = applyCountry(df)
+
     elif Lieu =="Parc" : 
         df = scrap_parc.scrapping_Nouveaux_parc(url, driver, date)
         translate(df)
-        lieu = tab.Lieux_disney.tolist()[1]
-        df = applyCountry(str(lieu))
+        df = clean_data_parc(df)
+        df = applyCountry(df)
         
-    # Effectuer une jointure avec l'option indicator=True
-    merged = pd.merge(tab, df, on=['commentaire', 'commentaire'], how='outer', indicator=True)
+    df = df[~df['commentaire'].isin(tab['commentaire'])]
 
-    # Sélectionner les lignes qui ont un indicateur "both"
-    to_drop = merged.query('_merge == "both"').index
-    # Supprimer les lignes sélectionnées du deuxième DataFrame
-    df.drop(to_drop, inplace=True)
-    
     return df 
-    
-    
-    
-    
+
+def Add_data(column, table):   
+    #query='WITH new_value (value) AS (VALUES ("value")) INSERT INTO table1 (id, value) SELECT (SELECT COALESCE(MAX(id), 0) + 1 FROM table1), value FROM new_value WHERE NOT EXISTS (SELECT 1 FROM table1 WHERE value = new_value.value);'  
+    for i in column:
+        val=i
+    query='WITH new_value (value) AS (VALUES ("val")) INSERT INTO table (id, value) SELECT (SELECT COALESCE(MAX(id), 0) + 1 FROM table), value FROM new_value WHERE NOT EXISTS (SELECT 1 FROM table WHERE value = new_value.value)'
+    mycursor.execute(query) 
 
     
     

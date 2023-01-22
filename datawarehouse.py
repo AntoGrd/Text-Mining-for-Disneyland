@@ -94,9 +94,9 @@ def creation_tables(tab1,tab2,tab3,tab4,tab5,tab6,tab7,tab8):
 
     tabms=pd.DataFrame([*hotels["Mois_Sejour"],*parcs["Mois_Sejour"]])
     tabas=pd.DataFrame([*hotels["Annee_Sejour"],*parcs["Annee_Sejour"]])
-    mois_entier=['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre']
-    mois_debut2=['janv.','févr.','mars','avr.','mai','juin','juil.','août','sept.','oct.','nov.','déc.']
-    tabms = tabms.replace(mois_debut2,mois_entier)
+    #mois_entier=['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre']
+    #mois_debut2=['janv.','févr.','mars','avr.','mai','juin','juil.','août','sept.','oct.','nov.','déc.']
+    #tabms = tabms.replace(mois_debut2,mois_entier)
 
     tab_date_sejour=pd.DataFrame({'Mois_sejour':tabms[0],'Annee_sejour':tabas[0]})
     tab_date_sejour.drop_duplicates(keep = 'first', inplace=True)
