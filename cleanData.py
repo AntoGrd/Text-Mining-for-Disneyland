@@ -269,37 +269,27 @@ def clean_commentaire(df):
             df[col] = nettoyage_corpus(list(df[col]))
     
     return df
-
-
-
+ 
+    
 def ProcessNouveauComm(url,date, Lieu, tab):
-    
+
     driver = webdriver.Chrome("C:/Users/Sam/Documents/SISE/Text mining/Driver/chromedriver.exe")
-    
-    if Lieu == "hotel":
+
+    if Lieu == "Hotel":
         df = scrap_hotel.scrapping_Nouveaux_hotel(url, driver, date)
         translate(df)
-        lieu = tab.Lieux_disney.tolist()[1]
-        df = applyCountry(str(lieu))
-        
+        df = clean_data_hotel(df)
+        df = applyCountry(df)
+
     elif Lieu =="Parc" : 
         df = scrap_parc.scrapping_Nouveaux_parc(url, driver, date)
         translate(df)
-        lieu = tab.Lieux_disney.tolist()[1]
-        df = applyCountry(str(lieu))
-        
-    # Effectuer une jointure avec l'option indicator=True
-    merged = pd.merge(tab, df, on=['commentaire', 'commentaire'], how='outer', indicator=True)
+        df = clean_data_parc(df)
+        df = applyCountry(df)
 
-    # Sélectionner les lignes qui ont un indicateur "both"
-    to_drop = merged.query('_merge == "both"').index
-    # Supprimer les lignes sélectionnées du deuxième DataFrame
-    df.drop(to_drop, inplace=True)
-    
-    return df 
-    
-    
-    
+    df = df[~df['commentaire'].isin(tab['commentaire'])]
+
+    return df
     
 
     

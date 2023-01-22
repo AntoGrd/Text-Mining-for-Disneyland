@@ -187,8 +187,7 @@ def get_continent(lat: float, lon:float) -> Tuple[str, str]:
 
 
 
-def applyCountry(i):
-    
+def applyCountry(tab):
 
         latitude = []
         longitude = []
@@ -200,17 +199,6 @@ def applyCountry(i):
         
         geolocator  = Nominatim(user_agent = "geoapiExercises")
 
-        
-        os.chdir("C:/Users/Sam/Documents/GitHub/Text-Mining-for-Disneyland/data_translate")
-        tab=pd.read_csv(str(i) + "_fr.csv")
-        #if i == "Disneyland_Paris" or i == "Walt_Disney_Studios_Park" :
-        #    tab = clean_data_parc(tab)
-        #else:
-        #    tab = clean_data_hotel(tab)
-        
-        #d_sentiment = add_Sentiment(tab) #ajouter la colonne sentiment sur les commentaires
-        
-        #ajouter la lattitude et longitudes des villes 
         for ville in tab['Ville'] : 
         
             try :
