@@ -9,7 +9,7 @@ Attached, the python files created fort the Streamlit app.
 
 How does it work ?
 
-# Create an virtual environmment (with visual code  (vscode) for instance)
+# Create a virtual environmment (with visual code  (vscode) for instance)
 - do not forget to install the requested librairies such as streamlit, plotly.graphs_objs (interactive plots), pandas and numpy (c. requirements.tx)
 - import the pages folder
 - import the functions besides the Pages folder (you are still in the environment, but not in the Pages folder)
