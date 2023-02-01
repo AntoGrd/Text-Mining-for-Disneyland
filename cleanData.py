@@ -270,14 +270,14 @@ def clean_commentaire(df):
             df[col] = nettoyage_corpus(list(df[col]))
     
     return df
-<<<<<<< HEAD
+
 
 
 def ProcessNouveauComm(url,date, Lieu, tab):
     
     driver = webdriver.Chrome("C:/Documents/travail/LYON2\M2/text_mining/projet_disney/chromedriver.exe")
     
-=======
+
  
     
 def ProcessNouveauComm(url,date, Lieu, tab):
