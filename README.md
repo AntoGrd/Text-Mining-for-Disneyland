@@ -1,3 +1,7 @@
+## Summary
+
+We have carried out an NLP project for DisneyLand Paris. Their objective was to be able to analyse the reviews of their sites and hotels through sites such as tripadvisor, booking or google. So we scrapped the reviews of these sites, and made a dashbord on streamlit by performing many analyses with the Word2Vec library of python.
+
 # Text-Mining-for-Disneyland-Paris
 Web Scrapping- NLP analysis - Streamlit app -On the behalf of Disneyland's Customer Experience Integration Team.
 
